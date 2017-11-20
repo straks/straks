@@ -1,0 +1,19 @@
+#################
+# General Config
+#################
+rpcuser=ustraks
+rpcpassword=YOUR_SUPER_SECRET_PASSWORD
+rpcport=7574
+rpcallowip=127.0.0.1
+server=1
+daemon=1
+listen=1
+#maxconnections=100
+
+####################
+# Masternode Config
+####################
+#masternode=1
+#masternodeprivkey=
+#externalip=:7575
+#promode=1

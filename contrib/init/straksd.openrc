@@ -1,0 +1,92 @@
+#!/sbin/runscript
+
+# backward compatibility for existing gentoo layout 
+#
+if [ -d "/var/lib/straks/.straks" ]; then
+	STRAKSD_DEFAULT_DATADIR="/var/lib/straks/.straks"
+else
+	STRAKSD_DEFAULT_DATADIR="/var/lib/straksd"
+fi
+
+STRAKSD_CONFIGFILE=${STRAKSD_CONFIGFILE:-/etc/straks/straks.conf}
+STRAKSD_PIDDIR=${STRAKSD_PIDDIR:-/var/run/straksd}
+STRAKSD_PIDFILE=${STRAKSD_PIDFILE:-${STRAKSD_PIDDIR}/straksd.pid}
+STRAKSD_DATADIR=${STRAKSD_DATADIR:-${STRAKSD_DEFAULT_DATADIR}}
+STRAKSD_USER=${STRAKSD_USER:-${STRAKS_USER:-straks}}
+STRAKSD_GROUP=${STRAKSD_GROUP:-straks}
+STRAKSD_BIN=${STRAKSD_BIN:-/usr/bin/straksd}
+STRAKSD_NICE=${STRAKSD_NICE:-${NICELEVEL:-0}}
+STRAKSD_OPTS="${STRAKSD_OPTS:-${STRAKS_OPTS}}"
+
+name="Straks Core Daemon"
+description="Straks cryptocurrency P2P network daemon"
+
+command="/usr/bin/straksd"
+command_args="-pid=\"${STRAKSD_PIDFILE}\" \
+		-conf=\"${STRAKSD_CONFIGFILE}\" \
+		-datadir=\"${STRAKSD_DATADIR}\" \
+		-daemon \
+		${STRAKSD_OPTS}"
+
+required_files="${STRAKSD_CONFIGFILE}"
+start_stop_daemon_args="-u ${STRAKSD_USER} \
+			-N ${STRAKSD_NICE} -w 2000"
+pidfile="${STRAKSD_PIDFILE}"
+
+# The retry schedule to use when stopping the daemon. Could be either
+# a timeout in seconds or multiple signal/timeout pairs (like
+# "SIGKILL/180 SIGTERM/300")
+retry="${STRAKSD_SIGTERM_TIMEOUT}"
+
+depend() {
+	need localmount net
+}
+
+# verify
+# 1) that the datadir exists and is writable (or create it)
+# 2) that a directory for the pid exists and is writable
+# 3) ownership and permissions on the config file
+start_pre() {
+	checkpath \
+	-d \
+	--mode 0750 \
+	--owner "${STRAKSD_USER}:${STRAKSD_GROUP}" \
+	"${STRAKSD_DATADIR}"
+
+	checkpath \
+	-d \
+	--mode 0755 \
+	--owner "${STRAKSD_USER}:${STRAKSD_GROUP}" \
+	"${STRAKSD_PIDDIR}"
+
+	checkpath -f \
+	-o ${STRAKSD_USER}:${STRAKSD_GROUP} \
+	-m 0660 \
+	${STRAKSD_CONFIGFILE}
+
+	checkconfig || return 1
+}
+
+checkconfig()
+{
+	if ! grep -qs '^rpcpassword=' "${STRAKSD_CONFIGFILE}" ; then
+		eerror ""
+		eerror "ERROR: You must set a secure rpcpassword to run straksd."
+		eerror "The setting must appear in ${STRAKSD_CONFIGFILE}"
+		eerror ""
+		eerror "This password is security critical to securing wallets "
+		eerror "and must not be the same as the rpcuser setting."
+		eerror "You can generate a suitable random password using the following"
+		eerror "command from the shell:"
+		eerror ""
+		eerror "bash -c 'tr -dc a-zA-Z0-9 < /dev/urandom | head -c32 && echo'"
+		eerror ""
+		eerror "It is also recommended that you also set alertnotify so you are "
+		eerror "notified of problems:"
+		eerror ""
+		eerror "ie: alertnotify=echo %%s | mail -s \"Straks Alert\"" \
+			"admin@foo.com"
+		eerror ""
+		return 1
+	fi
+}

@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Straks Core
+Comment=Connect to the Straks P2P Network
+Comment[de]=Verbinde mit dem Straks peer-to-peer Netzwerk
+Comment[fr]=Straks, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Straks, eşten eşe kriptografik sanal para birimi
+Exec=straks-qt %u
+Terminal=false
+Type=Application
+Icon=straks128
+MimeType=x-scheme-handler/straks;
+Categories=Office;Finance;

@@ -1,0 +1,6 @@
+usr/local/bin/straks-qt usr/bin
+share/pixmaps/straks32.xpm usr/share/pixmaps
+share/pixmaps/straks16.xpm usr/share/pixmaps
+share/pixmaps/straks128.png usr/share/pixmaps
+debian/straks-qt.desktop usr/share/applications
+debian/straks-qt.protocol usr/share/kde4/services/

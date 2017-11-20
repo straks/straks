@@ -1,0 +1,22 @@
+[Unit]
+Description=Straks's distributed currency daemon
+After=network.target
+
+[Service]
+User=straks
+Group=straks
+
+Type=forking
+PIDFile=/var/lib/straksd/straksd.pid
+ExecStart=/usr/bin/straksd -daemon -pid=/var/lib/straksd/straksd.pid \
+-conf=/etc/straks/straks.conf -datadir=/var/lib/straksd -disablewallet
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

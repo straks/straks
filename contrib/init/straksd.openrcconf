@@ -1,0 +1,33 @@
+# /etc/conf.d/straksd: config file for /etc/init.d/straksd
+
+# Config file location
+#STRAKSD_CONFIGFILE="/etc/straks/straks.conf"
+
+# What directory to write pidfile to?  (created and owned by $STRAKSD_USER)
+#STRAKSD_PIDDIR="/var/run/straksd"
+
+# What filename to give the pidfile
+#STRAKSD_PIDFILE="${STRAKSD_PIDDIR}/straksd.pid"
+
+# Where to write straksd data (be mindful that the blockchain is large)
+#STRAKSD_DATADIR="/var/lib/straksd"
+
+# User and group to own straksd process
+#STRAKSD_USER="straks"
+#STRAKSD_GROUP="straks"
+
+# Path to straksd executable
+#STRAKSD_BIN="/usr/bin/straksd"
+
+# Nice value to run straksd under
+#STRAKSD_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+STRAKSD_OPTS="-disablewallet"
+
+# The timeout in seconds OpenRC will wait for straksd to terminate
+# after a SIGTERM has been raised.
+# Note that this will be mapped as argument to start-stop-daemon's
+# '--retry' option, which means you can specify a retry schedule
+# here. For more information see man 8 start-stop-daemon.
+STRAKSD_SIGTERM_TIMEOUT=60
