@@ -67,7 +67,7 @@ Speed and privacy are core concerns for users today as well as e-commerce busine
 
 ### Links
 
-- **[STRAKS Website](https://straks.io)**
+- **[STRAKS Website](http://www.straks.io)**
 - **[STRAKS Explorer](https://straks.info)**
 - **[STRAKS Discord](https://discord.gg/5gzvadZ)**
 - **[STRAKS Reddit](https://www.reddit.com/r/STRAKSproject)**
