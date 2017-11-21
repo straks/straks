@@ -143,7 +143,7 @@ STRAKS will be capped at a maxium supply of **150 million coins**.  This target 
 
 The constant block reward prevents event cliffs related to expected "halvings" and will support a more consistent and stable participation rate over a long time horizon.
 
-More information will be available on the STRAKS' [website](http://straks.io)
+More information will be available on the STRAKS' [website](http://www.straks.io)
 
 ##### The Monetary Curve Based on a 10 STAK Block Reward
 ![Alt text](doc/mcurve.png)
@@ -227,7 +227,7 @@ As the Masternode count increases, the payment to Masternode holders will
 decline in favour of miners in order to support a decentralised ideology.  The
 new algorithm is simple in design but highly effective and lays the foundation for
 future advancements.  More information abut this feature will be posted on the
-[main site](http://straks.io). 
+[main site](http://www.straks.io). 
 
 ##### Reactive Equilibria Masternode Payment Rebalancing Profile 
 ![Alt text](doc/reactive_equilibria.png)
