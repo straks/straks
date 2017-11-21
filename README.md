@@ -115,18 +115,28 @@ As above summary, in addition, the following notable items:
 
 Due to the unique combination of SegWit, treasury reward, miner reward and Masternode payments, as of this writing, mining software and pools do not yet support STRAKS' coinbasetxn configuration.  The only way to mine at the moment is via STRAKS' wallet, as follows:
 
+
 ```
 Approach 1 (Local):
-(1) Start straksd/straks-qt locally
-(2) Run: "./straks-cli generate 1" (or via debug console in the Qt gui wallet)
+(1) Start straksd locally
+(2) Run: "./straks-cli generate 1"
 ```
 ```
 Approach 2 (Remote):
 (1) Start straksd on remote server and local server
-(2) On your local wallet (server) run: "./straks-cli getaccountaddress 0"
-(3) On Your remote server Run: "./straks-cli generatetoaddress 1 <address from step2>"
-(4) Shutdown local wallet (server)
+(2) On your local server run: "./straks-cli getaccountaddress 0"
+(3) On Your remote server run: "./straks-cli generatetoaddress 1 <address from step2>"
+(4) Shutdown local wallet
 ```
+```
+Approach 3 (QT Wallet):
+(1) Start straks-qt
+(2) On the menu bar; Help -> Debug Window -> Console
+(3) Run: "getaccountaddress 0"
+(4) Run: "generatetoaddress 1 <address from step3>"
+(5) Repeat step 4, as many times as desired.
+```
+
 We find ourselves in an attractive position of having a **low barrier to mining entry at launch**, which allows anyone and everyone to start mining from the outset.  You are only limited by the number of wallets that can be run simultaneously.  The latter is comparatively cheaper than setting up a multi-gpu mining rig.
 
 We are curently working with mining pools to ensure that we can enable GPU/CPU pool mining as soon as practicable.
