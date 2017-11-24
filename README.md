@@ -86,7 +86,6 @@ Speed and privacy are core concerns for users today as well as e-commerce busine
 - **John Smith (john@straks.io) - Marketing & PR, Business Development**
 - **Kasper (kasper@straks.io) - UI/UX, Marketing & PR**
 - **Eskodhi (eskodhi@straks.io) - Developer**
-- **Ned Stark (ned@straks.io) - Developer**
 
 
 __________________________________________________________________________
