@@ -67,7 +67,7 @@ Speed and privacy are core concerns for users today as well as e-commerce busine
 
 ### Links
 
-- **[STRAKS Website](http://www.straks.io)**
+- **[STRAKS Website](https://straks.io)**
 - **[STRAKS Explorer](https://straks.info)**
 - **[STRAKS Discord](https://discord.gg/5gzvadZ)**
 - **[STRAKS Reddit](https://www.reddit.com/r/STRAKSproject)**
@@ -115,28 +115,18 @@ As above summary, in addition, the following notable items:
 
 Due to the unique combination of SegWit, treasury reward, miner reward and Masternode payments, as of this writing, mining software and pools do not yet support STRAKS' coinbasetxn configuration.  The only way to mine at the moment is via STRAKS' wallet, as follows:
 
-
 ```
 Approach 1 (Local):
-(1) Start straksd locally
-(2) Run: "./straks-cli generate 1"
+(1) Start straksd/straks-qt locally
+(2) Run: "./straks-cli generate 1" (or via debug console in the Qt gui wallet)
 ```
 ```
 Approach 2 (Remote):
 (1) Start straksd on remote server and local server
-(2) On your local server run: "./straks-cli getaccountaddress 0"
-(3) On Your remote server run: "./straks-cli generatetoaddress 1 <address from step2>"
-(4) Shutdown local wallet
+(2) On your local wallet (server) run: "./straks-cli getaccountaddress 0"
+(3) On Your remote server Run: "./straks-cli generatetoaddress 1 <address from step2>"
+(4) Shutdown local wallet (server)
 ```
-```
-Approach 3 (QT Wallet):
-(1) Start straks-qt
-(2) On the menu bar; Help -> Debug Window -> Console
-(3) Run: "getaccountaddress 0"
-(4) Run: "generatetoaddress 1 <address from step3>"
-(5) Repeat step 4, as many times as desired.
-```
-
 We find ourselves in an attractive position of having a **low barrier to mining entry at launch**, which allows anyone and everyone to start mining from the outset.  You are only limited by the number of wallets that can be run simultaneously.  The latter is comparatively cheaper than setting up a multi-gpu mining rig.
 
 We are curently working with mining pools to ensure that we can enable GPU/CPU pool mining as soon as practicable.
@@ -153,7 +143,7 @@ STRAKS will be capped at a maxium supply of **150 million coins**.  This target 
 
 The constant block reward prevents event cliffs related to expected "halvings" and will support a more consistent and stable participation rate over a long time horizon.
 
-More information will be available on the STRAKS' [website](http://www.straks.io)
+More information will be available on the STRAKS' [website](http://straks.io)
 
 ##### The Monetary Curve Based on a 10 STAK Block Reward
 ![Alt text](doc/mcurve.png)
@@ -237,7 +227,7 @@ As the Masternode count increases, the payment to Masternode holders will
 decline in favour of miners in order to support a decentralised ideology.  The
 new algorithm is simple in design but highly effective and lays the foundation for
 future advancements.  More information abut this feature will be posted on the
-[main site](http://www.straks.io). 
+[main site](http://straks.io). 
 
 ##### Reactive Equilibria Masternode Payment Rebalancing Profile 
 ![Alt text](doc/reactive_equilibria.png)
@@ -506,14 +496,61 @@ Transaction:
 }
 ```
 
-
 #### The Swap Mechanics
 
-Development of a Discord sever bot that will be used for the coin swap process in December is in full flow.
+The swap process will be conducted in a manner such that it aligns STRAKS' investor/miner incentives, STRAKS' team long-term objectives, and SIGT's "investors" seeking to accrue value alongside the STRAKS' community.
 
-Users will use the bot on Discord, to initiate and conclude their coin-swap.  The specifics of how to perform the coin-swap will be communicated on November 29th.  We will make sure that everyone are notified across all channels, so that nobody may miss out on the coin-swap opportunity.
+The distribution of swap funds will be managed to the extent that significant disruption of STAK circulation and market value can/will be minimised.  It would be unreasonable to think that the development team have not extensively considered the detrimental impact of an instantaneous increase in the circulation of STAK coins post swap.  To this consideration, the process defined, as follows, to an appreciable degree, prevents SIGT investors benefiting at the expense of STRAKS' miners/investors.
 
-Once the swap-process is initiated, Signatum coin-holders will have a 30 day window, whereby they can swap their coins from Signatum to STRAKS at the 4:1 ratio.
+The start date of the swap will be announced soon on all relevant communication channels, and the **window for registration will last exactly 30 days**.
+
+##### The "STAK-bot"
+
+Users will use the STRAKS swap-bot on Discord, to initiate and conclude their coin-swap.  The steps involved in registering for the swap, subject to minor amendments, will be as follows:
+
+```
+1. User initiates SIGT swap by issuing direct-message to STAK-bot
+2. STAK-bot generates new Signatum address and requests SIGT transfer from user
+3. STAK-bot monitors address and waits for 15 confirmations
+4. STAK-bot notifies user of completion of transfer
+5. STAK-bot requests user STAK address for swap process.
+6. User provides new STAK address for swap. 
+7. STAK-bot confirms user registration for swap. 
+8. End of STAK swap registration process
+```
+
+##### The Swap Process
+
+Following the end of the swap period, 30-days post announcement of the start, the **swap process will be executed on a monthly basis** thereafter, in-line with the rate at which supply is being generated for STAK through mining, i.e at 1440 blocks per day = 14,400 STAK per day.  With the minor adjustment of the swap supply being accelerated by 5% each year.  
+
+All POS Signatum rewards will be burned via the same transparent process as for the collateral for the duration of the swap distribution.  A dedicated website will be setup, tracking SIGT collateral, collateral POS rewards and the burning.
+
+```
+Monthly swap distribution for registered STAK swap addresses:
+
+Year 1 per Month: 432,000 STAK distributed; 1,728,000 SIGT burned
+Year 2 per Month: 453,600 STAK distributed, 1,814,400 SIGT burned
+Year 3 per Month: 475,200 STAK distributed, 1,900,800 SIGT burned
+Year 4 per Month: 496,800 STAK distributed, 1,987,200 SIGT burned
+Year 5 per Month: 518,400 STAK distributed, 2,073,600 SIGT burned
+
+Year 6 for 10 Months: 540,000 STAK distributed, 2,160,000 SIGT burned
+Year 6 for 1 Month: 463,000 STAK distributed, 1,852,000 SIGT burned
+```
+
+##### Swap Supply Relative to Total Supply (+Mining)
+![Alt text](doc/swap_supply.png)
+
+
+By tracking POW generation, we have essentially **introduced a parallel POS system for SIGT "investors"**.  As such, SIGT investors are rewarded in-line with miners without having to "re-mine" coins -  having done so already.  **We the STRAKS team, present this as an equitable approach for all parties concerned**.  
+
+We note, again however, that Signatum investors/miners are not compelled in any way shape or form to participate in this swap.  This is simply an offer with the goal of alleviating their distress from being scammed by Signatum's development team, and to **build trust for the crypto-currency sector**, from an external perspective.  Moreover, to promote a **zero tolerance policy for nefarious operators within the sector**.
+
+If you have any questions, or misunderstandings, please ask questions on the [STRAKS Discord](https://discord.gg/5gzvadZ).   
+
+##### Total Circulation Versus Swap Supply and Mining Supply (Monthly)
+![Alt text](doc/monthly_swap_supply_surve.png)
+
 
 __________________________________________________________________________
 
