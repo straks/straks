@@ -3,8 +3,8 @@
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-SRCDIR="/home/squbs/straks-release/straks-git"
-BUILDDIR="/home/squbs/straks-release/straks-git"
+SRCDIR="/home/squbs/straks"
+BUILDDIR="/home/squbs/straks"
 EXEEXT=""
 
 # These will turn into comments if they were disabled when configuring.
