@@ -67,7 +67,7 @@ Speed and privacy are core concerns for users today as well as e-commerce busine
 
 ### Links
 
-- **[STRAKS Website](https://straks.io)**
+- **[STRAKS Website](http://www.straks.io)**
 - **[STRAKS Explorer](https://straks.info)**
 - **[STRAKS Discord](https://discord.gg/5gzvadZ)**
 - **[STRAKS Reddit](https://www.reddit.com/r/STRAKSproject)**
@@ -112,8 +112,11 @@ As above summary, in addition, the following notable items:
 
 **IMPORTANT**
 
-Due to the unique combination of SegWit, treasury reward, miner reward and Masternode payments, as of this writing, mining software and pools do not yet support STRAKS' coinbasetxn configuration.  The only way to mine at the moment is via STRAKS' wallet, as follows:
+Other than 'real world' testing of lightning transactions and cross chain atomic swaps, **all STRAKS' features are enabled and work from day 0**; end-users can utilise STRAKS' speed, larger chain capacity, SegWit and Masternode functionality right now.
 
+Due to the unique combination of SegWit, treasury reward, miner reward and Masternode payments, as of this writing, mining software and pools do not yet fully support STRAKS' coinbasetxn configuration.  GPU mining does work, but pool and/or mining software will need further code changes for SegWit blocks.
+
+##### Wallet Mining
 ```
 Approach 1 (Local):
 (1) Start straksd/straks-qt locally
@@ -126,9 +129,12 @@ Approach 2 (Remote):
 (3) On Your remote server Run: "./straks-cli generatetoaddress 1 <address from step2>"
 (4) Shutdown local wallet (server)
 ```
-We find ourselves in an attractive position of having a **low barrier to mining entry at launch**, which allows anyone and everyone to start mining from the outset.  You are only limited by the number of wallets that can be run simultaneously.  The latter is comparatively cheaper than setting up a multi-gpu mining rig.
 
-We are curently working with mining pools to ensure that we can enable GPU/CPU pool mining as soon as practicable.
+More information can be found on [STRAKS' Knowledge Base](https://kb.straks.info/)
+
+##### GPU Mining
+
+Please follow [STRAKS' Knowledge Base GPU mining guide](https://kb.straks.info/kb/5a1a52ed48e3b4777551b314)
 
 
 #### Zero Start Instamine Protection (ZSIP)
@@ -142,7 +148,7 @@ STRAKS will be capped at a maxium supply of **150 million coins**.  This target 
 
 The constant block reward prevents event cliffs related to expected "halvings" and will support a more consistent and stable participation rate over a long time horizon.
 
-More information will be available on the STRAKS' [website](http://straks.io)
+More information will be available on the STRAKS' [website](http://www.straks.io)
 
 ##### The Monetary Curve Based on a 10 STAK Block Reward
 ![Alt text](doc/mcurve.png)
@@ -226,7 +232,7 @@ As the Masternode count increases, the payment to Masternode holders will
 decline in favour of miners in order to support a decentralised ideology.  The
 new algorithm is simple in design but highly effective and lays the foundation for
 future advancements.  More information abut this feature will be posted on the
-[main site](http://straks.io). 
+[main site](http://www.straks.io). 
 
 ##### Reactive Equilibria Masternode Payment Rebalancing Profile 
 ![Alt text](doc/reactive_equilibria.png)
@@ -360,6 +366,7 @@ Swap
 Developers
 [1.0] SUUTsZhb7cpXNgZbieKFrE8gocAtL7EK1C
 [1.1] STnW6H7rFWmoXoriS5zjuqBQntnvD1tvhB
+[1.2] SZH7YJvMf4Wfxbf5ioZZgkasthebS9gZ4y
 
 
 Initial Mint to Swap Address:
