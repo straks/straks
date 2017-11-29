@@ -27,7 +27,7 @@ __________________________________________________________________________
 ###### Lightning Network: Compatible
 ###### Atomic Swaps: Compatible
 ###### Masternodes: Enabled
-###### Masternodes Collateral: 50,000 STAK
+###### Masternodes Collateral: 15,000 STAK
 ###### Masternode Reward: Rebalancing via New Reactive Equilibria (REV1) Algorithm
 ###### ZSMR: Explicit Masternode Decentralisation Promotion [Zero Reward to Block 50400]
 ###### ZSIP: Zero Start Instamine Protection [7 Days: 10080 Blocks]
