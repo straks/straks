@@ -18,7 +18,7 @@
 #include "masternode.h"
 
 //[squbs] calibrate masternode collateral
-static const int MASTERNODEAMOUNT = 50000;
+static const int MASTERNODEAMOUNT = 15000;
 
 // [squbs] Reactive Equilibria V1 - Payment Equilbrium Factor (PEF)
 // Value sensitivity is reasonably high. Make sure you understand

@@ -204,7 +204,7 @@ treasury addresses:
 
 #### Masternodes (and ZSMR)
 
-Masternodes will be supported with a collateral requirement of **50,000 STAK**.  
+Masternodes will be supported with a collateral requirement of **15,000 STAK**.  
 
 The collateral requirement is a dynamic target value and will be updated for future
 releases based on the market price of STRAKS and return on investment relative to

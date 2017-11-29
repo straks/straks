@@ -9,7 +9,7 @@ class CMNSignHelper{
 
 	public:
 	CScript collateralPubKey;
-    /// Is the inputs associated with this public key? (and there is 50000 STAK - checking if valid masternode)
+    /// Is the inputs associated with this public key? (and there is required STAK - checking if valid masternode)
     bool IsVinAssociatedWithPubkey(CTxIn& vin, CPubKey& pubkey){
 		CScript payee2;
 		payee2=GetScriptForDestination(pubkey.GetID());
