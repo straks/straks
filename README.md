@@ -529,19 +529,19 @@ Users will use the STRAKS swap-bot on Discord, to initiate and conclude their co
 
 Following the end of the swap period, 30-days post announcement of the start, the **swap process will be executed on a monthly basis** thereafter, in-line with the rate at which supply is being generated for STAK through mining, i.e at 1440 blocks per day = 14,400 STAK per day.  With the minor adjustment of the swap supply being accelerated by 5% each year.  
 
-All POS Signatum rewards will be burned via the same transparent process as for the collateral for the duration of the swap distribution.  A dedicated website will be setup, tracking SIGT collateral, collateral POS rewards and the burning.
+All Signatum coins will be **burnt instantly** upon receipt in a transparent manner, which the user should be able to track via the Signatum explorer.  This is aligned with the STRAKS team's position to *NOT* be responsible for the maintenance of Signatum's chain, associated nodes and issues that may arise over the duration of the swap payback period.  The STRAKS team will *only* be responsible for the swap allocated STAK and monthly distributions to swap participants on an ongoing basis.
 
 ```
 Monthly swap distribution for registered STAK swap addresses:
 
-Year 1 per Month: 432,000 STAK distributed; 1,728,000 SIGT burned
-Year 2 per Month: 453,600 STAK distributed, 1,814,400 SIGT burned
-Year 3 per Month: 475,200 STAK distributed, 1,900,800 SIGT burned
-Year 4 per Month: 496,800 STAK distributed, 1,987,200 SIGT burned
-Year 5 per Month: 518,400 STAK distributed, 2,073,600 SIGT burned
+Year 1 per Month: 432,000 STAK distributed; equivalent to 1,728,000 SIGT
+Year 2 per Month: 453,600 STAK distributed, equivalent to 1,814,400 SIGT
+Year 3 per Month: 475,200 STAK distributed, equivalent to 1,900,800 SIGT
+Year 4 per Month: 496,800 STAK distributed, equivalent to 1,987,200 SIGT
+Year 5 per Month: 518,400 STAK distributed, equivalent to 2,073,600 SIGT
 
-Year 6 for 10 Months: 540,000 STAK distributed, 2,160,000 SIGT burned
-Year 6 for 1 Month: 463,000 STAK distributed, 1,852,000 SIGT burned
+Year 6 for 10 Months: 540,000 STAK distributed, equivalent to 2,160,000 SIGT
+Year 6 for 1 Month: 463,000 STAK distributed, equivalent to 1,852,000 SIGT
 ```
 
 ##### Swap Supply Relative to Total Supply (+Mining)
