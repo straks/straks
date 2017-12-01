@@ -126,7 +126,7 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT2X].nOverrideRuleChangeActivationThreshold = 1; 
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("00000000000000000000000000000000000000000000000000000013c077554d");
+        consensus.nMinimumChainWork = uint256S("00000000000000000000000000000000000000000000000000e4a1837514b106");
 
         // By default assume that the signatures in ancestors of this block are valid.
         consensus.defaultAssumeValid = uint256S("0x0");
@@ -179,8 +179,10 @@ NEW **mainnet** merkle root: 15343d9e3cfff44854ec63cc588d5a1ed6ea971085c2be97acb
         fMineBlocksOnDemand = false;
 
         checkpointData = (CCheckpointData) {
-            boost::assign::map_list_of
-            (  0, uint256S("00000df14d859c4b3219d93978bcf02afc123d2344a2ed39033e1208948aa7c0") )
+            {
+                {     0, uint256S("00000df14d859c4b3219d93978bcf02afc123d2344a2ed39033e1208948aa7c0")},
+                { 19760, uint256S("000000000008cdaee7a7cc3e8e5336ce2426eb7079f9a43a4dbf15ac8c08cbec")}
+            }
         };
 
         // treasury payment adresses 
@@ -196,9 +198,9 @@ NEW **mainnet** merkle root: 15343d9e3cfff44854ec63cc588d5a1ed6ea971085c2be97acb
         //     (the tx=... number in the SetBestChain debug.log lines)
         // [3] estimated number of transactions per second after that timestamp
         chainTxData = ChainTxData{
-            0,
-            0,
-            0
+            1512085246,
+            29365,
+            1
         };
     }
 };
@@ -266,7 +268,7 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT2X].nOverrideRuleChangeActivationThreshold = 1; 
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("00000000000000000000000000000000000000000000000000000003240655a3");
+        consensus.nMinimumChainWork = uint256S("0000000000000000000000000000000000000000000000000000002f0c034f78");
 
         // By default assume that the signatures in ancestors of this block are valid.
         consensus.defaultAssumeValid = uint256S("0x0");
@@ -311,8 +313,10 @@ NEW **testnet** merkle root: 15343d9e3cfff44854ec63cc588d5a1ed6ea971085c2be97acb
         fMineBlocksOnDemand = false;
 
         checkpointData = (CCheckpointData) {
-            boost::assign::map_list_of
-            (  0, uint256S("000000cd747bd0b653e1fe417b60c1d9e990600cf2ff193404ea12c3ecb348b4") )
+            {
+                {     0, uint256S("000000cd747bd0b653e1fe417b60c1d9e990600cf2ff193404ea12c3ecb348b4")},
+                {119692, uint256S("000004d943ed36053076a62b20cc7bec6a8a4c66ed1f6a6e88deeca015ff555a")}
+            }
         };
 
         vTreasuryRewardAddress = {
@@ -320,9 +324,9 @@ NEW **testnet** merkle root: 15343d9e3cfff44854ec63cc588d5a1ed6ea971085c2be97acb
         };
 
         chainTxData = ChainTxData{
-            0,
-            0,
-            0
+            1512085561,
+            119905,
+            6
         };
     }
 };
