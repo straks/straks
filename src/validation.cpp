@@ -1393,7 +1393,7 @@ CAmount GetMasternodePayment(int nHeight, CAmount blockValue, const Consensus::P
         return 0;
 
     double sChokeRatio = nMoneySupply > 0 ? tCollateral / static_cast<double>(nMoneySupply) : 0; 
-    //LogPrintf("[re1] supply choke ratio: %d\n", sChokeRatio);
+    LogPrintf("[REV1] supply choke ratio: %d\n", sChokeRatio);
 
     double mnSDrift = 1 - sChokeRatio / MASTERNODE_PEF;
 
@@ -1411,9 +1411,9 @@ CAmount GetMasternodePayment(int nHeight, CAmount blockValue, const Consensus::P
     // M1: set some hard limits (due to Signatum swap pre-allocation)
     // As swap holders increasingly set up masternodes rewards will re-balance 
     // in favour of miners. But prevent early swap holders (i.e. MN owners) 
-    // from appropriating more than 45% of block value.  Around a chokeRatio 
-    // ~ 24%, rewards are in favour of miners, 51%. And declines steadily for MNs
-    // thereafter.  A greater than 76% chokeRatio, MN rewards are a big fat ZERO!
+    // from appropriating more than 60% of block value.  Around a chokeRatio 
+    // ~ 28%, rewards are in favour of miners, 51%. And declines steadily for MNs
+    // thereafter.  A greater than 90% chokeRatio, MN rewards are a big fat ZERO!
     ret = ret > blockValue*0.6 ? blockValue*0.6: ret;
      
     return ret;
@@ -3280,7 +3280,7 @@ bool CheckBlock(const CBlock& block, CValidationState& state, const Consensus::P
         if(pindex != NULL) {
             if(pindex->GetBlockHash() == block.hashPrevBlock) {
               CAmount nValue = block.vtx[0]->GetValueOut()  * 0.95; //adjusted for treasury
-                CAmount masternodePaymentAmount = GetMasternodePayment(pindex->nHeight+1, nValue, consensusParams);
+              CAmount masternodePaymentAmount = GetMasternodePayment(pindex->nHeight+1, nValue, consensusParams);
 
                 //LogPrintf("## reactive equilibria v1 ## CheckBlock() : masternode payment %d\n", masternodePaymentAmount);
                 
@@ -3304,13 +3304,14 @@ bool CheckBlock(const CBlock& block, CValidationState& state, const Consensus::P
                     const CTransaction &tx = *(block.vtx[0]);
 
                     BOOST_FOREACH(const CTxOut& output, tx.vout) {
+                        //REV1 allows for continuous mn payments - not a discrete function
                         if (output.scriptPubKey == payee && 
-                                output.nValue == masternodePaymentAmount) {
+                                output.nValue <= nValue * 0.6) {
                             foundPaymentAndPayee = true;
                             break;
                         }
                         
-                        if (output.nValue == masternodePaymentAmount)
+                        if (output.nValue == masternodePaymentAmount) 
                             foundPaymentAmount = true;
                         
                         if (output.scriptPubKey == payee)

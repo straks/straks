@@ -67,12 +67,11 @@ Speed and privacy are core concerns for users today as well as e-commerce busine
 
 ### Links
 
-- **[STRAKS Website](http://www.straks.io)**
+- **[STRAKS Website](https://straks.io)**
 - **[STRAKS Explorer](https://straks.info)**
 - **[STRAKS Discord](https://discord.gg/5gzvadZ)**
 - **[STRAKS Reddit](https://www.reddit.com/r/STRAKSproject)**
 - **[STRAKS Twitter](https://twitter.com/STRAKSproject)**
-- **[STRAKS Slack](https://straksproject.slack.com)**
 - **[STRAKS Telegram](https://t.me/joinchat/AAAAAFNgas-8mT4fmKulFg)**
 - **[STRAKS Facebook](https://www.facebook.com/STRAKSproject)**
 - **[STRAKS Community News](https://straks.news)**
@@ -84,8 +83,13 @@ Speed and privacy are core concerns for users today as well as e-commerce busine
 - **Cryptovore (dan@straks.io) - Lead Marketing & PR, Business Development**
 - **Ekam (ekam@straks.io) - Lead Developer & Business Development**
 - **John Smith (john@straks.io) - Marketing & PR, Business Development**
-- **Kasper (kasper@straks.io) - UI/UX, Marketing & PR**
+- **Kasper (kasper@straks.io) - Developer, Marketing & PR**
 - **Eskodhi (eskodhi@straks.io) - Developer**
+- **Bruno (bruno@straks.io) - Developer**
+- **Andrew (andrew@straks.io) - Developer**
+- **Proximus (proximus@straks.io) - Marketing & PR**
+- **Flydancer (flydancer@straks.io) - Marketing & PR**
+- **Wedlock (wedlock@straks.io) - Marketing & PR**
 
 
 __________________________________________________________________________
@@ -148,7 +152,7 @@ STRAKS will be capped at a maxium supply of **150 million coins**.  This target 
 
 The constant block reward prevents event cliffs related to expected "halvings" and will support a more consistent and stable participation rate over a long time horizon.
 
-More information will be available on the STRAKS' [website](http://www.straks.io)
+More information will be available on the STRAKS' [website](https://straks.io)
 
 ##### The Monetary Curve Based on a 10 STAK Block Reward
 ![Alt text](doc/mcurve.png)
@@ -232,7 +236,7 @@ As the Masternode count increases, the payment to Masternode holders will
 decline in favour of miners in order to support a decentralised ideology.  The
 new algorithm is simple in design but highly effective and lays the foundation for
 future advancements.  More information abut this feature will be posted on the
-[main site](http://www.straks.io). 
+[main site](https://straks.io). 
 
 ##### Reactive Equilibria Masternode Payment Rebalancing Profile 
 ![Alt text](doc/reactive_equilibria.png)

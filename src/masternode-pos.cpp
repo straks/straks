@@ -82,7 +82,10 @@ void ProcessMessageMasternodePOS(CNode* pfrom, const std::string& strCommand, CD
 
         CMasternode* pmnA = mnodeman.Find(mnse.vinMasternodeA);
         if(pmnA == NULL) return;
-        if(pmnA->protocolVersion < MIN_MASTERNODE_POS_PROTO_VERSION) return;
+        if(pmnA->protocolVersion < MIN_MASTERNODE_POS_PROTO_VERSION) {
+            LogPrintf("MasternodePOS::old protocol version - update to latest release\n");
+            return;
+        }
 
         int nBlockHeight = chainActive.Tip()->nHeight;
         if(nBlockHeight - mnse.nBlockHeight > 10){
