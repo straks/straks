@@ -89,6 +89,7 @@ Speed and privacy are core concerns for users today as well as e-commerce busine
 - **Andrew (andrew@straks.io) - Developer**
 - **Proximus (proximus@straks.io) - Marketing & PR**
 - **Flydancer (flydancer@straks.io) - Marketing & PR**
+- **Lifipp (lifipp@straks.io) - Marketing & PR**
 - **Wedlock (wedlock@straks.io) - Marketing & PR**
 
 
