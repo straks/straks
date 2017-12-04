@@ -126,7 +126,7 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT2X].nOverrideRuleChangeActivationThreshold = 1; 
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("00000000000000000000000000000000000000000000000000e4a1837514b106");
+        consensus.nMinimumChainWork = uint256S("0000000000000000000000000000000000000000000000000123daf4d2dae727");
 
         // By default assume that the signatures in ancestors of this block are valid.
         consensus.defaultAssumeValid = uint256S("0x0");
@@ -268,7 +268,7 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT2X].nOverrideRuleChangeActivationThreshold = 1; 
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0000000000000000000000000000000000000000000000000000002f0c034f78");
+        consensus.nMinimumChainWork = uint256S("0000000000000000000000000000000000000000000000000000003c2be52d50");
 
         // By default assume that the signatures in ancestors of this block are valid.
         consensus.defaultAssumeValid = uint256S("0x0");
