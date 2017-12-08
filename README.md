@@ -19,7 +19,7 @@ __________________________________________________________________________
 ###### Transactions Per Second: 133 (Bitcoin: 3, Bitcoin Cash: 27, Dash: 13)
 ###### Transactions Per 24 hours: 11,520,000
 ###### Difficulty Retargeting: New D106 Algorithm
-###### Maxmium Coin Supply: 150 Million 
+###### Maximum Coin Supply: 150 Million 
 ###### Treasury Funding: 5% Per Block
 ###### SegWit: Active
 ###### SegWit2x: Active
