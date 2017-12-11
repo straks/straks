@@ -10,7 +10,7 @@
 __________________________________________________________________________
 
 
-###### Version: 1.14.5.0 (Initial)
+###### Current Version: 1.14.5.2
 ###### Block Size: 4 MB
 ###### Max Block Size Serialized Size: 16 MB
 ###### Proof-of-Work Algorithm: Lyra2rev2
