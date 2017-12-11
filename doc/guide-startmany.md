@@ -4,7 +4,7 @@
 There are many ways to setup a wallet to support start-many. This guide will walk through two of them.
 
 1. [Importing an existing wallet (recommended if you are consolidating wallets).](#option1)
-2. [Sending 50,000 STAK to new wallet addresses.](#option2)
+2. [Sending 15,000 STAK to new wallet addresses.](#option2)
 
 ## <a name="option1"></a>Option 1. Importing an existing wallet
 
@@ -48,7 +48,7 @@ The wallet will re-scan and you will see your available balance increase by the 
 2. Click the Receive tab.
 3. Fill in the form to request a payment.
     * Label: mn01
-    * Amount: 1000 (optional)
+    * Amount: 15,000 (optional)
     * Click *Request payment*
 5. Click the *Copy Address* button
 
@@ -56,9 +56,9 @@ Create a new wallet address for each MasterNode.
 
 Close your QT Wallet.
 
-### Send 50,000 STAK to New Addresses
+### Send 15,000 STAK to New Addresses
 
-Just like setting up a standard MN. Send exactly 50,000 STAK to each new address created above.
+Just like setting up a standard MN. Send exactly 15,000 STAK in a *single transaction*  to each new address created above.
 
 ### Create New Masternode Private Keys
 
@@ -82,7 +82,7 @@ Copy the masternode private key and correspondig collateral output transaction t
 
 The masternode private key may be an existing key from [Option 1](#option1), or a newly generated key from [Option 2](#option2). 
 
-*Please note, the masternode priviate key is not the same as a wallet private key. Never put your wallet private key in the masternode.conf file. That is equivalent to putting your 50,000 STAK on the remote server and defeats the purpose of a hot/cold setup.*
+*Please note, the masternode priviate key is not the same as a wallet private key. Never put your wallet private key in the masternode.conf file. That is equivalent to putting your 15,000 STAK on the remote server and defeats the purpose of a hot/cold setup.*
 
 ### Get the collateral output
 
@@ -137,7 +137,7 @@ I usually confirm that remote is on the correct block by issuing:
 
 ```straksd getinfo```
 
-And compare with the a explorer at https://chainz.cryptoid.info/bsd
+And compare with the a explorer at https://straks.info
 
 ### Local
 

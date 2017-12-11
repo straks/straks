@@ -19,7 +19,7 @@ Straks 1.14.5.0 Release Notes: First Release
 ###### Lightning Network: Compatible
 ###### Atomic Swaps: Compatible
 ###### Masternodes: Enabled
-###### Masternodes Collateral: 50,000 STAK
+###### Masternodes Collateral: 15,000 STAK
 ###### Masternode Reward: Rebalancing via New Reactive Equilibria (REV1) Algorithm
 ###### ZSMR: Explicit Masternode Decentralisation Promotion [Zero Reward to Block 50400]
 ###### ZSIP: Zero Start Instamine Protection [7 Days: 10080 Blocks]
@@ -122,7 +122,7 @@ treasury addresses:
 
 #### Masternodes (and ZSMR)
 
-Masternodes will be supported with a collateral requirement of **50,000 STAK**.  
+Masternodes will be supported with a collateral requirement of **15,000 STAK**.  
 
 The collateral requirement is a dynamic target value and will be updated for future
 releases based on the market price of STRAKS and return on investment relative to
@@ -252,7 +252,7 @@ The coin swap poll was initiated on October the 30th and concluded on Saturday t
 
 #### The Swap and Developers Funds
 
-Instead of premine, primarily due to the new REV1 payment rebalancing algorithm requiring tracking of supply information, an instamine was added to Block 1 for the total of **41,250,000 STAK**.  
+Instead of premine, primarily due to the new REV1 payment rebalancing algorithm requiring tracking of supply information, an instamine was added to Block 1 for the total of **41,215,000 STAK**.  
 
 The calculation of the swap and developer funds buffer is as follows:
 

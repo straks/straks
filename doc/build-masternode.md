@@ -6,15 +6,15 @@ Some notes on how to build a Straks Masternode in Ubuntu server. Using Windows Q
 System requirements
 --------------------
 An Ubuntu 16.04 64bit server is recommended with at least 768MB 
-of memory and 15GB space available when running a Masternode.
+of memory and 10GB space available when running a Masternode.
 
 
 Notes
 -----
-You need exactly 50000 STAK to run a Masternode. Masternode input must have at least 15 confirmations.
+You need exactly 15000 STAK to run a Masternode. Masternode input must have at least 15 confirmations.
 Building a new wallet.dat is also recommended (a seperate .conf is needed). Masternode earnings are
 going to this wallet.dat and address. Send only newly earned coins away and pay attention for transaction fees.
-To fix a broken accountaddress 0 (possible when sending huge amounts of coins away), do a self TX of 50000 STAK.
+To fix a broken accountaddress 0 (possible when sending huge amounts of coins away), do a self TX of 15000 STAK.
 
 
 Start
@@ -30,7 +30,7 @@ Open your Windows Straks-Qt Client and open the debug console.
 	---
 	encryptwallet "strong password"
     ---
-	Send 50000 STAK to "address 0"
+	Send 15000 STAK to "address 0" in a *single transaction*
     ```
 	
 
@@ -135,19 +135,20 @@ Build Instructions: Ubuntu & Debian
 	./straksd	
 	
 	
-	limcoinxd commands
+	straks-cli commands
 	------------------
-	./straksd getinfo
-	./straksd masternode start 
-	./straksd masternode stop
-    ./straksd masternode current
-	./straksd help
+    # confirm mn eligible txn outputs
+    ./straks-cli masternode outputs
+	./straks-cli masternode start 
+	./straks-cli masternode stop
+    ./straks-cli masternode current
+	./straks-cli help
 	
 	
 	Start Mining
 	----------------------
-	./straks.cli generate 100
-	./straks.cli gethashespersec
+	./straks-cli generate 100
+	./straks-cli gethashespersec
 	
 
 Windows Straks-Qt Client configuration 
