@@ -517,17 +517,17 @@ The start date of the swap will be announced soon on all relevant communication 
 
 ##### The "STAK-bot"
 
-Users will use the STRAKS swap-bot on Discord, to initiate and conclude their coin-swap.  The steps involved in registering for the swap, subject to minor amendments, will be as follows:
+Users will use the STRAKS swap-bot (Swapotron) on Discord, to initiate and conclude their coin-swap.  The steps involved in registering for the swap, subject to minor amendments, will be as follows:
 
 ```
-1. User initiates SIGT swap by issuing direct-message to STAK-bot
-2. STAK-bot generates new Signatum address and requests SIGT transfer from user
-3. STAK-bot monitors address and waits for 15 confirmations
-4. STAK-bot notifies user of completion of transfer
-5. STAK-bot requests user STAK address for swap process.
-6. User provides new STAK address for swap. 
-7. STAK-bot confirms user registration for swap. 
-8. End of STAK swap registration process
+1. User initiates SIGT swap by issuing direct-message to Swapotron (!swap)
+2. Swapotron generates unique Signatum address and requests SIGT transfer from user
+3. Swapotron monitors address and waits for 10 confirmations
+4. Swapotron burns SIGT and notifies user
+5. End of swap process.
+
+At any time the user can type !straks to submit their STRAKS address. This must be
+done prior to the completion of the 30 day swap period.
 ```
 
 ##### The Swap Process
