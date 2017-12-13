@@ -4,7 +4,7 @@
 
 ## STRAKS 
 
-#### SegWit and SegWit2x active, Lightning Network compatible, Atomic Swap compatible and an increased non-SegWit block size of 4MB;  introducing the the first Masternode enabled digital currency based off core Bitcoin version 0.14.2.  STRAKS endeavours to eliminate unwanted transaction malleability through SegWit activation from day 0; solves capacity constraints suffered by Bitcoin and it's peer group through a larger non-SegWit block size and increased signature operations - effectively introducing SegWit4x; is Lightning Network compatible - supporting instant payments, scalability, low cost and cross blockchain transactions; proposes a fair distribution through a Zero Start Instamine Protection (ZSIP) policy and Zero Start Masternode Reward (ZSMR) policy; introduces a new unique Masternode payment re-balancing algorithm, labelled Reactive Equilibria (REV1); and furthermore, implements a modified version of the new effective D106 difficulty re-targeting algorithm
+#### SegWit and SegWit2x active, Lightning Network compatible, Atomic Swap compatible and an increased non-SegWit block size of 4MB;  introducing the first Masternode-enabled digital currency based off core Bitcoin version 0.14.2.  STRAKS endeavours to eliminate unwanted transaction malleability through SegWit activation from day 0; solves capacity constraints suffered by Bitcoin and its peer group through a larger non-SegWit block size and increased signature operations - effectively introducing SegWit4x; is Lightning Network compatible - supporting instant payments, scalability, low cost and cross blockchain transactions; proposes a fair distribution through a Zero Start Instamine Protection (ZSIP) policy and Zero Start Masternode Reward (ZSMR) policy; introduces a new unique Masternode payment re-balancing algorithm, labelled Reactive Equilibria (REV1); and furthermore, implements a modified version of the new effective D106 difficulty re-targeting algorithm
 
 
 __________________________________________________________________________
@@ -40,7 +40,7 @@ __________________________________________________________________________
 
 Introducing a new decentralised, open source, community driven digital currency, focusing on e-commerce utility.
 
-The name is a Danish word, that has never been used in any cryptocurrency context until now. It means quick/immediate - referring to the focus that we have on ensuring that transactions are as fast as can be and to be the most efficient cryptocurrency for e-commerce utility in the sector.  The currency unit of account is **STAK**, along with its exchange ticker.
+The name is a Danish word that has never been used in any cryptocurrency context until now. It means quick/immediate - referring to the focus that we have on ensuring that transactions are as fast as can be and to be the most efficient cryptocurrency for e-commerce utility in the sector.  The currency unit of account is **STAK**, along with its exchange ticker.
  
 
 ##### E-Commerce
@@ -48,7 +48,7 @@ Global e-commerce sales are projected to reach $2.2 trillion for 2017 and to inc
 
 
 ##### Open Source
-STRAKS is open source. Anyone is free to contribute to STRAKS’ development and make a pull request through Github. Further details making community contributions as smooth as possible, will become available in the future on the new website.
+STRAKS is open source. Anyone is free to contribute to STRAKS’ development and make a pull request through Github. Further details, making community contributions as smooth as possible, will become available in the future on the new website.
 
 
 ##### Decentralized Ownership
@@ -100,7 +100,7 @@ __________________________________________________________________________
 
 There is only **one** digital currency on this list that is designed - from the bottom up - to be scalable, fast, low cost, secure, decentralized and provide for instant utility, and that is **STRAKS**, the alternative conclusion is simply an escalation of commitment.  As part of STRAKS' decentralization manifesto, we fully support a diverse crypto-currency sector - with the caveat that we are **strictly against the concentration of hashing power**, through the use of asic hardware.
 
-> Escalation of commitment refers to a pattern of behavior in which an individual or group will continue to rationalize their decisions, actions, and investments when faced with increasingly negative outcomes rather than alter their course
+> Escalation of commitment refers to a pattern of behavior in which an individual or group will continue to rationalize their decisions, actions, and investments when faced with increasingly negative outcomes rather than alter their course.
 
 ![Alt text](doc/straks_compare.png)
 
