@@ -367,6 +367,8 @@ at the time of writing;
 Swap
 [0.0] SUUTsZhb7cpXNgZbieKFrE8gocAtL7EK1C
 [0.1] SPkVa5cB1kcgJk5rinL3p9w47qnjpej5gm
+[0.2] SPFTqzvx63YGt6U5GJ2WpbmsatTtZ8gsZr
+
 
 Developers
 [1.0] SUUTsZhb7cpXNgZbieKFrE8gocAtL7EK1C
