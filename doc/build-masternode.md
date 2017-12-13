@@ -41,23 +41,27 @@ Build Instructions: Ubuntu & Debian
 	$ passwd <PSW>
 	$ gpasswd -a <NEW USER> sudo
 	---
-	$ sudo apt-get install build-essential
-	$ sudo apt-get install libtool autotools-dev autoconf automake libssl-dev libevent-dev
-	$ sudo apt-get install libboost1.54-all-dev
-	$ sudo add-apt-repository ppa:bitcoin/bitcoin
-	$ sudo apt-get install libdb4.8-dev libdb4.8++-dev
-	$ sudo apt-get install miniupnpc*-dev
-	$ sudo apt-get install git ntp make g++ gcc autoconf cpp ngrep iftop sysstat unzip
-	$ sudo update-rc.d ntp enable
-	$ sudo apt-get update
-	$ sudo apt-get upgrade
-	---
-	optiopnal linux gui: $ sudo apt-get install lubuntu-desktop
-	---
-	optional, if problems with boost version: 
-	$ sudo apt-get remove libboost*
-	$ sudo apt-get purge libboost*
-	$ sudo apt-get install libboost1.54-all-dev
+    $ sudo apt-get update
+
+    $ sudo apt-get install -y build-essential
+    $ sudo apt-get install -y libtool autotools-dev autoconf automake
+    $ sudo apt-get install -y libssl-dev
+    $ sudo apt-get install -y libboost-all-dev
+    $ sudo apt-get install -y pkg-config 
+
+    $ sudo add-apt-repository -y ppa:bitcoin/bitcoin
+    $ sudo apt-get -y update
+    $ sudo apt-get install -y libdb4.8-dev
+    $ sudo apt-get install -y libdb4.8++-dev
+
+    $ sudo apt-get install -y libminiupnpc-dev
+    $ sudo apt-get install -y libqt4-dev libprotobuf-dev protobuf-compiler
+    $ sudo apt-get install -y libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev qttools5-dev-tools libprotobuf-dev
+    $ sudo apt-get install -y libcanberra-gtk-module
+    $ sudo apt-get install -y gtk2-engines-murrine
+    $ sudo apt-get install -y libqrencode-dev
+    $ sudo apt-get install -y libevent-dev
+    $ sudo apt-get install -y libzmq3-dev
 
 
 	Swapfile:
@@ -80,23 +84,28 @@ Build Instructions: Ubuntu & Debian
 
 	Install STAK
 	------------
-	mkdir .straks
-	cd .straks
-	wget https://github.com/straks/straks/releases/download/straks-1.14.5/straks-1.14.5.tar.gz
-	tar xvzf Linux.tar
+    # determine latest release tag
+    # https://github.com/straks/straks/releases/latest
+    $ export STRAKS_VER=1.14.15.2
+
+	$ mkdir ~/.straks
+	$ cd ~/.straks
+    $ wget https://github.com/straks/straks/releases/download/$STRAKS_VER/straks-$STRAKS_VER-linux-amd64.tar.gz
+	$ tar xvzf straks-$STRAKS_VER-linux-amd64.tar.gz
 	
-	$ sudo cp straksd /usr/bin
-	$ sudo chmod 775 /usr/bin/straksd
+    $ cd straks-$STRAKS_VER-linux-amd64/
+	$ sudo cp straks* /usr/bin
+	$ sudo chmod 775 /usr/bin/straks*
 
 	
 	Create a straks.conf in nano
 	-------------------------------
-	cd .straks
-	nano
+	$ cd ~/.straks
+	$ nano
 
 	---
 	rpcuser=<anything>
-	rpcpassword=<anything>
+	rpcpassword=<anything_but_very_secure>
 	rpcallowip=127.0.0.1
 	maxconnections=100
 	listen=1
@@ -110,43 +119,43 @@ Build Instructions: Ubuntu & Debian
 
 	save nano: Ctrl +  O
 	exit nano: Ctrl +  X
-	cd
+	$ cd
 
 
 	Create CRON
 	-----------
-	cd /etc/cron.d
-	crontab -e
+	$ cd /etc/cron.d
+	$ crontab -e
+
 	2 (for nano)
-	
 	at bottom of newly created file, insert:
+
 	---
 	@reboot /usr/bin/straksd -shrinkdebugfile    [to start masternode  (or wherever you keep your daemon)]
 	*/20 * * * * /usr/bin/straksd
 	---
+
 	save nano: Ctrl +  O
 	exit nano: Ctrl +  X
-	cd
+	$ cd
 	
 	
-	Manually start straksd
-	-------------------------
-	cd .straks
-	./straksd	
-	
+	Manually start STRAKS daemon 
+	----------------------------
+	$ straksd	
 	
 	straks-cli commands
 	------------------
-    # confirm mn eligible txn outputs
-    ./straks-cli masternode outputs
-	./straks-cli masternode start 
-	./straks-cli masternode stop
-    ./straks-cli masternode current
-	./straks-cli help
+    # confirm masternode eligible txn outputs
+    $ straks-cli masternode outputs
+	$ straks-cli masternode start 
+	$ straks-cli masternode stop
+    $ straks-cli masternode current
+	$ straks-cli help
 	
 	
-	Start Mining
-	----------------------
+	Start Mining (optional, but supports network)
+	---------------------------------------------
 	./straks-cli generate 100
 	./straks-cli gethashespersec
 	
