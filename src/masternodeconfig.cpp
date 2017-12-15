@@ -51,19 +51,22 @@ bool CMasternodeConfig::read(std::string& strErr) {
                 return false;
             }
         }
-		
+
 		int port = 0;
         std::string hostname = "";
 
 		SplitHostPort(ip, port, hostname);
-        
-            if(port != 7575) {
-                strErr = "Invalid port detected in masternode.conf: " + line + " (must be 7575 for mainnet)";
-                streamConfig.close();
-                return false;
-            }
-        
 
+        if(port != 7575 && Params().NetworkIDString() == CBaseChainParams::MAIN) {
+            strErr = "Invalid port detected in masternode.conf: " + line + " (must be 7575 for mainnet)";
+            streamConfig.close();
+            return false;
+        }
+        else if(port != 7565 && Params().NetworkIDString() == CBaseChainParams::TESTNET) {
+            strErr = "Invalid port detected in masternode.conf: " + line + " (must be 7565 for testnet)";
+            streamConfig.close();
+            return false;
+        }
 
         add(alias, ip, privKey, txHash, outputIndex, donationAddress, donationPercent);
     }
