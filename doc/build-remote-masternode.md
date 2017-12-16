@@ -35,19 +35,20 @@ listen=1
     Place the configuration file in its correction location:
 
     For Linux: ${HOME}/.straks/straks.conf
-    For Windows: %appdata%\\straks.conf
+    For Windows: %appdata%\straks.conf
 
 3.  Start STRAKS Qt gui client and allow the chain to sync
 
 4.  Go to Help --> Debug Window --> Console and enter: `getaccountaddress 0`
     Copy the generated address to a text file.
 
-5.  Enter: masternode genkey
+5.  In the console enter: `masternode genkey`
     Copy the generated private key to a text file.
 
 5.  Send exactly 15,000 STAK in a single transaction to the address generated from Step 4
 
 6.  After you have received the STAK from Step 5, go to Help --> Debug Window --> Console and enter: `masternode outputs`
+    
     You should see output similar to below indicating that the node has recognised coins as eligible to be used
     as collateral for a Masternode.
 
@@ -111,33 +112,37 @@ mn01 127.0.0.1:7575 92bHZcSpmT6UinHzR8VgaVZVgBVfbDRCh1WogXXXXXXtf9pyZ4Y d5651750
 ```
  ./straksd
 ```
+
     You should get the following expected output:
+
 
 ```
 Missing masternode input, please look at the documentation for instructions on masternode creation
 ```
 
+
 5.  Then enter the following command using *straks-cli*
 
 ```
-./straks-cli masternod debug
+./straks-cli masternode debug
 ```
 
 #### Local Machine
 
-1.  Now back on your local machine, start the STRAKS Qt client
+1.  Back on your local machine; start the STRAKS Qt client
 
 2.  Go to Help --> Debug Window --> Console and enter: `masternode start`
-    Your should get the following message:
+    You should get the following message:
 
 ```
 successfully started masternode
 ```
 
-    If you then enter: `masternodelist`
-    You should be able to find the externalip of your remote node
+3.  If you then enter: `masternodelist`
+    You should be able to locate the externalip of your remote node from the
+    output list of masternodes.
 
-    Congratulations your masternode is up and running!
+    **Congratulations your masternode is up and running!**
 
     Alternatively, on the STRAKS Qt client Masternodes tab --> All Masternodes you should see your
     remote node ip address listed with its public key and other data
