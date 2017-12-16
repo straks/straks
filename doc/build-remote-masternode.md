@@ -108,18 +108,11 @@ e.g.
 mn01 127.0.0.1:7575 92bHZcSpmT6UinHzR8VgaVZVgBVfbDRCh1WogXXXXXXtf9pyZ4Y d565175089b0f4dce2294dc003799ae0c9cb703cadd996a0a4224458f176eb6e 0
 ```
 
-4.  Start STRAKS daemon using command
-```
- ./straksd
-```
-
-    You should get the following expected output:
-
+4.  Start STRAKS daemon using command `./straksd`; you should get the following output:
 
 ```
 Missing masternode input, please look at the documentation for instructions on masternode creation
 ```
-
 
 5.  Then enter the following command using *straks-cli*
 
