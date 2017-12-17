@@ -10,6 +10,7 @@ sudo apt-get install -y libtool autotools-dev autoconf automake
 sudo apt-get install -y libssl-dev
 sudo apt-get install -y libboost-all-dev
 sudo apt-get install -y pkg-config 
+sudo apt-get install -y software-properties-common python-software-properties
 
 sudo add-apt-repository -y ppa:bitcoin/bitcoin
 sudo apt-get -y update
