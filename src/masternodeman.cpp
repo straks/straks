@@ -769,7 +769,7 @@ void CMasternodeMan::ProcessMessage(CNode* pfrom, const std::string& strCommand,
         bool stop;
         vRecv >> vin >> vchSig >> sigTime >> stop;
 
-        LogPrintf("dseep - Received: vin: %s sigTime: %lld stop: %s\n", vin.ToString().c_str(), sigTime, stop ? "true" : "false");
+        //LogPrintf("dseep - Received: vin: %s sigTime: %lld stop: %s\n", vin.ToString().c_str(), sigTime, stop ? "true" : "false");
 
         if (sigTime > GetAdjustedTime() + 60 * 60) {
             LogPrintf("dseep - Signature rejected, too far into the future %s\n", vin.ToString().c_str());
@@ -785,7 +785,7 @@ void CMasternodeMan::ProcessMessage(CNode* pfrom, const std::string& strCommand,
         CMasternode* pmn = this->Find(vin);
         if(pmn != NULL && pmn->protocolVersion >= MIN_PEER_PROTO_VERSION)
         {
-            LogPrintf("dseep - Found corresponding mn for vin: %s\n", vin.ToString().c_str());
+            //LogPrintf("dseep - Found corresponding mn for vin: %s\n", vin.ToString().c_str());
 
             // take this only if it's newer
             if(pmn->lastDseep < sigTime)
