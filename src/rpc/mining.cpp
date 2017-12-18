@@ -1385,14 +1385,15 @@ UniValue masternode(const JSONRPCRequest& request)
         UniValue rtnStr(UniValue::VSTR);
         if (request.params.size() == 2)
         {
-            /*if(request.params[1] == "enabled"){
+            if (request.params[1].get_str() == "enabled") {
             	return mnodeman.CountEnabled();
-            	//return rtnStr;
-            }*/
-            /* if(request.params[1] == "both"){
+            } else if (request.params[1].get_str() == "both") {
             	rtnStr = boost::lexical_cast<std::string>(mnodeman.CountEnabled()) + " / " + boost::lexical_cast<std::string>(mnodeman.size());
             	return rtnStr;
-            } */
+            } else {
+            	throw runtime_error(
+                "invalid parameter\n");
+            }
         }
         return mnodeman.size();
     }
