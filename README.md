@@ -87,10 +87,9 @@ Speed and privacy are core concerns for users today as well as e-commerce busine
 - **Eskodhi (eskodhi@straks.io) - Developer**
 - **Bruno (bruno@straks.io) - Developer**
 - **Andrew (andrew@straks.io) - Developer**
+- **Flydancer (flydancer@straks.io) - Developer**
 - **Proximus (proximus@straks.io) - Marketing & PR**
-- **Flydancer (flydancer@straks.io) - Marketing & PR**
 - **Lifipp (lifipp@straks.io) - Marketing & PR**
-- **Wedlock (wedlock@straks.io) - Marketing & PR**
 
 
 __________________________________________________________________________
@@ -375,6 +374,7 @@ Developers
 [1.0] SUUTsZhb7cpXNgZbieKFrE8gocAtL7EK1C
 [1.1] STnW6H7rFWmoXoriS5zjuqBQntnvD1tvhB
 [1.2] SZH7YJvMf4Wfxbf5ioZZgkasthebS9gZ4y
+[1.3] ShLgqYKRWrueCtbDXTPL9h64d1Kf73Sv86
 
 
 Initial Mint to Swap Address:
