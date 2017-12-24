@@ -5,7 +5,7 @@ includedir=${prefix}/include
 
 Name: STRAKS Core consensus library
 Description: Library for the STRAKS consensus protocol.
-Version: 1.14.5
+Version: 1.14.6
 Libs: -L${libdir} -lstraksconsensus
 Cflags: -I${includedir}
 Requires.private: libcrypto

@@ -1368,7 +1368,7 @@ CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
 CAmount GetMasternodePayment(int nHeight, CAmount blockValue, const Consensus::Params& consensusParams)
 {
     // start masternode payments
-    bool bMasternodePayment = 
+    bool bMasternodePayment =
         nHeight >= consensusParams.MasternodePaymentStartHeight;
 
     if(!bMasternodePayment) {
@@ -1377,14 +1377,14 @@ CAmount GetMasternodePayment(int nHeight, CAmount blockValue, const Consensus::P
     }
 
     // Reactive Equilibria V1 by Squbs (squbs@protonmail.com)
-    CAmount hBlockValue = blockValue/2; 
+    CAmount hBlockValue = blockValue/2;
     CAmount nMoneySupply = chainActive.Tip()->nMoneySupply;
 
     //LogPrintf("[re1] money supply: %u\n", nMoneySupply);
 
     // TODO: filter nodes by various characteristics
     int tNodes = mnodeman.CountMasternodesAboveProtocol(MIN_MASTERNODE_POS_PROTO_VERSION);
-    
+
     CAmount tCollateral = tNodes * MASTERNODEAMOUNT * COIN;
     //LogPrintf("[re1] masternode collateral: %u\n", tCollateral);
 
@@ -1392,12 +1392,12 @@ CAmount GetMasternodePayment(int nHeight, CAmount blockValue, const Consensus::P
     if (tNodes <= 0)
         return 0;
 
-    double sChokeRatio = nMoneySupply > 0 ? tCollateral / static_cast<double>(nMoneySupply) : 0; 
+    double sChokeRatio = nMoneySupply > 0 ? tCollateral / static_cast<double>(nMoneySupply) : 0;
     LogPrintf("[REV1] supply choke ratio: %d\n", sChokeRatio);
 
     double mnSDrift = 1 - sChokeRatio / MASTERNODE_PEF;
 
-    double activeS = std::tanh(mnSDrift); 
+    double activeS = std::tanh(mnSDrift);
     //LogPrintf("[re1] masternode payment activation weight %d\n", activeS);
 
     CAmount ret = hBlockValue * (activeS + MASTERNODE_PEF);
@@ -1409,13 +1409,13 @@ CAmount GetMasternodePayment(int nHeight, CAmount blockValue, const Consensus::P
 
     // Contextual modifications to approach:
     // M1: set some hard limits (due to Signatum swap pre-allocation)
-    // As swap holders increasingly set up masternodes rewards will re-balance 
-    // in favour of miners. But prevent early swap holders (i.e. MN owners) 
-    // from appropriating more than 60% of block value.  Around a chokeRatio 
+    // As swap holders increasingly set up masternodes rewards will re-balance
+    // in favour of miners. But prevent early swap holders (i.e. MN owners)
+    // from appropriating more than 60% of block value.  Around a chokeRatio
     // ~ 28%, rewards are in favour of miners, 51%. And declines steadily for MNs
     // thereafter.  A greater than 90% chokeRatio, MN rewards are a big fat ZERO!
     ret = ret > blockValue*0.6 ? blockValue*0.6: ret;
-     
+
     return ret;
 }
 
@@ -1429,7 +1429,7 @@ bool IsInitialBlockDownload()
     // Optimization: pre-test latch before taking the lock.
     if (latchToFalse.load(std::memory_order_relaxed))
         return false;
-    
+
     LOCK(cs_main);
     if (latchToFalse.load(std::memory_order_relaxed)) {
         //LogPrintf("latchToFalse.load(std::memory_order_relaxed) is false");
@@ -2144,14 +2144,14 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
 
         CAmount treasuryVal = GetBlockSubsidy(
             pindex->nHeight, chainparams.GetConsensus()) * 0.05;
-    
+
         // slow start - instamine protection
         if(pindex->nHeight <= PRE_SUBSIDY_HEIGHT)
             treasuryVal = 0.0;
 
         BOOST_FOREACH(const CTxOut& output, tx.vout) {
-            if (output.scriptPubKey == 
-                    Params().GetTreasuryRewardScriptAtHeight(pindex->nHeight)) 
+            if (output.scriptPubKey ==
+                    Params().GetTreasuryRewardScriptAtHeight(pindex->nHeight))
             {
                 if (output.nValue == treasuryVal) {
                     found = true;
@@ -2161,13 +2161,13 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
         }
 
         if (!found) {
-            LogPrintf("[squbs] ** rejecting block - treasury funding missing! **\n");
+            if(fDebug) LogPrintf("[squbs] ** rejecting block - treasury funding missing! **\n");
             return state.DoS(100, error("%s: treasury funding missing", __func__), REJECT_INVALID, "cb-no-treasury-funding");
         }
-    } 
+    }
 
     // Acitve Masternode Decentralisation Promotion
-    if(pindex->nHeight > 1 
+    if(pindex->nHeight > 1
        && pindex->nHeight < chainparams.GetConsensus().MasternodePaymentStartHeight) {
         bool invalidMasternodePayment = false;
 
@@ -2192,6 +2192,92 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
 
         if (invalidMasternodePayment) {
             return state.DoS(100, error("%s: unexpected masternode payment", __func__), REJECT_INVALID, "cb-invalid-mn-payment");
+        }
+    }
+
+    //Masternode Paymnet Assurance (MPA)
+    if(pindex->nHeight > chainparams.GetConsensus().MasternodePaymentStartHeight + 2220)
+    {
+        LOCK2(cs_main, mempool.cs);
+
+        if (!IsInitialBlockDownload()) {
+            bool missingMNPayment = true;
+            bool incorrectMNPayment = false;
+            bool nonSpecific = false;
+            CScript payee;
+
+            if(!masternodePayments.GetBlockPayee(pindex->nHeight, payee) 
+               || payee == CScript()) {
+                nonSpecific = true;
+            }
+            else
+            {
+                CTxDestination txdestaddr;
+                ExtractDestination(payee, txdestaddr);
+                CStraksAddress address(txdestaddr);
+
+                LogPrintf("MPA: block Masternode payee %s\n", address.ToString());
+                const CTransaction &tx = *(block.vtx[0]);
+
+                BOOST_FOREACH(const CTxOut& output, tx.vout) {
+                    if (output.scriptPubKey == payee) {
+                        LogPrintf("MPA: block Masternode payment %d\n", output.nValue);
+                        if(output.nValue == 0 || output.nValue > 570000000) {
+                            incorrectMNPayment = true;
+                            break;
+                        } else {
+                            missingMNPayment = false;
+                            break;
+                        }
+                    }
+                }
+            }
+
+            if(nonSpecific) {
+                const CTransaction &tx = *(block.vtx[0]);
+
+                CAmount tVal = 
+                    GetBlockSubsidy(pindex->nHeight, chainparams.GetConsensus()) * 0.05;
+                CAmount nValue = block.vtx[0]->GetValueOut() - tVal;
+
+                CAmount masternodeValue = 
+                    GetMasternodePayment(pindex->nHeight, nValue, chainparams.GetConsensus());
+
+                CAmount minerValue = nValue - masternodeValue;
+                
+                missingMNPayment = false;
+
+                //no registered nodes
+                if(masternodeValue == 0)
+                    missingMNPayment = false;
+                else if(tx.vout.size() <3) {
+                    LogPrintf("MPA: block coinbase vout count failed: %d!\n", tx.vout.size());
+                    missingMNPayment = true;
+                }
+                else
+                {
+                    unsigned int blockRewardTargetCount = 0;
+
+                    BOOST_FOREACH(const CTxOut& output, tx.vout) {
+                        if (output.scriptPubKey !=
+                                Params().GetTreasuryRewardScriptAtHeight(pindex->nHeight) && output.scriptPubKey != CScript())
+                        {
+                            if (output.nValue >= minerValue 
+                                || output.nValue >= masternodeValue)
+                                ++blockRewardTargetCount;
+                        }
+                    }
+
+                    if(blockRewardTargetCount != 2) {
+                      LogPrintf("MPA: block coinbase invalid non-zero non-t vouts: %d\n", blockRewardTargetCount);
+                      missingMNPayment = true;
+                    }
+                }
+            }
+
+            if (missingMNPayment || incorrectMNPayment) {
+                return state.DoS(100, error("%s: missing(%d) and/or incorrect(%d) masternode payment", __func__, missingMNPayment, incorrectMNPayment), REJECT_INVALID, "cb-missing-mn-payment");
+            }
         }
     }
 
@@ -3167,7 +3253,7 @@ bool FindBlockPos(CValidationState &state, CDiskBlockPos &pos, unsigned int nAdd
                 FILE *file = OpenBlockFile(pos);
                 if (file) {
                     LogPrintf("Pre-allocating up to position 0x%x in blk%05u.dat\n", nNewChunks * BLOCKFILE_CHUNK_SIZE, pos.nFile);
-                    
+
                     AllocateFileRange(file, pos.nPos, nNewChunks * BLOCKFILE_CHUNK_SIZE - pos.nPos);
                     fclose(file);
                 }
@@ -3283,7 +3369,7 @@ bool CheckBlock(const CBlock& block, CValidationState& state, const Consensus::P
               CAmount masternodePaymentAmount = GetMasternodePayment(pindex->nHeight+1, nValue, consensusParams);
 
                 //LogPrintf("## reactive equilibria v1 ## CheckBlock() : masternode payment %d\n", masternodePaymentAmount);
-                
+
                 // If we don't already have its previous block, skip masternode payment step
                 if (!IsInitialBlockDownload())
                 {
@@ -3292,28 +3378,31 @@ bool CheckBlock(const CBlock& block, CValidationState& state, const Consensus::P
                     bool foundPaymentAndPayee = false;
 
                     CScript payee;
-                    if(!masternodePayments.GetBlockPayee(chainActive.Tip()->nHeight+1, payee) 
+
+                    if(!masternodePayments.GetBlockPayee(chainActive.Tip()->nHeight+1, payee)
                             || payee == CScript()) {
 
                         foundPayee = true; //doesn't require a specific payee
                         foundPaymentAmount = true;
                         foundPaymentAndPayee = true;
-                        LogPrintf("CheckBlock() : non-specific masternode payments %d\n", chainActive.Tip()->nHeight+1);
+
+                        if(fDebug) LogPrintf("CheckBlock() : non-specific masternode payments %d\n", chainActive.Tip()->nHeight+1);
                     }
+
 
                     const CTransaction &tx = *(block.vtx[0]);
 
                     BOOST_FOREACH(const CTxOut& output, tx.vout) {
                         //REV1 allows for continuous mn payments - not a discrete function
-                        if (output.scriptPubKey == payee && 
+                        if (output.scriptPubKey == payee &&
                                 output.nValue <= nValue * 0.6) {
                             foundPaymentAndPayee = true;
                             break;
                         }
-                        
-                        if (output.nValue == masternodePaymentAmount) 
+
+                        if (output.nValue == masternodePaymentAmount)
                             foundPaymentAmount = true;
-                        
+
                         if (output.scriptPubKey == payee)
                             foundPayee = true;
                     }
@@ -3337,7 +3426,7 @@ bool CheckBlock(const CBlock& block, CValidationState& state, const Consensus::P
         } else {
             LogPrintf("CheckBlock() : pindex is null, skipping masternode payment check\n");
         }
-    } 
+    }
 
     // Check transactions
     for (const auto& tx : block.vtx)
@@ -3387,7 +3476,7 @@ bool IsWitnessSeasoned(const CBlockIndex* pindexPrev, const Consensus::Params& p
     const int nHeight = pindexPrev->nHeight + 1;
 
     const CBlockIndex* pindexForkBuffer = pindexPrev->GetAncestor(nHeight - params.BIP102HeightDelta);
-    
+
     return (VersionBitsState(pindexForkBuffer, params, Consensus::DEPLOYMENT_SEGWIT, versionbitscache) == THRESHOLD_ACTIVE);
 }
 
