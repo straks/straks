@@ -2195,8 +2195,8 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
         }
     }
 
-    //Masternode Paymnet Assurance (MPA)
-    if(pindex->nHeight > chainparams.GetConsensus().MasternodePaymentStartHeight + 2220)
+    //Masternode Payment Assurance (MPA) trigger on block 56195
+    if(pindex->nHeight > chainparams.GetConsensus().MasternodePaymentStartHeight + 5795)
     {
         LOCK2(cs_main, mempool.cs);
 
@@ -2222,7 +2222,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
                 BOOST_FOREACH(const CTxOut& output, tx.vout) {
                     if (output.scriptPubKey == payee) {
                         LogPrintf("MPA: block Masternode payment %d\n", output.nValue);
-                        //allow for fees
+                        //allow for fees as buffer over max mn payment
                         if(output.nValue == 0 || output.nValue > 620000000) {
                             incorrectMNPayment = true;
                             break;
@@ -2252,7 +2252,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
                 if(masternodeValue == 0)
                     missingMNPayment = false;
                 else if(tx.vout.size() <3) {
-                    LogPrintf("MPA: block coinbase vout count failed: %d!\n", tx.vout.size());
+                    LogPrintf("MPA: block coinbase transaction malformed: vouts=%d!\n", tx.vout.size());
                     missingMNPayment = true;
                 }
                 else
@@ -2270,15 +2270,15 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
                     }
 
                     if(blockRewardTargetCount != 2) {
-                      LogPrintf("MPA: block coinbase invalid non-zero non-t vouts: %d\n", blockRewardTargetCount);
+                      LogPrintf("MPA: block coinbase transaction invalid non-zero vouts: %d\n", blockRewardTargetCount);
                       missingMNPayment = true;
                     }
                 }
             }
 
-            //if (missingMNPayment || incorrectMNPayment) {
-            //    return state.DoS(100, error("%s: missing(%d) and/or incorrect(%d) masternode payment", __func__, missingMNPayment, incorrectMNPayment), REJECT_INVALID, "cb-missing-mn-payment");
-            //}
+            if (missingMNPayment || incorrectMNPayment) {
+                return state.DoS(100, error("%s: missing(%d) and/or incorrect(%d) masternode payment", __func__, missingMNPayment, incorrectMNPayment), REJECT_INVALID, "cb-missing-mn-payment");
+            }
         }
     }
 

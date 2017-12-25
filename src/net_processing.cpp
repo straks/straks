@@ -2337,8 +2337,8 @@ bool static ProcessMessage(CNode* pfrom, const std::string& strCommand, CDataStr
                     LOCK(cs_main);
                     Misbehaving(pfrom->GetId(), nDoS);
                 }
-                //std::string strError = "invalid header received " + headers.GetHash().ToString();//TODO--
-                //return error(strError.c_str());
+
+                return error("invalid header received");
             }
         }
 
