@@ -274,7 +274,7 @@ void MasternodeList::updateNodeList()
         QTableWidgetItem* addressItem = new QTableWidgetItem(QString::fromStdString(mn.addr.ToString()));
         QTableWidgetItem* protocolItem = new QTableWidgetItem(QString::number(mn.protocolVersion));
         QTableWidgetItem* statusItem = new QTableWidgetItem(QString::fromStdString(mn.Status()));
-        QTableWidgetItem* activeSecondsItem = new QTableWidgetItem(QString::number(mn.lastTimeSeen - mn.sigTime));
+        QTableWidgetItem* activeSecondsItem = new QTableWidgetItem(QDateTime::fromTime_t(mn.lastTimeSeen - mn.sigTime).toUTC().toString("dd:hh:mm:ss"));
         QTableWidgetItem* lastSeenItem = new QTableWidgetItem(QString::fromStdString(DateTimeStrFormat("%Y-%m-%d %H:%M", mn.lastTimeSeen)));
         QTableWidgetItem* pubkeyItem = new QTableWidgetItem(QString::fromStdString(address2.ToString()));
 

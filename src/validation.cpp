@@ -2222,7 +2222,8 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
                 BOOST_FOREACH(const CTxOut& output, tx.vout) {
                     if (output.scriptPubKey == payee) {
                         LogPrintf("MPA: block Masternode payment %d\n", output.nValue);
-                        if(output.nValue == 0 || output.nValue > 570000000) {
+                        //allow for fees
+                        if(output.nValue == 0 || output.nValue > 620000000) {
                             incorrectMNPayment = true;
                             break;
                         } else {
@@ -2275,9 +2276,9 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
                 }
             }
 
-            if (missingMNPayment || incorrectMNPayment) {
-                return state.DoS(100, error("%s: missing(%d) and/or incorrect(%d) masternode payment", __func__, missingMNPayment, incorrectMNPayment), REJECT_INVALID, "cb-missing-mn-payment");
-            }
+            //if (missingMNPayment || incorrectMNPayment) {
+            //    return state.DoS(100, error("%s: missing(%d) and/or incorrect(%d) masternode payment", __func__, missingMNPayment, incorrectMNPayment), REJECT_INVALID, "cb-missing-mn-payment");
+            //}
         }
     }
 
