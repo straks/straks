@@ -2195,11 +2195,9 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
         }
     }
 
-    //Masternode Payment Assurance (MPA) trigger on block 56195
-    if(pindex->nHeight > chainparams.GetConsensus().MasternodePaymentStartHeight + 5795)
+    //Masternode Payment Assurance (MPA)
+    if(pindex->nHeight > chainparams.GetConsensus().MasternodePaymentStartHeight + 7475)
     {
-        LOCK2(cs_main, mempool.cs);
-
         if (!IsInitialBlockDownload()) {
             bool missingMNPayment = true;
             bool incorrectMNPayment = false;
