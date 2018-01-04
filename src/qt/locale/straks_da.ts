@@ -14,7 +14,7 @@
     <message>
         <location filename="../forms/aboutdialog.ui" line="94"/>
         <source>Copyright &amp;copy; 2009-YYYY The STRAKS and DASH Core developers.
-Copyright &amp;copy; 2014-YYYY The STRAKS Core developers.</source>
+Copyright &amp;copy; 2014-YYYY STRAKS developers.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -40,12 +40,12 @@ Produktet indeholder software som er udviklet af OpenSSL Project til brug i Open
     </message>
     <message>
         <location filename="../utilitydialog.cpp" line="30"/>
-        <source>The STRAKS Core developers</source>
+        <source>STRAKS developers</source>
         <translation>Udviklerne af STRAKS Core</translation>
     </message>
     <message>
         <location filename="../utilitydialog.cpp" line="31"/>
-        <source>The STRAKS Core developers</source>
+        <source>STRAKS developers</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3224,12 +3224,12 @@ https://www.transifex.com/projects/p/straks/</source>
     </message>
     <message>
         <location filename="../splashscreen.cpp" line="35"/>
-        <source>The STRAKS Core developers</source>
+        <source>STRAKS developers</source>
         <translation>Udviklerne af STRAKS Core</translation>
     </message>
     <message>
         <location filename="../splashscreen.cpp" line="36"/>
-        <source>The STRAKS Core developers</source>
+        <source>STRAKS developers</source>
         <translation type="unfinished"/>
     </message>
     <message>

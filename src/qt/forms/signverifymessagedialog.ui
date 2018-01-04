@@ -48,7 +48,7 @@
          <item>
           <widget class="QValidatedLineEdit" name="addressIn_SM">
            <property name="toolTip">
-            <string>The Straks address to sign the message with</string>
+            <string>The STRAKS address to sign the message with</string>
            </property>
           </widget>
          </item>
@@ -258,7 +258,7 @@
          <item>
           <widget class="QValidatedLineEdit" name="addressIn_VM">
            <property name="toolTip">
-            <string>The Straks address the message was signed with</string>
+            <string>The STRAKS address the message was signed with</string>
            </property>
           </widget>
          </item>
