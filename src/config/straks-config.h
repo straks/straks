@@ -24,13 +24,13 @@
 #define CLIENT_VERSION_REVISION 6
 
 /* Copyright holder(s) before %s replacement */
-#define COPYRIGHT_HOLDERS "The %s developers"
+#define COPYRIGHT_HOLDERS "%s developers"
 
 /* Copyright holder(s) */
 #define COPYRIGHT_HOLDERS_FINAL "STRAKS developers"
 
 /* Replacement for %s in copyright holders string */
-#define COPYRIGHT_HOLDERS_SUBSTITUTION "STRAKS Core"
+#define COPYRIGHT_HOLDERS_SUBSTITUTION "STRAKS"
 
 /* Copyright year */
 #define COPYRIGHT_YEAR 2017
