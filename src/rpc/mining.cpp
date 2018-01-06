@@ -1,7 +1,7 @@
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2017 The Bitcoin Core developers
 // Copyright (c) 2015-2017 The Dash developers
-// Copyright (c) 2017 STRAKS developers
+// Copyright (c) 2017-2018 STRAKS developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -1201,7 +1201,7 @@ UniValue masternode(const JSONRPCRequest& request)
 
     if (request.fHelp  ||
             (strCommand != "start" && strCommand != "start-alias" && strCommand != "start-many" && strCommand != "stop" && strCommand != "stop-alias" && strCommand != "stop-many" && strCommand != "list-conf" && strCommand != "count"  && strCommand != "enforce"
-             && strCommand != "debug" && strCommand != "current" && strCommand != "winners" && strCommand != "genkey" && strCommand != "connect" && strCommand != "outputs" /* && strCommand != "vote-many" && strCommand != "vote" */))
+             && strCommand != "debug" && strCommand != "current" && strCommand != "winners" && strCommand != "genkey" && strCommand != "connect" && strCommand != "outputs" && strCommand != "list" /* && strCommand != "vote-many" && strCommand != "vote" */))
         throw runtime_error(
             "masternode \"command\"... ( \"passphrase\" )\n"
             "Set of commands to execute masternode related actions\n"
@@ -1221,7 +1221,7 @@ UniValue masternode(const JSONRPCRequest& request)
             "  stop         - Stop masternode configured in straks.conf\n"
             "  stop-alias   - Stop single masternode by assigned alias configured in masternode.conf\n"
             "  stop-many    - Stop all masternodes configured in masternode.conf\n"
-            "  list         - see masternodelist, This command has been removed.\n"
+            "  list         - proxy for new masternodelist command. use 'masternodelist' directly\n"
             "  list-conf    - Print masternode.conf in JSON format\n"
             "  winners      - Print list of masternode winners\n"
             "  vote-many    - Not implemented\n"
@@ -1772,15 +1772,22 @@ UniValue masternode(const JSONRPCRequest& request)
     	return("Voted successfully " + boost::lexical_cast<std::string>(success) + " time(s) and failed " + boost::lexical_cast<std::string>(failed) + " time(s).");
     }*/
 
-    /*if (strCommand == "list")
+    if (strCommand == "list")
     {
-        UniValue newParams(UniValue::VARR);
+        JSONRPCRequest xreq(request);
+        UniValue params(UniValue::VARR);
 
-        for (unsigned int i = 1; i < request.params.size(); i++) {
-            newParams.push_back(request.params[i]);
-        }
-        return masternodelist(newParams);
-    }*/
+        if(request.params.size() > 0)  {
+            for (unsigned int idx = 1; idx < request.params.size(); ++idx) 
+                params.push_back(request.params[idx]);
+
+            xreq.params = params;
+        } 
+
+        return masternodelist(xreq);
+    }
+
+    return "unknown";
 }
 
 

@@ -1,4 +1,4 @@
-// Copyright (c) 2017 STRAKS developers
+// Copyright (c) 2017-2018 STRAKS developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -9,7 +9,7 @@
  * network protocol versioning
  */
 
-static const int PROTOCOL_VERSION = 70100;
+static const int PROTOCOL_VERSION = 70101;
 
 //! initial proto version, to be increased after version/verack negotiation
 static const int INIT_PROTO_VERSION = 209;
@@ -21,19 +21,19 @@ static const int GETHEADERS_VERSION = 31800;
 static const int MIN_PEER_PROTO_VERSION = 70100;
 /**TODO-- */
 //! minimum peer version accepted by DarksendPool
-static const int MIN_POOL_PEER_PROTO_VERSION = 70103;
+static const int MIN_POOL_PEER_PROTO_VERSION = 70110;
 
 //! minimum peer version for masternode budgets
-static const int MIN_BUDGET_PEER_PROTO_VERSION = 70103;
+static const int MIN_BUDGET_PEER_PROTO_VERSION = 70110;
 
 //! minimum peer version for masternode winner broadcasts
-static const int MIN_MNW_PEER_PROTO_VERSION = 70103;
+static const int MIN_MNW_PEER_PROTO_VERSION = 70101;
 
 //! minimum peer version that can receive masternode payments
 // V1 - Last protocol version before update
 // V2 - Newest protocol version
 static const int MIN_MASTERNODE_PAYMENT_PROTO_VERSION_1 = 70100;
-static const int MIN_MASTERNODE_PAYMENT_PROTO_VERSION_2 = 70103;
+static const int MIN_MASTERNODE_PAYMENT_PROTO_VERSION_2 = 70101;
 //TODO-- ends
 
 //! nTime field added to CAddress, starting with this version;

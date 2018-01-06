@@ -1,4 +1,4 @@
-// Copyright (c) 2017 STRAKS developers
+// Copyright (c) 2014-2015 The Straks developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -66,6 +66,9 @@ private:
     std::map<COutPoint, int64_t> mWeAskedForMasternodeListEntry;
 
 public:
+    bool AwaitingSync() { return mWeAskedForMasternodeList.size() > 0; }
+    unsigned int AwaitingEntrySync() { return mWeAskedForMasternodeListEntry.size(); }
+
     // keep track of dsq count to prevent masternodes from gaming darksend queue
     int64_t nDsqCount;
 

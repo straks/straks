@@ -1,7 +1,7 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2017 The Bitcoin Core developers
 // Copyright (c) 2017 The Dash developers
-// Copyright (c) 2017 STRAKS developers
+// Copyright (c) 2017-2018 STRAKS developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -1393,7 +1393,7 @@ CAmount GetMasternodePayment(int nHeight, CAmount blockValue, const Consensus::P
         return 0;
 
     double sChokeRatio = nMoneySupply > 0 ? tCollateral / static_cast<double>(nMoneySupply) : 0;
-    LogPrintf("[REV1] supply choke ratio: %d\n", sChokeRatio);
+    //LogPrintf("[REV1] supply choke ratio: %d\n", sChokeRatio);
 
     double mnSDrift = 1 - sChokeRatio / MASTERNODE_PEF;
 
@@ -2213,14 +2213,20 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
             ExtractDestination(payee, txdestaddr);
             CStraksAddress address(txdestaddr);
 
-            LogPrintf("MPA: block Masternode payee %s\n", address.ToString());
+            if(fDebug) LogPrintf("MPA: block Masternode payee %s\n", address.ToString());
+
             const CTransaction &tx = *(block.vtx[0]);
+
+            CAmount tVal =
+                GetBlockSubsidy(pindex->nHeight, chainparams.GetConsensus()) * 0.05;
+            
+            CAmount nValue = block.vtx[0]->GetValueOut() - tVal;
 
             BOOST_FOREACH(const CTxOut& output, tx.vout) {
                 if (output.scriptPubKey == payee) {
-                    LogPrintf("MPA: block Masternode payment %d\n", output.nValue);
-                    //allow for fees as buffer over max mn payment
-                    if(output.nValue == 0 || output.nValue > 620000000) {
+                    if(fDebug) LogPrintf("MPA: block Masternode payment %d\n", output.nValue);
+
+                    if(output.nValue > nValue * 0.6) {
                         incorrectMNPayment = true;
                         break;
                     } else {
@@ -2236,11 +2242,13 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
 
             CAmount tVal =
                 GetBlockSubsidy(pindex->nHeight, chainparams.GetConsensus()) * 0.05;
+            
+            CAmount rBuffer = tVal/4;
+
             CAmount nValue = block.vtx[0]->GetValueOut() - tVal;
 
             CAmount masternodeValue =
                 GetMasternodePayment(pindex->nHeight, nValue, chainparams.GetConsensus());
-
             CAmount minerValue = nValue - masternodeValue;
 
             missingMNPayment = false;
@@ -2260,8 +2268,10 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
                     if (output.scriptPubKey !=
                             Params().GetTreasuryRewardScriptAtHeight(pindex->nHeight) && output.scriptPubKey != CScript())
                     {
-                        if (output.nValue >= minerValue
-                            || output.nValue >= masternodeValue)
+                        if ( (output.nValue > (minerValue - rBuffer) 
+                              && output.nValue < (minerValue + rBuffer))
+                             || (output.nValue > (masternodeValue - rBuffer) 
+                                 && output.nValue < (masternodeValue + rBuffer)) )
                             ++blockRewardTargetCount;
                     }
                 }
@@ -3362,10 +3372,9 @@ bool CheckBlock(const CBlock& block, CValidationState& state, const Consensus::P
 
         if(pindex != NULL) {
             if(pindex->GetBlockHash() == block.hashPrevBlock) {
-              CAmount nValue = block.vtx[0]->GetValueOut()  * 0.95; //adjusted for treasury
-              CAmount masternodePaymentAmount = GetMasternodePayment(pindex->nHeight+1, nValue, consensusParams);
-
-                //LogPrintf("## reactive equilibria v1 ## CheckBlock() : masternode payment %d\n", masternodePaymentAmount);
+                CAmount tVal = GetBlockSubsidy(pindex->nHeight+1, consensusParams) * 0.05;
+                CAmount nValue = block.vtx[0]->GetValueOut() - tVal;
+                CAmount masternodePaymentAmount = GetMasternodePayment(pindex->nHeight+1, nValue, consensusParams);
 
                 // If we don't already have its previous block, skip masternode payment step
                 if (!IsInitialBlockDownload())
@@ -3386,7 +3395,6 @@ bool CheckBlock(const CBlock& block, CValidationState& state, const Consensus::P
                         if(fDebug) LogPrintf("CheckBlock() : non-specific masternode payments %d\n", chainActive.Tip()->nHeight+1);
                     }
 
-
                     const CTransaction &tx = *(block.vtx[0]);
 
                     BOOST_FOREACH(const CTxOut& output, tx.vout) {
@@ -3397,8 +3405,15 @@ bool CheckBlock(const CBlock& block, CValidationState& state, const Consensus::P
                             break;
                         }
 
-                        if (output.nValue == masternodePaymentAmount)
+                        if (output.nValue == masternodePaymentAmount) {
+                            CTxDestination address1;
+                            ExtractDestination(output.scriptPubKey, address1);
+                            CStraksAddress address2(address1);
+
+                            if(fDebug) LogPrintf("CheckBlock() : found payment[%d|%d] or payee[%d|%s] nHeight %d. \n", true, masternodePaymentAmount, foundPayee, address2.ToString().c_str(), chainActive.Tip()->nHeight+1);
+
                             foundPaymentAmount = true;
+                        }
 
                         if (output.scriptPubKey == payee)
                             foundPayee = true;
@@ -3412,13 +3427,13 @@ bool CheckBlock(const CBlock& block, CValidationState& state, const Consensus::P
                         LogPrintf("CheckBlock() : *** CheckBlock() : couldn't find masternode payment[%d|%d] or payee[%d|%s] nHeight %d. \n", foundPaymentAmount, masternodePaymentAmount, foundPayee, address2.ToString().c_str(), chainActive.Tip()->nHeight+1);
                         return state.DoS(100, error("CheckBlock() : couldn't find masternode payment or payee"));//todo++
                     } else {
-                        LogPrintf("CheckBlock() : found payment[%d|%d] or payee[%d|%s] nHeight %d. \n", foundPaymentAmount, masternodePaymentAmount, foundPayee, address2.ToString().c_str(), chainActive.Tip()->nHeight+1);
+                        if(fDebug) LogPrintf("CheckBlock() : found payment[%d|%d] or payee[%d|%s] nHeight %d. \n", foundPaymentAmount, masternodePaymentAmount, foundPayee, address2.ToString().c_str(), chainActive.Tip()->nHeight+1);
                     }
                 } else {
-                    LogPrintf("CheckBlock() : IsInitialDownload, skipping masternode payment check %d\n", chainActive.Tip()->nHeight+1);
+                    if(fDebug) LogPrintf("CheckBlock() : IsInitialDownload, skipping masternode payment check %d\n", chainActive.Tip()->nHeight+1);
                 }
             } else {
-                LogPrintf("CheckBlock() : skipping masternode payment check - nHeight %d Hash %s\n", chainActive.Tip()->nHeight+1, block.GetHash().ToString().c_str());
+                if(fDebug) LogPrintf("CheckBlock() : skipping masternode payment check - nHeight %d Hash %s\n", chainActive.Tip()->nHeight+1, block.GetHash().ToString().c_str());
             }
         } else {
             LogPrintf("CheckBlock() : pindex is null, skipping masternode payment check\n");
@@ -3873,8 +3888,10 @@ bool ProcessNewBlock(const CChainParams& chainparams, const std::shared_ptr<cons
     if(!fProUserModeDarksendInstantX2) {
         if (!fImporting && !fReindex) { //TODO-- last checkpointed height
             //darkSendPool.NewBlock();//todo++ must add
-            if(masternodePayments.ProcessBlock(chainActive.Height()+10))
-                LogPrintf(" masternodePayments.ProcessBlock run success\n");
+            bool mnpb_state = masternodePayments.ProcessBlock(chainActive.Height()+10);
+            
+            if(fDebug)
+                LogPrintf("MasternodePayments ProcessBlock: Success=%d\n", mnpb_state);
 
             mnscan.DoMasternodePOSChecks();
         }
