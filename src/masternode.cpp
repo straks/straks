@@ -449,6 +449,7 @@ bool CMasternodePayments::ProcessBlock(int nBlockHeight)
     LOCK(cs_masternodepayments);
 
     if(!enabled) {
+        /*
         LogPrintf("Masternodelist entry sync status: %d\n", mnodeman.AwaitingEntrySync());
 
         if(mnodeman.AwaitingEntrySync() == 0) {
@@ -467,7 +468,7 @@ bool CMasternodePayments::ProcessBlock(int nBlockHeight)
                     return true;
                 }
             }
-        }
+        } */
         return false;
     }
 
