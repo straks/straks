@@ -1,14 +1,14 @@
 
-Straks 1.14.5 Release Notes: First Release
+STRAKS 1.14.5 Release Notes: First Release
 ==========================================
 
 ### Specifications
 
-#### Coinbase Transactions, Pool Mining and Wallet Mining 
+#### Coinbase Transactions, Pool Mining and Wallet Mining
 
 **IMPORTANT**
 
-Due to the unique combination of segwit, treasury reward, miner reward and masternode payments, as of this writing, mining software and pools do not yet support Straks' coinbasetxn configuration.  The only way to mine at the moment is via Straks' wallet, as follows:
+Due to the unique combination of segwit, treasury reward, miner reward and masternode payments, as of this writing, mining software and pools do not yet support STRAKS' coinbasetxn configuration.  The only way to mine at the moment is via STRAKS' wallet, as follows:
 
 ```
 Approach 1 (Local):
@@ -29,16 +29,16 @@ We are curently working with mining pools to ensure that we can enable GPU/CPU p
 
 #### Zero Start Instamine Protection (ZSIP)
 
-Straks blockchain has been set to issue a 0 block subsidy up to **block 10080**.  At 1440 blocks per day, this is approximately 7 days. During this time, community members will be informed of launch and will be able to configure their setups for mining.  During this period there are no Treasury payments, either.
+STRAKS blockchain has been set to issue a 0 block subsidy up to **block 10080**.  At 1440 blocks per day, this is approximately 7 days. During this time, community members will be informed of launch and will be able to configure their setups for mining.  During this period there are no Treasury payments, either.
 
 
 #### Maximum Coin Supply and Block Reward
 
-Straks will be capped at a maxium supply of **150 million coins**.  This target supports a managed inflation rate that allows for a constant block reward of **10 STAKs**.
+STRAKS will be capped at a maxium supply of **150 million coins**.  This target supports a managed inflation rate that allows for a constant block reward of **10 STAKs**.
 
 The constant block reward prevents event cliffs related to expected "halvings" and will support a more consistent and stable participation rate over a long time horizon.
 
-More information will be available on the Straks [website](http://straks.io)
+More information will be available on the STRAKS [website](http://straks.io)
 
 ##### The Monetary Curve Based on a 10 STAK Block Reward
 ![Alt text](mcurve.png)
@@ -50,11 +50,11 @@ More information will be available on the Straks [website](http://straks.io)
 
 #### POW Algorithm: Lyra2REv2
 
-Fast, power-efficient and asic resistant algorithm.  The Straks development team will continue to support a decentralized asic resistant blockchain, and will update the POW algorithm if the latter is no longer the case.
+Fast, power-efficient and asic resistant algorithm.  The STRAKS development team will continue to support a decentralized asic resistant blockchain, and will update the POW algorithm if the latter is no longer the case.
 
 The difference between Lyra2RE and Lyra2REv2 is as follows;
 
-- Addition of 2 rounds of CubeHash (https://en.wikipedia.org/wiki/CubeHash) 
+- Addition of 2 rounds of CubeHash (https://en.wikipedia.org/wiki/CubeHash)
 - Addition of 1 round of Blue Midnight Wish (https://www.mathematik.hu-berlin.de/~schliebn/dl/Blue-Midnight-Wish.pdf)
 - Removal of Groestl (http://www.groestl.info/)
 
@@ -63,21 +63,21 @@ More specific information about Lyra2 itself can be obtained from: http://lyra-2
 
 #### **NEW** Difficulty Retargeting Algorithm (D106 - Amaury Sechet)
 
-Recent public discussions on how to address Bitcoin Cash's hash rate oscillation has resulted in an excellent approach that addresses many weaknesses of various other algorithms.  A well developed analsysis was presented by Bitcoin Cash's developer Amaury Sechet and supported by Zawy12 via thorough analysis, with simulated results that demonstate the algorthim's effectiveness.  The proposed implementation was modified specific to Straks blockchain.
+Recent public discussions on how to address Bitcoin Cash's hash rate oscillation has resulted in an excellent approach that addresses many weaknesses of various other algorithms.  A well developed analsysis was presented by Bitcoin Cash's developer Amaury Sechet and supported by Zawy12 via thorough analysis, with simulated results that demonstate the algorthim's effectiveness.  The proposed implementation was modified specific to STRAKS blockchain.
 
 More information can be found here:
 
-- https://github.com/seredat/karbowanec/commit/231db5270acb2e673a641a1800be910ce345668a#commitcomment-22615466 
-- https://lists.linuxfoundation.org/pipermail/bitcoin-ml/2017-August/000136.html 
-- https://news.bitcoin.com/bitcoin-cash-hard-fork-plans-updated-new-difficulty-adjustment-algorithm-chosen/ 
+- https://github.com/seredat/karbowanec/commit/231db5270acb2e673a641a1800be910ce345668a#commitcomment-22615466
+- https://lists.linuxfoundation.org/pipermail/bitcoin-ml/2017-August/000136.html
+- https://news.bitcoin.com/bitcoin-cash-hard-fork-plans-updated-new-difficulty-adjustment-algorithm-chosen/
 
-##### The Modified D106 Algorithm Targeting a 60 Second Block Time for Straks Blockchain
+##### The Modified D106 Algorithm Targeting a 60 Second Block Time for STRAKS Blockchain
 ![Alt text](D106_algorithm_test.png)
 
 
 #### Treasury Funding
 
-In order to support continued development, exchange lisiting fees, web/node hosting costs, and various other operational costs related to running a successful blockchain, the Straks development team have decided to introduce a 5% treasury fee in perpetuity. We intend to ensure that the new currency is competitive and successful. To be able to deliver on that vision, we need to ensure that the currency is well-funded throughout its lifecycle. 
+In order to support continued development, exchange lisiting fees, web/node hosting costs, and various other operational costs related to running a successful blockchain, the STRAKS development team have decided to introduce a 5% treasury fee in perpetuity. We intend to ensure that the new currency is competitive and successful. To be able to deliver on that vision, we need to ensure that the currency is well-funded throughout its lifecycle.
 
 At 5%, approximately 72 blocks per day are mined for treasury (720 STAK).  In the spirit
 of transparency, the following 2-of-3 multisig addresses are the official
@@ -94,29 +94,29 @@ treasury addresses:
 #### Masternodes
 
 Masternodes will be supported with a collateral requirement of **15,000 STAK**.  This
-is a dynamic target value and will be updated in future releases based on the 
-market price of Straks and return on investment relative to its peer group.
+is a dynamic target value and will be updated in future releases based on the
+market price of STRAKS and return on investment relative to its peer group.
 
 Masternode payments do not start until after approximately 5 weeks post launch. More
 specifically, after **block number 50400**.  This is an active promotion of masternode
 decentralisation.  The time-delay seeks to provide  sufficent time for swap holders and
-ivnestors to set up nodes. 
+ivnestors to set up nodes.
 
 
 #### Masternode Payment Rebalancing: **NEW** Reactive Equilibria (REV1)
 
-Unique to Straks is the use of a new continous activation function based algorithm, 
-labelled Reactive Equilibria (REV1), that seeks to rebalance the payments made 
-to miners versus masternodes.  There is a hard limit of a maxmium 60% that 
-can be appropriated for masternode payments, but that would assume that the 
-total supply locked by masternodes versus coin circulation is below ~13%. 
-As the masternode count increases, the payment to masternode holders will 
+Unique to STRAKS is the use of a new continous activation function based algorithm,
+labelled Reactive Equilibria (REV1), that seeks to rebalance the payments made
+to miners versus masternodes.  There is a hard limit of a maxmium 60% that
+can be appropriated for masternode payments, but that would assume that the
+total supply locked by masternodes versus coin circulation is below ~13%.
+As the masternode count increases, the payment to masternode holders will
 decline in favour of miners in order to support a decentralised ideology.  The
 new algorithm is simple in design but highly effective and lays the foundation for
 future advancements.  More information abut this feature will be posted on the
-[main site](http://straks.io). 
+[main site](http://straks.io).
 
-##### Reactive Equilibria Masternode Payment Rebalancing Profile 
+##### Reactive Equilibria Masternode Payment Rebalancing Profile
 ![Alt text](reactive_equilibria.png)
 
 
@@ -124,27 +124,27 @@ future advancements.  More information abut this feature will be posted on the
 
 ![Alt text](segwit.png)
 
-SegWit2x is a combination of both SegWit and a 2MB hardfork. Straks has further 
+SegWit2x is a combination of both SegWit and a 2MB hardfork. STRAKS has further
 increased the non-segwit block size to 4MB from the outset to allow for greater
-scalability and utility.  The maximum serialised block size is 16MB for Straks. 
+scalability and utility.  The maximum serialised block size is 16MB for STRAKS.
 
-Straks is both lightning network and atomic swap compatible. And unlike 
+STRAKS is both lightning network and atomic swap compatible. And unlike
 many other "compatible" altcoins, SegWit, SegWit2x and the larger blocksize are enabled from the outset.
 
 For further information about Segregated Witness:
 
 https://bitcoincore.org/en/2016/01/26/segwit-benefits/
 
-##### Segregated Witness Transaction on Straks Testnet, [block:6635, txid:3fc630ac1a4b91714d7c7150275b8be019152329e70d1f7a37240a7331b9fab6]
+##### Segregated Witness Transaction on STRAKS Testnet, [block:6635, txid:3fc630ac1a4b91714d7c7150275b8be019152329e70d1f7a37240a7331b9fab6]
 ![Alt text](testnet_segwit.png)
 
 
-#### InstantTX and DarkSend Removal 
+#### InstantTX and DarkSend Removal
 *(Reproduced here for information purposes only, not release related)*
 
-Dropped support for both InstantTX and DarkSend. With the SegWit upgrade these features are going to be superseeded by far superior technology. SegWit will enable the Straks to adopt the Lightning Network (https://lightning.network/lightning-network-paper.pdf), cross-chain atomic swaps, advanced versions of TumbleBit (https://eprint.iacr.org/2016/575.pdf) and more.
+Dropped support for both InstantTX and DarkSend. With the SegWit upgrade these features are going to be superseeded by far superior technology. SegWit will enable the STRAKS to adopt the Lightning Network (https://lightning.network/lightning-network-paper.pdf), cross-chain atomic swaps, advanced versions of TumbleBit (https://eprint.iacr.org/2016/575.pdf) and more.
 
-#### Hierarchical Deterministic Key Generation 
+#### Hierarchical Deterministic Key Generation
 *(Reproduced here for information purposes only, not release related)*
 
 Newly created wallets will use hierarchical deterministic key generation
@@ -172,7 +172,7 @@ HD wallets are incompatible with older versions of Bitcoin Core.
 [Pull request](https://github.com/bitcoin/bitcoin/pull/8035/files), [BIP 32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki)
 
 
-#### Signature validation using libsecp256k1 [Noteworthy: pre-Straks]
+#### Signature validation using libsecp256k1 [Noteworthy: pre-STRAKS]
 *(Reproduced here for information purposes only, not release related)*
 
 ECDSA signatures inside Bitcoin transactions now use validation using
@@ -187,7 +187,7 @@ Libsecp256k1 has undergone very extensive testing and validation.
 
 A side effect of this change is that libconsensus no longer depends on OpenSSL.
 
-##### Direct headers announcement (BIP 130) [Noteworthy: pre-Straks]
+##### Direct headers announcement (BIP 130) [Noteworthy: pre-STRAKS]
 *(Reproduced here for information purposes only, not release related)*
 
 Between compatible peers, [BIP 130]
@@ -201,10 +201,10 @@ can often prevent an extra roundtrip before the actual block is downloaded.
 __________________________________________________________________________
 
 
-### Acknowledgements 
+### Acknowledgements
 
-Credit goes to Bitcoin Core, Dash and Bitsend for providing a basic platform for 
-Straks to enhance and develop, in concert with a shared desire to support the
+Credit goes to Bitcoin Core, Dash and Bitsend for providing a basic platform for
+STRAKS to enhance and develop, in concert with a shared desire to support the
 adoption of a decentralised digital currency future for the masses.
 
 
@@ -213,7 +213,7 @@ __________________________________________________________________________
 
 ### License
 
-Straks Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
+STRAKS Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
 information or see https://opensource.org/licenses/MIT.
 
 
@@ -224,7 +224,7 @@ __________________________________________________________________________
 
 The `master` branch is meant to be stable. Development is normally done in separate branches.
 [Tags](https://github.com/straks/straks/tags) are created to indicate new official,
-stable release versions of Straks Core.
+stable release versions of STRAKS Core.
 
 The contribution workflow is described in [CONTRIBUTING.md](CONTRIBUTING.md).
 
@@ -282,7 +282,7 @@ that run in -regtest mode.
 
 **DEBUG_LOCKORDER**
 
-Straks Core is a multithreaded application, and deadlocks or other multithreading bugs
+STRAKS Core is a multithreaded application, and deadlocks or other multithreading bugs
 can be very difficult to track down. Compiling with -DDEBUG_LOCKORDER (configure
 CXXFLAGS="-DDEBUG_LOCKORDER -g") inserts run-time checks to keep track of what locks
 are held, and adds warning to the debug.log file if inconsistencies are detected.
