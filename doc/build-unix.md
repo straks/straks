@@ -9,8 +9,10 @@ To Build
 	./configure
 
 	make
-	
-	strip straksd straks-cli straks-qt
+
+	strip src/straksd src/straks-cli src/qt/straks-qt
+
+	make install # optional
 
 This will build straks-qt as well if the dependencies are met.
 
