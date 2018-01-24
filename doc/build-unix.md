@@ -22,6 +22,7 @@ Dependencies
  Library     | Purpose          | Description
  ------------|------------------|----------------------
  libssl      | SSL Support      | Secure communications
+ libevent    | Networking       | OS independent asynchronous networking
  libdb4.8    | Berkeley DB      | Wallet storage
  libboost    | Boost            | C++ Library
  miniupnpc   | UPnP Support     | Optional firewall-jumping support
@@ -58,7 +59,7 @@ Build requirements:
 
 	sudo apt-get install build-essential
 	sudo apt-get install libtool autotools-dev autoconf automake
-	sudo apt-get install libssl-dev
+	sudo apt-get install libssl-dev libevent-dev
 
 for Ubuntu 12.04 and later:
 
