@@ -126,7 +126,7 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT2X].nOverrideRuleChangeActivationThreshold = 1; 
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("00000000000000000000000000000000000000000000000003dd6dcae5aa5460");
+        consensus.nMinimumChainWork = uint256S("00000000000000000000000000000000000000000000000008b3d8d9dd5c81fd");
 
         // By default assume that the signatures in ancestors of this block are valid.
         consensus.defaultAssumeValid = uint256S("0x0");
@@ -183,7 +183,8 @@ NEW **mainnet** merkle root: 15343d9e3cfff44854ec63cc588d5a1ed6ea971085c2be97acb
                 {     0, uint256S("00000df14d859c4b3219d93978bcf02afc123d2344a2ed39033e1208948aa7c0")},
                 { 19760, uint256S("000000000008cdaee7a7cc3e8e5336ce2426eb7079f9a43a4dbf15ac8c08cbec")},
                 { 34000, uint256S("00000000008fa092d7379523824d65470e1f62afdd9e4efe225b2a80461c16a1")},
-                { 50400, uint256S("00000000003c5729841f6d3f44d267e6be7e6b9a7cd4c9b2480a396f22e7561e")}
+                { 50400, uint256S("00000000003c5729841f6d3f44d267e6be7e6b9a7cd4c9b2480a396f22e7561e")},
+                { 94858, uint256S("000000000003b195d823ee34f2ffa36933e4696fa845508e0fa9238e0dbb9718")}
             }
         };
 
@@ -200,8 +201,8 @@ NEW **mainnet** merkle root: 15343d9e3cfff44854ec63cc588d5a1ed6ea971085c2be97acb
         //     (the tx=... number in the SetBestChain debug.log lines)
         // [3] estimated number of transactions per second after that timestamp
         chainTxData = ChainTxData{
-            1512085246,
-            29365,
+            1516904966,
+            139917,
             1
         };
     }
@@ -270,7 +271,7 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT2X].nOverrideRuleChangeActivationThreshold = 1; 
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("00000000000000000000000000000000000000000000000000000053944fd1e8");
+        consensus.nMinimumChainWork = uint256S("000000000000000000000000000000000000000000000000000000539862b0de");
 
         // By default assume that the signatures in ancestors of this block are valid.
         consensus.defaultAssumeValid = uint256S("0x0");
