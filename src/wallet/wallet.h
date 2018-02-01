@@ -97,7 +97,7 @@ enum WalletFeature
     FEATURE_COMPRPUBKEY = 60000, // compressed public keys
 
     FEATURE_HD = 130000, // Hierarchical key derivation after BIP32 (HD Wallet)
-    FEATURE_LATEST =  61000// HD is optional, use FEATURE_COMPRPUBKEY as latest version
+    FEATURE_LATEST =  61001// HD is optional, use FEATURE_COMPRPUBKEY as latest version
 };
 
 enum AvailableCoinsType

@@ -9,7 +9,7 @@
  * network protocol versioning
  */
 
-static const int PROTOCOL_VERSION = 70101;
+static const int PROTOCOL_VERSION = 70102;
 
 //! initial proto version, to be increased after version/verack negotiation
 static const int INIT_PROTO_VERSION = 209;
@@ -18,7 +18,7 @@ static const int INIT_PROTO_VERSION = 209;
 static const int GETHEADERS_VERSION = 31800;
 
 //! disconnect from peers older than this proto version
-static const int MIN_PEER_PROTO_VERSION = 70100;
+static const int MIN_PEER_PROTO_VERSION = 70101;
 /**TODO-- */
 //! minimum peer version accepted by DarksendPool
 static const int MIN_POOL_PEER_PROTO_VERSION = 70110;
@@ -33,7 +33,7 @@ static const int MIN_MNW_PEER_PROTO_VERSION = 70101;
 // V1 - Last protocol version before update
 // V2 - Newest protocol version
 static const int MIN_MASTERNODE_PAYMENT_PROTO_VERSION_1 = 70100;
-static const int MIN_MASTERNODE_PAYMENT_PROTO_VERSION_2 = 70101;
+static const int MIN_MASTERNODE_PAYMENT_PROTO_VERSION_2 = 70102;
 //TODO-- ends
 
 //! nTime field added to CAddress, starting with this version;

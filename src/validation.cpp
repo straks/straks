@@ -2278,7 +2278,8 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
 
                 if(blockRewardTargetCount != 2) {
                   LogPrintf("MPA: block coinbase transaction invalid non-zero vouts: %d\n", blockRewardTargetCount);
-                  missingMNPayment = true;
+                  //TODO: reimplement synchronization **wait** for ALL nodes
+                  //missingMNPayment = true;
                 }
             }
         }
