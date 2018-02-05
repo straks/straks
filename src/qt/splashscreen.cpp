@@ -29,8 +29,6 @@
 SplashScreen::SplashScreen(Qt::WindowFlags f) :
     QWidget(0, f), curAlignment(0)
 {
-//    setAutoFillBackground(true);
-
     // set reference point, paddings
     int paddingLeft             = 14;
     int paddingTop              = 470;
@@ -49,7 +47,6 @@ SplashScreen::SplashScreen(Qt::WindowFlags f) :
     QString font            = "Arial";
 
     // load the bitmap for writing some text over it
-//    QPixmap newPixmap;
     pixmap     = QPixmap(":/images/splash");
 
     QPainter pixPaint(&pixmap);
@@ -89,12 +86,11 @@ SplashScreen::SplashScreen(Qt::WindowFlags f) :
 
     pixPaint.end();
 
-//    this->setPixmap(newPixmap);
-
-QRect r(QPoint(), pixmap.size());
-resize(r.size());
-setFixedSize(r.size());
-move(QApplication::desktop()->screenGeometry().center() - r.center());
+    // Center and set as no-resize
+    QRect r(QPoint(), pixmap.size());
+    resize(r.size());
+    setFixedSize(r.size());
+    move(QApplication::desktop()->screenGeometry().center() - r.center());
 
     subscribeToCoreSignals();
 }
