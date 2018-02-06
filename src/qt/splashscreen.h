@@ -16,12 +16,12 @@ class NetworkStyle;
  * can take a long time, and in that case a progress window that cannot be
  * moved around and minimized has turned out to be frustrating to the user.
  */
-class SplashScreen : public QSplashScreen/* QWidget */
+class SplashScreen : public QWidget
 {
     Q_OBJECT
 
 public:
-    explicit SplashScreen(Qt::WindowFlags f, const QPixmap &pixmap);
+    explicit SplashScreen(Qt::WindowFlags f);
     ~SplashScreen();
 
 protected:

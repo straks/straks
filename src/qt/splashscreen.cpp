@@ -26,11 +26,9 @@
 #include <QPainter>
 #include <QRadialGradient>
 
-SplashScreen::SplashScreen(Qt::WindowFlags f, const QPixmap &pixmap) :
-    QSplashScreen(pixmap, f)
+SplashScreen::SplashScreen(Qt::WindowFlags f) :
+    QWidget(0, f), curAlignment(0)
 {
-    setAutoFillBackground(true);
-
     // set reference point, paddings
     int paddingLeft             = 14;
     int paddingTop              = 470;
@@ -49,11 +47,9 @@ SplashScreen::SplashScreen(Qt::WindowFlags f, const QPixmap &pixmap) :
     QString font            = "Arial";
 
     // load the bitmap for writing some text over it
-    QPixmap newPixmap;
-    newPixmap     = QPixmap(":/images/splash");
-    
+    pixmap     = QPixmap(":/images/splash");
 
-    QPainter pixPaint(&newPixmap);
+    QPainter pixPaint(&pixmap);
     pixPaint.setPen(QColor(100,100,100));
 
     // check font size and drawing with
@@ -90,7 +86,11 @@ SplashScreen::SplashScreen(Qt::WindowFlags f, const QPixmap &pixmap) :
 
     pixPaint.end();
 
-    this->setPixmap(newPixmap);
+    // Center and set as no-resize
+    QRect r(QPoint(), pixmap.size());
+    resize(r.size());
+    setFixedSize(r.size());
+    move(QApplication::desktop()->screenGeometry().center() - r.center());
 
     subscribeToCoreSignals();
 }
