@@ -126,7 +126,7 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT2X].nOverrideRuleChangeActivationThreshold = 1; 
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("00000000000000000000000000000000000000000000000008b3d8d9dd5c81fd");
+        consensus.nMinimumChainWork = uint256S("0000000000000000000000000000000000000000000000000fdcb80725085fc5");
 
         // By default assume that the signatures in ancestors of this block are valid.
         consensus.defaultAssumeValid = uint256S("0x0");
@@ -185,6 +185,7 @@ NEW **mainnet** merkle root: 15343d9e3cfff44854ec63cc588d5a1ed6ea971085c2be97acb
                 { 34000, uint256S("00000000008fa092d7379523824d65470e1f62afdd9e4efe225b2a80461c16a1")},
                 { 50400, uint256S("00000000003c5729841f6d3f44d267e6be7e6b9a7cd4c9b2480a396f22e7561e")},
                 { 94858, uint256S("000000000003b195d823ee34f2ffa36933e4696fa845508e0fa9238e0dbb9718")}
+                { 136201, uint256S("00000000000def1328cef45871f0cd91dabd28dc5ba117535cbcee19eebdf79c")}
             }
         };
 
@@ -271,7 +272,7 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT2X].nOverrideRuleChangeActivationThreshold = 1; 
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("000000000000000000000000000000000000000000000000000000539862b0de");
+        consensus.nMinimumChainWork = uint256S("00000000000000000000000000000000000000000000000000000055196d0002");
 
         // By default assume that the signatures in ancestors of this block are valid.
         consensus.defaultAssumeValid = uint256S("0x0");
@@ -320,6 +321,7 @@ NEW **testnet** merkle root: 15343d9e3cfff44854ec63cc588d5a1ed6ea971085c2be97acb
                 {     0, uint256S("000000cd747bd0b653e1fe417b60c1d9e990600cf2ff193404ea12c3ecb348b4")},
                 {119692, uint256S("000004d943ed36053076a62b20cc7bec6a8a4c66ed1f6a6e88deeca015ff555a")},
                 {195182, uint256S("0000001cbc01c2d26da194f44fd63e35eb87e65642c8611c93e9c14a2f2c0a0d")},
+                {232597, uint256S("0000023d86e2181d63c6db4cb82e5889737b824efd71904f03fe76898a941211")},
             }
         };
 

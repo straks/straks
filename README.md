@@ -224,7 +224,7 @@ receiving payments after the aforementioned ZSMR block height.
 
 #### Masternode Payment Rebalancing: **NEW** Reactive Equilibria (REV1)
 
-Unique to STRAKS is the use of a new continous activation function based algorithm,
+Unique to STRAKS is the use of a new continuous activation function based algorithm,
 labelled Reactive Equilibria (REV1), that seeks to rebalance the payments made
 to miners versus Masternodes.  There is a hard limit of 60% of the block reward that
 can be appropriated for Masternode payments; this limit defines the boundary at which
@@ -232,7 +232,7 @@ total supply locked by Masternodes versus total circulation remains below ~13%.
 As the Masternode count increases, the payment to Masternode holders will
 decline in favour of miners in order to support a decentralised ideology.  The
 new algorithm is simple in design but highly effective and lays the foundation for
-future advancements.  More information abut this feature will be posted on the
+future advancements.  More information about this feature will be posted on the
 [main site](https://straks.io).
 
 ##### Reactive Equilibria Masternode Payment Rebalancing Profile
