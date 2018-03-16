@@ -113,7 +113,7 @@ As above summary, in addition, the following notable items:
 
 Note: Pending full implementation and roll out of a STRAKS Lightning Network, **all other STRAKS' features are enabled and functional from day 0**; end-users can utilise STRAKS' speed, larger chain capacity, cross-chain atomic swaps, segregated witness and Masternode functionality straight away.
 
-Guides and additional information can be found on the [STRAKS' Knowledge Base](https://straks.co), and direct support be sought on the [STRAKS Discord](https://discord.gg/5gzvadZ)
+Guides and additional information can be found on the [STRAKS' Knowledge Base](https://straks.co), and direct support can be sought on the [STRAKS Discord](https://discord.gg/5gzvadZ)
 
 
 #### Zero Start Instamine Protection (ZSIP)
