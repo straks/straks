@@ -109,33 +109,11 @@ __________________________________________________________________________
 As above summary, in addition, the following notable items:
 
 
-#### Coinbase Transactions, Pool Mining and Wallet Mining
+#### Notes, Knowledge Base & Support
 
-**IMPORTANT**
+Note: Pending full implementation and roll out of a STRAKS Lightning Network, **all other STRAKS' features are enabled and functional from day 0**; end-users can utilise STRAKS' speed, larger chain capacity, cross-chain atomic swaps, segregated witness and Masternode functionality straight away.
 
-Other than 'real world' testing of lightning transactions and cross chain atomic swaps, **all STRAKS' features are enabled and work from day 0**; end-users can utilise STRAKS' speed, larger chain capacity, SegWit and Masternode functionality right now.
-
-Due to the unique combination of SegWit, treasury reward, miner reward and Masternode payments, as of this writing, some mining software and various pools do not yet fully support STRAKS' coinbasetxn configuration.  GPU mining does work, but pool and/or mining software may need further code changes for SegWit blocks.
-
-##### Wallet Mining
-```
-Approach 1 (Local):
-(1) Start straksd/straks-qt locally
-(2) Run: "./straks-cli generate 1" (or via debug console in the Qt gui wallet)
-```
-```
-Approach 2 (Remote):
-(1) Start straksd on remote server and local server
-(2) On your local wallet (server) run: "./straks-cli getaccountaddress 0"
-(3) On Your remote server Run: "./straks-cli generatetoaddress 1 <address from step2>"
-(4) Shutdown local wallet (server)
-```
-
-More information can be found on [STRAKS' Knowledge Base](https://kb.straks.info/)
-
-##### GPU Mining
-
-Please follow [STRAKS' Knowledge Base GPU mining guide](https://kb.straks.info/kb/5a1a52ed48e3b4777551b314)
+Guides and additional information can be found on the [STRAKS' Knowledge Base](https://straks.co), and direct support be sought on the [STRAKS Discord](https://discord.gg/5gzvadZ)
 
 
 #### Zero Start Instamine Protection (ZSIP)
@@ -250,7 +228,10 @@ scalability and utility.  The maximum serialised block size is **16MB** for STRA
 STRAKS is both lightning network and atomic swap compatible. And unlike
 many other "compatible" altcoins, SegWit, SegWit2x and the larger blocksize are enabled from the outset.
 
-For further information about Segregated Witness please visit [bitcoincore.org](https://bitcoincore.org/en/2016/01/26/SegWit-benefits/)
+For further information about Segregated Witness please visit [bitcoincore.org](https://bitcoincore.org/en/2016/01/26/segwit-benefits/)
+
+##### Segregated Witness Transaction on STRAKS Mainnet, [block:158979, txid:f729065b24497a99e3152372ef63b96b79228d0b6134e894cb3dcba47d2727f6]
+![Alt text](doc/mainnet_segwit.png)
 
 ##### Segregated Witness Transaction on STRAKS Testnet, [block:6635, txid:3fc630ac1a4b91714d7c7150275b8be019152329e70d1f7a37240a7331b9fab6]
 ![Alt text](doc/testnet_segwit.png)
