@@ -4,7 +4,7 @@
 
 ## STRAKS
 
-#### SegWit and SegWit2x active, Lightning Network compatible, Atomic Swap compatible and an increased non-SegWit block size of 4MB;  introducing the first Masternode-enabled digital currency based off core Bitcoin version 0.14.2.  STRAKS endeavours to eliminate unwanted transaction malleability through SegWit activation from day 0; solves capacity constraints suffered by Bitcoin and its peer group through a larger non-SegWit block size and increased signature operations - effectively introducing SegWit4x; is Lightning Network compatible - supporting instant payments, scalability, low cost and cross blockchain transactions; proposes a fair distribution through a Zero Start Instamine Protection (ZSIP) policy and Zero Start Masternode Reward (ZSMR) policy; introduces a new unique Masternode payment re-balancing algorithm, labelled Reactive Equilibria (REV1); and furthermore, implements a modified version of the new effective D106 difficulty re-targeting algorithm
+#### SegWit and SegWit2x active, Lightning Network compatible, Atomic Swap compatible and an increased non-SegWit block size of 4MB;  introducing the first Masternode-enabled digital currency based off core Bitcoin version 0.14.2.  STRAKS endeavours to eliminate unwanted transaction malleability through SegWit activation from day 0; solves capacity constraints suffered by Bitcoin and its peer group through a larger non-SegWit block size and increased signature operations - effectively introducing SegWit4x; is Lightning Network compatible - supporting instant payments, scalability, low cost and cross blockchain transactions; proposes a fair distribution through a Zero Start Instamine Protection (ZSIP) policy and Zero Start Masternode Reward (ZSMR) policy; introduces a new unique Masternode payment re-balancing algorithm, labelled Reactive Equilibria (REV1); and furthermore, implements a modified version of the new effective D601 difficulty re-targeting algorithm
 
 
 __________________________________________________________________________
@@ -17,7 +17,7 @@ __________________________________________________________________________
 ###### Coin Maturity: 100 blocks
 ###### Transactions Per Second: 133 (Bitcoin: 3, Bitcoin Cash: 27, Dash: 13)
 ###### Transactions Per 24 hours: 11,520,000
-###### Difficulty Retargeting: New D106 Algorithm
+###### Difficulty Retargeting: New D601 Algorithm
 ###### Maximum Coin Supply: 150 Million
 ###### Treasury Funding: 5% Per Block
 ###### SegWit: Active
@@ -152,7 +152,7 @@ The difference between Lyra2RE and Lyra2REv2 is as follows;
 - Removal of [Groestl](http://www.groestl.info/)
 
 
-#### **NEW** Difficulty Retargeting Algorithm (D106 - Amaury Sechet)
+#### **NEW** Difficulty Retargeting Algorithm (D601 - Amaury Sechet)
 
 Recent public discussions on how to address Bitcoin Cash's hash rate oscillation has resulted in an excellent approach that addresses many weaknesses of various other algorithms.  A well developed analsysis was presented by Bitcoin Cash's developer Amaury Sechet and supported by Zawy12 via thorough analysis, with simulated results that demonstate the algorthim's effectiveness.  The proposed implementation was modified specific to STRAKS blockchain.
 
@@ -161,8 +161,8 @@ More information can be found here:
 - [Bitcoin Mailing List Discussion](https://lists.linuxfoundation.org/pipermail/bitcoin-ml/2017-August/000136.html)
 - [Bitcoin News - Bitcoin Cash Hard Fork](https://news.bitcoin.com/bitcoin-cash-hard-fork-plans-updated-new-difficulty-adjustment-algorithm-chosen/)
 
-##### The Modified D106 Algorithm Targeting a 60 Second Block Time for STRAKS Blockchain
-![Alt text](doc/D106_algorithm_test.png)
+##### The Modified D601 Algorithm Targeting a 60 Second Block Time for STRAKS Blockchain
+![Alt text](doc/D601_algorithm_test.png)
 
 
 #### Treasury Funding
