@@ -71,7 +71,7 @@ Speed and privacy are core concerns for users today as well as e-commerce busine
 - **[STRAKS Discord](https://discord.gg/5gzvadZ)**
 - **[STRAKS Reddit](https://www.reddit.com/r/STRAKSproject)**
 - **[STRAKS Twitter](https://twitter.com/STRAKSproject)**
-- **[STRAKS Telegram](https://t.me/joinchat/AAAAAFNgas-8mT4fmKulFg)**
+- **[STRAKS Telegram](https://t.me/joinchat/F0-p1wzOoGequE5HMLzC5w)**
 - **[STRAKS Facebook](https://www.facebook.com/STRAKSproject)**
 - **[STRAKS Community News](https://straks.news)**
 
