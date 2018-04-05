@@ -66,27 +66,25 @@ Speed and privacy are core concerns for users today as well as e-commerce busine
 
 ### Links
 
-- **[STRAKS Website](https://straks.io)**
+- **[STRAKS Website](https://straks.tech)**
 - **[STRAKS Explorer](https://straks.info)**
 - **[STRAKS Discord](https://discord.gg/5gzvadZ)**
 - **[STRAKS Reddit](https://www.reddit.com/r/STRAKSproject)**
 - **[STRAKS Twitter](https://twitter.com/STRAKSproject)**
-- **[STRAKS Telegram](https://t.me/joinchat/AAAAAFNgas-8mT4fmKulFg)**
+- **[STRAKS Telegram](https://t.me/joinchat/F0-p1wzOoGequE5HMLzC5w)**
 - **[STRAKS Facebook](https://www.facebook.com/STRAKSproject)**
 - **[STRAKS Community News](https://straks.news)**
 
 
-### STRAKS Foundation Team
+### STRAKS Team
 
-- **Squbs (squbs@straks.io) - Lead Developer & Business Development**
-- **Cryptovore (dan@straks.io) - Lead Marketing & PR, Business Development**
-- **Ekam (ekam@straks.io) - Lead Developer & Business Development**
-- **John Smith (john@straks.io) - Marketing & PR, Business Development**
-- **Kasper (kasper@straks.io) - Developer, Marketing & PR**
-- **Bruno (bruno@straks.io) - Developer**
-- **Andrew (andrew@straks.io) - Developer**
-- **Flydancer (flydancer@straks.io) - Developer**
-- **Proximus (proximus@straks.io) - Marketing & PR**
+- **Squbs (squbs@straks.tech) - Lead Developer & Business Development**
+- **Ekam (ekam@straks.tech) - Lead Developer & Business Development**
+- **Kasper (kasper@straks.tech) - Developer**
+- **Bruno (bruno@straks.tech) - Developer**
+- **Andrew (andrew@straks.tech) - Developer**
+- **Flydancer (flydancer@straks.tech) - Developer**
+- **Proximus (proximus@straks.tech) - Marketing & PR**
 
 
 __________________________________________________________________________
@@ -127,7 +125,7 @@ STRAKS will be capped at a maxium supply of **150 million coins**.  This target 
 
 The constant block reward prevents event cliffs related to expected "halvings" and will support a more consistent and stable participation rate over a long time horizon.
 
-More information will be available on the STRAKS' [website](https://straks.io)
+More information will be available on the STRAKS' [website](https://straks.tech)
 
 ##### The Monetary Curve Based on a 10 STAK Block Reward
 ![Alt text](doc/mcurve.png)
@@ -211,7 +209,7 @@ As the Masternode count increases, the payment to Masternode holders will
 decline in favour of miners in order to support a decentralised ideology.  The
 new algorithm is simple in design but highly effective and lays the foundation for
 future advancements.  More information about this feature will be posted on the
-[main site](https://straks.io).
+[main site](https://straks.tech).
 
 ##### Reactive Equilibria Masternode Payment Rebalancing Profile
 ![Alt text](doc/reactive_equilibria.png)
