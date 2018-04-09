@@ -3348,7 +3348,7 @@ bool CheckBlock(const CBlock& block, CValidationState& state, const Consensus::P
     // checks that use witness data may be performed here.
 
     // Size limits
-    if (block.vtx.empty() || block.vtx.size() > MAX_BLOCK_VTX|| ::GetSerializeSize(block, SER_NETWORK, PROTOCOL_VERSION | SERIALIZE_TRANSACTION_NO_WITNESS) > MAX_BLOCK_VTX)
+    if (block.vtx.empty() || block.vtx.size() > MAX_BLOCK_VTX || ::GetSerializeSize(block, SER_NETWORK, PROTOCOL_VERSION | SERIALIZE_TRANSACTION_NO_WITNESS) * WITNESS_SCALE_FACTOR > MAX_BLOCK_SERIALIZED_SIZE)
         return state.DoS(100, false, REJECT_INVALID, "bad-blk-length", false, "size limits failed");
 
     // First transaction must be coinbase, the rest must not be
@@ -3663,7 +3663,7 @@ bool ContextualCheckBlock(const CBlock& block, CValidationState& state, const Co
 
     // Max block base size limit
     if (::GetSerializeSize(block, SER_NETWORK, PROTOCOL_VERSION | SERIALIZE_TRANSACTION_NO_WITNESS) > MaxBlockBaseSize(fSegwitSeasoned))
-        return state.DoS(100, false, REJECT_INVALID, "bad-blk-length", false, "size limits failed");
+        return state.DoS(100, false, REJECT_INVALID, "bad-blk-length", false, "non-segwit size limits failed");
 
     // First block at fork must be large
     if (fBIP102FirstBlock) {

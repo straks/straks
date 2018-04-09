@@ -437,8 +437,8 @@ UniValue sendtoaddress(const JSONRPCRequest& request)
     bool fSubtractFeeFromAmount = false;
     if (request.params.size() > 4)
         fSubtractFeeFromAmount = request.params[4].get_bool();
-	
-	bool fUseIX = false; //TODO--
+
+    bool fUseIX = false;
     bool fUseDS = false;
     if (request.params.size() > 5)
         fUseIX = request.params[5].get_bool();
