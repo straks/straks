@@ -1697,6 +1697,7 @@ bool AppInitMain(boost::thread_group& threadGroup, CScheduler& scheduler)
                 }
 
                 if (!LoadBlockIndex(chainparams)) {
+		    if (fRequestShutdown) break;
                     strLoadError = _("Error loading block database");
                     break;
                 }
