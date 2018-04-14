@@ -1,7 +1,7 @@
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2017 The Bitcoin Core developers
 // Copyright (c) 2017 The Dash developers
-// Copyright (c) 2017 The Straks developers
+// Copyright (c) 2017-2018 STRAKS developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -72,8 +72,8 @@ public:
     CMainParams() {
         strNetworkID = "main";
 
-        consensus.BIP34Height = 0;
-        consensus.BIP34Hash = uint256S("00000df14d859c4b3219d93978bcf02afc123d2344a2ed39033e1208948aa7c0");
+        consensus.BIP34Height = 1;
+        consensus.BIP34Hash = uint256S("00000b6321951f2ed170bbc9b7a360995176f2df418b0e275149bfce2fde3d6c");
         consensus.BIP65Height = 0;
         consensus.BIP66Height = 0;
         consensus.BIP102HeightDelta = 0;
@@ -126,7 +126,7 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT2X].nOverrideRuleChangeActivationThreshold = 1; 
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("000000000000000000000000000000000000000000000000016cc33045d3009c");
+        consensus.nMinimumChainWork = uint256S("00000000000000000000000000000000000000000000000012d32236165b6214");
 
         // By default assume that the signatures in ancestors of this block are valid.
         consensus.defaultAssumeValid = uint256S("0x0");
@@ -168,8 +168,8 @@ NEW **mainnet** merkle root: 15343d9e3cfff44854ec63cc588d5a1ed6ea971085c2be97acb
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,63);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,5);
         base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,204);
-        base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0xA2)(0xAE)(0xC9)(0xA6).convert_to_container<std::vector<unsigned char> >();
-        base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x46)(0x00)(0x2A)(0x10).convert_to_container<std::vector<unsigned char> >();
+        base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0x88)(0xB2)(0x1E).convert_to_container<std::vector<unsigned char> >();
+        base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x04)(0x88)(0xAD)(0xE4).convert_to_container<std::vector<unsigned char> >();
 
         vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_main, pnSeed6_main + ARRAYLEN(pnSeed6_main));
 
@@ -182,7 +182,11 @@ NEW **mainnet** merkle root: 15343d9e3cfff44854ec63cc588d5a1ed6ea971085c2be97acb
             {
                 {     0, uint256S("00000df14d859c4b3219d93978bcf02afc123d2344a2ed39033e1208948aa7c0")},
                 { 19760, uint256S("000000000008cdaee7a7cc3e8e5336ce2426eb7079f9a43a4dbf15ac8c08cbec")},
-                { 34000, uint256S("00000000008fa092d7379523824d65470e1f62afdd9e4efe225b2a80461c16a1")}
+                { 34000, uint256S("00000000008fa092d7379523824d65470e1f62afdd9e4efe225b2a80461c16a1")},
+                { 50400, uint256S("00000000003c5729841f6d3f44d267e6be7e6b9a7cd4c9b2480a396f22e7561e")},
+                { 94858, uint256S("000000000003b195d823ee34f2ffa36933e4696fa845508e0fa9238e0dbb9718")},
+                { 136201, uint256S("00000000000def1328cef45871f0cd91dabd28dc5ba117535cbcee19eebdf79c")},
+                { 160285, uint256S("00000000000147b96ecc7ab3248dcbabd87b2193bf045750fce80db89465b338")}
             }
         };
 
@@ -199,8 +203,8 @@ NEW **mainnet** merkle root: 15343d9e3cfff44854ec63cc588d5a1ed6ea971085c2be97acb
         //     (the tx=... number in the SetBestChain debug.log lines)
         // [3] estimated number of transactions per second after that timestamp
         chainTxData = ChainTxData{
-            1512085246,
-            29365,
+            1516904966,
+            139917,
             1
         };
     }
@@ -215,8 +219,8 @@ public:
     CTestNetParams() {
         strNetworkID = "test";
 
-        consensus.BIP34Height = 0;
-        consensus.BIP34Hash = uint256S("000000cd747bd0b653e1fe417b60c1d9e990600cf2ff193404ea12c3ecb348b4");
+        consensus.BIP34Height = 1;
+        consensus.BIP34Hash = uint256S("0000013dcc24cb29b041d5c89763f3aa44340faf556101783818a6ca8eb59e59");
         consensus.BIP65Height = 0; // 00000000007f6655f22f98e72ed80d8b06dc761d5da09df0fa1dc4be4f861eb6
         consensus.BIP66Height = 0; // 000000002104c8c45e99a8853285a3b592602a3ccde2b832481da85e9e4ba182
         consensus.BIP102HeightDelta = 0;
@@ -269,7 +273,7 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT2X].nOverrideRuleChangeActivationThreshold = 1; 
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0000000000000000000000000000000000000000000000000000004b872a38d6");
+        consensus.nMinimumChainWork = uint256S("0000000000000000000000000000000000000000000000000000005c3208d18e");
 
         // By default assume that the signatures in ancestors of this block are valid.
         consensus.defaultAssumeValid = uint256S("0x0");
@@ -318,6 +322,7 @@ NEW **testnet** merkle root: 15343d9e3cfff44854ec63cc588d5a1ed6ea971085c2be97acb
                 {     0, uint256S("000000cd747bd0b653e1fe417b60c1d9e990600cf2ff193404ea12c3ecb348b4")},
                 {119692, uint256S("000004d943ed36053076a62b20cc7bec6a8a4c66ed1f6a6e88deeca015ff555a")},
                 {195182, uint256S("0000001cbc01c2d26da194f44fd63e35eb87e65642c8611c93e9c14a2f2c0a0d")},
+                {232597, uint256S("0000023d86e2181d63c6db4cb82e5889737b824efd71904f03fe76898a941211")},
             }
         };
 

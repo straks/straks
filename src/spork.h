@@ -1,5 +1,4 @@
-
-// Copyright (c) 2009-2012 The Straks developers
+// Copyright (c) 2017-2018 STRAKS developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 #ifndef SPORK_H
@@ -107,8 +106,8 @@ private:
 public:
 
     CSporkManager() {
-        strMainPubKey = "04d7c233eefe7a65c69fbca70ca5d7eef7bc075250f24283fef762ed3a244914f792f54836f4a536694505d9f079ffdd0a82fb2b51e7744b2214ee2f011509a15b"; // squbs
-        strTestPubKey = "04b25545172cb8147f1e72677aa94aa193d5d77ba2f7241517c9828c51647202bd5c012ba70e874f8f6fcef77b881d0eb46edcda51c43cdd0ba1c974363c282f1b";  // squbs
+        strMainPubKey = "03a0d8182aa1594353051219402c79598109d80ec3ae0dd4fb7df46e8d962c7439"; 
+        strTestPubKey = "02f17b0c3e27065fcc400e5781d2995a8c4d9054d6aebd66149e3009c0c3f72242";  
     }
 
     std::string GetSporkNameByID(int id);

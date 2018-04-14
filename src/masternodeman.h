@@ -66,6 +66,9 @@ private:
     std::map<COutPoint, int64_t> mWeAskedForMasternodeListEntry;
 
 public:
+    bool AwaitingSync() { return mWeAskedForMasternodeList.size() > 0; }
+    unsigned int AwaitingEntrySync() { return mWeAskedForMasternodeListEntry.size(); }
+
     // keep track of dsq count to prevent masternodes from gaming darksend queue
     int64_t nDsqCount;
 

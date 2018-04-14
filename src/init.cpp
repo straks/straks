@@ -1,7 +1,7 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2017 The Bitcoin Core developers 
 // Copyright (c) 2017 The Dash developers 
-// Copyright (c) 2017 The Straks developers
+// Copyright (c) 2017-2018 STRAKS developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -609,7 +609,7 @@ std::string LicenseInfo()
 	//TODO-- add straks license
     return FormatParagraph(strprintf(_("Copyright (C) 2009 -%i The Bitcoin Core developers"), COPYRIGHT_YEAR)) + "\n" +
 		   FormatParagraph(strprintf(_("Copyright (C) 2014 -%i The Dash Developers"), COPYRIGHT_YEAR)) + "\n" +
-           FormatParagraph(strprintf(_("Copyright (C) %i The Straks Core Developers"), COPYRIGHT_YEAR)) + "\n" + "\n" +
+           FormatParagraph(strprintf(_("Copyright (C) %i The STRAKS Core Developers"), COPYRIGHT_YEAR)) + "\n" + "\n" +
            strprintf(_("Please contribute if you find %s useful. "
                        "Visit %s for further information about the software."),
                PACKAGE_NAME, URL_WEBSITE) +

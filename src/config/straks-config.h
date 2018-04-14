@@ -9,7 +9,7 @@
 /* #undef AC_APPLE_UNIVERSAL_BUILD */
 
 /* Version Build */
-#define CLIENT_VERSION_BUILD 2
+#define CLIENT_VERSION_BUILD 3
 
 /* Version is release */
 #define CLIENT_VERSION_IS_RELEASE true
@@ -21,19 +21,19 @@
 #define CLIENT_VERSION_MINOR 14
 
 /* Build revision */
-#define CLIENT_VERSION_REVISION 5
+#define CLIENT_VERSION_REVISION 7
 
 /* Copyright holder(s) before %s replacement */
-#define COPYRIGHT_HOLDERS "The %s developers"
+#define COPYRIGHT_HOLDERS "%s developers"
 
 /* Copyright holder(s) */
-#define COPYRIGHT_HOLDERS_FINAL "The STRAKS Core developers"
+#define COPYRIGHT_HOLDERS_FINAL "STRAKS developers"
 
 /* Replacement for %s in copyright holders string */
-#define COPYRIGHT_HOLDERS_SUBSTITUTION "STRAKS Core"
+#define COPYRIGHT_HOLDERS_SUBSTITUTION "STRAKS"
 
 /* Copyright year */
-#define COPYRIGHT_YEAR 2017
+#define COPYRIGHT_YEAR 2018
 
 /* Define to 1 to enable wallet functions */
 #define ENABLE_WALLET 1
@@ -319,7 +319,7 @@
 #define PACKAGE_NAME "STRAKS Core"
 
 /* Define to the full name and version of this package. */
-#define PACKAGE_STRING "STRAKS Core 1.14.5"
+#define PACKAGE_STRING "STRAKS Core 1.14.7"
 
 /* Define to the one symbol short name of this package. */
 #define PACKAGE_TARNAME "straks"
@@ -328,7 +328,7 @@
 #define PACKAGE_URL "https://straks.info/"
 
 /* Define to the version of this package. */
-#define PACKAGE_VERSION "1.14.5"
+#define PACKAGE_VERSION "1.14.7"
 
 /* Define to necessary symbol if this constant uses a non-standard name on
    your system. */

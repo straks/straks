@@ -1,7 +1,7 @@
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2017 The Bitcoin Core developers 
 // Copyright (c) 2017 The Dash developers 
-// Copyright (c) 2017 The Straks developers
+// Copyright (c) 2017-2018 STRAKS developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -437,8 +437,8 @@ UniValue sendtoaddress(const JSONRPCRequest& request)
     bool fSubtractFeeFromAmount = false;
     if (request.params.size() > 4)
         fSubtractFeeFromAmount = request.params[4].get_bool();
-	
-	bool fUseIX = false; //TODO--
+
+    bool fUseIX = false;
     bool fUseDS = false;
     if (request.params.size() > 5)
         fUseIX = request.params[5].get_bool();

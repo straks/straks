@@ -1,4 +1,4 @@
-// Copyright (c) 2009-2013 The Straks developers
+// Copyright (c) 2017-2018 STRAKS developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 

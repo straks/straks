@@ -1,5 +1,4 @@
-
-// Copyright (c) 2014-2015 The Straks developers
+// Copyright (c) 2017-2018 STRAKS developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 #ifndef MASTERNODE_H
@@ -327,8 +326,8 @@ private:
 public:
 
     CMasternodePayments() {
-        strMainPubKey = "04521CAE97FEE1CA1F67B4B6D5E4323125D63DBA5291CF2609F71234ED86355A109140B3316366CAD47DCD2D0C04326A3233AC7797231F0AF88C1FE6FE94B7E37C"; 
-        strTestPubKey = "04CBC82D432A42A05F9474A5554413A6166767C928DE669C40144DC585FB85F15E28035EADE398A6B8E38C24A001EAB50023124C4D8328C99EC2FDE47ED54B17BF"; 
+        strMainPubKey = "03a0d8182aa1594353051219402c79598109d80ec3ae0dd4fb7df46e8d962c7439"; 
+        strTestPubKey = "02f17b0c3e27065fcc400e5781d2995a8c4d9054d6aebd66149e3009c0c3f72242"; 
         enabled = false;
     }
 
@@ -349,6 +348,7 @@ public:
     void Sync(CNode* node, CConnman& connman);
     void CleanPaymentList();
     int LastPayment(CMasternode& mn);
+    bool IsEnabled() { return enabled; };
 
     //slow
     bool GetBlockPayee(int nBlockHeight, CScript& payee);

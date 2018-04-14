@@ -196,7 +196,7 @@ void MasternodeList::updateMyMasternodeInfo(QString strAlias, QString strAddr, C
     QTableWidgetItem* addrItem = new QTableWidgetItem(pmn ? QString::fromStdString(pmn->addr.ToString()) : strAddr);
     QTableWidgetItem* protocolItem = new QTableWidgetItem(QString::number(pmn ? pmn->protocolVersion : -1));
     QTableWidgetItem* statusItem = new QTableWidgetItem(QString::fromStdString(pmn ? pmn->Status() : "MISSING"));
-    QTableWidgetItem* activeSecondsItem = new QTableWidgetItem(QString::number(pmn->lastTimeSeen - pmn->sigTime));
+        QTableWidgetItem* activeSecondsItem = new QTableWidgetItem(QDateTime::fromTime_t(pmn->lastTimeSeen - pmn->sigTime).toUTC().toString("dd:hh:mm:ss"));
     QTableWidgetItem* lastSeenItem = new QTableWidgetItem(QString::fromStdString(DateTimeStrFormat("%Y-%m-%d %H:%M", pmn ? pmn->lastTimeSeen : 0)));
     QTableWidgetItem* pubkeyItem = new QTableWidgetItem(QString::fromStdString(pmn ? address2.ToString() : ""));
 
@@ -274,7 +274,7 @@ void MasternodeList::updateNodeList()
         QTableWidgetItem* addressItem = new QTableWidgetItem(QString::fromStdString(mn.addr.ToString()));
         QTableWidgetItem* protocolItem = new QTableWidgetItem(QString::number(mn.protocolVersion));
         QTableWidgetItem* statusItem = new QTableWidgetItem(QString::fromStdString(mn.Status()));
-        QTableWidgetItem* activeSecondsItem = new QTableWidgetItem(QString::number(mn.lastTimeSeen - mn.sigTime));
+        QTableWidgetItem* activeSecondsItem = new QTableWidgetItem(QDateTime::fromTime_t(mn.lastTimeSeen - mn.sigTime).toUTC().toString("dd:hh:mm:ss"));
         QTableWidgetItem* lastSeenItem = new QTableWidgetItem(QString::fromStdString(DateTimeStrFormat("%Y-%m-%d %H:%M", mn.lastTimeSeen)));
         QTableWidgetItem* pubkeyItem = new QTableWidgetItem(QString::fromStdString(address2.ToString()));
 

@@ -1,7 +1,7 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2017 The Bitcoin Core developers 
 // Copyright (c) 2017 The Dash developers 
-// Copyright (c) 2017 The Straks developers
+// Copyright (c) 2017-2018 STRAKS developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -138,7 +138,7 @@ inline uint256 Hash(const T1 p1begin, const T1 p1end,
 }
 
 /**TODO-- */
-/** Compute the 256-bit hash of the concatenation of three objects. */
+/** Compute the 256-bit hash of the concatenation of four objects. */
 template<typename T1, typename T2, typename T3, typename T4>
 inline uint256 Hash(const T1 p1begin, const T1 p1end,
                     const T2 p2begin, const T2 p2end,
@@ -154,7 +154,7 @@ inline uint256 Hash(const T1 p1begin, const T1 p1end,
     return result;
 }
 
-/** Compute the 256-bit hash of the concatenation of three objects. */
+/** Compute the 256-bit hash of the concatenation of five objects. */
 template<typename T1, typename T2, typename T3, typename T4, typename T5>
 inline uint256 Hash(const T1 p1begin, const T1 p1end,
                     const T2 p2begin, const T2 p2end,
@@ -172,7 +172,7 @@ inline uint256 Hash(const T1 p1begin, const T1 p1end,
     return result;
 }
 
-/** Compute the 256-bit hash of the concatenation of three objects. */
+/** Compute the 256-bit hash of the concatenation of six objects. */
 template<typename T1, typename T2, typename T3, typename T4, typename T5, typename T6>
 inline uint256 Hash(const T1 p1begin, const T1 p1end,
                     const T2 p2begin, const T2 p2end,

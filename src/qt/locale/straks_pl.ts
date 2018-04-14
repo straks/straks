@@ -1,24 +1,25 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="pl" version="2.0">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.0" language="pl">
 <context>
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="14"/>
-        <source>About STRAKS Core</source>
-        <translation>O STRAKS Core</translation>
+        <source>About Straks Core</source>
+        <translation>O Straks Core</translation>
     </message>
     <message>
         <location filename="../forms/aboutdialog.ui" line="53"/>
-        <source>&lt;b&gt;STRAKS Core&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;STRAKS Core&lt;b&gt; wersja</translation>
+        <source>&lt;b&gt;Straks Core&lt;/b&gt; version</source>
+        <translation>Wersja &lt;b&gt;Straks Core&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../forms/aboutdialog.ui" line="94"/>
-        <source>Copyright &amp;copy; 2009-YYYY The STRAKS and DASH Core developers.
-Copyright &amp;copy; 2014-YYYY The STRAKS Core developers.</source>
- <translation type="unfinished"></translation>
+        <source>Copyright &amp;copy; 2009-YYYY The Bitcoin Core - Dash Core developers and Straks Core developers.</source>
+        <translation>Wszelkie prawa zastrzeżone &amp;copy; 2009-YYYY The Bitcoin Core - programiści Dash Core oraz Straks Core.</translation>
     </message>
     <message>
-        <location filename="../forms/aboutdialog.ui" line="111"/>
+        <location filename="../forms/aboutdialog.ui" line="110"/>
         <source>
 This is experimental software.
 
@@ -32,35 +33,13 @@ Dystrybutowane pod licencją oprogramowania MIT/X11, zobacz akompaniujący plik 
 
 Ten produkt zawiera oprogramowanie opracowane przez Projekt OpenSSL do użycia w OpenSSL Toolkit (http://www.openssl.org/) i  oprogramowanie kryptograficzne napisane przez Eric Young (eay@cryptsoft.com) i także oprogramowanie UPnP napisane przez Thomas Bernard.</translation>
     </message>
-    <message>
-        <location filename="../utilitydialog.cpp" line="30"/>
-        <location filename="../utilitydialog.cpp" line="31"/>
-        <source>Copyright</source>
-        <translation>Prawo autorskie</translation>
-    </message>
-    <message>
-        <location filename="../utilitydialog.cpp" line="30"/>
-        <source>The STRAKS Core developers</source>
-        <translation>Deweloperzy STRAKS Core</translation>
-    </message>
-    <message>
-        <location filename="../utilitydialog.cpp" line="31"/>
-        <source>The STRAKS Core developers</source>
-        <translation>Deweloperzy STRAKS Core</translation>
-    </message>
-    <message>
-        <location filename="../utilitydialog.cpp" line="43"/>
-        <location filename="../utilitydialog.cpp" line="45"/>
-        <source>(%1-bit)</source>
-        <translation>(%1-bit)</translation>
-    </message>
 </context>
 <context>
     <name>AddressBookPage</name>
     <message>
         <location filename="../forms/addressbookpage.ui" line="30"/>
-        <source>Double-click to edit address or label</source>
-        <translation>Kliknij dwukrotnie, aby edytować adres lub etykietę</translation>
+        <source>Right-click to edit address or label</source>
+        <translation>Naciśnij prawy przycisk myszy aby edytować adres lub etykietę</translation>
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="57"/>
@@ -70,128 +49,128 @@ Ten produkt zawiera oprogramowanie opracowane przez Projekt OpenSSL do użycia w
     <message>
         <location filename="../forms/addressbookpage.ui" line="60"/>
         <source>&amp;New</source>
-        <translation>&amp;Nowy</translation>
+        <translation>Nowy</translation>
     </message>
     <message>
-        <location filename="../forms/addressbookpage.ui" line="71"/>
+        <location filename="../forms/addressbookpage.ui" line="74"/>
         <source>Copy the currently selected address to the system clipboard</source>
         <translation>Skopiuj aktualnie wybrany adres do schowka</translation>
     </message>
     <message>
-        <location filename="../forms/addressbookpage.ui" line="74"/>
+        <location filename="../forms/addressbookpage.ui" line="77"/>
         <source>&amp;Copy</source>
-        <translation>&amp;Kopiuj</translation>
+        <translation>Skopiuj</translation>
     </message>
     <message>
-        <location filename="../forms/addressbookpage.ui" line="85"/>
+        <location filename="../forms/addressbookpage.ui" line="91"/>
         <source>Delete the currently selected address from the list</source>
         <translation>Usuń obecnie zaznaczony adres z listy</translation>
     </message>
     <message>
-        <location filename="../forms/addressbookpage.ui" line="88"/>
+        <location filename="../forms/addressbookpage.ui" line="94"/>
         <source>&amp;Delete</source>
-        <translation>&amp;Usuń</translation>
+        <translation>Usuń</translation>
     </message>
     <message>
-        <location filename="../forms/addressbookpage.ui" line="112"/>
+        <location filename="../forms/addressbookpage.ui" line="121"/>
         <source>Export the data in the current tab to a file</source>
         <translation>Eksportuj dane z aktywnej karty do pliku</translation>
     </message>
     <message>
-        <location filename="../forms/addressbookpage.ui" line="115"/>
+        <location filename="../forms/addressbookpage.ui" line="124"/>
         <source>&amp;Export</source>
-        <translation>&amp;Eksportuj</translation>
+        <translation>Eksportuj</translation>
     </message>
     <message>
-        <location filename="../forms/addressbookpage.ui" line="132"/>
+        <location filename="../forms/addressbookpage.ui" line="144"/>
         <source>C&amp;lose</source>
-        <translation>Z&amp;amknij</translation>
+        <translation>Zamknij</translation>
     </message>
     <message>
-        <location filename="../addressbookpage.cpp" line="45"/>
+        <location filename="../addressbookpage.cpp" line="50"/>
         <source>Choose the address to send coins to</source>
         <translation>Wybierz adres na który wysłać monety</translation>
     </message>
     <message>
-        <location filename="../addressbookpage.cpp" line="46"/>
-        <source>Choose the address to receive coins with</source>
-        <translation>Wybierz adres do otrzymania monet.</translation>
-    </message>
-    <message>
         <location filename="../addressbookpage.cpp" line="51"/>
+        <source>Choose the address to receive coins with</source>
+        <translation>Wybierz adres do otrzymywania monet</translation>
+    </message>
+    <message>
+        <location filename="../addressbookpage.cpp" line="56"/>
         <source>C&amp;hoose</source>
-        <translation>W&amp;ybierz</translation>
+        <translation>Wybierz</translation>
     </message>
     <message>
-        <location filename="../addressbookpage.cpp" line="57"/>
+        <location filename="../addressbookpage.cpp" line="62"/>
         <source>Sending addresses</source>
-        <translation>Adres wysyłania</translation>
+        <translation>Adres nadawczy</translation>
     </message>
     <message>
-        <location filename="../addressbookpage.cpp" line="58"/>
+        <location filename="../addressbookpage.cpp" line="63"/>
         <source>Receiving addresses</source>
         <translation>Adres odbiorczy</translation>
     </message>
     <message>
-        <location filename="../addressbookpage.cpp" line="65"/>
-        <source>These are your STRAKS addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>To są twoje adresy STRAKS z których wysyłasz Darkcoiny. Zawsze upewnij się, że kwota i adres do ktoórego wysyłasz STRAKS są prawidłowe. </translation>
+        <location filename="../addressbookpage.cpp" line="70"/>
+        <source>These are your Straks addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Poniżej zamieszczono Twoje adresy do wysyłania płatności. Zawsze sprawdź kwotę i adres odbiorczy zanim na niego coś wyślesz.</translation>
     </message>
     <message>
-        <location filename="../addressbookpage.cpp" line="69"/>
-        <source>These are your STRAKS addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>To są twoje adresy do otrzymywania STRAKSów. Zaleca się aby tworzyć nowy adres dla każdej transakcji</translation>
+        <location filename="../addressbookpage.cpp" line="74"/>
+        <source>These are your Straks addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Poniżej zamieszczono Twoje adresy do odbierania płatności. Zaleca się używać za każdym razem nowego adresu dla każdej nowej transakcji.</translation>
     </message>
     <message>
-        <location filename="../addressbookpage.cpp" line="75"/>
+        <location filename="../addressbookpage.cpp" line="80"/>
         <source>&amp;Copy Address</source>
-        <translation>&amp;Kopiuj adres</translation>
+        <translation>Skopiuj adres</translation>
     </message>
     <message>
-        <location filename="../addressbookpage.cpp" line="76"/>
+        <location filename="../addressbookpage.cpp" line="81"/>
         <source>Copy &amp;Label</source>
-        <translation>Kopiuj &amp;Etykietę</translation>
+        <translation>Skopiuj etykietę</translation>
     </message>
     <message>
-        <location filename="../addressbookpage.cpp" line="77"/>
+        <location filename="../addressbookpage.cpp" line="82"/>
         <source>&amp;Edit</source>
-        <translation>&amp;Modyfikuj</translation>
+        <translation>Edytuj</translation>
     </message>
     <message>
-        <location filename="../addressbookpage.cpp" line="271"/>
+        <location filename="../addressbookpage.cpp" line="275"/>
         <source>Export Address List</source>
         <translation>Eksportuj listę adresową</translation>
     </message>
     <message>
-        <location filename="../addressbookpage.cpp" line="272"/>
+        <location filename="../addressbookpage.cpp" line="276"/>
         <source>Comma separated file (*.csv)</source>
         <translation>Plik *.CSV (rozdzielany przecinkami)</translation>
     </message>
     <message>
-        <location filename="../addressbookpage.cpp" line="285"/>
+        <location filename="../addressbookpage.cpp" line="289"/>
         <source>Exporting Failed</source>
         <translation>Błąd przy próbie eksportu</translation>
     </message>
     <message>
-        <location filename="../addressbookpage.cpp" line="286"/>
-        <source>There was an error trying to save the address list to %1.</source>
-        <translation>Wystąpił błąd podczas próby zapisu listy adresów do %1.</translation>
+        <location filename="../addressbookpage.cpp" line="290"/>
+        <source>There was an error trying to save the address list to %1. Please try again.</source>
+        <translation>Wystąpił błąd podczas próby zapisu adresu do listy adresowej %1. Proszę spróbuj ponownie.</translation>
     </message>
 </context>
 <context>
     <name>AddressTableModel</name>
     <message>
-        <location filename="../addresstablemodel.cpp" line="169"/>
+        <location filename="../addresstablemodel.cpp" line="170"/>
         <source>Label</source>
         <translation>Etykieta</translation>
     </message>
     <message>
-        <location filename="../addresstablemodel.cpp" line="169"/>
+        <location filename="../addresstablemodel.cpp" line="170"/>
         <source>Address</source>
         <translation>Adres</translation>
     </message>
     <message>
-        <location filename="../addresstablemodel.cpp" line="205"/>
+        <location filename="../addresstablemodel.cpp" line="206"/>
         <source>(no label)</source>
         <translation>(bez etykiety)</translation>
     </message>
@@ -201,119 +180,109 @@ Ten produkt zawiera oprogramowanie opracowane przez Projekt OpenSSL do użycia w
     <message>
         <location filename="../forms/askpassphrasedialog.ui" line="26"/>
         <source>Passphrase Dialog</source>
-        <translation>Okienko Hasła</translation>
+        <translation>Okienko hasła</translation>
     </message>
     <message>
-        <location filename="../forms/askpassphrasedialog.ui" line="47"/>
+        <location filename="../forms/askpassphrasedialog.ui" line="56"/>
         <source>Enter passphrase</source>
         <translation>Wpisz hasło</translation>
     </message>
     <message>
-        <location filename="../forms/askpassphrasedialog.ui" line="61"/>
+        <location filename="../forms/askpassphrasedialog.ui" line="70"/>
         <source>New passphrase</source>
         <translation>Nowe hasło</translation>
     </message>
     <message>
-        <location filename="../forms/askpassphrasedialog.ui" line="75"/>
+        <location filename="../forms/askpassphrasedialog.ui" line="84"/>
         <source>Repeat new passphrase</source>
         <translation>Powtórz nowe hasło</translation>
     </message>
     <message>
-        <location filename="../forms/askpassphrasedialog.ui" line="108"/>
-        <source>Serves to disable the trivial sendmoney when OS account compromised. Provides no real security.</source>
-        <translation>Służy do zablokowania funkcji wysyłania monet gdy konto użytkownika systemu operacyjnego zostało przejęte przez kogoś innego. Nie oferuje prawdziwego bezpieczeństwa. Wirus lub haker wciąż może uzyskać dostęp do twojego portfela.</translation>
-    </message>
-    <message>
-        <location filename="../forms/askpassphrasedialog.ui" line="111"/>
-        <source>For anonymization only</source>
-        <translation>Tylko dla anonimizacji</translation>
-    </message>
-    <message>
-        <location filename="../askpassphrasedialog.cpp" line="41"/>
-        <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;10 or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
-        <translation>Wprowadź nowe hasło dla portfela.&lt;br/&gt;Proszę użyć hasła składającego się z &lt;b&gt;10 lub więcej losowych znaków&lt;/b&gt; lub &lt;b&gt;ośmiu lub więcej słów&lt;/b&gt;.</translation>
-    </message>
-    <message>
-        <location filename="../askpassphrasedialog.cpp" line="42"/>
+        <location filename="../askpassphrasedialog.cpp" line="49"/>
         <source>Encrypt wallet</source>
         <translation>Zaszyfruj portfel</translation>
     </message>
     <message>
-        <location filename="../askpassphrasedialog.cpp" line="48"/>
+        <location filename="../askpassphrasedialog.cpp" line="52"/>
         <source>This operation needs your wallet passphrase to unlock the wallet.</source>
         <translation>Ta operacja wymaga hasła do portfela ażeby odblokować portfel.</translation>
     </message>
     <message>
-        <location filename="../askpassphrasedialog.cpp" line="53"/>
+        <location filename="../askpassphrasedialog.cpp" line="57"/>
         <source>Unlock wallet</source>
         <translation>Odblokuj portfel</translation>
     </message>
     <message>
-        <location filename="../askpassphrasedialog.cpp" line="56"/>
+        <location filename="../askpassphrasedialog.cpp" line="60"/>
         <source>This operation needs your wallet passphrase to decrypt the wallet.</source>
-        <translation>Ta operacja wymaga hasła do portfela ażeby odszyfrować portfel.</translation>
+        <translation>Ta operacja wymaga hasła do portfela żeby odszyfrować portfel.</translation>
     </message>
     <message>
-        <location filename="../askpassphrasedialog.cpp" line="61"/>
+        <location filename="../askpassphrasedialog.cpp" line="65"/>
         <source>Decrypt wallet</source>
         <translation>Odszyfruj portfel</translation>
     </message>
     <message>
-        <location filename="../askpassphrasedialog.cpp" line="64"/>
+        <location filename="../askpassphrasedialog.cpp" line="68"/>
         <source>Change passphrase</source>
         <translation>Zmień hasło</translation>
     </message>
     <message>
-        <location filename="../askpassphrasedialog.cpp" line="65"/>
-        <source>Enter the old and new passphrase to the wallet.</source>
-        <translation>Podaj stare i nowe hasło do portfela.</translation>
-    </message>
-    <message>
-        <location filename="../askpassphrasedialog.cpp" line="112"/>
+        <location filename="../askpassphrasedialog.cpp" line="113"/>
         <source>Confirm wallet encryption</source>
         <translation>Potwierdź szyfrowanie portfela</translation>
     </message>
     <message>
-        <location filename="../askpassphrasedialog.cpp" line="113"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR STAK&lt;/b&gt;!</source>
-        <translation>Ostrzeżenie: Jeśli zaszyfrujesz swój portfel i zgubisz swoje hasło, &lt;b&gt;STRACISZ WSZYSTKIE STAKY&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <location filename="../askpassphrasedialog.cpp" line="113"/>
+        <location filename="../askpassphrasedialog.cpp" line="114"/>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Jesteś pewien, że chcesz zaszyfrować swój portfel?</translation>
     </message>
     <message>
-        <location filename="../askpassphrasedialog.cpp" line="122"/>
+        <location filename="../askpassphrasedialog.cpp" line="123"/>
         <location filename="../askpassphrasedialog.cpp" line="181"/>
         <source>Wallet encrypted</source>
         <translation>Portfel zaszyfrowany</translation>
     </message>
     <message>
-        <location filename="../askpassphrasedialog.cpp" line="124"/>
-        <source>STRAKS will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your STRAKS from being stolen by malware infecting your computer.</source>
-        <translation>STRAKS zostanie teraz zamknięty aby zakończyć proces szyfrowania. Pamiętaj, że zaszyfrowanie portfela nie gwarantuje pełnej ochrony przed kradzieżą twoich monet przez złośliwe oprogramowanie.</translation>
+        <location filename="../askpassphrasedialog.cpp" line="46"/>
+        <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
+        <translation>Wprowadź nowe hasło do portfela. &lt;br/&gt;Proszę użyj hasła składającego się z &lt;b&gt;dziesięciu lub więcej losowych znaków&lt;/b&gt;, lub &lt;b&gt;co najmniej ośmiu słów&lt;/b&gt;.</translation>
     </message>
     <message>
-        <location filename="../askpassphrasedialog.cpp" line="128"/>
+        <location filename="../askpassphrasedialog.cpp" line="69"/>
+        <source>Enter the old passphrase and new passphrase to the wallet.</source>
+        <translation>Wprowadź stare oraz nowe hasło do portfela.</translation>
+    </message>
+    <message>
+        <location filename="../askpassphrasedialog.cpp" line="114"/>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR STRAKSS&lt;/b&gt;!</source>
+        <translation>Uwaga: jeśli zaszyfrujesz swój portfel i utracisz hasło, to wtedy &lt;b&gt;STRACISZ WSZYSTKIE SWOJE STRAKS&lt;/b&gt;!</translation>
+    </message>
+    <message>
+        <location filename="../askpassphrasedialog.cpp" line="125"/>
+        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your STRAKS from being stolen by malware infecting your computer.</source>
+        <translation>%n zostanie teraz zamknięty aby dokończyć proces szyfrowania. Pamiętaj, że szyfrowanie portfela nie może całkowicie ochronić twoich Straks, jeśli zostanie od wykradziony przez ew. złośliwe oprogramowanie na Twoim komputerze.</translation>
+    </message>
+    <message>
+        <location filename="../askpassphrasedialog.cpp" line="129"/>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
-        <translation>WAŻNE: Wszystkie wykonane wcześniej kopie pliku portfela powinny być zamienione na nowe, szyfrowane pliki. Z powodów bezpieczeństwa, poprzednie kopie nieszyfrowanych plików portfela staną się bezużyteczne jak tylko zaczniesz korzystać z nowego, szyfrowanego portfela.</translation>
+        <translation>WAŻNE: Wszystkie wykonane wcześniej kopie pliku portfela powinny być zamienione na nowe, zaszyfrowane pliki. Z powodów bezpieczeństwa, poprzednie kopie nieszyfrowanych plików portfela staną się bezużyteczne jak tylko zaczniesz korzystać z nowego, szyfrowanego portfela.</translation>
     </message>
     <message>
-        <location filename="../askpassphrasedialog.cpp" line="137"/>
-        <location filename="../askpassphrasedialog.cpp" line="144"/>
+        <location filename="../askpassphrasedialog.cpp" line="138"/>
+        <location filename="../askpassphrasedialog.cpp" line="145"/>
         <location filename="../askpassphrasedialog.cpp" line="187"/>
         <location filename="../askpassphrasedialog.cpp" line="193"/>
         <source>Wallet encryption failed</source>
         <translation>Szyfrowanie portfela nie powiodło się</translation>
     </message>
     <message>
-        <location filename="../askpassphrasedialog.cpp" line="138"/>
+        <location filename="../askpassphrasedialog.cpp" line="139"/>
         <source>Wallet encryption failed due to an internal error. Your wallet was not encrypted.</source>
         <translation>Szyfrowanie portfela nie powiodło się z powodu wewnętrznego błędu. Twój portfel nie został zaszyfrowany.</translation>
     </message>
     <message>
-        <location filename="../askpassphrasedialog.cpp" line="145"/>
+        <location filename="../askpassphrasedialog.cpp" line="146"/>
         <location filename="../askpassphrasedialog.cpp" line="194"/>
         <source>The supplied passphrases do not match.</source>
         <translation>Podane hasła nie są takie same.</translation>
@@ -341,464 +310,14 @@ Ten produkt zawiera oprogramowanie opracowane przez Projekt OpenSSL do użycia w
         <translation>Hasło portfela zostało pomyślnie zmienione.</translation>
     </message>
     <message>
-        <location filename="../askpassphrasedialog.cpp" line="230"/>
-        <location filename="../askpassphrasedialog.cpp" line="254"/>
+        <location filename="../askpassphrasedialog.cpp" line="229"/>
+        <location filename="../askpassphrasedialog.cpp" line="253"/>
         <source>Warning: The Caps Lock key is on!</source>
-        <translation>Uwaga: Klawisz Caps Lock jest włączony</translation>
-    </message>
-</context>
-<context>
-    <name>STRAKSGUI</name>
-    <message>
-        <location filename="../straksgui.cpp" line="76"/>
-        <source>STRAKS Core</source>
-        <translation>STRAKS Core</translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="85"/>
-        <source>Wallet</source>
-        <translation>Portfel</translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="87"/>
-        <source>Node</source>
-        <translation>Węzeł</translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="101"/>
-        <location filename="../straksgui.cpp" line="498"/>
-        <source>[testnet]</source>
-        <translation>[testnet]</translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="227"/>
-        <source>&amp;Overview</source>
-        <translation>P&amp;odsumowanie</translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="228"/>
-        <source>Show general overview of wallet</source>
-        <translation>Pokazuje ogólny zarys portfela</translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="234"/>
-        <source>&amp;Send</source>
-        <translation>Wyślij</translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="235"/>
-        <source>Send coins to a STRAKS address</source>
-        <translation>Wyślij monety na adres Darkcoina</translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="241"/>
-        <source>&amp;Receive</source>
-        <translation>Odbie&amp;rz</translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="242"/>
-        <source>Request payments (generates QR codes and straks: URIs)</source>
-        <translation>Poproś o płatności (tworzy kod QR oraz straks: link)</translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="248"/>
-        <source>&amp;Transactions</source>
-        <translation>&amp;Transakcje</translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="249"/>
-        <source>Browse transaction history</source>
-        <translation>Przeglądaj historię transakcji</translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="266"/>
-        <source>E&amp;xit</source>
-        <translation>&amp;Zakończ</translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="267"/>
-        <source>Quit application</source>
-        <translation>Zamknij program</translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="271"/>
-        <location filename="../straksgui.cpp" line="273"/>
-        <source>&amp;About STRAKS Core</source>
-        <translation>&amp;O STRAKS Core</translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="274"/>
-        <source>Show information about STRAKS</source>
-        <translation>Pokaż informacje na temat STRAKS</translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="277"/>
-        <location filename="../straksgui.cpp" line="279"/>
-        <source>About &amp;Qt</source>
-        <translation>O &amp;Qt</translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="281"/>
-        <source>Show information about Qt</source>
-        <translation>Pokazuje informacje o Qt</translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="283"/>
-        <source>&amp;Options...</source>
-        <translation>&amp;Opcje...</translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="284"/>
-        <source>Modify configuration options for STRAKS</source>
-        <translation>Zmień opcje konfiguracji dla STRAKS</translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="287"/>
-        <location filename="../straksgui.cpp" line="289"/>
-        <source>&amp;Show / Hide</source>
-        <translation>&amp;Pokaż / Ukryj</translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="290"/>
-        <source>Show or hide the main Window</source>
-        <translation>Pokazuje lub ukrywa główne okno</translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="292"/>
-        <source>&amp;Encrypt Wallet...</source>
-        <translation>Zaszyfruj Portf&amp;el</translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="293"/>
-        <source>Encrypt the private keys that belong to your wallet</source>
-        <translation>Szyfruj klucze prywatne, które są powiązane z twoim portfelem</translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="295"/>
-        <source>&amp;Backup Wallet...</source>
-        <translation>Wykonaj kopię zapasową...</translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="296"/>
-        <source>Backup wallet to another location</source>
-        <translation>Zapasowy portfel w innej lokalizacji</translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="297"/>
-        <source>&amp;Change Passphrase...</source>
-        <translation>&amp;Zmień hasło...</translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="298"/>
-        <source>Change the passphrase used for wallet encryption</source>
-        <translation>Zmień hasło użyte do szyfrowania portfela</translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="299"/>
-        <source>&amp;Unlock Wallet...</source>
-        <translation>Odblok&amp;uj Portfel</translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="300"/>
-        <source>Unlock wallet</source>
-        <translation>Odblokuj portfel</translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="301"/>
-        <source>&amp;Lock Wallet</source>
-        <translation>Zab&amp;lokuj Porftel</translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="302"/>
-        <source>Sign &amp;message...</source>
-        <translation>Podpisz wiado&amp;mość...</translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="303"/>
-        <source>Sign messages with your STRAKS addresses to prove you own them</source>
-        <translation>Podpisz wiadomości swoim adresem STRAKS aby udowodnić, że jesteś ich właścicielem. </translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="304"/>
-        <source>&amp;Verify message...</source>
-        <translation>&amp;Zweryfikuj wiadomość...</translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="305"/>
-        <source>Verify messages to ensure they were signed with specified STRAKS addresses</source>
-        <translation>Zweryfikuj wiadomości aby upewnić się, że zostały one podpisane wybranym adresem STRAKS</translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="307"/>
-        <source>&amp;Information</source>
-        <translation>&amp;Informacje</translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="308"/>
-        <source>Show diagnostic information</source>
-        <translation>Pokaż informacje diagnostyczne</translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="309"/>
-        <source>&amp;Debug console</source>
-        <translation>Konsola &amp;debugowania</translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="310"/>
-        <source>Open debugging console</source>
-        <translation>Otwórz konsole debugowania</translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="311"/>
-        <source>&amp;Network Monitor</source>
-        <translation>Mo&amp;nitor Sieci</translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="312"/>
-        <source>Show network monitor</source>
-        <translation>Pokaż monitor sieci</translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="313"/>
-        <source>Open &amp;Configuration File</source>
-        <translation>Otwórz plik konfiguracji</translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="314"/>
-        <source>Open configuration file</source>
-        <translation>Otworz plik konfiguracji </translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="316"/>
-        <source>&amp;Sending addresses...</source>
-        <translation>Adres wysyłania</translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="317"/>
-        <source>Show the list of used sending addresses and labels</source>
-        <translation>Pokaż listę użytych adresów wysyłających i etykiety</translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="318"/>
-        <source>&amp;Receiving addresses...</source>
-        <translation>Adres odbiorczy</translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="319"/>
-        <source>Show the list of used receiving addresses and labels</source>
-        <translation>Pokaż listę użytych adresów odbiorczych i etykiety</translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="321"/>
-        <source>Open &amp;URI...</source>
-        <translation>Otwórz URI...</translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="322"/>
-        <source>Open a straks: URI or payment request</source>
-        <translation>Otwórz straks: Link lub żądanie zapłaty</translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="324"/>
-        <source>&amp;Command-line options</source>
-        <translation>&amp;Opcje konsoli</translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="325"/>
-        <source>Show the STRAKS Core help message to get a list with possible STRAKS command-line options</source>
-        <translation>Pokaż wiadomość pomocy STRAKS Core aby otrzymać listę z dostępnymi opcjami linii komend.</translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="361"/>
-        <source>&amp;File</source>
-        <translation>&amp;Plik</translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="375"/>
-        <source>&amp;Settings</source>
-        <translation>P&amp;referencje</translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="388"/>
-        <source>&amp;Tools</source>
-        <translation>&amp;Narzędzia</translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="395"/>
-        <source>&amp;Help</source>
-        <translation>Pomo&amp;c</translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="406"/>
-        <source>Tabs toolbar</source>
-        <translation>Pasek zakładek</translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="493"/>
-        <location filename="../straksgui.cpp" line="498"/>
-        <source>STRAKS client</source>
-        <translation>Klient STRAKS</translation>
-    </message>
-    <message numerus="yes">
-        <location filename="../straksgui.cpp" line="643"/>
-        <source>%n active connection(s) to STRAKS network</source>
-        <translation><numerusform>%n aktywne połączenie do sieci STRAKS</numerusform><numerusform>%n aktywne połączenia do sieci STRAKS</numerusform><numerusform>%n aktywnych połączeń do sieci STRAKS</numerusform></translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="655"/>
-        <source>Synchronizing with network...</source>
-        <translation>Synchronizacja z siecią...</translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="658"/>
-        <source>Importing blocks from disk...</source>
-        <translation>Importowanie bloków z dysku...</translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="661"/>
-        <source>Reindexing blocks on disk...</source>
-        <translation>Ponowne indeksowanie bloków na dysku...</translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="665"/>
-        <source>No block source available...</source>
-        <translation>Brak dostępnych źródeł bloków...</translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="675"/>
-        <source>Processed %1 blocks of transaction history.</source>
-        <translation>Pobrano %1 bloków z historią transakcji.</translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="680"/>
-        <source>Up to date</source>
-        <translation>Aktualny</translation>
-    </message>
-    <message numerus="yes">
-        <location filename="../straksgui.cpp" line="701"/>
-        <source>%n hour(s)</source>
-        <translation><numerusform>%n godzina</numerusform><numerusform>%n godziny</numerusform><numerusform>%n godzina(y)</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <location filename="../straksgui.cpp" line="705"/>
-        <source>%n day(s)</source>
-        <translation><numerusform>%n dzień</numerusform><numerusform>%n dni</numerusform><numerusform>%n dzień(dni)</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <location filename="../straksgui.cpp" line="709"/>
-        <location filename="../straksgui.cpp" line="715"/>
-        <source>%n week(s)</source>
-        <translation><numerusform>%n tydzień</numerusform><numerusform>%n tygodnie</numerusform><numerusform>%n tydzień(tygodnie)</numerusform></translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="715"/>
-        <source>%1 and %2</source>
-        <translation>%1 i %2</translation>
-    </message>
-    <message numerus="yes">
-        <location filename="../straksgui.cpp" line="715"/>
-        <source>%n year(s)</source>
-        <translation><numerusform>%n rok</numerusform><numerusform>%n lat</numerusform><numerusform>%n rok(lata)</numerusform></translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="719"/>
-        <source>%1 behind</source>
-        <translation>%1 wstecz</translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="724"/>
-        <source>Catching up...</source>
-        <translation>Łapanie bloków...</translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="740"/>
-        <source>Last received block was generated %1 ago.</source>
-        <translation>Ostatni otrzymany blok został wygenerowany %1 temu.</translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="742"/>
-        <source>Transactions after this will not yet be visible.</source>
-        <translation>Transakcje po tym momencie nie będą jeszcze widoczne.</translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="755"/>
-        <source>STRAKS</source>
-        <translation>STRAKS</translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="769"/>
-        <source>Error</source>
-        <translation>Błąd</translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="772"/>
-        <source>Warning</source>
-        <translation>Ostrzeżenie</translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="775"/>
-        <source>Information</source>
-        <translation>Informacja</translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="854"/>
-        <source>Sent transaction</source>
-        <translation>Transakcja wysłana</translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="854"/>
-        <source>Incoming transaction</source>
-        <translation>Transakcja przychodząca</translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="855"/>
-        <source>Date: %1
-Amount: %2
-Type: %3
-Address: %4
-</source>
-        <translation>Data: %1
-Kwota: %2
-Typ: %3
-Adres: %4
-</translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="926"/>
-        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
-        <translation>Portfel jest &lt;b&gt;zaszyfrowany&lt;/b&gt; i obecnie &lt;b&gt;niezablokowany&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="936"/>
-        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt; for anonimization only</source>
-        <translation>Portfel jest &lt;b&gt;zaszyfrowany&lt;/b&gt; a obecnie &lt;b&gt;odblokowany&lt;/b&gt; tylko w celu miksowania</translation>
-    </message>
-    <message>
-        <location filename="../straksgui.cpp" line="946"/>
-        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
-        <translation>Portfel jest &lt;b&gt;zaszyfrowany&lt;/b&gt; i obecnie &lt;b&gt;zablokowany&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <location filename="../straks.cpp" line="449"/>
-        <source>A fatal error occurred. STRAKS can no longer continue safely and will quit.</source>
-        <translation>Wystąpił poważny błąd. STRAKS zostanie zamknięty.</translation>
-    </message>
-</context>
-<context>
-    <name>ClientModel</name>
-    <message>
-        <location filename="../clientmodel.cpp" line="164"/>
-        <source>Network Alert</source>
-        <translation>Sieć Alert</translation>
+        <translation>Uwaga: Klawisz Caps Lock jest włączony!</translation>
     </message>
 </context>
 <context>
     <name>CoinControlDialog</name>
-    <message>
-        <location filename="../forms/coincontroldialog.ui" line="14"/>
-        <source>Coin Control Address Selection</source>
-        <translation>Sterowanie Monetą Wybór Adresu</translation>
-    </message>
     <message>
         <location filename="../forms/coincontroldialog.ui" line="48"/>
         <source>Quantity:</source>
@@ -815,293 +334,174 @@ Adres: %4
         <translation>Kwota:</translation>
     </message>
     <message>
-        <location filename="../forms/coincontroldialog.ui" line="151"/>
-        <source>Priority:</source>
-        <translation>Priorytet:</translation>
-    </message>
-    <message>
-        <location filename="../forms/coincontroldialog.ui" line="196"/>
+        <location filename="../forms/coincontroldialog.ui" line="202"/>
         <source>Fee:</source>
         <translation>Opłata:</translation>
     </message>
     <message>
-        <location filename="../forms/coincontroldialog.ui" line="228"/>
-        <source>Low Output:</source>
-        <translation>Niska wartość wyjściowa</translation>
+        <location filename="../forms/coincontroldialog.ui" line="14"/>
+        <source>Coin Selection</source>
+        <translation>Zaznaczanie monety</translation>
     </message>
     <message>
-        <location filename="../forms/coincontroldialog.ui" line="276"/>
+        <location filename="../forms/coincontroldialog.ui" line="154"/>
+        <source>Dust:</source>
+        <translation>&quot;Śmieciowe&quot; wartości:</translation>
+    </message>
+    <message>
+        <location filename="../forms/coincontroldialog.ui" line="247"/>
         <source>After Fee:</source>
         <translation>Po opłacie:</translation>
     </message>
     <message>
-        <location filename="../forms/coincontroldialog.ui" line="308"/>
+        <location filename="../forms/coincontroldialog.ui" line="279"/>
         <source>Change:</source>
         <translation>Reszta:</translation>
     </message>
     <message>
-        <location filename="../forms/coincontroldialog.ui" line="364"/>
+        <location filename="../forms/coincontroldialog.ui" line="335"/>
         <source>(un)select all</source>
         <translation>Zaznacz/Odznacz wszystko</translation>
     </message>
     <message>
-        <location filename="../forms/coincontroldialog.ui" line="377"/>
+        <location filename="../forms/coincontroldialog.ui" line="351"/>
         <source>Tree mode</source>
         <translation>Widok drzewa</translation>
     </message>
     <message>
-        <location filename="../forms/coincontroldialog.ui" line="393"/>
+        <location filename="../forms/coincontroldialog.ui" line="364"/>
         <source>List mode</source>
         <translation>Widok listy</translation>
     </message>
     <message>
-        <location filename="../forms/coincontroldialog.ui" line="400"/>
-        <source>(1 locked)</source>
-        <translation>(1 zablokowana)</translation>
+        <location filename="../forms/coincontroldialog.ui" line="425"/>
+        <source>Received with label</source>
+        <translation>Otrzymano z etykietą</translation>
     </message>
     <message>
-        <location filename="../forms/coincontroldialog.ui" line="446"/>
+        <location filename="../forms/coincontroldialog.ui" line="430"/>
+        <source>Received with address</source>
+        <translation>Otrzymano z adresu</translation>
+    </message>
+    <message>
+        <location filename="../forms/coincontroldialog.ui" line="420"/>
         <source>Amount</source>
         <translation>Kwota</translation>
     </message>
     <message>
-        <location filename="../forms/coincontroldialog.ui" line="451"/>
-        <source>Label</source>
-        <translation>Etykieta</translation>
-    </message>
-    <message>
-        <location filename="../forms/coincontroldialog.ui" line="456"/>
-        <source>Address</source>
-        <translation>Adres</translation>
-    </message>
-    <message>
-        <location filename="../forms/coincontroldialog.ui" line="461"/>
-        <source>Darksend Rounds</source>
-        <translation>Ilość rund mieszania</translation>
-    </message>
-    <message>
-        <location filename="../forms/coincontroldialog.ui" line="466"/>
+        <location filename="../forms/coincontroldialog.ui" line="435"/>
         <source>Date</source>
         <translation>Data</translation>
     </message>
     <message>
-        <location filename="../forms/coincontroldialog.ui" line="471"/>
+        <location filename="../forms/coincontroldialog.ui" line="440"/>
         <source>Confirmations</source>
         <translation>Potwierdzenia</translation>
     </message>
     <message>
-        <location filename="../forms/coincontroldialog.ui" line="474"/>
+        <location filename="../forms/coincontroldialog.ui" line="443"/>
         <source>Confirmed</source>
         <translation>Potwierdzony</translation>
     </message>
     <message>
-        <location filename="../forms/coincontroldialog.ui" line="479"/>
-        <source>Priority</source>
-        <translation>Priorytet</translation>
-    </message>
-    <message>
-        <location filename="../coincontroldialog.cpp" line="43"/>
+        <location filename="../coincontroldialog.cpp" line="58"/>
         <source>Copy address</source>
-        <translation>Kopiuj adres</translation>
+        <translation>Skopiuj adres</translation>
     </message>
     <message>
-        <location filename="../coincontroldialog.cpp" line="44"/>
+        <location filename="../coincontroldialog.cpp" line="59"/>
         <source>Copy label</source>
-        <translation>Kopiuj etykietę</translation>
+        <translation>Skopiuj etykietę</translation>
     </message>
     <message>
-        <location filename="../coincontroldialog.cpp" line="45"/>
-        <location filename="../coincontroldialog.cpp" line="71"/>
+        <location filename="../coincontroldialog.cpp" line="60"/>
+        <location filename="../coincontroldialog.cpp" line="86"/>
         <source>Copy amount</source>
-        <translation>Kopiuj kwotę</translation>
+        <translation>Skopiuj kwotę</translation>
     </message>
     <message>
-        <location filename="../coincontroldialog.cpp" line="46"/>
+        <location filename="../coincontroldialog.cpp" line="61"/>
         <source>Copy transaction ID</source>
         <translation>Skopiuj ID transakcji</translation>
     </message>
     <message>
-        <location filename="../coincontroldialog.cpp" line="47"/>
+        <location filename="../coincontroldialog.cpp" line="62"/>
         <source>Lock unspent</source>
-        <translation>Zablokuj</translation>
+        <translation>Zablokuj niewydane</translation>
     </message>
     <message>
-        <location filename="../coincontroldialog.cpp" line="48"/>
+        <location filename="../coincontroldialog.cpp" line="63"/>
         <source>Unlock unspent</source>
-        <translation>Odblokuj</translation>
+        <translation>Odblokuj niewydane</translation>
     </message>
     <message>
-        <location filename="../coincontroldialog.cpp" line="70"/>
+        <location filename="../coincontroldialog.cpp" line="85"/>
         <source>Copy quantity</source>
         <translation>Skopiuj ilość</translation>
     </message>
     <message>
-        <location filename="../coincontroldialog.cpp" line="72"/>
+        <location filename="../coincontroldialog.cpp" line="87"/>
         <source>Copy fee</source>
         <translation>Skopiuj opłatę</translation>
     </message>
     <message>
-        <location filename="../coincontroldialog.cpp" line="73"/>
+        <location filename="../coincontroldialog.cpp" line="88"/>
         <source>Copy after fee</source>
         <translation>Skopiuj ilość po opłacie</translation>
     </message>
     <message>
-        <location filename="../coincontroldialog.cpp" line="74"/>
+        <location filename="../coincontroldialog.cpp" line="89"/>
         <source>Copy bytes</source>
         <translation>Skopiuj ilość bajtów</translation>
     </message>
     <message>
-        <location filename="../coincontroldialog.cpp" line="75"/>
-        <source>Copy priority</source>
-        <translation>Skopiuj priorytet</translation>
+        <location filename="../coincontroldialog.cpp" line="90"/>
+        <source>Copy dust</source>
+        <translation>Skopiuj &quot;śmieci&quot;:</translation>
     </message>
     <message>
-        <location filename="../coincontroldialog.cpp" line="76"/>
-        <source>Copy low output</source>
-        <translation>Skopiuj niską wartość</translation>
+        <location filename="../coincontroldialog.cpp" line="611"/>
+        <source>This label turns red if any recipient receives an amount smaller than the current dust threshold.</source>
+        <translation>Ta etykieta przyjmuje kolor czerwony jeśli odbiorca otrzyma kwotę mniejszą niż obecnie ustalony próg dla bardzo małych wartości (&quot;śmieci&quot;).</translation>
     </message>
     <message>
-        <location filename="../coincontroldialog.cpp" line="77"/>
+        <location filename="../coincontroldialog.cpp" line="620"/>
+        <source>Can vary +/- %1 satoshi(s) per input.</source>
+        <translation>Może się zmienić +- %1 satoshi na każde wejście.</translation>
+    </message>
+    <message>
+        <location filename="../coincontroldialog.cpp" line="91"/>
         <source>Copy change</source>
         <translation>Skopiuj resztę</translation>
     </message>
     <message>
-        <location filename="../coincontroldialog.cpp" line="410"/>
-        <source>highest</source>
-        <translation>najwyższa</translation>
-    </message>
-    <message>
-        <location filename="../coincontroldialog.cpp" line="411"/>
-        <source>higher</source>
-        <translation>wyższa</translation>
-    </message>
-    <message>
-        <location filename="../coincontroldialog.cpp" line="412"/>
-        <source>high</source>
-        <translation>wysoka</translation>
-    </message>
-    <message>
-        <location filename="../coincontroldialog.cpp" line="413"/>
-        <source>medium-high</source>
-        <translation>średnio wysoki</translation>
-    </message>
-    <message>
-        <location filename="../coincontroldialog.cpp" line="759"/>
-        <source>n/a</source>
-        <translation>nie dotyczy</translation>
-    </message>
-    <message>
-        <location filename="../forms/coincontroldialog.ui" line="164"/>
-        <location filename="../coincontroldialog.cpp" line="414"/>
-        <source>medium</source>
-        <translation>średnia</translation>
-    </message>
-    <message>
-        <location filename="../coincontroldialog.cpp" line="418"/>
-        <source>low-medium</source>
-        <translation>średnio niski</translation>
-    </message>
-    <message>
-        <location filename="../coincontroldialog.cpp" line="419"/>
-        <source>low</source>
-        <translation>niski</translation>
-    </message>
-    <message>
-        <location filename="../coincontroldialog.cpp" line="420"/>
-        <source>lower</source>
-        <translation>niższy</translation>
-    </message>
-    <message>
-        <location filename="../coincontroldialog.cpp" line="421"/>
-        <source>lowest</source>
-        <translation>najniższy</translation>
-    </message>
-    <message>
-        <location filename="../coincontroldialog.cpp" line="432"/>
+        <location filename="../coincontroldialog.cpp" line="416"/>
         <source>(%1 locked)</source>
         <translation>(%1 zablokowane)</translation>
     </message>
     <message>
-        <location filename="../coincontroldialog.cpp" line="464"/>
-        <source>none</source>
-        <translation>żaden</translation>
-    </message>
-    <message>
-        <location filename="../coincontroldialog.cpp" line="615"/>
-        <source>Dust</source>
-        <translation>Pył</translation>
-    </message>
-    <message>
-        <location filename="../coincontroldialog.cpp" line="615"/>
+        <location filename="../coincontroldialog.cpp" line="597"/>
         <source>yes</source>
         <translation>tak</translation>
     </message>
     <message>
-        <location filename="../forms/coincontroldialog.ui" line="244"/>
-        <location filename="../coincontroldialog.cpp" line="615"/>
+        <location filename="../coincontroldialog.cpp" line="597"/>
         <source>no</source>
         <translation>nie</translation>
     </message>
     <message>
-        <location filename="../coincontroldialog.cpp" line="625"/>
-        <source>This label turns red, if the transaction size is greater than 1000 bytes.</source>
-        <translation>Etykieta staje się czerwona kiedy transakcja jest większa niż 1000 bajtów.</translation>
-    </message>
-    <message>
-        <location filename="../coincontroldialog.cpp" line="626"/>
-        <location filename="../coincontroldialog.cpp" line="631"/>
-        <source>This means a fee of at least %1 per kB is required.</source>
-        <translation>Oznacza to wymaganą opłatę minimum %1 na kB.</translation>
-    </message>
-    <message>
-        <location filename="../coincontroldialog.cpp" line="627"/>
-        <source>Can vary +/- 1 byte per input.</source>
-        <translation>Waha się +/- 1 bajt na wejście.</translation>
-    </message>
-    <message>
-        <location filename="../coincontroldialog.cpp" line="629"/>
-        <source>Transactions with higher priority are more likely to get included into a block.</source>
-        <translation>Transakcje o wyższym priorytecie zostają szybciej dołączone do bloku.</translation>
-    </message>
-    <message>
-        <location filename="../coincontroldialog.cpp" line="630"/>
-        <source>This label turns red, if the priority is smaller than &quot;medium&quot;.</source>
-        <translation>Ta etykieta jest czerwona, jeżeli priorytet jest mniejszy niż &quot;średni&quot;</translation>
-    </message>
-    <message>
-        <location filename="../coincontroldialog.cpp" line="633"/>
-        <source>This label turns red, if any recipient receives an amount smaller than %1.</source>
-        <translation>Etykieta staje się czerwona kiedy którykolwiek odbiorca otrzymuje kwotę mniejszą niż %1.</translation>
-    </message>
-    <message>
-        <location filename="../coincontroldialog.cpp" line="634"/>
-        <location filename="../coincontroldialog.cpp" line="638"/>
-        <source>This means a fee of at least %1 is required.</source>
-        <translation>Oznacza to, że wymagana jest opłata przynajmniej %1.</translation>
-    </message>
-    <message>
-        <location filename="../coincontroldialog.cpp" line="635"/>
-        <source>Amounts below 0.546 times the minimum relay fee are shown as dust.</source>
-        <translation>Kwoty poniżej 0.546 razy mniejsze od minimalnej ustawionej opłaty pokazane są jako pył.</translation>
-    </message>
-    <message>
-        <location filename="../coincontroldialog.cpp" line="637"/>
-        <source>This label turns red, if the change is smaller than %1.</source>
-        <translation>Etykieta staje się czerwona kiedy reszta jest mniejsza niż %1.</translation>
-    </message>
-    <message>
-        <location filename="../coincontroldialog.cpp" line="680"/>
-        <location filename="../coincontroldialog.cpp" line="741"/>
+        <location filename="../coincontroldialog.cpp" line="662"/>
+        <location filename="../coincontroldialog.cpp" line="714"/>
         <source>(no label)</source>
         <translation>(bez etykiety)</translation>
     </message>
     <message>
-        <location filename="../coincontroldialog.cpp" line="734"/>
+        <location filename="../coincontroldialog.cpp" line="707"/>
         <source>change from %1 (%2)</source>
         <translation>reszta z %1 (%2)</translation>
     </message>
     <message>
-        <location filename="../coincontroldialog.cpp" line="735"/>
+        <location filename="../coincontroldialog.cpp" line="708"/>
         <source>(change)</source>
         <translation>(reszta)</translation>
     </message>
@@ -1109,86 +509,86 @@ Adres: %4
 <context>
     <name>DarksendConfig</name>
     <message>
-        <location filename="../forms/Darksendconfig.ui" line="14"/>
+        <location filename="../forms/darksendconfig.ui" line="14"/>
         <source>Configure Darksend</source>
         <translation>Skonfiguruj Darksend</translation>
     </message>
     <message>
-        <location filename="../forms/Darksendconfig.ui" line="26"/>
+        <location filename="../forms/darksendconfig.ui" line="26"/>
         <source>Basic Privacy</source>
         <translation>Podstawowa prywatność</translation>
     </message>
     <message>
-        <location filename="../forms/Darksendconfig.ui" line="39"/>
+        <location filename="../forms/darksendconfig.ui" line="39"/>
         <source>High Privacy</source>
         <translation>Wysoka prywatność</translation>
     </message>
     <message>
-        <location filename="../forms/Darksendconfig.ui" line="52"/>
+        <location filename="../forms/darksendconfig.ui" line="52"/>
         <source>Maximum Privacy</source>
         <translation>Maksymalna prywatność</translation>
     </message>
     <message>
-        <location filename="../forms/Darksendconfig.ui" line="65"/>
+        <location filename="../forms/darksendconfig.ui" line="65"/>
         <source>Please select a privacy level.</source>
         <translation>Proszę wybrać poziom bezpieczeństwa.</translation>
     </message>
     <message>
-        <location filename="../forms/Darksendconfig.ui" line="78"/>
-        <source>Use 2 separate Xnodes to mix funds up to 1000 STAK</source>
-        <translation>Użyj 2 oddzielnych masternodów aby wymieszać środki max. do 1000 STAK</translation>
+        <location filename="../forms/darksendconfig.ui" line="78"/>
+        <source>Use 2 separate masternodes to mix funds up to 1000 STAK</source>
+        <translation>Użyj 2 osobnych masternodów aby wymieszać fundusze do 1000 STAK</translation>
     </message>
     <message>
-        <location filename="../forms/Darksendconfig.ui" line="91"/>
-        <source>Use 8 separate Xnodes to mix funds up to 1000 STAK</source>
-        <translation>Użyj 8 oddzielnych masternodów aby wymieszać środki max. do 1000 STAK</translation>
+        <location filename="../forms/darksendconfig.ui" line="91"/>
+        <source>Use 8 separate masternodes to mix funds up to 1000 STAK</source>
+        <translation>Użyj 8 osobnych masternodów aby wymieszać fundusze do 1000 STAK</translation>
     </message>
     <message>
-        <location filename="../forms/Darksendconfig.ui" line="104"/>
-        <source>Use 16 separate Xnodes</source>
-        <translation>Użyj 16 oddzielnych masternodów</translation>
+        <location filename="../forms/darksendconfig.ui" line="104"/>
+        <source>Use 16 separate masternodes</source>
+        <translation>Użyj 16 osobnych masternodów</translation>
     </message>
     <message>
-        <location filename="../forms/Darksendconfig.ui" line="117"/>
+        <location filename="../forms/darksendconfig.ui" line="117"/>
         <source>This option is the quickest and will cost about ~0.025 STAK to anonymize 1000 STAK</source>
         <translation>Ta opcja jest najszybsza i kosztuje około 0.025 STAK za zanonimizowanie 1000 STAK</translation>
     </message>
     <message>
-        <location filename="../forms/Darksendconfig.ui" line="130"/>
+        <location filename="../forms/darksendconfig.ui" line="130"/>
         <source>This option is moderately fast and will cost about 0.05 STAK to anonymize 1000 STAK</source>
         <translation>Ta opcja jest w miarę szybka i kosztuje około 0.05 STAK za zanonimizowanie 1000 STAK</translation>
     </message>
     <message>
-        <location filename="../forms/Darksendconfig.ui" line="156"/>
+        <location filename="../forms/darksendconfig.ui" line="156"/>
         <source>0.1 STAK per 1000 STAK you anonymize.</source>
         <translation>0.1 STAK za każde 1000 STAK które zanonimizujesz.</translation>
     </message>
     <message>
-        <location filename="../forms/Darksendconfig.ui" line="143"/>
+        <location filename="../forms/darksendconfig.ui" line="143"/>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Jest to najwolniejsza lecz najbardziej bezpieczna opcja. Maksymalny poziom zanonimizowania będzie kosztować</translation>
     </message>
     <message>
-        <location filename="../Darksendconfig.cpp" line="43"/>
-        <location filename="../Darksendconfig.cpp" line="58"/>
-        <location filename="../Darksendconfig.cpp" line="73"/>
+        <location filename="../darksendconfig.cpp" line="43"/>
+        <location filename="../darksendconfig.cpp" line="58"/>
+        <location filename="../darksendconfig.cpp" line="73"/>
         <source>Darksend Configuration</source>
         <translation>Konfiguracja Darksend</translation>
     </message>
     <message>
-        <location filename="../Darksendconfig.cpp" line="44"/>
-        <source>Darksend was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening STRAKS&apos;s configuration screen.</source>
-        <translation>Darksend został pomyślnie ustawiony na poziom podstawowy (%1 oraz 2 rundy). Możesz to zmienić kiedy chcesz, otwierając ekran z konfiguracją STRAKS.</translation>
+        <location filename="../darksendconfig.cpp" line="44"/>
+        <source>Darksend was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Straks&apos;s configuration screen.</source>
+        <translation>Darksend został pomyślnie ustawiony na poziom podstawowy (%1 i 2 rundy). Możesz to zmienić w każdym momencie otwierając ekran konfiguracji Straks.</translation>
     </message>
     <message>
-        <location filename="../Darksendconfig.cpp" line="59"/>
-        <source>Darksend was successfully set to high (%1 and 8 rounds). You can change this at any time by opening STRAKS&apos;s configuration screen.</source>
-        <translation>Darksend został pomyślnie ustawiony na poziom wysoki (%1 oraz 8 rund). Możesz to zmienić kiedy chcesz, otwierając ekran z konfiguracją STRAKS.</translation>
+        <location filename="../darksendconfig.cpp" line="59"/>
+        <source>Darksend was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Straks&apos;s configuration screen.</source>
+        <translation>Darksend został pomyślnie ustawiony na poziom wysoki (%1 i 8 rund). Możesz to zmienić w każdym momencie otwierając ekran konfiguracji Straks.</translation>
     </message>
     <message>
-        <location filename="../Darksendconfig.cpp" line="74"/>
-        <source>Darksend was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening STRAKS&apos;s configuration screen.</source>
-        <translation>Darksend został pomyślnie ustawiony na poziom maksymalny (%1 oraz 16 rund). Możesz to zmienić kiedy chcesz, otwierając ekran z konfiguracją STRAKS.</translation>
+        <location filename="../darksendconfig.cpp" line="74"/>
+        <source>Darksend was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Straks&apos;s configuration screen.</source>
+        <translation>Darksend został pomyślnie ustawiony na poziom maksymalny (%1 i %16 rund). Możesz to zmienić w każdym momencie otwierając ekran konfiguracji Straks.</translation>
     </message>
 </context>
 <context>
@@ -1201,7 +601,7 @@ Adres: %4
     <message>
         <location filename="../forms/editaddressdialog.ui" line="25"/>
         <source>&amp;Label</source>
-        <translation>&amp;Etykieta</translation>
+        <translation>Etykieta</translation>
     </message>
     <message>
         <location filename="../forms/editaddressdialog.ui" line="35"/>
@@ -1211,50 +611,50 @@ Adres: %4
     <message>
         <location filename="../forms/editaddressdialog.ui" line="42"/>
         <source>&amp;Address</source>
-        <translation>&amp;Adres</translation>
+        <translation>Adres</translation>
     </message>
     <message>
         <location filename="../forms/editaddressdialog.ui" line="52"/>
         <source>The address associated with this address list entry. This can only be modified for sending addresses.</source>
-        <translation>Ten adres jest skojarzony z wpisem na liście adresów. Może być zmodyfikowany jedynie dla adresów wysyłających.</translation>
+        <translation>Ten adres jest skojarzony z tym adresem na liście adresów. Może być zmodyfikowany jedynie dla adresów nadawczych.</translation>
     </message>
     <message>
-        <location filename="../editaddressdialog.cpp" line="29"/>
+        <location filename="../editaddressdialog.cpp" line="28"/>
         <source>New receiving address</source>
         <translation>Nowy adres odbiorczy</translation>
     </message>
     <message>
-        <location filename="../editaddressdialog.cpp" line="33"/>
+        <location filename="../editaddressdialog.cpp" line="32"/>
         <source>New sending address</source>
-        <translation>Nowy adres wysyłania</translation>
+        <translation>Nowy adres nadawczy</translation>
     </message>
     <message>
-        <location filename="../editaddressdialog.cpp" line="36"/>
+        <location filename="../editaddressdialog.cpp" line="35"/>
         <source>Edit receiving address</source>
-        <translation>Zmień adres odbioru</translation>
+        <translation>Zmień adres odbiorczy</translation>
     </message>
     <message>
-        <location filename="../editaddressdialog.cpp" line="40"/>
+        <location filename="../editaddressdialog.cpp" line="39"/>
         <source>Edit sending address</source>
-        <translation>Zmień adres wysyłania</translation>
+        <translation>Zmień adres nadawczy</translation>
     </message>
     <message>
-        <location filename="../editaddressdialog.cpp" line="111"/>
-        <source>The entered address &quot;%1&quot; is not a valid STRAKS address.</source>
-        <translation>Wprowadzony adres &quot;%1&quot; nie jest właściwym adresem STRAKS.</translation>
+        <location filename="../editaddressdialog.cpp" line="110"/>
+        <source>The entered address &quot;%1&quot; is not a valid Straks address.</source>
+        <translation>Wprowadzony adres &quot;%1&quot; nie jest prawidłowym adresem Straks.</translation>
     </message>
     <message>
-        <location filename="../editaddressdialog.cpp" line="116"/>
+        <location filename="../editaddressdialog.cpp" line="115"/>
         <source>The entered address &quot;%1&quot; is already in the address book.</source>
         <translation>Wprowadzony adres &quot;%1&quot; już istnieje w książce adresowej.</translation>
     </message>
     <message>
-        <location filename="../editaddressdialog.cpp" line="121"/>
+        <location filename="../editaddressdialog.cpp" line="120"/>
         <source>Could not unlock wallet.</source>
         <translation>Nie można było odblokować portfela.</translation>
     </message>
     <message>
-        <location filename="../editaddressdialog.cpp" line="126"/>
+        <location filename="../editaddressdialog.cpp" line="125"/>
         <source>New key generation failed.</source>
         <translation>Tworzenie nowego klucza nie powiodło się.</translation>
     </message>
@@ -1262,27 +662,27 @@ Adres: %4
 <context>
     <name>FreespaceChecker</name>
     <message>
-        <location filename="../intro.cpp" line="69"/>
+        <location filename="../intro.cpp" line="78"/>
         <source>A new data directory will be created.</source>
         <translation>Utworzono nowy folder danych.</translation>
     </message>
     <message>
-        <location filename="../intro.cpp" line="91"/>
+        <location filename="../intro.cpp" line="100"/>
         <source>name</source>
         <translation>nazwa</translation>
     </message>
     <message>
-        <location filename="../intro.cpp" line="93"/>
+        <location filename="../intro.cpp" line="102"/>
         <source>Directory already exists. Add %1 if you intend to create a new directory here.</source>
         <translation>Katalog już istnieje. Dodaj %1 jeśli masz zamiar utworzyć tutaj nowy katalog.</translation>
     </message>
     <message>
-        <location filename="../intro.cpp" line="96"/>
+        <location filename="../intro.cpp" line="105"/>
         <source>Path already exists, and is not a directory.</source>
-        <translation>Ścieżka już istnieje i nie wskazuje na folder.</translation>
+        <translation>Ścieżka już istnieje i nie jest folderem.</translation>
     </message>
     <message>
-        <location filename="../intro.cpp" line="103"/>
+        <location filename="../intro.cpp" line="112"/>
         <source>Cannot create data directory here.</source>
         <translation>Nie można było tutaj utworzyć folderu.</translation>
     </message>
@@ -1290,59 +690,70 @@ Adres: %4
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <location filename="../forms/helpmessagedialog.ui" line="19"/>
-        <source>STRAKS Core - Command-line options</source>
-        <translation>STRAKS Core - Opcje wiersza poleceń</translation>
-    </message>
-    <message>
-        <location filename="../utilitydialog.cpp" line="69"/>
-        <source>STRAKS Core</source>
-        <translation>STRAKS Core</translation>
-    </message>
-    <message>
-        <location filename="../utilitydialog.cpp" line="69"/>
+        <location filename="../utilitydialog.cpp" line="40"/>
         <source>version</source>
         <translation>wersja</translation>
     </message>
     <message>
+        <location filename="../utilitydialog.cpp" line="45"/>
+        <location filename="../utilitydialog.cpp" line="47"/>
+        <source>(%1-bit)</source>
+        <translation>(%1-bit)</translation>
+    </message>
+    <message>
+        <location filename="../utilitydialog.cpp" line="52"/>
+        <source>About %1</source>
+        <translation>O %1</translation>
+    </message>
+    <message>
         <location filename="../utilitydialog.cpp" line="71"/>
+        <source>Command-line options</source>
+        <translation>Opcje konsoli</translation>
+    </message>
+    <message>
+        <location filename="../utilitydialog.cpp" line="72"/>
         <source>Usage:</source>
         <translation>Użycie:</translation>
     </message>
     <message>
-        <location filename="../utilitydialog.cpp" line="72"/>
+        <location filename="../utilitydialog.cpp" line="73"/>
         <source>command-line options</source>
         <translation>opcje konsoli</translation>
     </message>
     <message>
-        <location filename="../utilitydialog.cpp" line="76"/>
-        <source>UI options</source>
-        <translation>UI opcje</translation>
+        <location filename="../utilitydialog.cpp" line="82"/>
+        <source>UI Options:</source>
+        <translation>Opcje UI:</translation>
     </message>
     <message>
-        <location filename="../utilitydialog.cpp" line="77"/>
-        <source>Choose data directory on startup (default: 0)</source>
-        <translation>Wybierz folder danych przy starcie (domyślnie: 0)</translation>
+        <location filename="../utilitydialog.cpp" line="86"/>
+        <source>Choose data directory on startup (default: %u)</source>
+        <translation>Wybierz katalog danych podczas uruchamiania (domyślnie: %u)</translation>
     </message>
     <message>
-        <location filename="../utilitydialog.cpp" line="78"/>
+        <location filename="../utilitydialog.cpp" line="90"/>
+        <source>Show splash screen on startup (default: %u)</source>
+        <translation>Pokaż okno powitalne podczas uruchamiania (domyślnie: %u)</translation>
+    </message>
+    <message>
+        <location filename="../utilitydialog.cpp" line="91"/>
+        <source>Reset all settings changed in the GUI</source>
+        <translation>Przywróć domyślne ustawienia wyglądu programu (GUI)</translation>
+    </message>
+    <message>
+        <location filename="../utilitydialog.cpp" line="87"/>
         <source>Set language, for example &quot;de_DE&quot; (default: system locale)</source>
-        <translation>Ustaw Język, na przykład &quot;pl_PL&quot; (domyślnie: systemowy)</translation>
+        <translation>Ustaw język, na przykład &quot;pl_PL&quot; (domyślnie: systemowy)</translation>
     </message>
     <message>
-        <location filename="../utilitydialog.cpp" line="79"/>
+        <location filename="../utilitydialog.cpp" line="88"/>
         <source>Start minimized</source>
         <translation>Uruchom zminimalizowany</translation>
     </message>
     <message>
-        <location filename="../utilitydialog.cpp" line="80"/>
+        <location filename="../utilitydialog.cpp" line="89"/>
         <source>Set SSL root certificates for payment request (default: -system-)</source>
-        <translation>Ustaw główne cerytfikaty SSL dla żądań płatności (domyślnie: -system-)</translation>
-    </message>
-    <message>
-        <location filename="../utilitydialog.cpp" line="81"/>
-        <source>Show splash screen on startup (default: 1)</source>
-        <translation>Pokazuj okno powitalne przy starcie (domyślnie: 1)</translation>
+        <translation>Ustaw główne cerytfikaty SSL dla zleceń płatności (domyślnie: -system-)</translation>
     </message>
 </context>
 <context>
@@ -1354,18 +765,18 @@ Adres: %4
     </message>
     <message>
         <location filename="../forms/intro.ui" line="23"/>
-        <source>Welcome to STRAKS Core.</source>
-        <translation>Witaj w STRAKS Core</translation>
+        <source>Welcome to %1.</source>
+        <translation>Witaj w %1.</translation>
     </message>
     <message>
         <location filename="../forms/intro.ui" line="49"/>
-        <source>As this is the first time the program is launched, you can choose where STRAKS Core will store its data.</source>
-        <translation>Ponieważ uruchomiłeś ten program po raz pierwszy, możesz wybrać gdzie STRAKS Core będzie przechowywał dane.</translation>
+        <source>As this is the first time the program is launched, you can choose where %1 will store its data.</source>
+        <translation>Jako że jest to pierwsze uruchomienie programu, możesz wybrać gdzie chcesz, ab jego dane były zapisywane.</translation>
     </message>
     <message>
         <location filename="../forms/intro.ui" line="59"/>
-        <source>STRAKS Core will download and store a copy of the STRAKS block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>STRAKS Core ściągnie i przechowa  kopię blockchain na twoim dysku. Co najmniej 1GB danych zostanie zapisanych w tym katalogu, a wraz z upływem czasu blockchain będzie stopniowo wymagał coraz więcej miejsca. Twój portfel również zostanie zapisany w tym katalogu.</translation>
+        <source>%1 will download and store a copy of the Straks block chain. At least %2GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>%1 pobierze i będzie trzymał na dysku kopię blockchaina Straks. Co najmniej %2GB danych będzie się znajdowąć w tym katalogu i z czasem będzie rosnąć. Dane portfela także zostaną tam umieszczone.</translation>
     </message>
     <message>
         <location filename="../forms/intro.ui" line="69"/>
@@ -1375,32 +786,35 @@ Adres: %4
     <message>
         <location filename="../forms/intro.ui" line="76"/>
         <source>Use a custom data directory:</source>
-        <translation>Użyj wybranego folderu dla danych</translation>
+        <translation>Użyj innego folderu dla danych:</translation>
     </message>
     <message>
-        <location filename="../intro.cpp" line="185"/>
-        <source>STRAKS</source>
-        <translation>STRAKS</translation>
+        <location filename="../intro.cpp" line="206"/>
+        <source>Error: Specified data directory &quot;%1&quot; cannot be created.</source>
+        <translation>Błąd: Wskazany katalog danych &quot;%1&quot; nie może zostać utworzony.</translation>
     </message>
     <message>
-        <location filename="../intro.cpp" line="186"/>
-        <source>Error: Specified data directory &quot;%1&quot; can not be created.</source>
-        <translation>Błąd: Określony folder danych &quot;%1&quot; nie mógł zostać utworzony.</translation>
-    </message>
-    <message>
-        <location filename="../intro.cpp" line="210"/>
+        <location filename="../intro.cpp" line="232"/>
         <source>Error</source>
         <translation>Błąd</translation>
     </message>
-    <message>
-        <location filename="../intro.cpp" line="219"/>
-        <source>GB of free space available</source>
-        <translation>GB dostępnego wolnego miejsca</translation>
+    <message numerus="yes">
+        <location filename="../intro.cpp" line="241"/>
+        <source>%n GB of free space available</source>
+        <translation>
+            <numerusform>%n GB wolnego miejsca</numerusform>
+            <numerusform>%n GB wolnego miejsca</numerusform>
+            <numerusform>%n GB wolnego miejsca</numerusform>
+        </translation>
     </message>
-    <message>
-        <location filename="../intro.cpp" line="222"/>
-        <source>(of %1GB needed)</source>
-        <translation>(z %1GB potrzebnego)</translation>
+    <message numerus="yes">
+        <location filename="../intro.cpp" line="244"/>
+        <source>(of %n GB needed)</source>
+        <translation>
+            <numerusform>%n GB wymagany</numerusform>
+            <numerusform>%n GB wymagane</numerusform>
+            <numerusform>%n GB wymagan(y/e)</numerusform>
+        </translation>
     </message>
 </context>
 <context>
@@ -1413,7 +827,7 @@ Adres: %4
     <message>
         <location filename="../forms/openuridialog.ui" line="20"/>
         <source>Open payment request from URI or file</source>
-        <translation>Otwórz żądanie zapłaty z URI lub pliku</translation>
+        <translation>Otwórz zlecenie zapłaty z URI lub pliku</translation>
     </message>
     <message>
         <location filename="../forms/openuridialog.ui" line="29"/>
@@ -1421,14 +835,14 @@ Adres: %4
         <translation>URI:</translation>
     </message>
     <message>
-        <location filename="../forms/openuridialog.ui" line="40"/>
+        <location filename="../forms/openuridialog.ui" line="39"/>
         <source>Select payment request file</source>
-        <translation>Otwórz żądanie zapłaty z pliku</translation>
+        <translation>Otwórz zlecenie zapłaty z pliku</translation>
     </message>
     <message>
-        <location filename="../openuridialog.cpp" line="48"/>
+        <location filename="../openuridialog.cpp" line="47"/>
         <source>Select payment request file to open</source>
-        <translation>Wybierz plik żądania zapłaty do otwarcia</translation>
+        <translation>Wybierz plik zlecenia zapłaty do otwarcia</translation>
     </message>
 </context>
 <context>
@@ -1444,19 +858,9 @@ Adres: %4
         <translation>Główne</translation>
     </message>
     <message>
-        <location filename="../forms/optionsdialog.ui" line="33"/>
-        <source>Automatically start STRAKS after logging in to the system.</source>
-        <translation>Automatycznie uruchom STRAKS po zalogowaniu się do systemu.</translation>
-    </message>
-    <message>
-        <location filename="../forms/optionsdialog.ui" line="36"/>
-        <source>&amp;Start STRAKS on system login</source>
-        <translation>&amp;Uruchom STRAKS po zalogowaniu się do systemu</translation>
-    </message>
-    <message>
         <location filename="../forms/optionsdialog.ui" line="45"/>
         <source>Size of &amp;database cache</source>
-        <translation>Rozmiar &amp;pamięci podręcznej bazy danych.</translation>
+        <translation>Rozmiar pamięci podręcznej bazy danych</translation>
     </message>
     <message>
         <location filename="../forms/optionsdialog.ui" line="61"/>
@@ -1466,7 +870,7 @@ Adres: %4
     <message>
         <location filename="../forms/optionsdialog.ui" line="88"/>
         <source>Number of script &amp;verification threads</source>
-        <translation>Liczba wątków &amp;weryfikacji skryptu</translation>
+        <translation>Liczba wątków weryfikacji skryptu</translation>
     </message>
     <message>
         <location filename="../forms/optionsdialog.ui" line="101"/>
@@ -1474,256 +878,275 @@ Adres: %4
         <translation>(0=auto, &lt;0 = zostaw tyle wolnych rdzeni)</translation>
     </message>
     <message>
-        <location filename="../forms/optionsdialog.ui" line="138"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This setting determines the amount of individual Xnodes that an input will be anonymized through. More rounds of anonymization gives a higher degree of privacy, but also costs more in fees.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Tutaj możesz ustawić liczbę masternodów, przez które transakcja zostanie przepuszczona. Im większa liczba masternodów tym większy poziom anonimowości, ale opłata jest również wyższa.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
-    </message>
-    <message>
-        <location filename="../forms/optionsdialog.ui" line="141"/>
-        <source>Darksend rounds to use</source>
-        <translation>Ilość rund Darksend.</translation>
-    </message>
-    <message>
-        <location filename="../forms/optionsdialog.ui" line="165"/>
-        <source>This amount acts as a threshold to turn off Darksend once it&apos;s reached.</source>
-        <translation>Ta kwota działa jako próg po którego przekroczeniu Darksend zostaje wyłączony.</translation>
-    </message>
-    <message>
-        <location filename="../forms/optionsdialog.ui" line="180"/>
-        <source>Amount of STRAKS to keep anonymized</source>
-        <translation>Ilość STRAKSów, które mają pozostać anonimowe.</translation>
-    </message>
-    <message>
-        <location filename="../forms/optionsdialog.ui" line="206"/>
+        <location filename="../forms/optionsdialog.ui" line="137"/>
         <source>W&amp;allet</source>
         <translation>Portfel</translation>
     </message>
     <message>
-        <location filename="../forms/optionsdialog.ui" line="212"/>
-        <source>Optional transaction fee per kB that helps make sure your transactions are processed quickly. Most transactions are 1 kB.</source>
-        <translation>Opcjonalna prowizja za transakcje za kB, wspomaga ona szybkość przebiegu transakcji. Większość transakcji jest 1 kB.</translation>
-    </message>
-    <message>
-        <location filename="../forms/optionsdialog.ui" line="227"/>
-        <source>Pay transaction &amp;fee</source>
-        <translation>Płać prowizję za transakcje</translation>
-    </message>
-    <message>
-        <location filename="../forms/optionsdialog.ui" line="271"/>
+        <location filename="../forms/optionsdialog.ui" line="143"/>
         <source>Expert</source>
         <translation>Ekspert</translation>
     </message>
     <message>
-        <location filename="../forms/optionsdialog.ui" line="277"/>
+        <location filename="../forms/optionsdialog.ui" line="149"/>
         <source>Whether to show coin control features or not.</source>
-        <translation>Czy pokazać funkcje kontroli monet czy nie.</translation>
+        <translation>Czy pokazać funkcję kontroli monet czy nie.</translation>
     </message>
     <message>
-        <location filename="../forms/optionsdialog.ui" line="280"/>
+        <location filename="../forms/optionsdialog.ui" line="152"/>
         <source>Enable coin &amp;control features</source>
-        <translation>Włącz funkcje &amp;kontroli monet</translation>
+        <translation>Włącz funkcję kontroli monet</translation>
     </message>
     <message>
-        <location filename="../forms/optionsdialog.ui" line="287"/>
+        <location filename="../forms/optionsdialog.ui" line="159"/>
         <source>If you disable the spending of unconfirmed change, the change from a transaction cannot be used until that transaction has at least one confirmation. This also affects how your balance is computed.</source>
-        <translation>Jeśli wyłączysz możliwość wydawania niepotwierdzonej reszty, to reszta z transakcji nie może zostać użyta dopóki nie ma przynajmniej jednego potwierdzona. To również wpływa na to jak wyliczane jest twoje saldo.</translation>
+        <translation>Jeśli wyłączysz możliwość wydawania niepotwierdzonej reszty, to reszta z transakcji nie może zostać użyta dopóki nie ma przynajmniej jednego potwierdzona. To również wpływa na to jak wyliczane jest Twoje saldo.</translation>
     </message>
     <message>
-        <location filename="../forms/optionsdialog.ui" line="290"/>
+        <location filename="../forms/optionsdialog.ui" line="162"/>
         <source>&amp;Spend unconfirmed change</source>
-        <translation>&amp;Wydaj niepotwierdzoną resztę</translation>
+        <translation>Wydaj niepotwierdzoną resztę</translation>
     </message>
     <message>
-        <location filename="../forms/optionsdialog.ui" line="301"/>
+        <location filename="../forms/optionsdialog.ui" line="186"/>
         <source>&amp;Network</source>
-        <translation>&amp;Sieć</translation>
+        <translation>Sieć</translation>
     </message>
     <message>
-        <location filename="../forms/optionsdialog.ui" line="307"/>
-        <source>Automatically open the STRAKS client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatycznie uruchamiaj port klienta Darkcoina na ruterze. To działa tylko jeśli twój ruter wspiera  i ma włączone UPnP.</translation>
-    </message>
-    <message>
-        <location filename="../forms/optionsdialog.ui" line="310"/>
+        <location filename="../forms/optionsdialog.ui" line="195"/>
         <source>Map port using &amp;UPnP</source>
-        <translation>Mapuj port używając &amp;UPnP</translation>
+        <translation>Mapuj port używając UPnP</translation>
     </message>
     <message>
-        <location filename="../forms/optionsdialog.ui" line="317"/>
-        <source>Connect to the STRAKS network through a SOCKS proxy.</source>
-        <translation>Połącz się z siecią Darkcoina przez proxy SOCKS</translation>
-    </message>
-    <message>
-        <location filename="../forms/optionsdialog.ui" line="320"/>
-        <source>&amp;Connect through SOCKS proxy (default proxy):</source>
-        <translation>&amp;Połącz się przez SOCKS proxy (opcja domyślna):</translation>
-    </message>
-    <message>
-        <location filename="../forms/optionsdialog.ui" line="329"/>
+        <location filename="../forms/optionsdialog.ui" line="224"/>
+        <location filename="../forms/optionsdialog.ui" line="411"/>
         <source>Proxy &amp;IP:</source>
-        <translation>Proxy &amp;IP: </translation>
+        <translation>Proxy IP:</translation>
     </message>
     <message>
-        <location filename="../forms/optionsdialog.ui" line="354"/>
+        <location filename="../forms/optionsdialog.ui" line="249"/>
+        <location filename="../forms/optionsdialog.ui" line="436"/>
         <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
         <translation>Adres IP serwera proxy (np. IPv4: 127.0.0.1 / IPv6: ::1)</translation>
     </message>
     <message>
-        <location filename="../forms/optionsdialog.ui" line="361"/>
+        <location filename="../forms/optionsdialog.ui" line="256"/>
+        <location filename="../forms/optionsdialog.ui" line="443"/>
         <source>&amp;Port:</source>
-        <translation>&amp;Port:</translation>
+        <translation>Port:</translation>
     </message>
     <message>
-        <location filename="../forms/optionsdialog.ui" line="386"/>
+        <location filename="../forms/optionsdialog.ui" line="281"/>
+        <location filename="../forms/optionsdialog.ui" line="468"/>
         <source>Port of the proxy (e.g. 9050)</source>
         <translation>Port proxy (np. 9050)</translation>
     </message>
     <message>
-        <location filename="../forms/optionsdialog.ui" line="393"/>
-        <source>SOCKS &amp;Version:</source>
-        <translation>Wersja &amp;SOCKS</translation>
-    </message>
-    <message>
-        <location filename="../forms/optionsdialog.ui" line="406"/>
-        <source>SOCKS version of the proxy (e.g. 5)</source>
-        <translation>SOCKS wersja serwera proxy (np. 5)</translation>
-    </message>
-    <message>
-        <location filename="../forms/optionsdialog.ui" line="442"/>
+        <location filename="../forms/optionsdialog.ui" line="504"/>
         <source>&amp;Window</source>
-        <translation>&amp;Okno</translation>
+        <translation>Okno</translation>
     </message>
     <message>
-        <location filename="../forms/optionsdialog.ui" line="448"/>
+        <location filename="../forms/optionsdialog.ui" line="520"/>
         <source>Show only a tray icon after minimizing the window.</source>
-        <translation>Pokazuj tylko ikonę przy zegarku po zminimalizowaniu okna.</translation>
+        <translation>Pokazuj tylko ikonę w trayu (przy zegarze) po zminimalizowaniu okna.</translation>
     </message>
     <message>
-        <location filename="../forms/optionsdialog.ui" line="451"/>
+        <location filename="../forms/optionsdialog.ui" line="523"/>
         <source>&amp;Minimize to the tray instead of the taskbar</source>
-        <translation>&amp;Minimalizuj do paska przy zegarku zamiast do paska zadań</translation>
+        <translation>Minimalizuj do traya zamiast do paska zadań</translation>
     </message>
     <message>
-        <location filename="../forms/optionsdialog.ui" line="458"/>
-        <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Quit in the menu.</source>
-        <translation>Minimalizuje zamiast zakończyć działanie programu przy zamykaniu okna. Kiedy ta opcja jest włączona, program zakończy działanie po wybieraniu Zamknij w menu.</translation>
-    </message>
-    <message>
-        <location filename="../forms/optionsdialog.ui" line="461"/>
+        <location filename="../forms/optionsdialog.ui" line="533"/>
         <source>M&amp;inimize on close</source>
-        <translation>M&amp;inimalizuj przy zamknięciu</translation>
+        <translation>Minimalizuj przy zamknięciu</translation>
     </message>
     <message>
-        <location filename="../forms/optionsdialog.ui" line="482"/>
+        <location filename="../forms/optionsdialog.ui" line="554"/>
         <source>&amp;Display</source>
-        <translation>&amp;Wyświetlanie</translation>
+        <translation>Wyświetlanie</translation>
     </message>
     <message>
-        <location filename="../forms/optionsdialog.ui" line="490"/>
+        <location filename="../forms/optionsdialog.ui" line="562"/>
         <source>User Interface &amp;language:</source>
-        <translation>Język &amp;Użytkownika:</translation>
+        <translation>Język Użytkownika:</translation>
     </message>
     <message>
-        <location filename="../forms/optionsdialog.ui" line="503"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting STRAKS.</source>
-        <translation>Tutaj można ustawić język interfejsu użytkownika. To ustawienie zostanie zapisane po ponownym uruchomieniu STRAKS.</translation>
-    </message>
-    <message>
-        <location filename="../forms/optionsdialog.ui" line="524"/>
-        <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/projects/p/straks/</source>
-        <translation>STRAKS Core nie został przetłumaczony na twój język? Tłumaczenie jest niepełne lub niepoprawne? Możesz pomóc nam tłumaczyć tutaj:
-https://www.transifex.com/projects/p/straks/</translation>
-    </message>
-    <message>
-        <location filename="../forms/optionsdialog.ui" line="550"/>
+        <location filename="../forms/optionsdialog.ui" line="600"/>
         <source>&amp;Unit to show amounts in:</source>
-        <translation>&amp;Jednostka pokazywana przy kwocie:</translation>
+        <translation>Jednostka pokazywana przy kwocie:</translation>
     </message>
     <message>
-        <location filename="../forms/optionsdialog.ui" line="563"/>
+        <location filename="../forms/optionsdialog.ui" line="613"/>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Wybierz podział jednostki pokazywany w interfejsie  oraz podczas wysyłania monet</translation>
+        <translation>Wybierz podjednostkę pokazywaną w interfejsie oraz podczas wysyłania monet.</translation>
     </message>
     <message>
-        <location filename="../forms/optionsdialog.ui" line="572"/>
-        <source>Whether to show STRAKS addresses in the transaction list or not.</source>
-        <translation>Czy wyświetlić adres STRAKS w liście transakcji czy nie</translation>
+        <location filename="../forms/optionsdialog.ui" line="33"/>
+        <source>Automatically start %1 after logging in to the system.</source>
+        <translation>Włącza klient portfela %1 po zalogowaniu się do systemu operacyjnego.</translation>
+    </message>
+    <message>
+        <location filename="../forms/optionsdialog.ui" line="36"/>
+        <source>&amp;Start %1 on system login</source>
+        <translation>Uruchom %1 podczas uruchamiania systemu.</translation>
+    </message>
+    <message>
+        <location filename="../forms/optionsdialog.ui" line="192"/>
+        <source>Automatically open the Straks client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automatycznie otwiera port na routerze używany przez klienta Straksa. Działa to tylko na routerach, które wspierają i mają włączone UPnP.</translation>
+    </message>
+    <message>
+        <location filename="../forms/optionsdialog.ui" line="202"/>
+        <source>Accept connections from outside</source>
+        <translation>Zezwala na połączenia z zewnątrz</translation>
+    </message>
+    <message>
+        <location filename="../forms/optionsdialog.ui" line="205"/>
+        <source>Allow incoming connections</source>
+        <translation>Zezwól na połączenia przychodzące</translation>
+    </message>
+    <message>
+        <location filename="../forms/optionsdialog.ui" line="212"/>
+        <source>Connect to the Straks network through a SOCKS5 proxy.</source>
+        <translation>Połącz się z siecią Straks używając proxy SOCKS5.</translation>
+    </message>
+    <message>
+        <location filename="../forms/optionsdialog.ui" line="215"/>
+        <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
+        <translation>Połącz za pomocą proxy SOCKS5 (domyślne proxy):</translation>
+    </message>
+    <message>
+        <location filename="../forms/optionsdialog.ui" line="305"/>
+        <source>Used for reaching peers via:</source>
+        <translation>Używany do połączenia z peerami poprzez:</translation>
+    </message>
+    <message>
+        <location filename="../forms/optionsdialog.ui" line="318"/>
+        <location filename="../forms/optionsdialog.ui" line="341"/>
+        <location filename="../forms/optionsdialog.ui" line="364"/>
+        <source>Shows, if the supplied default SOCKS5 proxy is used to reach peers via this network type.</source>
+        <translation>Pokazuje, czy domyślny serwer proxy SOCKS5 jest używany do połączenia z peerami przy pomocy tego typu połączenia z siecią.</translation>
+    </message>
+    <message>
+        <location filename="../forms/optionsdialog.ui" line="328"/>
+        <source>IPv4</source>
+        <translation>IPv4</translation>
+    </message>
+    <message>
+        <location filename="../forms/optionsdialog.ui" line="351"/>
+        <source>IPv6</source>
+        <translation>IPv6</translation>
+    </message>
+    <message>
+        <location filename="../forms/optionsdialog.ui" line="374"/>
+        <source>Tor</source>
+        <translation>TOR</translation>
+    </message>
+    <message>
+        <location filename="../forms/optionsdialog.ui" line="399"/>
+        <source>Connect to the Straks network through a separate SOCKS5 proxy for Tor hidden services.</source>
+        <translation>Połącz się z siecią Straks poprzez osobne proxy SOCKS5 dla sieci TOR.</translation>
+    </message>
+    <message>
+        <location filename="../forms/optionsdialog.ui" line="402"/>
+        <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services:</source>
+        <translation>Użyj osobnych proxy SOCKS5 aby móc się połączyć z peerami poprzez ukrytą sieć TOR:</translation>
+    </message>
+    <message>
+        <location filename="../forms/optionsdialog.ui" line="510"/>
+        <source>&amp;Hide the icon from the system tray.</source>
+        <translation>Nie pokazuj ikonki w tray&apos;u.</translation>
+    </message>
+    <message>
+        <location filename="../forms/optionsdialog.ui" line="513"/>
+        <source>Hide tray icon</source>
+        <translation>Ukryj ikonkę w tray&apos;u.</translation>
+    </message>
+    <message>
+        <location filename="../forms/optionsdialog.ui" line="530"/>
+        <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Exit in the menu.</source>
+        <translation>Zminimalizuj zamiast zamykać aplikację, kiedy zamknie się okno. Kiedy ta opcja jest zaznaczona, aplikacja zostanie zamknięty tylko po zaznaczeniu Wyjścia w menu.</translation>
     </message>
     <message>
         <location filename="../forms/optionsdialog.ui" line="575"/>
-        <source>&amp;Display addresses in transaction list</source>
-        <translation>&amp;Wyświetlaj adresy w liście transakcji</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting %1.</source>
+        <translation>Język programu może zostać zmieniony tutaj. Zmiana ta wymaga ponownego uruchomienia %1.</translation>
     </message>
     <message>
-        <location filename="../forms/optionsdialog.ui" line="584"/>
-        <location filename="../forms/optionsdialog.ui" line="597"/>
+        <location filename="../forms/optionsdialog.ui" line="586"/>
+        <source>User Interface Theme:</source>
+        <translation>Motyw użytkownika:</translation>
+    </message>
+    <message>
+        <location filename="../forms/optionsdialog.ui" line="624"/>
+        <location filename="../forms/optionsdialog.ui" line="637"/>
         <source>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</source>
-        <translation>URL osób trzecich (np. eksplorator bloków), które pojawiają się w zakładce transakcji jako pozycje w menu kontekstowym. %s w URL jest zastąpione przez hash transakcji. Wielokrotne URL są oddzielane przez pionową poprzeczkę |.</translation>
+        <translation>URL osób trzecich (np. eksplorator bloków), które pojawiają się w zakładce transakcji jako pozycje w menu kontekstowym. %s w URL jest zastąpione przez hash transakcji. Wielokrotne URL są oddzielane przez pionową kreskę |.</translation>
     </message>
     <message>
-        <location filename="../forms/optionsdialog.ui" line="587"/>
+        <location filename="../forms/optionsdialog.ui" line="627"/>
         <source>Third party transaction URLs</source>
         <translation>URL transakcji osób trzecich</translation>
     </message>
     <message>
-        <location filename="../forms/optionsdialog.ui" line="628"/>
+        <location filename="../forms/optionsdialog.ui" line="668"/>
         <source>Active command-line options that override above options:</source>
         <translation>Aktywne opcje linii komend, które nadpisują powyższe opcje:</translation>
     </message>
     <message>
-        <location filename="../forms/optionsdialog.ui" line="671"/>
+        <location filename="../forms/optionsdialog.ui" line="711"/>
         <source>Reset all client options to default.</source>
         <translation>Przywróć domyślne wszystkie ustawienia klienta.</translation>
     </message>
     <message>
-        <location filename="../forms/optionsdialog.ui" line="674"/>
+        <location filename="../forms/optionsdialog.ui" line="714"/>
         <source>&amp;Reset Options</source>
-        <translation>Z&amp;resetuj Ustawienia</translation>
+        <translation>Zresetuj ustawienia</translation>
     </message>
     <message>
-        <location filename="../forms/optionsdialog.ui" line="735"/>
+        <location filename="../forms/optionsdialog.ui" line="775"/>
         <source>&amp;OK</source>
-        <translation>&amp;OK</translation>
+        <translation>OK</translation>
     </message>
     <message>
-        <location filename="../forms/optionsdialog.ui" line="742"/>
+        <location filename="../forms/optionsdialog.ui" line="788"/>
         <source>&amp;Cancel</source>
-        <translation>&amp;Anuluj</translation>
+        <translation>Anuluj</translation>
     </message>
     <message>
-        <location filename="../optionsdialog.cpp" line="73"/>
+        <location filename="../optionsdialog.cpp" line="92"/>
         <source>default</source>
-        <translation>domyślny</translation>
+        <translation>domyślnie</translation>
     </message>
     <message>
-        <location filename="../optionsdialog.cpp" line="134"/>
+        <location filename="../optionsdialog.cpp" line="156"/>
         <source>none</source>
         <translation>żaden</translation>
     </message>
     <message>
-        <location filename="../optionsdialog.cpp" line="222"/>
+        <location filename="../optionsdialog.cpp" line="230"/>
         <source>Confirm options reset</source>
         <translation>Potwierdź reset ustawień</translation>
     </message>
     <message>
-        <location filename="../optionsdialog.cpp" line="223"/>
-        <location filename="../optionsdialog.cpp" line="253"/>
+        <location filename="../optionsdialog.cpp" line="231"/>
+        <location filename="../optionsdialog.cpp" line="274"/>
         <source>Client restart required to activate changes.</source>
         <translation>Wymagany restart programu, aby uaktywnić zmiany.</translation>
     </message>
     <message>
-        <location filename="../optionsdialog.cpp" line="223"/>
-        <source>Client will be shutdown, do you want to proceed?</source>
-        <translation>Program zostanie wyłączony. Czy chcesz kontynuować?</translation>
+        <location filename="../optionsdialog.cpp" line="231"/>
+        <source>Client will be shut down. Do you want to proceed?</source>
+        <translation>Klient zostanie wyłączony. Czy chcesz kontynuować?</translation>
     </message>
     <message>
-        <location filename="../optionsdialog.cpp" line="257"/>
+        <location filename="../optionsdialog.cpp" line="278"/>
         <source>This change would require a client restart.</source>
         <translation>Ta zmiana może wymagać ponownego uruchomienia klienta.</translation>
     </message>
     <message>
-        <location filename="../optionsdialog.cpp" line="291"/>
+        <location filename="../optionsdialog.cpp" line="306"/>
         <source>The supplied proxy address is invalid.</source>
         <translation>Adres podanego proxy jest nieprawidłowy</translation>
     </message>
@@ -1731,412 +1154,219 @@ https://www.transifex.com/projects/p/straks/</translation>
 <context>
     <name>OverviewPage</name>
     <message>
-        <location filename="../forms/overviewpage.ui" line="20"/>
+        <location filename="../forms/overviewpage.ui" line="14"/>
         <source>Form</source>
         <translation>Formularz</translation>
     </message>
     <message>
-        <location filename="../forms/overviewpage.ui" line="63"/>
-        <source>Wallet</source>
-        <translation>Portfel</translation>
-    </message>
-    <message>
-        <location filename="../forms/overviewpage.ui" line="70"/>
-        <location filename="../forms/overviewpage.ui" line="953"/>
-        <location filename="../forms/overviewpage.ui" line="1021"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the STRAKS network after a connection is established, but this process has not completed yet.</source>
-        <translation>Wyświetlona informacja może być przedawniona. Twój portfel automatycznie zsynchronizuje sie z siecią STRAKS jak tylko zostanie ustanowione połączenie, jednakże proces ten jeszcze się nie zakończył.</translation>
-    </message>
-    <message>
-        <location filename="../forms/overviewpage.ui" line="114"/>
+        <location filename="../forms/overviewpage.ui" line="333"/>
         <source>Available:</source>
         <translation>Dostępne:</translation>
     </message>
     <message>
-        <location filename="../forms/overviewpage.ui" line="130"/>
+        <location filename="../forms/overviewpage.ui" line="349"/>
         <source>Your current spendable balance</source>
-        <translation>Twoje obecne saldo</translation>
+        <translation>Twoje obecne dostępne saldo</translation>
     </message>
     <message>
-        <location filename="../forms/overviewpage.ui" line="146"/>
+        <location filename="../forms/overviewpage.ui" line="374"/>
+        <source>Your current balance in watch-only addresses</source>
+        <translation>Twoje obecne saldo na obserwowalnym adresie</translation>
+    </message>
+    <message>
+        <location filename="../forms/overviewpage.ui" line="390"/>
         <source>Pending:</source>
         <translation>W toku:</translation>
     </message>
     <message>
-        <location filename="../forms/overviewpage.ui" line="162"/>
+        <location filename="../forms/overviewpage.ui" line="154"/>
         <source>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</source>
-        <translation>Suma transakcji, które nie zostały jeszcze potwierdzone, a które nie zostały wliczone do twojego obecnego salda</translation>
+        <translation>Suma transakcji, które nie zostały jeszcze potwierdzone, a które nie zostały wliczone do Twojego dostępnego salda</translation>
     </message>
     <message>
-        <location filename="../forms/overviewpage.ui" line="178"/>
+        <location filename="../forms/overviewpage.ui" line="266"/>
         <source>Immature:</source>
-        <translation>Niedojrzały: </translation>
+        <translation>Niepotwierdzone:</translation>
     </message>
     <message>
-        <location filename="../forms/overviewpage.ui" line="191"/>
+        <location filename="../forms/overviewpage.ui" line="237"/>
         <source>Mined balance that has not yet matured</source>
-        <translation>Balans wydobycia, który jeszcze nie dojrzał</translation>
+        <translation>Wydobyte monety, które nie zostały jeszcze potwierdzone</translation>
     </message>
     <message>
-        <location filename="../forms/overviewpage.ui" line="207"/>
+        <location filename="../forms/overviewpage.ui" line="60"/>
+        <source>Balances</source>
+        <translation>Salda</translation>
+    </message>
+    <message>
+        <location filename="../forms/overviewpage.ui" line="76"/>
+        <location filename="../forms/overviewpage.ui" line="462"/>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Straks network after a connection is established, but this process has not completed yet.</source>
+        <translation>Wyświetlane informacje mogą być nieaktualne. Twój portfel automatycznie się zsynchronizuje z siecią Straks, kiedy połączenie zostanie ustanowione, co nadal nie zostało zrealizowane.</translation>
+    </message>
+    <message>
+        <location filename="../forms/overviewpage.ui" line="129"/>
+        <source>Unconfirmed transactions to watch-only addresses</source>
+        <translation>Niepotwierdzone transakcje na obserwowalnym adresie</translation>
+    </message>
+    <message>
+        <location filename="../forms/overviewpage.ui" line="179"/>
+        <source>Mined balance in watch-only addresses that has not yet matured</source>
+        <translation>Wykopane monety na obserwowalnym adresie</translation>
+    </message>
+    <message>
+        <location filename="../forms/overviewpage.ui" line="221"/>
         <source>Total:</source>
         <translation>Wynosi ogółem:</translation>
     </message>
     <message>
-        <location filename="../forms/overviewpage.ui" line="223"/>
+        <location filename="../forms/overviewpage.ui" line="282"/>
         <source>Your current total balance</source>
         <translation>Twoje obecne saldo</translation>
     </message>
     <message>
-        <location filename="../forms/overviewpage.ui" line="302"/>
-        <source>Status:</source>
-        <translation>Status:</translation>
+        <location filename="../forms/overviewpage.ui" line="307"/>
+        <source>Current total balance in watch-only addresses</source>
+        <translation>Obecne saldo na obserwowalnym adresie</translation>
     </message>
     <message>
-        <location filename="../forms/overviewpage.ui" line="309"/>
-        <source>Enabled/Disabled</source>
-        <translation>Włączony/Wyłączony</translation>
+        <location filename="../forms/overviewpage.ui" line="323"/>
+        <source>Watch-only:</source>
+        <translation>Tylko do poglądu</translation>
     </message>
     <message>
-        <location filename="../forms/overviewpage.ui" line="316"/>
-        <source>Completion:</source>
-        <translation>Ukończone:</translation>
+        <location filename="../forms/overviewpage.ui" line="397"/>
+        <source>Spendable:</source>
+        <translation>Dostępne:</translation>
     </message>
     <message>
-        <location filename="../forms/overviewpage.ui" line="336"/>
-        <source>Darksend Balance:</source>
-        <translation>Bilans Darksend:</translation>
-    </message>
-    <message>
-        <location filename="../forms/overviewpage.ui" line="349"/>
-        <source>0 STAK</source>
-        <translation>0 STAK</translation>
-    </message>
-    <message>
-        <location filename="../forms/overviewpage.ui" line="356"/>
-        <source>Amount and Rounds:</source>
-        <translation>Ilość oraz Rundy:</translation>
-    </message>
-    <message>
-        <location filename="../forms/overviewpage.ui" line="363"/>
-        <source>0 STAK / 0 Rounds</source>
-        <translation>0 STAK / 0 Rund</translation>
-    </message>
-    <message>
-        <location filename="../forms/overviewpage.ui" line="370"/>
-        <source>Submitted Denom:</source>
-        <translation>Zgłoszone denominacje:</translation>
-    </message>
-    <message>
-        <location filename="../forms/overviewpage.ui" line="377"/>
-        <source>The denominations you submitted to the Xnode. To mix, other users must submit the exact same denominations.</source>
-        <translation>Denominacje zgłoszone do Masternodów. Aby je wymieszać, pozostali uzytkownicy muszą zgłosić dokładnie te same denominacje.</translation>
-    </message>
-    <message>
-        <location filename="../forms/overviewpage.ui" line="380"/>
-        <source>n/a</source>
-        <translation>nie dotyczy</translation>
-    </message>
-    <message>
-        <location filename="../forms/overviewpage.ui" line="946"/>
-        <location filename="../overviewpage.cpp" line="453"/>
-        <location filename="../overviewpage.cpp" line="467"/>
-        <location filename="../overviewpage.cpp" line="481"/>
-        <source>Darksend</source>
-        <translation>Darksend</translation>
-    </message>
-    <message>
-        <location filename="../forms/overviewpage.ui" line="839"/>
-        <source>Start/Stop Mixing</source>
-        <translation>Start/Stop Mieszanie</translation>
-    </message>
-    <message>
-        <location filename="../forms/overviewpage.ui" line="871"/>
-        <source>(Last Message)</source>
-        <translation>(Ostatnia Wiadomość)</translation>
-    </message>
-    <message>
-        <location filename="../forms/overviewpage.ui" line="896"/>
-        <source>Try to manually submit a Darksend request.</source>
-        <translation>Prubój ręcznie zgłosić żądanie Darksend.</translation>
-    </message>
-    <message>
-        <location filename="../forms/overviewpage.ui" line="899"/>
-        <source>Try Mix</source>
-        <translation>Mieszaj</translation>
-    </message>
-    <message>
-        <location filename="../forms/overviewpage.ui" line="918"/>
-        <source>Reset the current status of Darksend (can interrupt Darksend if it&apos;s in the process of Mixing, which can cost you money!)</source>
-        <translation>Zresetuj obecny stan Darksend (może przerwać Darksend, jeżeli jest w trakcie mieszania. Może Cię to kosztować! )</translation>
-    </message>
-    <message>
-        <location filename="../forms/overviewpage.ui" line="924"/>
-        <source>Reset</source>
-        <translation>Reset</translation>
-    </message>
-    <message>
-        <location filename="../forms/overviewpage.ui" line="1014"/>
-        <source>&lt;b&gt;Recent transactions&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Ostatnie transakcje&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <location filename="../overviewpage.cpp" line="126"/>
-        <location filename="../overviewpage.cpp" line="127"/>
-        <location filename="../overviewpage.cpp" line="128"/>
-        <source>out of sync</source>
-        <translation>desynchronizacja</translation>
-    </message>
-    <message>
-        <location filename="../overviewpage.cpp" line="143"/>
-        <location filename="../overviewpage.cpp" line="350"/>
-        <source>Disabled</source>
-        <translation>Wyłączony</translation>
-    </message>
-    <message>
-        <location filename="../overviewpage.cpp" line="146"/>
-        <location filename="../overviewpage.cpp" line="352"/>
-        <location filename="../overviewpage.cpp" line="495"/>
-        <source>Start Darksend Mixing</source>
-        <translation>Uruchom miksowanie Darksend</translation>
-    </message>
-    <message>
-        <location filename="../overviewpage.cpp" line="148"/>
-        <location filename="../overviewpage.cpp" line="497"/>
-        <source>Stop Darksend Mixing</source>
-        <translation>Zatrzymaj miksowanie Darksend</translation>
-    </message>
-    <message>
-        <location filename="../overviewpage.cpp" line="270"/>
-        <source>No inputs detected</source>
-        <translation>Nie wykryto wejść</translation>
-    </message>
-    <message>
-        <location filename="../overviewpage.cpp" line="278"/>
-        <source>Found unconfirmed denominated outputs, will wait till they confirm to recalculate.</source>
-        <translation>Znaleziono niepotwierdzone zdenominowane wyjścia, wstrzymam się z rekalkulacją do czasu ich potwierdzenia.</translation>
-    </message>
-    <message>
-        <location filename="../overviewpage.cpp" line="335"/>
-        <source>Rounds</source>
-        <translation>Rundy</translation>
-    </message>
-    <message>
-        <location filename="../overviewpage.cpp" line="366"/>
-        <source>Enabled</source>
-        <translation>Włączony</translation>
-    </message>
-    <message>
-        <location filename="../overviewpage.cpp" line="424"/>
-        <source>Last Darksend message:
-</source>
-        <translation>Ostatnia wiadomość Darksend:
-</translation>
-    </message>
-    <message>
-        <location filename="../overviewpage.cpp" line="377"/>
-        <location filename="../overviewpage.cpp" line="406"/>
-        <source>Darksend is idle.</source>
-        <translation>Darksend jest w stanie spoczynku.</translation>
-    </message>
-    <message>
-        <location filename="../overviewpage.cpp" line="381"/>
-        <source>Mixing in progress...</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location filename="../overviewpage.cpp" line="387"/>
-        <source>Darksend request complete: Your transaction was accepted into the pool!</source>
-        <translation>Żądanie Daeksend zostało zakończone: Twoja transakcja została zaakceptowana do wspólnego funduszu kopaczy.</translation>
-    </message>
-    <message>
-        <location filename="../overviewpage.cpp" line="393"/>
-        <source>Submitted following entries to Xnode:</source>
-        <translation>Następujące wpisy zostały przesłane do masternoda: </translation>
-    </message>
-    <message>
-        <location filename="../overviewpage.cpp" line="394"/>
-        <location filename="../overviewpage.cpp" line="395"/>
-        <location filename="../overviewpage.cpp" line="396"/>
-        <source>Submitted to Xnode, Waiting for more entries</source>
-        <translation>Przesłano do masternoda. Czekam na więcej wpisów.</translation>
-    </message>
-    <message>
-        <location filename="../overviewpage.cpp" line="399"/>
-        <source>Found enough users, signing ...</source>
-        <translation>Znaleziono wystarczającą ilość użytkowników, trwa podpisywanie ...</translation>
-    </message>
-    <message>
-        <location filename="../overviewpage.cpp" line="400"/>
-        <source>Found enough users, signing ( waiting. )</source>
-        <translation>Znaleziono wystarczającą ilość użytkowników, trwa podopisywanie ( poczekaj chwilę. )</translation>
-    </message>
-    <message>
-        <location filename="../overviewpage.cpp" line="401"/>
-        <source>Found enough users, signing ( waiting.. )</source>
-        <translation>Znaleziono wystarczająco użytkowników, trwa podpisywanie ( poczekaj chwilę.. )</translation>
-    </message>
-    <message>
-        <location filename="../overviewpage.cpp" line="402"/>
-        <source>Found enough users, signing ( waiting... )</source>
-        <translation>Znaleziono wystarczająco użytkowników, trwa podpisywanie ( poczekaj chwilę... )</translation>
-    </message>
-    <message>
-        <location filename="../overviewpage.cpp" line="404"/>
-        <source>Transmitting final transaction.</source>
-        <translation>Trwa wysyłanie pierwszej transakcji.</translation>
-    </message>
-    <message>
-        <location filename="../overviewpage.cpp" line="408"/>
-        <source>Finalizing transaction.</source>
-        <translation>Finalizowanie transakcji.</translation>
-    </message>
-    <message>
-        <location filename="../overviewpage.cpp" line="410"/>
-        <source>Darksend request incomplete:</source>
-        <translation>Żądanie Darksend zakończyło się niepowodzeniem:</translation>
-    </message>
-    <message>
-        <location filename="../overviewpage.cpp" line="410"/>
-        <source>Will retry...</source>
-        <translation>spóbuję ponownie</translation>
-    </message>
-    <message>
-        <location filename="../overviewpage.cpp" line="412"/>
-        <source>Darksend request complete:</source>
-        <translation>Żądanie Darksend zakończyło się powodzeniem:</translation>
-    </message>
-    <message>
-        <location filename="../overviewpage.cpp" line="414"/>
-        <source>Submitted to Xnode, waiting in queue .</source>
-        <translation>Przesłano do masterdnoda, czekaj na swoją kolej.</translation>
-    </message>
-    <message>
-        <location filename="../overviewpage.cpp" line="415"/>
-        <source>Submitted to Xnode, waiting in queue ..</source>
-        <translation>Przesłano do masterdnoda, czekaj na swoją kolej..</translation>
-    </message>
-    <message>
-        <location filename="../overviewpage.cpp" line="416"/>
-        <source>Submitted to Xnode, waiting in queue ...</source>
-        <translation>Przesłano do masterdnoda, czekaj na swoją kolej...</translation>
-    </message>
-    <message>
-        <location filename="../overviewpage.cpp" line="418"/>
-        <source>Unknown state:</source>
-        <translation>Status nieznany:</translation>
-    </message>
-    <message>
-        <location filename="../overviewpage.cpp" line="432"/>
-        <source>N/A</source>
-        <translation>NIEDOSTĘPNE</translation>
-    </message>
-    <message>
-        <location filename="../overviewpage.cpp" line="454"/>
-        <source>Darksend was successfully reset.</source>
-        <translation>Darksend został pomyślnie zresetowany</translation>
-    </message>
-    <message>
-        <location filename="../overviewpage.cpp" line="468"/>
-        <source>Darksend requires at least %1 to use.</source>
-        <translation>Darksend wymaga użycia conajmniej %1</translation>
-    </message>
-    <message>
-        <location filename="../overviewpage.cpp" line="482"/>
-        <source>Wallet is locked and user declined to unlock. Disabling Darksend.</source>
-        <translation>Portfel jest zablokowany a użytkownik odmówił odblokowania. Darksend zostaje wyłączony.</translation>
+        <location filename="../forms/overviewpage.ui" line="446"/>
+        <source>Recent transactions</source>
+        <translation>Ostatnie transakcje</translation>
     </message>
 </context>
 <context>
     <name>PaymentServer</name>
     <message>
-        <location filename="../paymentserver.cpp" line="293"/>
-        <location filename="../paymentserver.cpp" line="505"/>
-        <location filename="../paymentserver.cpp" line="518"/>
-        <location filename="../paymentserver.cpp" line="613"/>
-        <location filename="../paymentserver.cpp" line="631"/>
-        <location filename="../paymentserver.cpp" line="647"/>
+        <location filename="../paymentserver.cpp" line="326"/>
+        <location filename="../paymentserver.cpp" line="542"/>
+        <location filename="../paymentserver.cpp" line="584"/>
+        <location filename="../paymentserver.cpp" line="697"/>
+        <location filename="../paymentserver.cpp" line="711"/>
+        <location filename="../paymentserver.cpp" line="729"/>
         <source>Payment request error</source>
         <translation>Błąd żądania płatności</translation>
     </message>
     <message>
-        <location filename="../paymentserver.cpp" line="294"/>
+        <location filename="../paymentserver.cpp" line="327"/>
         <source>Cannot start straks: click-to-pay handler</source>
-        <translation>Nie można włączyć straks: kliknij-aby-zapłacić ubsługującemu.</translation>
+        <translation>Nie można włączyć straks: kliknij-aby-zapłacić obsługującemu</translation>
     </message>
     <message>
-        <location filename="../paymentserver.cpp" line="352"/>
-        <source>Net manager warning</source>
-        <translation>Ostrzeżenie menedżera sieci</translation>
-    </message>
-    <message>
-        <location filename="../paymentserver.cpp" line="353"/>
-        <source>Your active proxy doesn&apos;t support SOCKS5, which is required for payment requests via proxy.</source>
-        <translation>Twoje aktywne proxy nie obsługuje SOCKS5, co jest wymagane dla żądania płatności przez proxy.</translation>
-    </message>
-    <message>
-        <location filename="../paymentserver.cpp" line="404"/>
-        <location filename="../paymentserver.cpp" line="417"/>
+        <location filename="../paymentserver.cpp" line="430"/>
+        <location filename="../paymentserver.cpp" line="444"/>
+        <location filename="../paymentserver.cpp" line="451"/>
         <source>URI handling</source>
         <translation>Obsługa URI</translation>
     </message>
     <message>
-        <location filename="../paymentserver.cpp" line="405"/>
+        <location filename="../paymentserver.cpp" line="431"/>
         <source>Payment request fetch URL is invalid: %1</source>
-        <translation>Żądanie płatności podowduje że URL jest niewłaściwy: %1</translation>
+        <translation>Żądanie płatności powoduje, że URL jest niewłaściwy: %1</translation>
     </message>
     <message>
-        <location filename="../paymentserver.cpp" line="418"/>
-        <source>URI can not be parsed! This can be caused by an invalid STRAKS address or malformed URI parameters.</source>
-        <translation>URI nie może zostać przeanalizowany! Mogło to być spowodowane przez niewłaściwy adres STRAKS lub niewłaściwe parametry URI</translation>
-    </message>
-    <message>
-        <location filename="../paymentserver.cpp" line="432"/>
+        <location filename="../paymentserver.cpp" line="465"/>
         <source>Payment request file handling</source>
         <translation>Obsługa pliku z żądaniem płatności</translation>
     </message>
     <message>
-        <location filename="../paymentserver.cpp" line="433"/>
-        <source>Payment request file can not be read or processed! This can be caused by an invalid payment request file.</source>
-        <translation>Plik z żądaniem płatności nie może zostać odczytany lub przetworzony! Może to być spowodowane przez niewłaściwy plik z żądaniem płatności.</translation>
+        <location filename="../paymentserver.cpp" line="444"/>
+        <source>Invalid payment address %1</source>
+        <translation>Błędny adres płatności %1</translation>
     </message>
     <message>
-        <location filename="../paymentserver.cpp" line="506"/>
+        <location filename="../paymentserver.cpp" line="452"/>
+        <source>URI cannot be parsed! This can be caused by an invalid Straks address or malformed URI parameters.</source>
+        <translation>URI nie może zostać zweryfikowane! Może być to spowodowane nieprawidłowym adresem Straks lub nieprawidłowymi parametrami URI.</translation>
+    </message>
+    <message>
+        <location filename="../paymentserver.cpp" line="466"/>
+        <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
+        <translation>Zlecenie płatności nie może być przetorzone! Może być to spowodowane nieprawidłowym plikiem płatności.</translation>
+    </message>
+    <message>
+        <location filename="../paymentserver.cpp" line="527"/>
+        <location filename="../paymentserver.cpp" line="536"/>
+        <location filename="../paymentserver.cpp" line="567"/>
+        <location filename="../paymentserver.cpp" line="577"/>
+        <location filename="../paymentserver.cpp" line="594"/>
+        <location filename="../paymentserver.cpp" line="682"/>
+        <source>Payment request rejected</source>
+        <translation>Odrzucono zlecenie płatności.</translation>
+    </message>
+    <message>
+        <location filename="../paymentserver.cpp" line="527"/>
+        <source>Payment request network doesn&apos;t match client network.</source>
+        <translation>Zlecenie płatności nie pasuje do sieci klienta.</translation>
+    </message>
+    <message>
+        <location filename="../paymentserver.cpp" line="536"/>
+        <source>Payment request expired.</source>
+        <translation>Zlecenie płatności przedawniło się.</translation>
+    </message>
+    <message>
+        <location filename="../paymentserver.cpp" line="542"/>
+        <source>Payment request is not initialized.</source>
+        <translation>Zlecenie płatności nie zostało zainicjowane.</translation>
+    </message>
+    <message>
+        <location filename="../paymentserver.cpp" line="568"/>
         <source>Unverified payment requests to custom payment scripts are unsupported.</source>
-        <translation>Niezweryfikowane żądania płatności dla specjalnych skryptów z płatnościami nie są obsługiwane.</translation>
+        <translation>Niezweryfikowane żądania płatności dla innych skryptów płatności nie są obsługiwane.</translation>
     </message>
     <message>
-        <location filename="../paymentserver.cpp" line="514"/>
+        <location filename="../paymentserver.cpp" line="577"/>
+        <location filename="../paymentserver.cpp" line="594"/>
+        <source>Invalid payment request.</source>
+        <translation>Nieprawidłowe zlecenie płatności.</translation>
+    </message>
+    <message>
+        <location filename="../paymentserver.cpp" line="584"/>
         <source>Requested payment amount of %1 is too small (considered dust).</source>
-        <translation>Żądana kwota %1 jest za niska (uznana za pył).</translation>
+        <translation>Żądana kwota płatności %1 jest za niska (uznana jako &quot;śmieci&quot;).</translation>
     </message>
     <message>
-        <location filename="../paymentserver.cpp" line="565"/>
+        <location filename="../paymentserver.cpp" line="639"/>
         <source>Refund from %1</source>
         <translation>Zwrot z %1</translation>
     </message>
     <message>
-        <location filename="../paymentserver.cpp" line="608"/>
+        <location filename="../paymentserver.cpp" line="683"/>
+        <source>Payment request %1 is too large (%2 bytes, allowed %3 bytes).</source>
+        <translation>Zlecenie płatności jest za duże (%2 bajtów, dozwolone %3 bajów).</translation>
+    </message>
+    <message>
+        <location filename="../paymentserver.cpp" line="692"/>
         <source>Error communicating with %1: %2</source>
         <translation>Błąd komunikacji z %1 : %2</translation>
     </message>
     <message>
-        <location filename="../paymentserver.cpp" line="632"/>
-        <source>Payment request can not be parsed or processed!</source>
-        <translation>Żądanie płatności nie może zostać przeanalizowne lub przetworzone!</translation>
+        <location filename="../paymentserver.cpp" line="712"/>
+        <source>Payment request cannot be parsed!</source>
+        <translation>Żądanie płatności nie może zostać przetworzone!</translation>
     </message>
     <message>
-        <location filename="../paymentserver.cpp" line="643"/>
+        <location filename="../paymentserver.cpp" line="725"/>
         <source>Bad response from server %1</source>
         <translation>Błędna odpowiedź z serwera %1</translation>
     </message>
     <message>
-        <location filename="../paymentserver.cpp" line="665"/>
+        <location filename="../paymentserver.cpp" line="747"/>
         <source>Network request error</source>
         <translation>Błąd żądania sieci</translation>
     </message>
     <message>
-        <location filename="../paymentserver.cpp" line="676"/>
+        <location filename="../paymentserver.cpp" line="758"/>
         <source>Payment acknowledged</source>
         <translation>Płatność potwierdzona</translation>
     </message>
@@ -2144,42 +1374,140 @@ https://www.transifex.com/projects/p/straks/</translation>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../straks.cpp" line="525"/>
-        <location filename="../straks.cpp" line="532"/>
-        <location filename="../straks.cpp" line="539"/>
-        <location filename="../straks.cpp" line="552"/>
-        <source>STRAKS</source>
-        <translation>STRAKS</translation>
-    </message>
-    <message>
-        <location filename="../straks.cpp" line="526"/>
+        <location filename="../straks.cpp" line="638"/>
         <source>Error: Specified data directory &quot;%1&quot; does not exist.</source>
         <translation>Błąd: Określony folder danych &quot;%1&quot; nie istnieje.</translation>
     </message>
     <message>
-        <location filename="../straks.cpp" line="533"/>
+        <location filename="../straks.cpp" line="645"/>
         <source>Error: Cannot parse configuration file: %1. Only use key=value syntax.</source>
-        <translation>Błąd: Nie można przetworzyć pliku konfiguracyjnego: %1. Używaj tylko składni klucz=wartość.</translation>
+        <translation>Błąd: Nie można zweryfikować pliku konfiguracyjnego: %1. Używaj tylko składni klucz=wartość.</translation>
     </message>
     <message>
-        <location filename="../straks.cpp" line="540"/>
-        <source>Error reading Xnode configuration file: %1</source>
-        <translation>Błąd podczas wczytywania pliku z konfiguracją masternoda: %1</translation>
+        <location filename="../straks.cpp" line="659"/>
+        <source>Error: %1</source>
+        <translation>Błąd: %1</translation>
     </message>
     <message>
-        <location filename="../straks.cpp" line="552"/>
-        <source>Error: Invalid combination of -regtest and -testnet.</source>
-        <translation>Błąd: Niepoprawna kombinacja -regtest i -testnet.</translation>
+        <location filename="../straks.cpp" line="678"/>
+        <source>Straks</source>
+        <translation>Straks</translation>
     </message>
     <message>
-        <location filename="../straks.cpp" line="612"/>
-        <source>STRAKS Core didn&apos;t yet exit safely...</source>
-        <translation>STRAKS Core jeszcze się nie wyłaczył...</translation>
+        <location filename="../straks.cpp" line="679"/>
+        <source>Error reading masternode configuration file: %1</source>
+        <translation>Błąd podczas wczytywania pliku konfiguracyjnego masternoda: %1</translation>
     </message>
     <message>
-        <location filename="../guiutil.cpp" line="101"/>
-        <source>Enter a STRAKS address (e.g. iGJXtgFacXixKeK8Pxmk3a7YhXMc2o8EsB )</source>
-        <translation>Wpisz adres STRAKS (np. iGJXtgFacXixKeK8Pxmk3a7YhXMc2o8EsB )</translation>
+        <location filename="../straks.cpp" line="727"/>
+        <source>%1 didn&apos;t yet exit safely...</source>
+        <translation>%1 nie zostało jeszcze zakończone bezpieczne...</translation>
+    </message>
+    <message>
+        <location filename="../guiutil.cpp" line="136"/>
+        <source>Enter a Straks address (e.g. %1)</source>
+        <translation>Wprowadź adres Straks (np. %1)</translation>
+    </message>
+    <message>
+        <location filename="../guiutil.cpp" line="947"/>
+        <source>%1 d</source>
+        <translation>%1 d</translation>
+    </message>
+    <message>
+        <location filename="../guiutil.cpp" line="949"/>
+        <source>%1 h</source>
+        <translation>%1 h</translation>
+    </message>
+    <message>
+        <location filename="../guiutil.cpp" line="951"/>
+        <source>%1 m</source>
+        <translation>%1 m</translation>
+    </message>
+    <message>
+        <location filename="../guiutil.cpp" line="953"/>
+        <location filename="../guiutil.cpp" line="1006"/>
+        <source>%1 s</source>
+        <translation>%1 s</translation>
+    </message>
+    <message>
+        <location filename="../guiutil.cpp" line="996"/>
+        <source>None</source>
+        <translation>Żaden</translation>
+    </message>
+    <message>
+        <location filename="../guiutil.cpp" line="1001"/>
+        <source>N/A</source>
+        <translation>NIEDOSTĘPNE</translation>
+    </message>
+    <message>
+        <location filename="../guiutil.cpp" line="1001"/>
+        <source>%1 ms</source>
+        <translation>%1 ms</translation>
+    </message>
+    <message numerus="yes">
+        <location filename="../guiutil.cpp" line="1019"/>
+        <source>%n second(s)</source>
+        <translation>
+            <numerusform>%n sekunda</numerusform>
+            <numerusform>%n sekundy</numerusform>
+            <numerusform>%n sekund(y)</numerusform>
+        </translation>
+    </message>
+    <message numerus="yes">
+        <location filename="../guiutil.cpp" line="1023"/>
+        <source>%n minute(s)</source>
+        <translation>
+            <numerusform>%n minuta</numerusform>
+            <numerusform>%n minuty</numerusform>
+            <numerusform>%n minut(y)</numerusform>
+        </translation>
+    </message>
+    <message numerus="yes">
+        <location filename="../guiutil.cpp" line="1027"/>
+        <source>%n hour(s)</source>
+        <translation>
+            <numerusform>%n godzina</numerusform>
+            <numerusform>%n godziny</numerusform>
+            <numerusform>%n godzina(y)</numerusform>
+        </translation>
+    </message>
+    <message numerus="yes">
+        <location filename="../guiutil.cpp" line="1031"/>
+        <source>%n day(s)</source>
+        <translation>
+            <numerusform>%n dzień</numerusform>
+            <numerusform>%n dni</numerusform>
+            <numerusform>%n dzień(dni)</numerusform>
+        </translation>
+    </message>
+    <message numerus="yes">
+        <location filename="../guiutil.cpp" line="1035"/>
+        <location filename="../guiutil.cpp" line="1041"/>
+        <source>%n week(s)</source>
+        <translation>
+            <numerusform>%n tydzień</numerusform>
+            <numerusform>%n tygodnie</numerusform>
+            <numerusform>%n tydzień(tygodnie)</numerusform>
+        </translation>
+    </message>
+    <message>
+        <location filename="../guiutil.cpp" line="1041"/>
+        <source>%1 and %2</source>
+        <translation>%1 i %2</translation>
+    </message>
+    <message numerus="yes">
+        <location filename="../guiutil.cpp" line="1041"/>
+        <source>%n year(s)</source>
+        <translation>
+            <numerusform>%n rok</numerusform>
+            <numerusform>%n lat</numerusform>
+            <numerusform>%n rok(lata)</numerusform>
+        </translation>
+    </message>
+    <message>
+        <location filename="../straksunits.cpp" line="176"/>
+        <source>Amount</source>
+        <translation>Kwota</translation>
     </message>
 </context>
 <context>
@@ -2187,12 +1515,12 @@ https://www.transifex.com/projects/p/straks/</translation>
     <message>
         <location filename="../receiverequestdialog.cpp" line="36"/>
         <source>&amp;Save Image...</source>
-        <translation>&amp;Zapisz obraz...</translation>
+        <translation>Zapisz obraz...</translation>
     </message>
     <message>
         <location filename="../receiverequestdialog.cpp" line="39"/>
         <source>&amp;Copy Image</source>
-        <translation>&amp;Kopiuj obraz</translation>
+        <translation>Skopiuj obraz</translation>
     </message>
     <message>
         <location filename="../receiverequestdialog.cpp" line="71"/>
@@ -2208,195 +1536,498 @@ https://www.transifex.com/projects/p/straks/</translation>
 <context>
     <name>RPCConsole</name>
     <message>
-        <location filename="../forms/rpcconsole.ui" line="14"/>
-        <source>Tools window</source>
-        <translation>Okno narzędzi</translation>
-    </message>
-    <message>
-        <location filename="../forms/rpcconsole.ui" line="24"/>
+        <location filename="../forms/debugwindow.ui" line="24"/>
         <source>&amp;Information</source>
-        <translation>&amp;Informacje</translation>
+        <translation>Informacje</translation>
     </message>
     <message>
-        <location filename="../forms/rpcconsole.ui" line="33"/>
-        <source>Xnode Count</source>
-        <translation>Ilość masternodów</translation>
-    </message>
-    <message>
-        <location filename="../forms/rpcconsole.ui" line="46"/>
+        <location filename="../forms/debugwindow.ui" line="39"/>
         <source>General</source>
         <translation>Ogólne</translation>
     </message>
     <message>
-        <location filename="../forms/rpcconsole.ui" line="53"/>
+        <location filename="../forms/debugwindow.ui" line="183"/>
         <source>Name</source>
         <translation>Nazwa</translation>
     </message>
     <message>
-        <location filename="../forms/rpcconsole.ui" line="60"/>
-        <source>Client name</source>
-        <translation>Nazwa klienta</translation>
-    </message>
-    <message>
-        <location filename="../forms/rpcconsole.ui" line="70"/>
-        <location filename="../forms/rpcconsole.ui" line="139"/>
-        <location filename="../forms/rpcconsole.ui" line="192"/>
-        <location filename="../forms/rpcconsole.ui" line="215"/>
-        <location filename="../forms/rpcconsole.ui" line="231"/>
-        <location filename="../forms/rpcconsole.ui" line="247"/>
-        <location filename="../forms/rpcconsole.ui" line="276"/>
-        <location filename="../forms/rpcconsole.ui" line="292"/>
-        <location filename="../forms/rpcconsole.ui" line="315"/>
-        <location filename="../forms/rpcconsole.ui" line="341"/>
+        <location filename="../forms/debugwindow.ui" line="56"/>
+        <location filename="../forms/debugwindow.ui" line="82"/>
+        <location filename="../forms/debugwindow.ui" line="108"/>
+        <location filename="../forms/debugwindow.ui" line="131"/>
+        <location filename="../forms/debugwindow.ui" line="157"/>
+        <location filename="../forms/debugwindow.ui" line="193"/>
+        <location filename="../forms/debugwindow.ui" line="216"/>
+        <location filename="../forms/debugwindow.ui" line="252"/>
+        <location filename="../forms/debugwindow.ui" line="275"/>
+        <location filename="../forms/debugwindow.ui" line="311"/>
+        <location filename="../forms/debugwindow.ui" line="334"/>
+        <location filename="../forms/debugwindow.ui" line="997"/>
+        <location filename="../forms/debugwindow.ui" line="1020"/>
+        <location filename="../forms/debugwindow.ui" line="1043"/>
+        <location filename="../forms/debugwindow.ui" line="1066"/>
+        <location filename="../forms/debugwindow.ui" line="1089"/>
+        <location filename="../forms/debugwindow.ui" line="1112"/>
+        <location filename="../forms/debugwindow.ui" line="1135"/>
+        <location filename="../forms/debugwindow.ui" line="1158"/>
+        <location filename="../forms/debugwindow.ui" line="1181"/>
+        <location filename="../forms/debugwindow.ui" line="1204"/>
+        <location filename="../forms/debugwindow.ui" line="1227"/>
+        <location filename="../forms/debugwindow.ui" line="1250"/>
+        <location filename="../forms/debugwindow.ui" line="1273"/>
+        <location filename="../forms/debugwindow.ui" line="1296"/>
+        <location filename="../forms/debugwindow.ui" line="1319"/>
+        <location filename="../forms/debugwindow.ui" line="1345"/>
+        <location filename="../forms/debugwindow.ui" line="1368"/>
+        <location filename="../forms/debugwindow.ui" line="1391"/>
+        <location filename="../forms/debugwindow.ui" line="1469"/>
         <source>N/A</source>
         <translation>NIEDOSTĘPNE</translation>
     </message>
     <message>
-        <location filename="../forms/rpcconsole.ui" line="83"/>
+        <location filename="../forms/debugwindow.ui" line="206"/>
         <source>Number of connections</source>
         <translation>Liczba połączeń</translation>
     </message>
     <message>
-        <location filename="../forms/rpcconsole.ui" line="90"/>
-        <source>Open the STRAKS debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Otwiera plik z zapisami debugowania Darkcoina z obecnego katalogu. Może to potrfać kilka sekund w zależności od rozmiaru pliku.</translation>
-    </message>
-    <message>
-        <location filename="../forms/rpcconsole.ui" line="93"/>
+        <location filename="../forms/debugwindow.ui" line="375"/>
         <source>&amp;Open</source>
-        <translation>&amp;Otwórz</translation>
+        <translation>Otwórz</translation>
     </message>
     <message>
-        <location filename="../forms/rpcconsole.ui" line="116"/>
+        <location filename="../forms/debugwindow.ui" line="147"/>
         <source>Startup time</source>
         <translation>Czas uruchomienia</translation>
     </message>
     <message>
-        <location filename="../forms/rpcconsole.ui" line="129"/>
+        <location filename="../forms/debugwindow.ui" line="176"/>
         <source>Network</source>
         <translation>Sieć</translation>
     </message>
     <message>
-        <location filename="../forms/rpcconsole.ui" line="152"/>
+        <location filename="../forms/debugwindow.ui" line="265"/>
         <source>Last block time</source>
         <translation>Czas ostatniego bloku</translation>
     </message>
     <message>
-        <location filename="../forms/rpcconsole.ui" line="165"/>
+        <location filename="../forms/debugwindow.ui" line="365"/>
         <source>Debug log file</source>
         <translation>Plik logowania debugowania</translation>
     </message>
     <message>
-        <location filename="../forms/rpcconsole.ui" line="172"/>
-        <source>Using OpenSSL version</source>
-        <translation>Używana wersja OpenSSL</translation>
-    </message>
-    <message>
-        <location filename="../forms/rpcconsole.ui" line="182"/>
-        <source>Build date</source>
-        <translation>Data kompilacji</translation>
-    </message>
-    <message>
-        <location filename="../forms/rpcconsole.ui" line="205"/>
+        <location filename="../forms/debugwindow.ui" line="242"/>
         <source>Current number of blocks</source>
         <translation>Aktualna liczba bloków</translation>
     </message>
     <message>
-        <location filename="../forms/rpcconsole.ui" line="305"/>
+        <location filename="../forms/debugwindow.ui" line="46"/>
         <source>Client version</source>
         <translation>Wersja klienta</translation>
     </message>
     <message>
-        <location filename="../forms/rpcconsole.ui" line="334"/>
+        <location filename="../forms/debugwindow.ui" line="14"/>
+        <source>Debug window</source>
+        <translation>Okno debugowania</translation>
+    </message>
+    <message>
+        <location filename="../forms/debugwindow.ui" line="69"/>
+        <location filename="../forms/debugwindow.ui" line="1056"/>
+        <source>User Agent</source>
+        <translation>User Agent</translation>
+    </message>
+    <message>
+        <location filename="../forms/debugwindow.ui" line="95"/>
+        <source>Using BerkeleyDB version</source>
+        <translation>Użycie wersji BerkeleDB</translation>
+    </message>
+    <message>
+        <location filename="../forms/debugwindow.ui" line="121"/>
+        <source>Datadir</source>
+        <translation>Lokalizacja</translation>
+    </message>
+    <message>
+        <location filename="../forms/debugwindow.ui" line="235"/>
         <source>Block chain</source>
-        <translation>Ciąg bloków</translation>
+        <translation>Blockchain</translation>
     </message>
     <message>
-        <location filename="../forms/rpcconsole.ui" line="349"/>
+        <location filename="../forms/debugwindow.ui" line="294"/>
+        <source>Memory Pool</source>
+        <translation>Zaalokowana pamięć</translation>
+    </message>
+    <message>
+        <location filename="../forms/debugwindow.ui" line="301"/>
+        <source>Current number of transactions</source>
+        <translation>Obecna liczba transakcji</translation>
+    </message>
+    <message>
+        <location filename="../forms/debugwindow.ui" line="324"/>
+        <source>Memory usage</source>
+        <translation>Użycie pamięci</translation>
+    </message>
+    <message>
+        <location filename="../forms/debugwindow.ui" line="372"/>
+        <source>Open the %1 debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Otwórz plik logów %1 z obecnego katalogu danych. Może to zająć kilka sekund dla dużych plików.</translation>
+    </message>
+    <message>
+        <location filename="../forms/debugwindow.ui" line="401"/>
         <source>&amp;Console</source>
-        <translation>&amp;Konsola</translation>
+        <translation>Konsola</translation>
     </message>
     <message>
-        <location filename="../forms/rpcconsole.ui" line="398"/>
+        <location filename="../forms/debugwindow.ui" line="440"/>
+        <source>Decrease font size</source>
+        <translation>Zmniejsz rozmiar czcionki</translation>
+    </message>
+    <message>
+        <location filename="../forms/debugwindow.ui" line="469"/>
+        <source>Increase font size</source>
+        <translation>Zwiększ rozmiar czcionki</translation>
+    </message>
+    <message>
+        <location filename="../forms/debugwindow.ui" line="501"/>
         <source>Clear console</source>
         <translation>Wyczyść konsolę</translation>
     </message>
     <message>
-        <location filename="../forms/rpcconsole.ui" line="421"/>
+        <location filename="../forms/debugwindow.ui" line="596"/>
         <source>&amp;Network Traffic</source>
-        <translation>$Ruch sieci</translation>
+        <translation>Ruch sieci</translation>
     </message>
     <message>
-        <location filename="../forms/rpcconsole.ui" line="473"/>
+        <location filename="../forms/debugwindow.ui" line="648"/>
         <source>&amp;Clear</source>
-        <translation>&amp;Wyczyść</translation>
+        <translation>Wyczyść</translation>
     </message>
     <message>
-        <location filename="../forms/rpcconsole.ui" line="486"/>
+        <location filename="../forms/debugwindow.ui" line="664"/>
         <source>Totals</source>
         <translation>Kwota ogólna</translation>
     </message>
     <message>
-        <location filename="../forms/rpcconsole.ui" line="550"/>
-        <location filename="../rpcconsole.cpp" line="367"/>
+        <location filename="../forms/debugwindow.ui" line="728"/>
+        <location filename="../forms/debugwindow.ui" line="1286"/>
+        <source>Received</source>
+        <translation>Otrzymano</translation>
+    </message>
+    <message>
+        <location filename="../forms/debugwindow.ui" line="808"/>
+        <location filename="../forms/debugwindow.ui" line="1263"/>
+        <source>Sent</source>
+        <translation>Wysłano</translation>
+    </message>
+    <message>
+        <location filename="../forms/debugwindow.ui" line="849"/>
+        <source>&amp;Peers</source>
+        <translation>Peery</translation>
+    </message>
+    <message>
+        <location filename="../forms/debugwindow.ui" line="902"/>
+        <source>Banned peers</source>
+        <translation>Zbanowane peery.</translation>
+    </message>
+    <message>
+        <location filename="../forms/debugwindow.ui" line="962"/>
+        <location filename="../rpcconsole.cpp" line="475"/>
+        <location filename="../rpcconsole.cpp" line="1271"/>
+        <source>Select a peer to view detailed information.</source>
+        <translation>Zaznacz peera aby uzyskać dodatkowe informacje.</translation>
+    </message>
+    <message>
+        <location filename="../forms/debugwindow.ui" line="987"/>
+        <source>Whitelisted</source>
+        <translation>Na białej liście</translation>
+    </message>
+    <message>
+        <location filename="../forms/debugwindow.ui" line="1010"/>
+        <source>Direction</source>
+        <translation>Kierunek</translation>
+    </message>
+    <message>
+        <location filename="../forms/debugwindow.ui" line="1033"/>
+        <source>Version</source>
+        <translation>Wersja</translation>
+    </message>
+    <message>
+        <location filename="../forms/debugwindow.ui" line="1079"/>
+        <source>Services</source>
+        <translation>Usługi</translation>
+    </message>
+    <message>
+        <location filename="../forms/debugwindow.ui" line="1102"/>
+        <source>Starting Block</source>
+        <translation>Rozpoczęcie bloku</translation>
+    </message>
+    <message>
+        <location filename="../forms/debugwindow.ui" line="1125"/>
+        <source>Synced Headers</source>
+        <translation>Zsynchronizowane nagłówki</translation>
+    </message>
+    <message>
+        <location filename="../forms/debugwindow.ui" line="1148"/>
+        <source>Synced Blocks</source>
+        <translation>Zsynchronizowane bloki</translation>
+    </message>
+    <message>
+        <location filename="../forms/debugwindow.ui" line="1171"/>
+        <source>Ban Score</source>
+        <translation>Rezultat blokady</translation>
+    </message>
+    <message>
+        <location filename="../forms/debugwindow.ui" line="1194"/>
+        <source>Connection Time</source>
+        <translation>Czas połączenia</translation>
+    </message>
+    <message>
+        <location filename="../forms/debugwindow.ui" line="1217"/>
+        <source>Last Send</source>
+        <translation>Ostatnio wysłano</translation>
+    </message>
+    <message>
+        <location filename="../forms/debugwindow.ui" line="1240"/>
+        <source>Last Receive</source>
+        <translation>Ostatnio odebrano</translation>
+    </message>
+    <message>
+        <location filename="../forms/debugwindow.ui" line="1309"/>
+        <source>Ping Time</source>
+        <translation>Czas pingu.</translation>
+    </message>
+    <message>
+        <location filename="../forms/debugwindow.ui" line="1332"/>
+        <source>The duration of a currently outstanding ping.</source>
+        <translation>Czas trwania obecnie zaległego polecenia ping.</translation>
+    </message>
+    <message>
+        <location filename="../forms/debugwindow.ui" line="1335"/>
+        <source>Ping Wait</source>
+        <translation>Oczekiwanie pingowania</translation>
+    </message>
+    <message>
+        <location filename="../forms/debugwindow.ui" line="1358"/>
+        <source>Min Ping</source>
+        <translation>Minimalny ping</translation>
+    </message>
+    <message>
+        <location filename="../forms/debugwindow.ui" line="1381"/>
+        <source>Time Offset</source>
+        <translation>Offset czasu</translation>
+    </message>
+    <message>
+        <location filename="../forms/debugwindow.ui" line="1421"/>
+        <source>&amp;Wallet Repair</source>
+        <translation>Naprawa portfela</translation>
+    </message>
+    <message>
+        <location filename="../forms/debugwindow.ui" line="1436"/>
+        <source>Wallet repair options.</source>
+        <translation>Opcje naprawy portfela.</translation>
+    </message>
+    <message>
+        <location filename="../forms/debugwindow.ui" line="1449"/>
+        <source>The buttons below will restart the wallet with command-line options to repair the wallet, fix issues with corrupt blockhain files or missing/obsolete transactions.</source>
+        <translation>Przyciski poniżej uruchomią ponownie portfel z poleceniami w celu jego naprawy, naprawy błędów z uszkodzonym blockchainem czy brakującymi/przestarzałymi transakcjami.</translation>
+    </message>
+    <message>
+        <location filename="../forms/debugwindow.ui" line="1459"/>
+        <source>Wallet In Use:</source>
+        <translation>Portfel w użyciu</translation>
+    </message>
+    <message>
+        <location filename="../forms/debugwindow.ui" line="1501"/>
+        <source>Salvage wallet</source>
+        <translation>Odzyskaj portfel</translation>
+    </message>
+    <message>
+        <location filename="../forms/debugwindow.ui" line="1515"/>
+        <source>Attempt to recover private keys from a corrupt wallet.dat.</source>
+        <translation>Spróbuj odzyskać klucze prywatne z uszkodzonego pliku wallet.dat.</translation>
+    </message>
+    <message>
+        <location filename="../forms/debugwindow.ui" line="1531"/>
+        <source>Rescan blockchain files</source>
+        <translation>Przeskanuj pliki blockchaina.</translation>
+    </message>
+    <message>
+        <location filename="../forms/debugwindow.ui" line="1545"/>
+        <source>Rescan the block chain for missing wallet transactions.</source>
+        <translation>Przeskanuj blockchain w poszukiwaniu brakujących transakcji w portfelu.</translation>
+    </message>
+    <message>
+        <location filename="../forms/debugwindow.ui" line="1561"/>
+        <source>Recover transactions 1</source>
+        <translation>Odzyskaj transakcje 1</translation>
+    </message>
+    <message>
+        <location filename="../forms/debugwindow.ui" line="1575"/>
+        <source>Recover transactions from blockchain (keep meta-data, e.g. account owner).</source>
+        <translation>Odzyskaj transakcję z blockchaina (pozostaw metadane, np. właściciela konta).</translation>
+    </message>
+    <message>
+        <location filename="../forms/debugwindow.ui" line="1591"/>
+        <source></source>
+        <translation>Odzyskaj transakcje 2</translation>
+    </message>
+    <message>
+        <location filename="../forms/debugwindow.ui" line="1605"/>
+        <source>Recover transactions from blockchain (drop meta-data).</source>
+        <translation>Odzyskaj transakcję z blockchaina (porzucając metadane).</translation>
+    </message>
+    <message>
+        <location filename="../forms/debugwindow.ui" line="1621"/>
+        <source>Upgrade wallet format</source>
+        <translation>Uaktualnij format portfela</translation>
+    </message>
+    <message>
+        <location filename="../forms/debugwindow.ui" line="1635"/>
+        <source>Upgrade wallet to latest format on startup. (Note: this is NOT an update of the wallet itself!)</source>
+        <translation>Uaktualnij portfel do najnowszego formatu podczas startu (Uwaga: to NIE JEST aktualizacja samego portfela!)</translation>
+    </message>
+    <message>
+        <location filename="../forms/debugwindow.ui" line="1651"/>
+        <source>Rebuild index</source>
+        <translation>Odbuduj indeks.</translation>
+    </message>
+    <message>
+        <location filename="../forms/debugwindow.ui" line="1665"/>
+        <source>Rebuild block chain index from current blk000??.dat files.</source>
+        <translation>Odbuduj indeks blockchaina używając obecne pliki typu blk000??.dat</translation>
+    </message>
+    <message>
+        <location filename="../rpcconsole.cpp" line="843"/>
         <source>In:</source>
         <translation>Wejście:</translation>
     </message>
     <message>
-        <location filename="../forms/rpcconsole.ui" line="630"/>
-        <location filename="../rpcconsole.cpp" line="368"/>
+        <location filename="../rpcconsole.cpp" line="844"/>
         <source>Out:</source>
         <translation>Wyjście:</translation>
     </message>
     <message>
-        <location filename="../rpcconsole.cpp" line="333"/>
-        <source>Welcome to the STRAKS RPC console.</source>
-        <translation>Witaj w konsoli RPC Darkcoina</translation>
+        <location filename="../rpcconsole.cpp" line="567"/>
+        <source>&amp;Disconnect</source>
+        <translation>Rozłącz</translation>
     </message>
     <message>
-        <location filename="../rpcconsole.cpp" line="334"/>
+        <location filename="../rpcconsole.cpp" line="568"/>
+        <location filename="../rpcconsole.cpp" line="569"/>
+        <location filename="../rpcconsole.cpp" line="570"/>
+        <location filename="../rpcconsole.cpp" line="571"/>
+        <source>Ban for</source>
+        <translation>Zbanuj za</translation>
+    </message>
+    <message>
+        <location filename="../rpcconsole.cpp" line="568"/>
+        <source>1 &amp;hour</source>
+        <translation>1 godzina</translation>
+    </message>
+    <message>
+        <location filename="../rpcconsole.cpp" line="569"/>
+        <source>1 &amp;day</source>
+        <translation>1 dzień</translation>
+    </message>
+    <message>
+        <location filename="../rpcconsole.cpp" line="570"/>
+        <source>1 &amp;week</source>
+        <translation>1 tydzień</translation>
+    </message>
+    <message>
+        <location filename="../rpcconsole.cpp" line="571"/>
+        <source>1 &amp;year</source>
+        <translation>1 rok</translation>
+    </message>
+    <message>
+        <location filename="../rpcconsole.cpp" line="619"/>
+        <source>&amp;Unban</source>
+        <translation>Odbanuj</translation>
+    </message>
+    <message>
+        <location filename="../rpcconsole.cpp" line="807"/>
+        <source>Welcome to the %1 RPC console.</source>
+        <translation>Witaj w konsoli RPC %1.</translation>
+    </message>
+    <message>
+        <location filename="../rpcconsole.cpp" line="808"/>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
-        <translation>Użyj strzałek do przewijania historii i &lt;b&gt;Ctrl-L&lt;/b&gt; aby wyczyścić ekran</translation>
+        <translation>Użyj strzałek do przewijania historii i &lt;b&gt;Ctrl-L&lt;/b&gt; aby wyczyścić ekran.</translation>
     </message>
     <message>
-        <location filename="../rpcconsole.cpp" line="335"/>
+        <location filename="../rpcconsole.cpp" line="809"/>
         <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
-        <translation>Wpisz &lt;b&gt;help&lt;/b&gt; aby uzyskać listę dostępnych komend</translation>
+        <translation>Wpisz &lt;b&gt;help&lt;/b&gt; aby uzyskać listę dostępnych komend.</translation>
     </message>
     <message>
-        <location filename="../rpcconsole.cpp" line="474"/>
+        <location filename="../rpcconsole.cpp" line="811"/>
+        <source>WARNING: Scammers have been active, telling users to type commands here, stealing their wallet contents. Do not use this console without fully understanding the ramification of a command.</source>
+        <translation>UWAGA: Oszuści nigdy nie śpią i mogą Ci mówić, abyś tutaj wpisywał różne komendy, służy to wykradnięciu danych portfela. Nie używaj tej konsoli jeśli nie rozumiesz w pełni znaczenia wpisywanych komend.</translation>
+    </message>
+    <message>
+        <location filename="../rpcconsole.cpp" line="847"/>
+        <source>Network activity disabled</source>
+        <translation>Aktywność sieciowa wyłączona</translation>
+    </message>
+    <message>
+        <location filename="../rpcconsole.cpp" line="1012"/>
         <source>%1 B</source>
         <translation>%1 B</translation>
     </message>
     <message>
-        <location filename="../rpcconsole.cpp" line="476"/>
+        <location filename="../rpcconsole.cpp" line="1014"/>
         <source>%1 KB</source>
         <translation>%1 KB</translation>
     </message>
     <message>
-        <location filename="../rpcconsole.cpp" line="478"/>
+        <location filename="../rpcconsole.cpp" line="1016"/>
         <source>%1 MB</source>
         <translation>%1 MB</translation>
     </message>
     <message>
-        <location filename="../rpcconsole.cpp" line="480"/>
+        <location filename="../rpcconsole.cpp" line="1018"/>
         <source>%1 GB</source>
         <translation>%1 GB</translation>
     </message>
     <message>
-        <location filename="../rpcconsole.cpp" line="487"/>
-        <source>%1 m</source>
-        <translation>%1 m</translation>
+        <location filename="../rpcconsole.cpp" line="1117"/>
+        <source>(node id: %1)</source>
+        <translation>(id węzła: %1)</translation>
     </message>
     <message>
-        <location filename="../rpcconsole.cpp" line="492"/>
-        <source>%1 h</source>
-        <translation>%1 h</translation>
+        <location filename="../rpcconsole.cpp" line="1119"/>
+        <source>via %1</source>
+        <translation>przez %1</translation>
     </message>
     <message>
-        <location filename="../rpcconsole.cpp" line="494"/>
-        <source>%1 h %2 m</source>
-        <translation>%1 h %2 m</translation>
+        <location filename="../rpcconsole.cpp" line="1122"/>
+        <location filename="../rpcconsole.cpp" line="1123"/>
+        <source>never</source>
+        <translation>nigdy</translation>
+    </message>
+    <message>
+        <location filename="../rpcconsole.cpp" line="1133"/>
+        <source>Inbound</source>
+        <translation>Przychodzacy</translation>
+    </message>
+    <message>
+        <location filename="../rpcconsole.cpp" line="1133"/>
+        <source>Outbound</source>
+        <translation>Wychodzący</translation>
+    </message>
+    <message>
+        <location filename="../rpcconsole.cpp" line="1135"/>
+        <source>Yes</source>
+        <translation>Tak</translation>
+    </message>
+    <message>
+        <location filename="../rpcconsole.cpp" line="1135"/>
+        <source>No</source>
+        <translation>Nie</translation>
+    </message>
+    <message>
+        <location filename="../rpcconsole.cpp" line="1147"/>
+        <location filename="../rpcconsole.cpp" line="1153"/>
+        <source>Unknown</source>
+        <translation>Nieznany</translation>
     </message>
 </context>
 <context>
@@ -2404,23 +2035,23 @@ https://www.transifex.com/projects/p/straks/</translation>
     <message>
         <location filename="../forms/receivecoinsdialog.ui" line="34"/>
         <source>Reuse one of the previously used receiving addresses. Reusing addresses has security and privacy issues. Do not use this unless re-generating a payment request made before.</source>
-        <translation>Użyj jeden z poprzednio użytych adresów odbiorczych. Podczas ponownego używania adresów występują problemy z bezpieczeństwem i prywatnością. Nie korzystaj z tej opcji, chyba że odtwarzasz żądanie płatności wykonane już wcześniej.</translation>
+        <translation>Użyj jeden z poprzednio użytych adresów odbiorczych. Ponowne użycie tych samych adresów mają problemy może skutkować problemami z bezpieczeństwem i prywatnością. Nie korzystaj z tej opcji, chyba że powtarzasz żądanie płatności wykonane wcześniej.</translation>
     </message>
     <message>
         <location filename="../forms/receivecoinsdialog.ui" line="37"/>
         <source>R&amp;euse an existing receiving address (not recommended)</source>
-        <translation>O&amp;drzuć istniejący adres odbiorczy (nie zalecane)</translation>
+        <translation>Ponownie użyj istniejącego adresu odbiorczego (niezalecane)</translation>
     </message>
     <message>
         <location filename="../forms/receivecoinsdialog.ui" line="51"/>
         <location filename="../forms/receivecoinsdialog.ui" line="74"/>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the STRAKS network.</source>
-        <translation>Opcjonalna wiadomość do żądania płatności. Wiadomość wyświetli się po otwarciu żądania. Pamiętaj: Wiadomość nie zostanie wysłana razem z płatnością poprzez sieć STRAKS.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Straks network.</source>
+        <translation>Opcjonalna wiadomość jaką załączasz do transakcji, która będzie widoczna gdy ją zlecisz. Uwaga: wiadomość nie będzie wysłana wraz z płatnością poprzez sieć Straks.</translation>
     </message>
     <message>
         <location filename="../forms/receivecoinsdialog.ui" line="54"/>
         <source>&amp;Message:</source>
-        <translation>&amp;Wiadomość:</translation>
+        <translation>Wiadomość:</translation>
     </message>
     <message>
         <location filename="../forms/receivecoinsdialog.ui" line="67"/>
@@ -2436,7 +2067,7 @@ https://www.transifex.com/projects/p/straks/</translation>
     <message>
         <location filename="../forms/receivecoinsdialog.ui" line="91"/>
         <source>&amp;Label:</source>
-        <translation>&amp;Etykieta:</translation>
+        <translation>Etykieta:</translation>
     </message>
     <message>
         <location filename="../forms/receivecoinsdialog.ui" line="104"/>
@@ -2447,17 +2078,17 @@ https://www.transifex.com/projects/p/straks/</translation>
     <message>
         <location filename="../forms/receivecoinsdialog.ui" line="107"/>
         <source>&amp;Amount:</source>
-        <translation>&amp;Ilość:</translation>
+        <translation>Ilość:</translation>
     </message>
     <message>
         <location filename="../forms/receivecoinsdialog.ui" line="141"/>
         <source>&amp;Request payment</source>
-        <translation>&amp;Żądaj płatności</translation>
+        <translation>Żądaj płatności</translation>
     </message>
     <message>
         <location filename="../forms/receivecoinsdialog.ui" line="158"/>
         <source>Clear all fields of the form.</source>
-        <translation>Wyczyść pola formularza</translation>
+        <translation>Wyczyść pola formularza.</translation>
     </message>
     <message>
         <location filename="../forms/receivecoinsdialog.ui" line="161"/>
@@ -2465,14 +2096,14 @@ https://www.transifex.com/projects/p/straks/</translation>
         <translation>Wyczyść</translation>
     </message>
     <message>
-        <location filename="../forms/receivecoinsdialog.ui" line="239"/>
+        <location filename="../forms/receivecoinsdialog.ui" line="236"/>
         <source>Requested payments history</source>
         <translation>Żądanie historii płatności</translation>
     </message>
     <message>
         <location filename="../forms/receivecoinsdialog.ui" line="261"/>
         <source>Show the selected request (does the same as double clicking an entry)</source>
-        <translation>Pokaż zaznaczone żądanie (działa jak podwójne kliknięcie)</translation>
+        <translation>Pokaż zaznaczone żądanie (działa jak podwójne kliknięcie na pozycję)</translation>
     </message>
     <message>
         <location filename="../forms/receivecoinsdialog.ui" line="264"/>
@@ -2480,29 +2111,34 @@ https://www.transifex.com/projects/p/straks/</translation>
         <translation>Pokaż</translation>
     </message>
     <message>
-        <location filename="../forms/receivecoinsdialog.ui" line="278"/>
+        <location filename="../forms/receivecoinsdialog.ui" line="281"/>
         <source>Remove the selected entries from the list</source>
-        <translation>Usuń zaznaczone z listy</translation>
+        <translation>Usuń zaznaczone wpisy z listy</translation>
     </message>
     <message>
-        <location filename="../forms/receivecoinsdialog.ui" line="281"/>
+        <location filename="../forms/receivecoinsdialog.ui" line="284"/>
         <source>Remove</source>
         <translation>Usuń</translation>
     </message>
     <message>
-        <location filename="../receivecoinsdialog.cpp" line="39"/>
+        <location filename="../receivecoinsdialog.cpp" line="47"/>
+        <source>Copy URI</source>
+        <translation>Skopiuj URI</translation>
+    </message>
+    <message>
+        <location filename="../receivecoinsdialog.cpp" line="48"/>
         <source>Copy label</source>
-        <translation>Kopiuj etykietę</translation>
+        <translation>Skopiuj etykietę</translation>
     </message>
     <message>
-        <location filename="../receivecoinsdialog.cpp" line="40"/>
+        <location filename="../receivecoinsdialog.cpp" line="49"/>
         <source>Copy message</source>
-        <translation>Kopiuj wiadomość</translation>
+        <translation>Skopiuj wiadomość</translation>
     </message>
     <message>
-        <location filename="../receivecoinsdialog.cpp" line="41"/>
+        <location filename="../receivecoinsdialog.cpp" line="50"/>
         <source>Copy amount</source>
-        <translation>Kopiuj kwotę</translation>
+        <translation>Skopiuj kwotę</translation>
     </message>
 </context>
 <context>
@@ -2515,17 +2151,17 @@ https://www.transifex.com/projects/p/straks/</translation>
     <message>
         <location filename="../forms/receiverequestdialog.ui" line="75"/>
         <source>Copy &amp;URI</source>
-        <translation>Kopiuj &amp;URI</translation>
+        <translation>Skopiuj URI</translation>
     </message>
     <message>
-        <location filename="../forms/receiverequestdialog.ui" line="82"/>
+        <location filename="../forms/receiverequestdialog.ui" line="85"/>
         <source>Copy &amp;Address</source>
-        <translation>Kopiuj &amp;adres</translation>
+        <translation>Skopiuj adres</translation>
     </message>
     <message>
-        <location filename="../forms/receiverequestdialog.ui" line="89"/>
+        <location filename="../forms/receiverequestdialog.ui" line="95"/>
         <source>&amp;Save Image...</source>
-        <translation>&amp;Zapisz obraz...</translation>
+        <translation>Zapisz obraz...</translation>
     </message>
     <message>
         <location filename="../receiverequestdialog.cpp" line="136"/>
@@ -2565,7 +2201,7 @@ https://www.transifex.com/projects/p/straks/</translation>
     <message>
         <location filename="../receiverequestdialog.cpp" line="161"/>
         <source>Resulting URI too long, try to reduce the text for label / message.</source>
-        <translation>Wynikowy URI jest zbyt długi, spróbuj zmniejszyć tekst etykiety / wiadomości</translation>
+        <translation>Wynikowy URI jest zbyt długi, spróbuj zmniejszyć tekst etykiety / wiadomości.</translation>
     </message>
     <message>
         <location filename="../receiverequestdialog.cpp" line="166"/>
@@ -2576,50 +2212,48 @@ https://www.transifex.com/projects/p/straks/</translation>
 <context>
     <name>RecentRequestsTableModel</name>
     <message>
-        <location filename="../recentrequeststablemodel.cpp" line="24"/>
+        <location filename="../recentrequeststablemodel.cpp" line="29"/>
         <source>Date</source>
         <translation>Data</translation>
     </message>
     <message>
-        <location filename="../recentrequeststablemodel.cpp" line="24"/>
+        <location filename="../recentrequeststablemodel.cpp" line="29"/>
         <source>Label</source>
         <translation>Etykieta</translation>
     </message>
     <message>
-        <location filename="../recentrequeststablemodel.cpp" line="24"/>
+        <location filename="../recentrequeststablemodel.cpp" line="29"/>
         <source>Message</source>
         <translation>Wiadomość</translation>
     </message>
     <message>
-        <location filename="../recentrequeststablemodel.cpp" line="24"/>
-        <source>Amount</source>
-        <translation>Kwota</translation>
+        <location filename="../recentrequeststablemodel.cpp" line="86"/>
+        <source>(no amount requested)</source>
+        <translation>(nie zażądano kwoty</translation>
     </message>
     <message>
-        <location filename="../recentrequeststablemodel.cpp" line="62"/>
+        <location filename="../recentrequeststablemodel.cpp" line="128"/>
+        <source>Requested</source>
+        <translation>Żądane</translation>
+    </message>
+    <message>
+        <location filename="../recentrequeststablemodel.cpp" line="69"/>
         <source>(no label)</source>
         <translation>(bez etykiety)</translation>
     </message>
     <message>
-        <location filename="../recentrequeststablemodel.cpp" line="71"/>
+        <location filename="../recentrequeststablemodel.cpp" line="78"/>
         <source>(no message)</source>
         <translation>(brak wiadomości)</translation>
-    </message>
-    <message>
-        <location filename="../recentrequeststablemodel.cpp" line="79"/>
-        <source>(no amount)</source>
-        <translation>(brak kwoty)</translation>
     </message>
 </context>
 <context>
     <name>SendCoinsDialog</name>
     <message>
         <location filename="../forms/sendcoinsdialog.ui" line="14"/>
-        <location filename="../sendcoinsdialog.cpp" line="429"/>
-        <location filename="../sendcoinsdialog.cpp" line="521"/>
-        <location filename="../sendcoinsdialog.cpp" line="531"/>
+        <location filename="../sendcoinsdialog.cpp" line="554"/>
         <source>Send Coins</source>
-        <translation>Wyślij Monety</translation>
+        <translation>Wyślij monety</translation>
     </message>
     <message>
         <location filename="../forms/sendcoinsdialog.ui" line="90"/>
@@ -2632,283 +2266,330 @@ https://www.transifex.com/projects/p/straks/</translation>
         <translation>Wejścia...</translation>
     </message>
     <message>
-        <location filename="../forms/sendcoinsdialog.ui" line="117"/>
+        <location filename="../forms/sendcoinsdialog.ui" line="120"/>
         <source>automatically selected</source>
         <translation>zaznaczone automatycznie</translation>
     </message>
     <message>
-        <location filename="../forms/sendcoinsdialog.ui" line="136"/>
+        <location filename="../forms/sendcoinsdialog.ui" line="139"/>
         <source>Insufficient funds!</source>
-        <translation>Niewystarczające środki</translation>
+        <translation>Niewystarczające środki!</translation>
     </message>
     <message>
-        <location filename="../forms/sendcoinsdialog.ui" line="225"/>
+        <location filename="../forms/sendcoinsdialog.ui" line="228"/>
         <source>Quantity:</source>
         <translation>Ilość:</translation>
     </message>
     <message>
-        <location filename="../forms/sendcoinsdialog.ui" line="260"/>
+        <location filename="../forms/sendcoinsdialog.ui" line="263"/>
         <source>Bytes:</source>
-        <translation>Bajtów:</translation>
+        <translation>Bajty:</translation>
     </message>
     <message>
-        <location filename="../forms/sendcoinsdialog.ui" line="308"/>
+        <location filename="../forms/sendcoinsdialog.ui" line="311"/>
         <source>Amount:</source>
         <translation>Kwota:</translation>
     </message>
     <message>
-        <location filename="../forms/sendcoinsdialog.ui" line="340"/>
-        <source>Priority:</source>
-        <translation>Priorytet:</translation>
-    </message>
-    <message>
-        <location filename="../forms/sendcoinsdialog.ui" line="353"/>
-        <source>medium</source>
-        <translation>średnia</translation>
-    </message>
-    <message>
-        <location filename="../forms/sendcoinsdialog.ui" line="388"/>
+        <location filename="../forms/sendcoinsdialog.ui" line="391"/>
         <source>Fee:</source>
         <translation>Opłata:</translation>
     </message>
     <message>
-        <location filename="../forms/sendcoinsdialog.ui" line="420"/>
-        <source>Low Output:</source>
-        <translation>Niska wartość wyjściowa:</translation>
+        <location filename="../forms/sendcoinsdialog.ui" line="343"/>
+        <source>Dust:</source>
+        <translation>&quot;Śmieciowe&quot; wartości:</translation>
     </message>
     <message>
-        <location filename="../forms/sendcoinsdialog.ui" line="433"/>
-        <source>no</source>
-        <translation>nie</translation>
-    </message>
-    <message>
-        <location filename="../forms/sendcoinsdialog.ui" line="468"/>
+        <location filename="../forms/sendcoinsdialog.ui" line="442"/>
         <source>After Fee:</source>
         <translation>Po opłacie:</translation>
     </message>
     <message>
-        <location filename="../forms/sendcoinsdialog.ui" line="500"/>
+        <location filename="../forms/sendcoinsdialog.ui" line="474"/>
         <source>Change:</source>
-        <translation>Reszta:</translation>
+        <translation>Zmiana:</translation>
     </message>
     <message>
-        <location filename="../forms/sendcoinsdialog.ui" line="544"/>
+        <location filename="../forms/sendcoinsdialog.ui" line="518"/>
         <source>If this is activated, but the change address is empty or invalid, change will be sent to a newly generated address.</source>
-        <translation>Kiedy ta opcja jest wybrana, ale adres reszty jest pusty lub nieprawidłowy to reszta będzie wysyłana na adres nowo-wygenerowany.</translation>
+        <translation>Kiedy ta opcja jest wybrana, ale zmieniony adres jest pusty lub nieprawidłowy, to transakcja będzie wysłana na nowo-wygenerowany adres.</translation>
     </message>
     <message>
-        <location filename="../forms/sendcoinsdialog.ui" line="547"/>
+        <location filename="../forms/sendcoinsdialog.ui" line="521"/>
         <source>Custom change address</source>
-        <translation>Niestandardowe zmiany adresu</translation>
+        <translation>Niestandardowa zmiana adresu</translation>
     </message>
     <message>
-        <location filename="../forms/sendcoinsdialog.ui" line="668"/>
+        <location filename="../forms/sendcoinsdialog.ui" line="727"/>
+        <source>Transaction Fee:</source>
+        <translation>Opłata za transakcję</translation>
+    </message>
+    <message>
+        <location filename="../forms/sendcoinsdialog.ui" line="741"/>
+        <source>Choose...</source>
+        <translation>Wybierz...</translation>
+    </message>
+    <message>
+        <location filename="../forms/sendcoinsdialog.ui" line="778"/>
+        <source>collapse fee-settings</source>
+        <translation>Zwiń pasek z opłatami</translation>
+    </message>
+    <message>
+        <location filename="../forms/sendcoinsdialog.ui" line="781"/>
+        <source>Hide</source>
+        <translation>Ukryj</translation>
+    </message>
+    <message>
+        <location filename="../forms/sendcoinsdialog.ui" line="829"/>
+        <location filename="../forms/sendcoinsdialog.ui" line="845"/>
+        <source>If the custom fee is set to 1000 satoshis and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 satoshis in fee, while &quot;total at least&quot; pays 1000 satoshis. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Jeśli niestandardowa opłata za transakcję jest ustawiona na 1000 satoshi, a transakcja zajmuje tylko 250 bajtów, wtedy za kilobajt płaci się tylko 250 satoshi, gdy suma opłat wyniesisie co najmniej 1000 satoshi. W przypadku transakcji większych niż kilobajt płaci się z osobna za kilobajt.</translation>
+    </message>
+    <message>
+        <location filename="../forms/sendcoinsdialog.ui" line="832"/>
+        <source>per kilobyte</source>
+        <translation>za kilobajt</translation>
+    </message>
+    <message>
+        <location filename="../forms/sendcoinsdialog.ui" line="848"/>
+        <source>total at least</source>
+        <translation>co najmniej w sumie</translation>
+    </message>
+    <message>
+        <location filename="../forms/sendcoinsdialog.ui" line="878"/>
+        <location filename="../forms/sendcoinsdialog.ui" line="891"/>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for straks transactions than the network can process.</source>
+        <translation>Zapłata minimalnej opłaty transakcyjnej jest w porządku, jeśli na potwierdzenie oczekuje mniej transakcji niż wolna ilość miejsca w bloku. Ale pamiętaj, że może to skutkować o wiele dłuższym czasem oczekiwania na potwierdzenie Straks niż sieć jest w stanie przetworzyć.</translation>
+    </message>
+    <message>
+        <location filename="../forms/sendcoinsdialog.ui" line="894"/>
+        <source>(read the tooltip)</source>
+        <translation>(przeczytaj podpowiedź)</translation>
+    </message>
+    <message>
+        <location filename="../forms/sendcoinsdialog.ui" line="923"/>
+        <source>Recommended:</source>
+        <translation>Zalecany:</translation>
+    </message>
+    <message>
+        <location filename="../forms/sendcoinsdialog.ui" line="953"/>
+        <source>Custom:</source>
+        <translation>Niestandardowy:</translation>
+    </message>
+    <message>
+        <location filename="../forms/sendcoinsdialog.ui" line="1005"/>
+        <source>(Smart fee not initialized yet. This usually takes a few blocks...)</source>
+        <translation>(Inteligentne opłaty transakcyjne nie zostały jeszcze zainicjowane. To trwa zazwyczaj kilka bloków...)</translation>
+    </message>
+    <message>
+        <location filename="../forms/sendcoinsdialog.ui" line="1034"/>
+        <source>Confirmation time target:</source>
+        <translation>Limit czasu potwierdzenia</translation>
+    </message>
+    <message>
+        <location filename="../forms/sendcoinsdialog.ui" line="1094"/>
+        <source>normal</source>
+        <translation>normalny</translation>
+    </message>
+    <message>
+        <location filename="../forms/sendcoinsdialog.ui" line="1134"/>
+        <source>fast</source>
+        <translation>szybko</translation>
+    </message>
+    <message>
+        <location filename="../forms/sendcoinsdialog.ui" line="1193"/>
         <source>Confirm the send action</source>
         <translation>Potwierdź akcję wysyłania</translation>
     </message>
     <message>
-        <location filename="../forms/sendcoinsdialog.ui" line="671"/>
+        <location filename="../forms/sendcoinsdialog.ui" line="1196"/>
         <source>S&amp;end</source>
-        <translation>Wy&amp;syłka</translation>
+        <translation>Wyślij</translation>
     </message>
     <message>
-        <location filename="../forms/sendcoinsdialog.ui" line="691"/>
+        <location filename="../forms/sendcoinsdialog.ui" line="1219"/>
         <source>Clear all fields of the form.</source>
-        <translation>Wyczyść wszystkie pola formularza</translation>
+        <translation>Wyczyść wszystkie pola w formularzu.</translation>
     </message>
     <message>
-        <location filename="../forms/sendcoinsdialog.ui" line="694"/>
+        <location filename="../forms/sendcoinsdialog.ui" line="1222"/>
         <source>Clear &amp;All</source>
-        <translation>Wyczyść &amp;wszystko</translation>
+        <translation>Wyczyść wszystko</translation>
     </message>
     <message>
-        <location filename="../forms/sendcoinsdialog.ui" line="711"/>
+        <location filename="../forms/sendcoinsdialog.ui" line="1236"/>
         <source>Send to multiple recipients at once</source>
         <translation>Wyślij do wielu odbiorców na raz</translation>
     </message>
     <message>
-        <location filename="../forms/sendcoinsdialog.ui" line="714"/>
+        <location filename="../forms/sendcoinsdialog.ui" line="1239"/>
         <source>Add &amp;Recipient</source>
-        <translation>Dodaj Odbio&amp;rce</translation>
+        <translation>Dodaj Odbiorcę</translation>
     </message>
     <message>
-        <location filename="../forms/sendcoinsdialog.ui" line="752"/>
-        <source>Darksend</source>
-        <translation>Darksend</translation>
-    </message>
-    <message>
-        <location filename="../forms/sendcoinsdialog.ui" line="771"/>
-        <source>InstantX</source>
-        <translation>InstantX</translation>
-    </message>
-    <message>
-        <location filename="../forms/sendcoinsdialog.ui" line="778"/>
+        <location filename="../forms/sendcoinsdialog.ui" line="1277"/>
         <source>Balance:</source>
         <translation>Saldo:</translation>
     </message>
     <message>
-        <location filename="../sendcoinsdialog.cpp" line="53"/>
+        <location filename="../sendcoinsdialog.cpp" line="68"/>
         <source>Copy quantity</source>
         <translation>Skopiuj ilość</translation>
     </message>
     <message>
-        <location filename="../sendcoinsdialog.cpp" line="54"/>
+        <location filename="../sendcoinsdialog.cpp" line="69"/>
         <source>Copy amount</source>
-        <translation>Kopiuj kwotę</translation>
+        <translation>Skopiuj kwotę</translation>
     </message>
     <message>
-        <location filename="../sendcoinsdialog.cpp" line="55"/>
+        <location filename="../sendcoinsdialog.cpp" line="70"/>
         <source>Copy fee</source>
-        <translation>Skopiuj opłatę</translation>
+        <translation>Skopiuj opłatę transakcyjną</translation>
     </message>
     <message>
-        <location filename="../sendcoinsdialog.cpp" line="56"/>
+        <location filename="../sendcoinsdialog.cpp" line="71"/>
         <source>Copy after fee</source>
         <translation>Skopiuj ilość po opłacie</translation>
     </message>
     <message>
-        <location filename="../sendcoinsdialog.cpp" line="57"/>
+        <location filename="../sendcoinsdialog.cpp" line="72"/>
         <source>Copy bytes</source>
         <translation>Skopiuj ilość bajtów</translation>
     </message>
     <message>
-        <location filename="../sendcoinsdialog.cpp" line="58"/>
-        <source>Copy priority</source>
-        <translation>Skopiuj priorytet</translation>
+        <location filename="../sendcoinsdialog.cpp" line="73"/>
+        <source>Copy dust</source>
+        <translation>Skopiuj &quot;śmieciowe&quot; wartości.</translation>
     </message>
     <message>
-        <location filename="../sendcoinsdialog.cpp" line="59"/>
-        <source>Copy low output</source>
-        <translation>Skopiuj niską wartość</translation>
+        <location filename="../sendcoinsdialog.cpp" line="308"/>
+        <source>added as transaction fee</source>
+        <translation>dodane jako opłata za transakcję</translation>
     </message>
     <message>
-        <location filename="../sendcoinsdialog.cpp" line="60"/>
+        <location filename="../sendcoinsdialog.cpp" line="323"/>
+        <source>Total Amount %1</source>
+        <translation>Całkowita kwota %1</translation>
+    </message>
+    <message>
+        <location filename="../sendcoinsdialog.cpp" line="519"/>
+        <source>The recipient address is not valid. Please recheck.</source>
+        <translation>Adres odbiorcy jest nieprawidłowy. Proszę sprawdzić ponownie.</translation>
+    </message>
+    <message>
+        <location filename="../sendcoinsdialog.cpp" line="531"/>
+        <source>Duplicate address found: addresses should only be used once each.</source>
+        <translation>Znaleziono duplikat adresu: adresy powinny być unikalne.</translation>
+    </message>
+    <message>
+        <location filename="../sendcoinsdialog.cpp" line="538"/>
+        <source>The transaction was rejected with the following reason: %1</source>
+        <translation>Transakcja została odrzucona z następującego powodu: %1</translation>
+    </message>
+    <message>
+        <location filename="../sendcoinsdialog.cpp" line="542"/>
+        <source>A fee higher than %1 is considered an absurdly high fee.</source>
+        <translation>Opłata za transakcję większa niż %1 jest uważana za absurdalnie wysoką.</translation>
+    </message>
+    <message>
+        <location filename="../sendcoinsdialog.cpp" line="545"/>
+        <source>Payment request expired.</source>
+        <translation>Zlecenie płatności przedawniło się.</translation>
+    </message>
+    <message numerus="yes">
+        <location filename="../sendcoinsdialog.cpp" line="612"/>
+        <source>%n block(s)</source>
+        <translation>
+            <numerusform>%n blok</numerusform>
+            <numerusform>%n bloków</numerusform>
+            <numerusform>%n blok(ów)</numerusform>
+        </translation>
+    </message>
+    <message>
+        <location filename="../sendcoinsdialog.cpp" line="640"/>
+        <source>Pay only the required fee of %1</source>
+        <translation>Zapłać tylko wymaganą opłatę transakcyjną w wysokości %1</translation>
+    </message>
+    <message numerus="yes">
+        <location filename="../sendcoinsdialog.cpp" line="665"/>
+        <source>Estimated to begin confirmation within %n block(s).</source>
+        <translation>
+            <numerusform>Szacowane rozpoczęcie potwierdzenia w ciągu %n bloku.</numerusform>
+            <numerusform>Szacowane rozpoczęcie potwierdzenia w ciągu %n bloków.</numerusform>
+            <numerusform>Szacowane rozpoczęcie potwierdzenia w ciągu %n bloku(ów).</numerusform>
+        </translation>
+    </message>
+    <message>
+        <location filename="../sendcoinsdialog.cpp" line="767"/>
+        <source>Warning: Invalid Straks address</source>
+        <translation>Uwaga: Nieprawidłowy adres Straks</translation>
+    </message>
+    <message>
+        <location filename="../sendcoinsdialog.cpp" line="74"/>
         <source>Copy change</source>
         <translation>Skopiuj resztę</translation>
     </message>
     <message>
-        <location filename="../sendcoinsdialog.cpp" line="145"/>
-        <location filename="../sendcoinsdialog.cpp" line="151"/>
-        <location filename="../sendcoinsdialog.cpp" line="160"/>
-        <source>using</source>
-        <translation>używając</translation>
-    </message>
-    <message>
-        <location filename="../sendcoinsdialog.cpp" line="145"/>
-        <location filename="../sendcoinsdialog.cpp" line="151"/>
-        <source>anonymous funds</source>
-        <translation>anonimowe środki</translation>
-    </message>
-    <message>
-        <location filename="../sendcoinsdialog.cpp" line="155"/>
-        <source>(Darksend requires this amount to be rounded up to the nearest %1).</source>
-        <translation>(Darksend wymaga aby kwota ta została zaokrąglona do najbliższego 1%).</translation>
-    </message>
-    <message>
-        <location filename="../sendcoinsdialog.cpp" line="160"/>
-        <source>any available funds (not recommended)</source>
-        <translation>jakiekolwiek dostępne środki (niezalecane)</translation>
-    </message>
-    <message>
-        <location filename="../sendcoinsdialog.cpp" line="166"/>
-        <source>and InstantX</source>
-        <translation>i InstantX</translation>
-    </message>
-    <message>
-        <location filename="../sendcoinsdialog.cpp" line="190"/>
-        <location filename="../sendcoinsdialog.cpp" line="195"/>
-        <location filename="../sendcoinsdialog.cpp" line="200"/>
-        <location filename="../sendcoinsdialog.cpp" line="204"/>
+        <location filename="../sendcoinsdialog.cpp" line="279"/>
+        <location filename="../sendcoinsdialog.cpp" line="284"/>
+        <location filename="../sendcoinsdialog.cpp" line="289"/>
+        <location filename="../sendcoinsdialog.cpp" line="293"/>
         <source>%1 to %2</source>
         <translation>%1 do %2</translation>
     </message>
     <message>
-        <location filename="../sendcoinsdialog.cpp" line="253"/>
+        <location filename="../sendcoinsdialog.cpp" line="299"/>
         <source>Are you sure you want to send?</source>
         <translation>Czy na pewno chcesz wysłać?</translation>
     </message>
     <message>
-        <location filename="../sendcoinsdialog.cpp" line="262"/>
-        <source>are added as transaction fee</source>
-        <translation>dodane są jako opłata za transakcje</translation>
-    </message>
-    <message>
-        <location filename="../sendcoinsdialog.cpp" line="276"/>
-        <source>Total Amount %1 (= %2)</source>
-        <translation>Łączna kwota %1 (= %2)</translation>
-    </message>
-    <message>
-        <location filename="../sendcoinsdialog.cpp" line="278"/>
+        <location filename="../sendcoinsdialog.cpp" line="326"/>
         <source>or</source>
         <translation>lub</translation>
     </message>
     <message>
-        <location filename="../sendcoinsdialog.cpp" line="280"/>
+        <location filename="../sendcoinsdialog.cpp" line="328"/>
         <source>Confirm send coins</source>
-        <translation>Potwierdź wysyłanie monet</translation>
+        <translation>Potwierdź wysłanie monet</translation>
     </message>
     <message>
-        <location filename="../sendcoinsdialog.cpp" line="435"/>
-        <source>Payment request expired</source>
-        <translation>Zażądanie płatności upłynęło</translation>
-    </message>
-    <message>
-        <location filename="../sendcoinsdialog.cpp" line="443"/>
-        <source>Invalid payment address %1</source>
-        <translation>błędny adres płatności %1</translation>
-    </message>
-    <message>
-        <location filename="../sendcoinsdialog.cpp" line="498"/>
-        <source>The recipient address is not valid, please recheck.</source>
-        <translation>Adres odbiorcy jest nieprawidłowy, proszę poprawić</translation>
-    </message>
-    <message>
-        <location filename="../sendcoinsdialog.cpp" line="501"/>
+        <location filename="../sendcoinsdialog.cpp" line="522"/>
         <source>The amount to pay must be larger than 0.</source>
         <translation>Kwota do zapłacenia musi być większa od 0.</translation>
     </message>
     <message>
-        <location filename="../sendcoinsdialog.cpp" line="504"/>
+        <location filename="../sendcoinsdialog.cpp" line="525"/>
         <source>The amount exceeds your balance.</source>
-        <translation>Kwota przekracza twoje saldo.</translation>
+        <translation>Kwota przekracza Twoje saldo.</translation>
     </message>
     <message>
-        <location filename="../sendcoinsdialog.cpp" line="507"/>
+        <location filename="../sendcoinsdialog.cpp" line="528"/>
         <source>The total exceeds your balance when the %1 transaction fee is included.</source>
-        <translation>Suma przekracza twoje saldo, gdy doliczymy %1 prowizji transakcyjnej.</translation>
+        <translation>Suma przekracza twoje saldo, gdy zostanie doliczone %1 prowizji transakcyjnej.</translation>
     </message>
     <message>
-        <location filename="../sendcoinsdialog.cpp" line="510"/>
-        <source>Duplicate address found, can only send to each address once per send operation.</source>
-        <translation>Znaleziono powtórzony adres, można wysłać tylko raz na każdy adres podczas operacji wysyłania.</translation>
-    </message>
-    <message>
-        <location filename="../sendcoinsdialog.cpp" line="513"/>
+        <location filename="../sendcoinsdialog.cpp" line="534"/>
         <source>Transaction creation failed!</source>
         <translation>Utworzenie transakcji nie powiodło się!</translation>
     </message>
     <message>
-        <location filename="../sendcoinsdialog.cpp" line="517"/>
-        <source>The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>Transakcja została odrzucona! Może się to zdarzyć jeśli część monet z portfela została już wydana używając kopii pliku wallet.dat i nie zostało to tutaj uwzględnione.</translation>
-    </message>
-    <message>
-        <location filename="../sendcoinsdialog.cpp" line="522"/>
-        <source>Error: The wallet was unlocked only to anonymize coins.</source>
-        <translation>Błąd: Portfel został odblokowany tylko dla anonimizacji monet.</translation>
-    </message>
-    <message>
-        <location filename="../sendcoinsdialog.cpp" line="635"/>
-        <source>Warning: Invalid STRAKS address</source>
-        <translation>Ostrzeżenie: adres STRAKS jest nieprawidlowy </translation>
-    </message>
-    <message>
-        <location filename="../sendcoinsdialog.cpp" line="644"/>
+        <location filename="../sendcoinsdialog.cpp" line="775"/>
         <source>Warning: Unknown change address</source>
-        <translation>Ostrzeżenie: Nieznany adres</translation>
+        <translation>Uwaga: Nieznany adres</translation>
     </message>
     <message>
-        <location filename="../sendcoinsdialog.cpp" line="655"/>
+        <location filename="../sendcoinsdialog.cpp" line="778"/>
+        <source>Confirm custom change address</source>
+        <translation>Potwierdź niestandardową zmianę adresu</translation>
+    </message>
+    <message>
+        <location filename="../sendcoinsdialog.cpp" line="778"/>
+        <source>The address you selected for change is not part of this wallet. Any or all funds in your wallet may be sent to this address. Are you sure?</source>
+        <translation>Wybrany adres do zmiany nie jest częścią tego portfela. Różne lub wszystkie środki w twoim portfelu mogą być wysyłane na ten adres. Jesteś tego pewien?</translation>
+    </message>
+    <message>
+        <location filename="../sendcoinsdialog.cpp" line="799"/>
         <source>(no label)</source>
         <translation>(bez etykiety)</translation>
     </message>
@@ -2918,109 +2599,128 @@ https://www.transifex.com/projects/p/straks/</translation>
     <message>
         <location filename="../forms/sendcoinsentry.ui" line="21"/>
         <source>This is a normal payment.</source>
-        <translation>To jest standardowa płatność</translation>
+        <translation>To jest standardowa płatność.</translation>
     </message>
     <message>
-        <location filename="../forms/sendcoinsentry.ui" line="36"/>
+        <location filename="../forms/sendcoinsentry.ui" line="42"/>
         <source>Pay &amp;To:</source>
-        <translation>Zapłać &amp;dla:</translation>
+        <translation>Zapłać dla:</translation>
     </message>
     <message>
-        <location filename="../forms/sendcoinsentry.ui" line="54"/>
-        <source>The address to send the payment to (e.g. iGJXtgFacXixKeK8Pxmk3a7YhXMc2o8EsB )</source>
-        <translation>Adres na który wysłać płatność (np. iGJXtgFacXixKeK8Pxmk3a7YhXMc2o8EsB )</translation>
+        <location filename="../forms/sendcoinsentry.ui" line="60"/>
+        <source>The STRAKS address to send the payment to</source>
+        <translation>Adres Straks na który ma być wysłana płatność</translation>
     </message>
     <message>
-        <location filename="../forms/sendcoinsentry.ui" line="61"/>
+        <location filename="../forms/sendcoinsentry.ui" line="67"/>
         <source>Choose previously used address</source>
         <translation>Wybierz wcześniej użyty adres </translation>
     </message>
     <message>
-        <location filename="../forms/sendcoinsentry.ui" line="71"/>
+        <location filename="../forms/sendcoinsentry.ui" line="83"/>
         <source>Alt+A</source>
         <translation>Alt+A</translation>
     </message>
     <message>
-        <location filename="../forms/sendcoinsentry.ui" line="78"/>
+        <location filename="../forms/sendcoinsentry.ui" line="90"/>
         <source>Paste address from clipboard</source>
         <translation>Wklej adres ze schowka</translation>
     </message>
     <message>
-        <location filename="../forms/sendcoinsentry.ui" line="88"/>
+        <location filename="../forms/sendcoinsentry.ui" line="106"/>
         <source>Alt+P</source>
         <translation>Alt+P</translation>
     </message>
     <message>
-        <location filename="../forms/sendcoinsentry.ui" line="95"/>
-        <location filename="../forms/sendcoinsentry.ui" line="619"/>
-        <location filename="../forms/sendcoinsentry.ui" line="1155"/>
+        <location filename="../forms/sendcoinsentry.ui" line="113"/>
+        <location filename="../forms/sendcoinsentry.ui" line="661"/>
+        <location filename="../forms/sendcoinsentry.ui" line="1194"/>
         <source>Remove this entry</source>
         <translation>Usuń ten wpis</translation>
     </message>
     <message>
-        <location filename="../forms/sendcoinsentry.ui" line="111"/>
+        <location filename="../forms/sendcoinsentry.ui" line="135"/>
         <source>&amp;Label:</source>
-        <translation>&amp;Etykieta:</translation>
+        <translation>Etykieta:</translation>
     </message>
     <message>
-        <location filename="../forms/sendcoinsentry.ui" line="124"/>
+        <location filename="../forms/sendcoinsentry.ui" line="148"/>
         <source>Enter a label for this address to add it to the list of used addresses</source>
         <translation>Wprowadź etykietę dla tego adresu by dodać go do listy użytych adresów</translation>
     </message>
     <message>
-        <location filename="../forms/sendcoinsentry.ui" line="131"/>
-        <location filename="../forms/sendcoinsentry.ui" line="652"/>
-        <location filename="../forms/sendcoinsentry.ui" line="1188"/>
+        <location filename="../forms/sendcoinsentry.ui" line="155"/>
+        <location filename="../forms/sendcoinsentry.ui" line="694"/>
+        <location filename="../forms/sendcoinsentry.ui" line="1227"/>
         <source>A&amp;mount:</source>
-        <translation>Su&amp;ma:</translation>
+        <translation>Suma:</translation>
     </message>
     <message>
-        <location filename="../forms/sendcoinsentry.ui" line="147"/>
+        <location filename="../forms/sendcoinsentry.ui" line="173"/>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less STRAKS than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation>Opłata za transakcyjnę zostanie pobrana z wysyłanej kwoty. Odbiorca otrzyma mniej Straks niż wprowadziłeś w polu kwoty. Jeśli zaznaczyłeś wielu odbiorców, opłata zostanie podzielona po równo między nimi.</translation>
+    </message>
+    <message>
+        <location filename="../forms/sendcoinsentry.ui" line="176"/>
+        <source>S&amp;ubtract fee from amount</source>
+        <translation>Pobierz opłatę od transakcji</translation>
+    </message>
+    <message>
+        <location filename="../forms/sendcoinsentry.ui" line="185"/>
         <source>Message:</source>
         <translation>Wiadomość:</translation>
     </message>
     <message>
-        <location filename="../forms/sendcoinsentry.ui" line="157"/>
-        <source>A message that was attached to the straks: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the STRAKS network.</source>
-        <translation>Wiadomość, która została dołączona do straks: Link, który zostanie zapisany wraz z transakcją do wglądu w przyszłości. Zauważ. że sama wiadomość nie zostanie wysłana przez sieć Darkcoina.</translation>
+        <location filename="../forms/sendcoinsentry.ui" line="195"/>
+        <source>A message that was attached to the straks: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Straks network.</source>
+        <translation>Wiadomość dołączona do Straks: URI, który będzie przechowywany wraz z transakcją dla Twojej wiadomości. Uwaga: nie będzie ona wysłana przez sieć Straks.</translation>
     </message>
     <message>
-        <location filename="../forms/sendcoinsentry.ui" line="583"/>
-        <source>This is an unverified payment request.</source>
-        <translation>To żądanie zapłaty nie zostało zweryfikowane.</translation>
+        <location filename="../forms/sendcoinsentry.ui" line="628"/>
+        <source>This is an unauthenticated payment request.</source>
+        <translation>Jest to nieuwierzytelnione zlecenie płatności.</translation>
     </message>
     <message>
-        <location filename="../forms/sendcoinsentry.ui" line="601"/>
-        <location filename="../forms/sendcoinsentry.ui" line="1133"/>
+        <location filename="../forms/sendcoinsentry.ui" line="1157"/>
+        <source>This is an authenticated payment request.</source>
+        <translation>Jest to uwierzytelniona zlecenie platności.</translation>
+    </message>
+    <message>
+        <location filename="../forms/sendcoinsentry.ui" line="643"/>
+        <location filename="../forms/sendcoinsentry.ui" line="1172"/>
         <source>Pay To:</source>
-        <translation>Wpłać do:</translation>
+        <translation>Zapłać dla:</translation>
     </message>
     <message>
-        <location filename="../forms/sendcoinsentry.ui" line="635"/>
-        <location filename="../forms/sendcoinsentry.ui" line="1171"/>
+        <location filename="../forms/sendcoinsentry.ui" line="677"/>
+        <location filename="../forms/sendcoinsentry.ui" line="1210"/>
         <source>Memo:</source>
         <translation>Notatka:</translation>
     </message>
     <message>
-        <location filename="../forms/sendcoinsentry.ui" line="1115"/>
-        <source>This is a verified payment request.</source>
-        <translation>Zweryfikowano żądanie zapłaty.</translation>
-    </message>
-    <message>
-        <location filename="../sendcoinsentry.cpp" line="31"/>
+        <location filename="../sendcoinsentry.cpp" line="37"/>
         <source>Enter a label for this address to add it to your address book</source>
         <translation>Wprowadź etykietę dla tego adresu by dodać go do książki adresowej</translation>
     </message>
 </context>
 <context>
+    <name>SendConfirmationDialog</name>
+    <message>
+        <location filename="../sendcoinsdialog.cpp" line="894"/>
+        <location filename="../sendcoinsdialog.cpp" line="899"/>
+        <source>Yes</source>
+        <translation>Tak</translation>
+    </message>
+</context>
+<context>
     <name>ShutdownWindow</name>
     <message>
-        <location filename="../utilitydialog.cpp" line="129"/>
-        <source>STRAKS Core is shutting down...</source>
-        <translation>Trwa zamykanie STRAKS Core</translation>
+        <location filename="../utilitydialog.cpp" line="169"/>
+        <source>%1 is shutting down...</source>
+        <translation>%1 jest wyłączany...</translation>
     </message>
     <message>
-        <location filename="../utilitydialog.cpp" line="130"/>
+        <location filename="../utilitydialog.cpp" line="170"/>
         <source>Do not shut down the computer until this window disappears.</source>
         <translation>Nie wyłączaj komputera dopóki to okno nie zniknie.</translation>
     </message>
@@ -3033,181 +2733,176 @@ https://www.transifex.com/projects/p/straks/</translation>
         <translation>Podpisy - Podpisz / zweryfikuj wiadomość</translation>
     </message>
     <message>
-        <location filename="../forms/signverifymessagedialog.ui" line="24"/>
+        <location filename="../forms/signverifymessagedialog.ui" line="27"/>
         <source>&amp;Sign Message</source>
-        <translation>Podpi&amp;sz Wiadomość</translation>
+        <translation>Podpisz Wiadomość</translation>
     </message>
     <message>
-        <location filename="../forms/signverifymessagedialog.ui" line="30"/>
-        <source>You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>Możesz podpisywać wiadomości swoimi adresami aby udowodnić, że jesteś ich właścicielem. Uważaj, aby nie podpisywać niczego co wzbudza Twoje podejrzenia, ponieważ ktoś może stosować phishing próbując nakłonić Cię do ich podpisania. Akceptuj i podpisuj tylko w pełni zrozumiałe komunikaty i wiadomości.</translation>
+        <location filename="../forms/signverifymessagedialog.ui" line="33"/>
+        <source>You can sign messages/agreements with your addresses to prove you can receive STRAKS sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <translation>Możesz podpisać wiadomości lub udowodnić że jesteś właścicielem danego adresu Straks na który możesz go otrzymywać. Uważaj, aby nie podpisywać niczego nieważnego albo losowego, gdyż ataki phishingowe mogą skłonić Cię do podpisania Twojej tożsamości. Podpisuj tylko konkretne wiadomości, na które wyrażasz zgodę.</translation>
     </message>
     <message>
-        <location filename="../forms/signverifymessagedialog.ui" line="48"/>
-        <source>The address to sign the message with (e.g. iGJXtgFacXixKeK8Pxmk3a7YhXMc2o8EsB )</source>
-        <translation>Adres, którym ma być podpisana wiadomość (np.: iGJXtgFacXixKeK8Pxmk3a7YhXMc2o8EsB )</translation>
+        <location filename="../forms/signverifymessagedialog.ui" line="51"/>
+        <source>The STRAKS address to sign the message with</source>
+        <translation>Adres STRAKS użyty do podpisania wiadomości</translation>
     </message>
     <message>
-        <location filename="../forms/signverifymessagedialog.ui" line="55"/>
-        <location filename="../forms/signverifymessagedialog.ui" line="265"/>
+        <location filename="../forms/signverifymessagedialog.ui" line="58"/>
+        <location filename="../forms/signverifymessagedialog.ui" line="268"/>
         <source>Choose previously used address</source>
         <translation>Wybierz wcześniej użyty adres</translation>
     </message>
     <message>
-        <location filename="../forms/signverifymessagedialog.ui" line="65"/>
-        <location filename="../forms/signverifymessagedialog.ui" line="275"/>
+        <location filename="../forms/signverifymessagedialog.ui" line="68"/>
+        <location filename="../forms/signverifymessagedialog.ui" line="278"/>
         <source>Alt+A</source>
         <translation>Alt+A</translation>
     </message>
     <message>
-        <location filename="../forms/signverifymessagedialog.ui" line="75"/>
+        <location filename="../forms/signverifymessagedialog.ui" line="78"/>
         <source>Paste address from clipboard</source>
         <translation>Wklej adres ze schowka</translation>
     </message>
     <message>
-        <location filename="../forms/signverifymessagedialog.ui" line="85"/>
+        <location filename="../forms/signverifymessagedialog.ui" line="88"/>
         <source>Alt+P</source>
         <translation>Alt+P</translation>
     </message>
     <message>
-        <location filename="../forms/signverifymessagedialog.ui" line="97"/>
+        <location filename="../forms/signverifymessagedialog.ui" line="100"/>
         <source>Enter the message you want to sign here</source>
-        <translation>Wprowadź wiadomość, którą chcesz podpisać, tutaj</translation>
+        <translation>Wprowadź tutaj wiadomość, którą chcesz podpisać</translation>
     </message>
     <message>
-        <location filename="../forms/signverifymessagedialog.ui" line="104"/>
+        <location filename="../forms/signverifymessagedialog.ui" line="107"/>
         <source>Signature</source>
         <translation>Podpis</translation>
     </message>
     <message>
-        <location filename="../forms/signverifymessagedialog.ui" line="131"/>
+        <location filename="../forms/signverifymessagedialog.ui" line="134"/>
         <source>Copy the current signature to the system clipboard</source>
         <translation>Kopiuje aktualny podpis do schowka systemowego</translation>
     </message>
     <message>
-        <location filename="../forms/signverifymessagedialog.ui" line="152"/>
-        <source>Sign the message to prove you own this STRAKS address</source>
-        <translation>Podpisz wiadomość aby udowodnić, że jesteś właścicielem adresu STRAKS.</translation>
-    </message>
-    <message>
         <location filename="../forms/signverifymessagedialog.ui" line="155"/>
-        <source>Sign &amp;Message</source>
-        <translation>Podpisz Wiado&amp;mość</translation>
+        <source>Sign the message to prove you own this Straks address</source>
+        <translation>Podpisz wiadomość, aby udowodnić, że jesteś właścicielem danego adresu Straks</translation>
     </message>
     <message>
-        <location filename="../forms/signverifymessagedialog.ui" line="169"/>
-        <source>Reset all sign message fields</source>
-        <translation>Zresetuj wszystkie pola podpisanej wiadomości</translation>
+        <location filename="../forms/signverifymessagedialog.ui" line="240"/>
+        <source>Enter the receiver&apos;s address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack. Note that this only proves the signing party receives with the address, it cannot prove sendership of any transaction!</source>
+        <translation>Wprowadź adres odbiorcy, wiadomość (upewnij się, że skopiowałeś wszelakie przerwy, spacje, tabulatory itp. dokładnie) i podpis poniżej w celu weryfikacji wiadomości. Upewnij się, aby nie umieszczać w podpisie więcej informacji niż w samej wiadomości, aby uniknąć możliwości ataku kryptologicznego &quot;Man in the middle&quot;. Pamiętaj, że to tylko potwierdza wiadomość dla danego adresu, nie może za to potwierdzić wysłania jakiejkolwiek transakcji!</translation>
     </message>
     <message>
-        <location filename="../forms/signverifymessagedialog.ui" line="172"/>
-        <location filename="../forms/signverifymessagedialog.ui" line="315"/>
-        <source>Clear &amp;All</source>
-        <translation>Wyczyść &amp;wszystko</translation>
-    </message>
-    <message>
-        <location filename="../forms/signverifymessagedialog.ui" line="231"/>
-        <source>&amp;Verify Message</source>
-        <translation>&amp;Zweryfikuj wiadomość</translation>
-    </message>
-    <message>
-        <location filename="../forms/signverifymessagedialog.ui" line="237"/>
-        <source>Enter the signing address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack.</source>
-        <translation>Wpisz adres podpisujący, podaj wiadomość (upewnij się, że dokładnie skopiujesz wszystkie zakończenia linii, spacje, tabulacje itp.) oraz podpis poniżej by sprawdzić wiadomość. Uważaj by nie dodać więcej do podpisu niż do samej podpisywanej wiadomości by uniknąć ataku man-in-the-middle (człowiek pośrodku)</translation>
-    </message>
-    <message>
-        <location filename="../forms/signverifymessagedialog.ui" line="258"/>
-        <source>The address the message was signed with (e.g. iGJXtgFacXixKeK8Pxmk3a7YhXMc2o8EsB )</source>
-        <translation>Adres, którym została podpisana wiadomość (np.:  iGJXtgFacXixKeK8Pxmk3a7YhXMc2o8EsB )</translation>
-    </message>
-    <message>
-        <location filename="../forms/signverifymessagedialog.ui" line="295"/>
-        <source>Verify the message to ensure it was signed with the specified STRAKS address</source>
-        <translation>Zweryfikuj wiadomość aby upewnić się, że została zapisana przez konkretny adres STRAKS</translation>
+        <location filename="../forms/signverifymessagedialog.ui" line="261"/>
+        <source>The STRAKS address the message was signed with</source>
+        <translation>Adres STRAKS dla którego wiadomość zostanie podpisana</translation>
     </message>
     <message>
         <location filename="../forms/signverifymessagedialog.ui" line="298"/>
-        <source>Verify &amp;Message</source>
-        <translation>Zweryfikuj Wiado&amp;mość</translation>
+        <source>Verify the message to ensure it was signed with the specified Straks address</source>
+        <translation>Zweryfikuj wiadomość, aby upewnić się że została podpisana określonym adresem Straks</translation>
     </message>
     <message>
-        <location filename="../forms/signverifymessagedialog.ui" line="312"/>
+        <location filename="../forms/signverifymessagedialog.ui" line="158"/>
+        <source>Sign &amp;Message</source>
+        <translation>Podpisz Wiadomość</translation>
+    </message>
+    <message>
+        <location filename="../forms/signverifymessagedialog.ui" line="172"/>
+        <source>Reset all sign message fields</source>
+        <translation>Resetuje wszystkie pola weryfikacji wiadomości</translation>
+    </message>
+    <message>
+        <location filename="../forms/signverifymessagedialog.ui" line="175"/>
+        <location filename="../forms/signverifymessagedialog.ui" line="318"/>
+        <source>Clear &amp;All</source>
+        <translation>Wyczyść wszystko</translation>
+    </message>
+    <message>
+        <location filename="../forms/signverifymessagedialog.ui" line="234"/>
+        <source>&amp;Verify Message</source>
+        <translation>Zweryfikuj wiadomość</translation>
+    </message>
+    <message>
+        <location filename="../forms/signverifymessagedialog.ui" line="301"/>
+        <source>Verify &amp;Message</source>
+        <translation>Zweryfikuj Wiadomość</translation>
+    </message>
+    <message>
+        <location filename="../forms/signverifymessagedialog.ui" line="315"/>
         <source>Reset all verify message fields</source>
         <translation>Resetuje wszystkie pola weryfikacji wiadomości</translation>
     </message>
     <message>
-        <location filename="../signverifymessagedialog.cpp" line="30"/>
+        <location filename="../signverifymessagedialog.cpp" line="41"/>
         <source>Click &quot;Sign Message&quot; to generate signature</source>
-        <translation>Kliknij &quot;Podpisz Wiadomość&quot; żeby uzyskać podpis</translation>
+        <translation>Kliknij &quot;Podpisz Wiadomość&quot; żeby wygenerować podpis</translation>
     </message>
     <message>
-        <location filename="../signverifymessagedialog.cpp" line="31"/>
-        <source>Enter a STRAKS address (e.g. iGJXtgFacXixKeK8Pxmk3a7YhXMc2o8EsB )</source>
-        <translation>Wpisz adres STRAKS (np. iGJXtgFacXixKeK8Pxmk3a7YhXMc2o8EsB )</translation>
-    </message>
-    <message>
-        <location filename="../signverifymessagedialog.cpp" line="114"/>
-        <location filename="../signverifymessagedialog.cpp" line="194"/>
+        <location filename="../signverifymessagedialog.cpp" line="124"/>
+        <location filename="../signverifymessagedialog.cpp" line="204"/>
         <source>The entered address is invalid.</source>
         <translation>Podany adres jest nieprawidłowy.</translation>
     </message>
     <message>
-        <location filename="../signverifymessagedialog.cpp" line="114"/>
-        <location filename="../signverifymessagedialog.cpp" line="122"/>
-        <location filename="../signverifymessagedialog.cpp" line="194"/>
-        <location filename="../signverifymessagedialog.cpp" line="202"/>
+        <location filename="../signverifymessagedialog.cpp" line="124"/>
+        <location filename="../signverifymessagedialog.cpp" line="132"/>
+        <location filename="../signverifymessagedialog.cpp" line="204"/>
+        <location filename="../signverifymessagedialog.cpp" line="212"/>
         <source>Please check the address and try again.</source>
         <translation>Proszę sprawdzić adres i spróbować ponownie.</translation>
     </message>
     <message>
-        <location filename="../signverifymessagedialog.cpp" line="122"/>
-        <location filename="../signverifymessagedialog.cpp" line="202"/>
+        <location filename="../signverifymessagedialog.cpp" line="132"/>
+        <location filename="../signverifymessagedialog.cpp" line="212"/>
         <source>The entered address does not refer to a key.</source>
         <translation>Wprowadzony adres nie odnosi się do klucza.</translation>
     </message>
     <message>
-        <location filename="../signverifymessagedialog.cpp" line="130"/>
+        <location filename="../signverifymessagedialog.cpp" line="140"/>
         <source>Wallet unlock was cancelled.</source>
         <translation>Odblokowanie portfela zostało anulowane.</translation>
     </message>
     <message>
-        <location filename="../signverifymessagedialog.cpp" line="138"/>
+        <location filename="../signverifymessagedialog.cpp" line="148"/>
         <source>Private key for the entered address is not available.</source>
-        <translation>Klucz prywatny dla podanego adresu nie jest dostępny</translation>
+        <translation>Klucz prywatny dla podanego adresu nie jest dostępny.</translation>
     </message>
     <message>
-        <location filename="../signverifymessagedialog.cpp" line="150"/>
+        <location filename="../signverifymessagedialog.cpp" line="160"/>
         <source>Message signing failed.</source>
-        <translation>Podpisanie wiadomości nie powiodło się</translation>
+        <translation>Podpisanie wiadomości nie powiodło się.</translation>
     </message>
     <message>
-        <location filename="../signverifymessagedialog.cpp" line="155"/>
+        <location filename="../signverifymessagedialog.cpp" line="165"/>
         <source>Message signed.</source>
         <translation>Wiadomość podpisana.</translation>
     </message>
     <message>
-        <location filename="../signverifymessagedialog.cpp" line="213"/>
+        <location filename="../signverifymessagedialog.cpp" line="223"/>
         <source>The signature could not be decoded.</source>
         <translation>Podpis nie może zostać zdekodowany.</translation>
     </message>
     <message>
-        <location filename="../signverifymessagedialog.cpp" line="213"/>
-        <location filename="../signverifymessagedialog.cpp" line="226"/>
+        <location filename="../signverifymessagedialog.cpp" line="223"/>
+        <location filename="../signverifymessagedialog.cpp" line="236"/>
         <source>Please check the signature and try again.</source>
         <translation>Sprawdź podpis i spróbuj ponownie.</translation>
     </message>
     <message>
-        <location filename="../signverifymessagedialog.cpp" line="226"/>
+        <location filename="../signverifymessagedialog.cpp" line="236"/>
         <source>The signature did not match the message digest.</source>
-        <translation>Podpis nie odpowiadał streszczeniu wiadomości</translation>
+        <translation>Podpis nie odpowiadał streszczeniu wiadomości.</translation>
     </message>
     <message>
-        <location filename="../signverifymessagedialog.cpp" line="233"/>
+        <location filename="../signverifymessagedialog.cpp" line="243"/>
         <source>Message verification failed.</source>
         <translation>Weryfikacja wiadomości nie powiodła się.</translation>
     </message>
     <message>
-        <location filename="../signverifymessagedialog.cpp" line="238"/>
+        <location filename="../signverifymessagedialog.cpp" line="248"/>
         <source>Message verified.</source>
         <translation>Wiadomość zweryfikowana.</translation>
     </message>
@@ -3215,29 +2910,478 @@ https://www.transifex.com/projects/p/straks/</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <location filename="../splashscreen.cpp" line="33"/>
-        <source>STRAKS Core</source>
-        <translation>STRAKS Core</translation>
+        <location filename="../splashscreen.cpp" line="43"/>
+        <source>Straks Core</source>
+        <translation>Straks Core</translation>
     </message>
     <message>
-        <location filename="../splashscreen.cpp" line="34"/>
+        <location filename="../splashscreen.cpp" line="44"/>
         <source>Version %1</source>
         <translation>Wersja %1</translation>
     </message>
     <message>
-        <location filename="../splashscreen.cpp" line="35"/>
-        <source>The STRAKS Core developers</source>
+        <location filename="../splashscreen.cpp" line="45"/>
+        <location filename="../splashscreen.cpp" line="46"/>
+        <source>STRAKS developers</source>
         <translation>Deweloperzy STRAKS Core</translation>
     </message>
     <message>
-        <location filename="../splashscreen.cpp" line="36"/>
-        <source>The STRAKS Core developers</source>
-        <translation>Deweloperzy STRAKS Core</translation>
-    </message>
-    <message>
-        <location filename="../splashscreen.cpp" line="37"/>
+        <location filename="../splashscreen.cpp" line="47"/>
         <source>[testnet]</source>
         <translation>[testnet]</translation>
+    </message>
+</context>
+<context>
+    <name>StraksGUI</name>
+    <message>
+        <location filename="../straks.cpp" line="547"/>
+        <source>A fatal error occurred. Straks can no longer continue safely and will quit.</source>
+        <translation>Wystąpił błąd krytyczny. Straks nie może już bezpiecznie kontynuować i zakończy swoje działanie.</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="141"/>
+        <source>Wallet</source>
+        <translation>Portfel</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="143"/>
+        <source>Node</source>
+        <translation>Węzeł</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="299"/>
+        <source>&amp;Overview</source>
+        <translation>Podsumowanie</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="300"/>
+        <source>Show general overview of wallet</source>
+        <translation>Pokazuje ogólny przegląd portfela</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="306"/>
+        <source>&amp;Send</source>
+        <translation>Wyślij</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="307"/>
+        <source>Send coins to a Straks address</source>
+        <translation>Wyślij monety na adres Straks</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="317"/>
+        <source>&amp;Receive</source>
+        <translation>Odbierz</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="318"/>
+        <source>Request payments (generates QR codes and straks: URIs)</source>
+        <translation>Zlecenie płatności (generuje kod QR oraz Straks: link)</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="328"/>
+        <source>&amp;Transactions</source>
+        <translation>Transakcje</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="329"/>
+        <source>Browse transaction history</source>
+        <translation>Przeglądaj historię transakcji</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="336"/>
+        <source>&amp;Masternodes</source>
+        <translation>Węzły</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="337"/>
+        <source>Show information about Masternodes</source>
+        <translation>Pokazuje informacje o węzłach (masternodes)</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="364"/>
+        <source>E&amp;xit</source>
+        <translation>Zakończ</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="365"/>
+        <source>Quit application</source>
+        <translation>Zamknij aplikację</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="368"/>
+        <source>&amp;About %1</source>
+        <translation>O %1</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="369"/>
+        <source>Show information about %1</source>
+        <translation>Pokazuje informacje o %1</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="372"/>
+        <source>About &amp;Qt</source>
+        <translation>O Qt</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="373"/>
+        <source>Show information about Qt</source>
+        <translation>Pokazuje informacje o bibliotece Qt</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="375"/>
+        <source>&amp;Options...</source>
+        <translation>Opcje...</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="376"/>
+        <source>Modify configuration options for %1</source>
+        <translation>Zmień opcje konfiguracyjne dla %1</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="379"/>
+        <source>&amp;Show / Hide</source>
+        <translation>Pokaż/Ukryj</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="380"/>
+        <source>Show or hide the main Window</source>
+        <translation>Pokazuje lub ukrywa główne okno</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="382"/>
+        <source>&amp;Encrypt Wallet...</source>
+        <translation>Zaszyfruj Portfel</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="383"/>
+        <source>Encrypt the private keys that belong to your wallet</source>
+        <translation>Szyfruj klucze prywatne, które są powiązane z twoim portfelem</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="385"/>
+        <source>&amp;Backup Wallet...</source>
+        <translation>Wykonaj kopię zapasową...</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="386"/>
+        <source>Backup wallet to another location</source>
+        <translation>Zrób kopię zapasową portfela w innej lokalizacji</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="387"/>
+        <source>&amp;Change Passphrase...</source>
+        <translation>Zmień hasło...</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="388"/>
+        <source>Change the passphrase used for wallet encryption</source>
+        <translation>Zmień hasło użyte do szyfrowania portfela</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="389"/>
+        <source>Sign &amp;message...</source>
+        <translation>Podpisz wiadomość...</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="390"/>
+        <source>Sign messages with your Straks addresses to prove you own them</source>
+        <translation>Podpisz wiadomości ze swoimi adresami Straks, aby udowodnić że je posiadasz</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="391"/>
+        <source>&amp;Verify message...</source>
+        <translation>Zweryfikuj wiadomość...</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="392"/>
+        <source>Verify messages to ensure they were signed with specified Straks addresses</source>
+        <translation>Zweryfikuj wiadomości, aby upewnić się że zostały podpisane określonymi adresami Straks</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="396"/>
+        <source>Wallet &amp;Repair</source>
+        <translation>Naprawa portfela</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="397"/>
+        <source>Show wallet repair options</source>
+        <translation>Pokaż opcje naprawy portfela</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="399"/>
+        <source>Show Automatic &amp;Backups</source>
+        <translation>Pokaż automatyczne kopie zapasowe</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="400"/>
+        <source>Show automatically created wallet backups</source>
+        <translation>Pokaż automatycznie utworzone kopie zapasowe portfela</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="402"/>
+        <source>Show Straks Conf file</source>
+        <translation>Pokaż plik Conf Straks</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="403"/>
+        <source>Show straks configuration file</source>
+        <translation>Pokaż plik konfiguracyjny Straks</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="405"/>
+        <source>Show Masternode Conf file</source>
+        <translation>Pokaż plik Conf masternoda</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="406"/>
+        <source>Show masternode configuration file</source>
+        <translation>Pokaż plik konfiguracyjny masternoda</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="408"/>
+        <source>&amp;Debug window</source>
+        <translation>Okno debugowania</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="409"/>
+        <source>Open debugging and diagnostic console</source>
+        <translation>Otwórz konsolę debugowania i diagnostyki</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="413"/>
+        <source>&amp;Sending addresses...</source>
+        <translation>Adresy do wysyłania...</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="414"/>
+        <source>Show the list of used sending addresses and labels</source>
+        <translation>Pokaż listę używanych adresów na które wysyłasz Straks oraz ich etykiety</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="415"/>
+        <source>&amp;Receiving addresses...</source>
+        <translation>Adresy do otrzymywania...</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="416"/>
+        <source>Show the list of used receiving addresses and labels</source>
+        <translation>Pokaż listę Twoich używanych adresów do otrzymywania Straks oraz ich etykiety</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="418"/>
+        <source>Open &amp;URI...</source>
+        <translation>Otwórz URI...</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="419"/>
+        <source>Open a straks: URI or payment request</source>
+        <translation>Otwórz Straks: Link lub żądanie zapłaty</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="421"/>
+        <source>&amp;Command-line options</source>
+        <translation>Opcje konsoli</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="423"/>
+        <source>Show the %1 help message to get a list with possible Straks command-line options</source>
+        <translation>Pokaż komunikat pomocy %1, aby uzyskać listę z możliwymi opcjami wiersza poleceń Straks</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="465"/>
+        <source>&amp;File</source>
+        <translation>Plik</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="479"/>
+        <source>&amp;Settings</source>
+        <translation>Preferencje</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="489"/>
+        <source>&amp;Help</source>
+        <translation>Pomoc</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="509"/>
+        <source>Tabs toolbar</source>
+        <translation>Pasek zakładek</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="635"/>
+        <source>%1 client</source>
+        <translation>%1 klient</translation>
+    </message>
+    <message numerus="yes">
+        <location filename="../straksgui.cpp" line="816"/>
+        <location filename="../straksgui.cpp" line="818"/>
+        <source>%n active connection(s) to Straks network</source>
+        <translation>
+            <numerusform>%n aktywne połączenie z siecią Straks</numerusform>
+            <numerusform>%n aktywnych połączeń z siecią Straks</numerusform>
+            <numerusform>%n aktywne(ych) połączenie(ń) z siecią Straks</numerusform>
+        </translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="816"/>
+        <source>Masternode is active </source>
+        <translation>Węzeł (masternode) jest aktywny </translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="816"/>
+        <location filename="../straksgui.cpp" line="818"/>
+        <source>Click to disable network activity.</source>
+        <translation>Kliknij aby wyłączyć aktywność sieciową.</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="821"/>
+        <source>Network activity disabled.</source>
+        <translation>Aktywność sieciowa wyłączona.</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="821"/>
+        <source>Click to enable network activity again.</source>
+        <translation>Kliknij aby ponownie włączyć aktywność sieciową.</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="853"/>
+        <source>Syncing Headers (%1%)...</source>
+        <translation>Synchronizowanie nagłówków (%1%)...</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="879"/>
+        <source>Synchronizing with network...</source>
+        <translation>Synchronizowanie z siecią...</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="884"/>
+        <source>Indexing blocks on disk...</source>
+        <translation>Indeksowanie bloków na dysku...</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="886"/>
+        <source>Processing blocks on disk...</source>
+        <translation>Przetwarzanie bloków na dysku...</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="890"/>
+        <source>Reindexing blocks on disk...</source>
+        <translation>Ponowne indeksowanie bloków na dysku...</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="896"/>
+        <source>Connecting to peers...</source>
+        <translation>Łączenie z peerami</translation>
+    </message>
+    <message numerus="yes">
+        <location filename="../straksgui.cpp" line="905"/>
+        <source>Processed %n block(s) of transaction history.</source>
+        <translation>
+            <numerusform>Przetworzono %n blok historii transakcji</numerusform>
+            <numerusform>Przetworzono %n bloków historii transakcji</numerusform>
+            <numerusform>Przetworzono %n blok(ów) historii transakcji</numerusform>
+        </translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="910"/>
+        <source>Up to date</source>
+        <translation>Aktualny</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="929"/>
+        <source>%1 behind</source>
+        <translation>%1 wstecz</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="934"/>
+        <source>Catching up...</source>
+        <translation>Łapanie bloków...</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="953"/>
+        <source>Last received block was generated %1 ago.</source>
+        <translation>Ostatni otrzymany blok został wygenerowany %1 temu.</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="955"/>
+        <source>Transactions after this will not yet be visible.</source>
+        <translation>Transakcje po tym momencie nie będą jeszcze widoczne.</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="968"/>
+        <source>Straks</source>
+        <translation>Straks</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="982"/>
+        <source>Error</source>
+        <translation>Błąd</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="985"/>
+        <source>Warning</source>
+        <translation>Uwaga</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="988"/>
+        <source>Information</source>
+        <translation>Informacja</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="1079"/>
+        <source>Date: %1</source>
+        <translation>Data: %1</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="1080"/>
+        <source>Amount: %1</source>
+        <translation>Kwota</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="1081"/>
+        <source>Type: %1</source>
+        <translation>Typ: %1</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="1083"/>
+        <source>Label: %1</source>
+        <translation>Etykieta: %1</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="1085"/>
+        <source>Address: %1</source>
+        <translation>Adres: %1</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="1086"/>
+        <source>Sent transaction</source>
+        <translation>Transakcja wysłana</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="1086"/>
+        <source>Incoming transaction</source>
+        <translation>Transakcja przychodząca</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="1138"/>
+        <source>HD key generation is &lt;b&gt;enabled&lt;/b&gt;</source>
+        <translation>Generowanie kluczy HD jest &lt;b&gt;włączone&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="1138"/>
+        <source>HD key generation is &lt;b&gt;disabled&lt;/b&gt;</source>
+        <translation>Generowanie kluczy jest &lt;b&gt;wyłączone&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="1157"/>
+        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
+        <translation>Portfel jest &lt;b&gt;zaszyfrowany&lt;/b&gt; i obecnie &lt;b&gt;niezablokowany&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <location filename="../straksgui.cpp" line="1165"/>
+        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
+        <translation>Portfel jest &lt;b&gt;zaszyfrowany&lt;/b&gt; i obecnie &lt;b&gt;zablokowany&lt;/b&gt;</translation>
     </message>
 </context>
 <context>
@@ -3251,228 +3395,243 @@ https://www.transifex.com/projects/p/straks/</translation>
 <context>
     <name>TransactionDesc</name>
     <message numerus="yes">
-        <location filename="../transactiondesc.cpp" line="28"/>
+        <location filename="../transactiondesc.cpp" line="30"/>
         <source>Open for %n more block(s)</source>
-        <translation><numerusform>Otwórz na %n kolejny blok</numerusform><numerusform>Otwórz na %n kolejnych bloków</numerusform><numerusform>Otwórz na %n kolejnych blok(ów)</numerusform></translation>
+        <translation>
+            <numerusform>Otwórz dla %n kolejny blok</numerusform>
+            <numerusform>Otwórz dla %n kolejnych bloków</numerusform>
+            <numerusform>Otwórz dla %n kolejnych blok(ów)</numerusform>
+        </translation>
     </message>
     <message>
-        <location filename="../transactiondesc.cpp" line="30"/>
+        <location filename="../transactiondesc.cpp" line="32"/>
         <source>Open until %1</source>
         <translation>Otwórz do %1</translation>
     </message>
     <message>
-        <location filename="../transactiondesc.cpp" line="41"/>
-        <location filename="../transactiondesc.cpp" line="52"/>
-        <location filename="../transactiondesc.cpp" line="62"/>
-        <location filename="../transactiondesc.cpp" line="74"/>
-        <source>conflicted</source>
-        <translation>konflikt</translation>
-    </message>
-    <message>
-        <location filename="../transactiondesc.cpp" line="43"/>
-        <source>%1/offline (verified via instantx)</source>
-        <translation>%1/offline (zweryfikowane przez instantx)</translation>
-    </message>
-    <message>
-        <location filename="../transactiondesc.cpp" line="45"/>
-        <source>%1/confirmed (verified via instantx)</source>
-        <translation>1%/potwierdzony (zweryfikowane przez instantx)</translation>
-    </message>
-    <message>
-        <location filename="../transactiondesc.cpp" line="47"/>
-        <source>%1 confirmations (verified via instantx)</source>
-        <translation>1% potwierdzeń (zweryfikowane przez instantx)</translation>
-    </message>
-    <message>
-        <location filename="../transactiondesc.cpp" line="76"/>
+        <location filename="../transactiondesc.cpp" line="40"/>
         <source>%1/offline</source>
         <translation>%1/offline</translation>
     </message>
     <message>
-        <location filename="../transactiondesc.cpp" line="78"/>
+        <location filename="../transactiondesc.cpp" line="44"/>
         <source>%1/unconfirmed</source>
-        <translation>%1/niezatwierdzone</translation>
+        <translation>%1/niepotwierdzone</translation>
     </message>
     <message>
-        <location filename="../transactiondesc.cpp" line="68"/>
-        <location filename="../transactiondesc.cpp" line="80"/>
+        <location filename="../transactiondesc.cpp" line="46"/>
         <source>%1 confirmations</source>
         <translation>%1 potwierdzeń</translation>
     </message>
     <message>
-        <location filename="../transactiondesc.cpp" line="54"/>
-        <source>%1/offline (InstantX verification in progress - %2 of %3 signatures)</source>
-        <translation>%1/nieaktywny (w trakcie weryfikacji InstantX - %2 z %3 oznaczeń)</translation>
+        <location filename="../transactiondesc.cpp" line="38"/>
+        <source>conflicted with a transaction with %1 confirmations</source>
+        <translation>konflikt z transakcją o $1 potwierdzeniach</translation>
     </message>
     <message>
-        <location filename="../transactiondesc.cpp" line="56"/>
-        <source>%1/confirmed (InstantX verification in progress - %2 of %3 signatures )</source>
-        <translation>%1/potwierdzony (w trakcie weryfikacji InstantX - %2 z %3 oznaczeń)</translation>
+        <location filename="../transactiondesc.cpp" line="42"/>
+        <source>0/unconfirmed, %1</source>
+        <translation>0/niepotwierdzone, %1</translation>
     </message>
     <message>
-        <location filename="../transactiondesc.cpp" line="58"/>
-        <source>%1 confirmations (InstantX verification in progress - %2 of %3 signatures)</source>
-        <translation>%1/potwierdzeń (w trakcie weryfikacji InstantX - %2 z %3 oznaczeń)</translation>
+        <location filename="../transactiondesc.cpp" line="42"/>
+        <source>in memory pool</source>
+        <translation>jest w pamięci</translation>
     </message>
     <message>
-        <location filename="../transactiondesc.cpp" line="64"/>
-        <source>%1/offline (InstantX verification failed)</source>
-        <translation>%1/nieaktywny (weryfikacja InstantX niepowiodła się)</translation>
+        <location filename="../transactiondesc.cpp" line="42"/>
+        <source>not in memory pool</source>
+        <translation>nie jest w pamięci</translation>
     </message>
     <message>
-        <location filename="../transactiondesc.cpp" line="66"/>
-        <source>%1/confirmed (InstantX verification failed)</source>
-        <translation>%1/potwierdzony (weryfikacja InstantX nie powiodła się)</translation>
+        <location filename="../transactiondesc.cpp" line="42"/>
+        <source>abandoned</source>
+        <translation>porzucony</translation>
     </message>
     <message>
-        <location filename="../transactiondesc.cpp" line="98"/>
+        <location filename="../transactiondesc.cpp" line="63"/>
         <source>Status</source>
         <translation>Status</translation>
     </message>
     <message>
-        <location filename="../transactiondesc.cpp" line="103"/>
+        <location filename="../transactiondesc.cpp" line="68"/>
         <source>, has not been successfully broadcast yet</source>
         <translation>, nie został jeszcze pomyślnie wyemitowany</translation>
     </message>
     <message numerus="yes">
-        <location filename="../transactiondesc.cpp" line="105"/>
+        <location filename="../transactiondesc.cpp" line="70"/>
         <source>, broadcast through %n node(s)</source>
-        <translation><numerusform>, transmituj przez %n węzeł</numerusform><numerusform>, transmituj przez %n węzłów</numerusform><numerusform>, transmituj przez %n węzeł(ów)</numerusform></translation>
+        <translation>
+            <numerusform>, transmituj przez %n węzeł</numerusform>
+            <numerusform>, transmituj przez %n węzłów</numerusform>
+            <numerusform>, transmituj przez %n węzeł(ów)</numerusform>
+        </translation>
     </message>
     <message>
-        <location filename="../transactiondesc.cpp" line="109"/>
+        <location filename="../transactiondesc.cpp" line="74"/>
         <source>Date</source>
         <translation>Data</translation>
     </message>
     <message>
-        <location filename="../transactiondesc.cpp" line="116"/>
+        <location filename="../transactiondesc.cpp" line="81"/>
         <source>Source</source>
         <translation>Źródło</translation>
     </message>
     <message>
-        <location filename="../transactiondesc.cpp" line="116"/>
+        <location filename="../transactiondesc.cpp" line="81"/>
         <source>Generated</source>
         <translation>Wygenerowano</translation>
     </message>
     <message>
-        <location filename="../transactiondesc.cpp" line="121"/>
-        <location filename="../transactiondesc.cpp" line="138"/>
+        <location filename="../transactiondesc.cpp" line="86"/>
+        <location filename="../transactiondesc.cpp" line="99"/>
+        <location filename="../transactiondesc.cpp" line="171"/>
         <source>From</source>
         <translation>Od</translation>
     </message>
     <message>
-        <location filename="../transactiondesc.cpp" line="138"/>
+        <location filename="../transactiondesc.cpp" line="99"/>
         <source>unknown</source>
         <translation>nieznany</translation>
     </message>
     <message>
-        <location filename="../transactiondesc.cpp" line="139"/>
-        <location filename="../transactiondesc.cpp" line="161"/>
-        <location filename="../transactiondesc.cpp" line="219"/>
+        <location filename="../transactiondesc.cpp" line="100"/>
+        <location filename="../transactiondesc.cpp" line="120"/>
+        <location filename="../transactiondesc.cpp" line="189"/>
         <source>To</source>
         <translation>Do</translation>
     </message>
     <message>
-        <location filename="../transactiondesc.cpp" line="142"/>
-        <location filename="../transactiondesc.cpp" line="144"/>
+        <location filename="../transactiondesc.cpp" line="102"/>
         <source>own address</source>
         <translation>własny adres</translation>
     </message>
     <message>
-        <location filename="../transactiondesc.cpp" line="142"/>
+        <location filename="../transactiondesc.cpp" line="102"/>
+        <location filename="../transactiondesc.cpp" line="171"/>
+        <source>watch-only</source>
+        <translation>tylko do poglądu</translation>
+    </message>
+    <message>
+        <location filename="../transactiondesc.cpp" line="104"/>
         <source>label</source>
         <translation>etykieta</translation>
     </message>
     <message>
-        <location filename="../transactiondesc.cpp" line="179"/>
-        <location filename="../transactiondesc.cpp" line="191"/>
-        <location filename="../transactiondesc.cpp" line="236"/>
-        <location filename="../transactiondesc.cpp" line="253"/>
-        <location filename="../transactiondesc.cpp" line="306"/>
+        <location filename="../transactiondesc.cpp" line="138"/>
+        <location filename="../transactiondesc.cpp" line="150"/>
+        <location filename="../transactiondesc.cpp" line="203"/>
+        <location filename="../transactiondesc.cpp" line="229"/>
+        <location filename="../transactiondesc.cpp" line="284"/>
         <source>Credit</source>
-        <translation>Przypisy</translation>
+        <translation>Wpływ</translation>
     </message>
     <message numerus="yes">
-        <location filename="../transactiondesc.cpp" line="181"/>
+        <location filename="../transactiondesc.cpp" line="140"/>
         <source>matures in %n more block(s)</source>
-        <translation><numerusform>dojrzałe w %n kolejnym bloku</numerusform><numerusform>dojrzałe w %n kolejnych bloków</numerusform><numerusform>dojrzałe w %n kolejnych blok(ów)</numerusform></translation>
+        <translation>
+            <numerusform>potwierdzone w %n kolejnym bloku</numerusform>
+            <numerusform>potwierdzone w %n kolejnych bloków</numerusform>
+            <numerusform>potwierdzone w %n kolejnych blok(ów)</numerusform>
+        </translation>
     </message>
     <message>
-        <location filename="../transactiondesc.cpp" line="183"/>
+        <location filename="../transactiondesc.cpp" line="142"/>
         <source>not accepted</source>
         <translation>niezaakceptowane</translation>
     </message>
     <message>
-        <location filename="../transactiondesc.cpp" line="227"/>
-        <location filename="../transactiondesc.cpp" line="235"/>
-        <location filename="../transactiondesc.cpp" line="250"/>
-        <location filename="../transactiondesc.cpp" line="303"/>
+        <location filename="../transactiondesc.cpp" line="201"/>
+        <location filename="../transactiondesc.cpp" line="226"/>
+        <location filename="../transactiondesc.cpp" line="281"/>
         <source>Debit</source>
-        <translation>Debet</translation>
+        <translation>Obciążenie</translation>
     </message>
     <message>
-        <location filename="../transactiondesc.cpp" line="241"/>
+        <location filename="../transactiondesc.cpp" line="211"/>
+        <source>Total debit</source>
+        <translation>Całkowite obciążenia</translation>
+    </message>
+    <message>
+        <location filename="../transactiondesc.cpp" line="212"/>
+        <source>Total credit</source>
+        <translation>Całkowite wpływy</translation>
+    </message>
+    <message>
+        <location filename="../transactiondesc.cpp" line="217"/>
         <source>Transaction fee</source>
         <translation>Prowizja transakcji</translation>
     </message>
     <message>
-        <location filename="../transactiondesc.cpp" line="257"/>
+        <location filename="../transactiondesc.cpp" line="233"/>
         <source>Net amount</source>
         <translation>Kwota netto</translation>
     </message>
     <message>
-        <location filename="../transactiondesc.cpp" line="263"/>
-        <location filename="../transactiondesc.cpp" line="272"/>
+        <location filename="../transactiondesc.cpp" line="239"/>
+        <location filename="../transactiondesc.cpp" line="250"/>
         <source>Message</source>
         <translation>Wiadomość</translation>
     </message>
     <message>
-        <location filename="../transactiondesc.cpp" line="265"/>
+        <location filename="../transactiondesc.cpp" line="241"/>
         <source>Comment</source>
         <translation>Komentarz</translation>
     </message>
     <message>
-        <location filename="../transactiondesc.cpp" line="267"/>
+        <location filename="../transactiondesc.cpp" line="243"/>
         <source>Transaction ID</source>
         <translation>ID transakcji</translation>
     </message>
     <message>
-        <location filename="../transactiondesc.cpp" line="285"/>
+        <location filename="../transactiondesc.cpp" line="244"/>
+        <source>Transaction total size</source>
+        <translation>Łączny rozmiar transakcji</translation>
+    </message>
+    <message>
+        <location filename="../transactiondesc.cpp" line="245"/>
+        <source>Output index</source>
+        <translation>Indeks wyjściowy</translation>
+    </message>
+    <message>
+        <location filename="../transactiondesc.cpp" line="263"/>
         <source>Merchant</source>
         <translation>Kupiec</translation>
     </message>
     <message>
-        <location filename="../transactiondesc.cpp" line="292"/>
+        <location filename="../transactiondesc.cpp" line="270"/>
         <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>Wygenerowane monety muszą dojrzeć przez %1 bloków zanim będzie można je wysłać. Gdy wygenerowałeś ten blok, został on ogłoszony w sieci i dodany do łańcucha bloków. Jeżeli nie uda mu się wejść do łańcucha, jego status zostanie zmieniony na &quot;nie zaakceptowano&quot; i nie będzie można go wydać. To czasem zdarza się gdy inny węzeł wygeneruje blok kilka sekund przed tobą.</translation>
+        <translation>Wygenerowane monety muszą zostać potwierdzone przez %1 bloków zanim będzie można je wysłać. Gdy wygenerowałeś ten blok, został on ogłoszony w sieci i dodany do łańcucha bloków. Jeżeli nie uda mu się wejść do łańcucha, jego status zostanie zmieniony na &quot;nie zaakceptowany&quot; i nie będzie można go wydać. To czasem zdarza się gdy inny węzeł wygeneruje blok kilka sekund przed Tobą.</translation>
     </message>
     <message>
-        <location filename="../transactiondesc.cpp" line="300"/>
+        <location filename="../transactiondesc.cpp" line="278"/>
         <source>Debug information</source>
         <translation>Informacje debugowania</translation>
     </message>
     <message>
-        <location filename="../transactiondesc.cpp" line="308"/>
+        <location filename="../transactiondesc.cpp" line="286"/>
         <source>Transaction</source>
         <translation>Transakcja</translation>
     </message>
     <message>
-        <location filename="../transactiondesc.cpp" line="311"/>
+        <location filename="../transactiondesc.cpp" line="289"/>
         <source>Inputs</source>
         <translation>Wejścia</translation>
     </message>
     <message>
-        <location filename="../transactiondesc.cpp" line="332"/>
+        <location filename="../transactiondesc.cpp" line="310"/>
         <source>Amount</source>
         <translation>Kwota</translation>
     </message>
     <message>
-        <location filename="../transactiondesc.cpp" line="333"/>
+        <location filename="../transactiondesc.cpp" line="311"/>
+        <location filename="../transactiondesc.cpp" line="312"/>
         <source>true</source>
         <translation>prawda</translation>
     </message>
     <message>
-        <location filename="../transactiondesc.cpp" line="333"/>
+        <location filename="../transactiondesc.cpp" line="311"/>
+        <location filename="../transactiondesc.cpp" line="312"/>
         <source>false</source>
         <translation>fałsz</translation>
     </message>
@@ -3480,170 +3639,159 @@ https://www.transifex.com/projects/p/straks/</translation>
 <context>
     <name>TransactionDescDialog</name>
     <message>
-        <location filename="../forms/transactiondescdialog.ui" line="14"/>
-        <source>Transaction details</source>
-        <translation>Szczegóły transakcji</translation>
-    </message>
-    <message>
         <location filename="../forms/transactiondescdialog.ui" line="20"/>
         <source>This pane shows a detailed description of the transaction</source>
         <translation>Ten panel pokazuje szczegółowy opis transakcji</translation>
+    </message>
+    <message>
+        <location filename="../transactiondescdialog.cpp" line="17"/>
+        <source>Details for %1</source>
+        <translation>Szczegóły dla</translation>
     </message>
 </context>
 <context>
     <name>TransactionTableModel</name>
     <message>
-        <location filename="../transactiontablemodel.cpp" line="233"/>
+        <location filename="../transactiontablemodel.cpp" line="246"/>
         <source>Date</source>
         <translation>Data</translation>
     </message>
     <message>
-        <location filename="../transactiontablemodel.cpp" line="233"/>
+        <location filename="../transactiontablemodel.cpp" line="246"/>
         <source>Type</source>
         <translation>Typ</translation>
     </message>
     <message>
-        <location filename="../transactiontablemodel.cpp" line="233"/>
-        <source>Address</source>
-        <translation>Adres</translation>
-    </message>
-    <message>
-        <location filename="../transactiontablemodel.cpp" line="233"/>
-        <source>Amount</source>
-        <translation>Kwota</translation>
+        <location filename="../transactiontablemodel.cpp" line="246"/>
+        <source>Label</source>
+        <translation>Etykieta</translation>
     </message>
     <message numerus="yes">
-        <location filename="../transactiontablemodel.cpp" line="285"/>
+        <location filename="../transactiontablemodel.cpp" line="304"/>
         <source>Open for %n more block(s)</source>
-        <translation><numerusform>Otwórz na %n kolejny blok</numerusform><numerusform>Otwórz na %n kolejnych bloków</numerusform><numerusform>Otwórz na %n kolejny(ch) blok(ów)</numerusform></translation>
+        <translation>
+            <numerusform>Otwórz dla %n kolejny blok</numerusform>
+            <numerusform>Otwórz dla %n kolejnych bloków</numerusform>
+            <numerusform>Otwórz dla %n kolejny(ch) blok(ów)</numerusform>
+        </translation>
     </message>
     <message>
-        <location filename="../transactiontablemodel.cpp" line="288"/>
+        <location filename="../transactiontablemodel.cpp" line="307"/>
         <source>Open until %1</source>
         <translation>Otwórz do %1</translation>
     </message>
     <message>
-        <location filename="../transactiontablemodel.cpp" line="291"/>
+        <location filename="../transactiontablemodel.cpp" line="310"/>
         <source>Offline</source>
         <translation>Offline</translation>
     </message>
     <message>
-        <location filename="../transactiontablemodel.cpp" line="294"/>
+        <location filename="../transactiontablemodel.cpp" line="313"/>
         <source>Unconfirmed</source>
-        <translation>Niepotwierdzone:</translation>
+        <translation>Niepotwierdzone</translation>
     </message>
     <message>
-        <location filename="../transactiontablemodel.cpp" line="297"/>
+        <location filename="../transactiontablemodel.cpp" line="316"/>
+        <source>Abandoned</source>
+        <translation>Porzucone</translation>
+    </message>
+    <message>
+        <location filename="../transactiontablemodel.cpp" line="319"/>
         <source>Confirming (%1 of %2 recommended confirmations)</source>
         <translation>Potwierdzanie (%1 z %2 rekomendowanych potwierdzeń)</translation>
     </message>
     <message>
-        <location filename="../transactiontablemodel.cpp" line="300"/>
+        <location filename="../transactiontablemodel.cpp" line="322"/>
         <source>Confirmed (%1 confirmations)</source>
         <translation>Zatwierdzony (%1 potwierdzeń)</translation>
     </message>
     <message>
-        <location filename="../transactiontablemodel.cpp" line="303"/>
+        <location filename="../transactiontablemodel.cpp" line="325"/>
         <source>Conflicted</source>
         <translation>Konflikt</translation>
     </message>
     <message>
-        <location filename="../transactiontablemodel.cpp" line="306"/>
+        <location filename="../transactiontablemodel.cpp" line="328"/>
         <source>Immature (%1 confirmations, will be available after %2)</source>
-        <translation>Niedojrzały (%1 potwierdzenia, będzie dostępny po %2)</translation>
+        <translation>Niedojrzały (%1 potwierdzenie(a/ń), będzie dostępny po %2)</translation>
     </message>
     <message>
-        <location filename="../transactiontablemodel.cpp" line="309"/>
+        <location filename="../transactiontablemodel.cpp" line="331"/>
         <source>This block was not received by any other nodes and will probably not be accepted!</source>
         <translation>Ten blok nie został odebrany przez jakikolwiek inny węzeł i prawdopodobnie nie zostanie zaakceptowany!</translation>
     </message>
     <message>
-        <location filename="../transactiontablemodel.cpp" line="312"/>
+        <location filename="../transactiontablemodel.cpp" line="334"/>
         <source>Generated but not accepted</source>
         <translation>Wygenerowano ale nie zaakceptowano</translation>
     </message>
     <message>
-        <location filename="../transactiontablemodel.cpp" line="354"/>
+        <location filename="../transactiontablemodel.cpp" line="373"/>
         <source>Received with</source>
         <translation>Otrzymane przez</translation>
     </message>
     <message>
-        <location filename="../transactiontablemodel.cpp" line="356"/>
+        <location filename="../transactiontablemodel.cpp" line="375"/>
         <source>Received from</source>
         <translation>Odebrano od</translation>
     </message>
     <message>
-        <location filename="../transactiontablemodel.cpp" line="358"/>
-        <source>Received via Darksend</source>
-        <translation>Otrzymane przez Darksend</translation>
+        <location filename="../transactiontablemodel.cpp" line="410"/>
+        <source>watch-only</source>
+        <translation>tylko do podglądu</translation>
     </message>
     <message>
-        <location filename="../transactiontablemodel.cpp" line="361"/>
+        <location filename="../transactiontablemodel.cpp" line="683"/>
+        <source>Whether or not a watch-only address is involved in this transaction.</source>
+        <translation>Niezależnie od tego czy tylko-obserwowalny adres bierze udział w tej transakcji.</translation>
+    </message>
+    <message>
+        <location filename="../transactiontablemodel.cpp" line="685"/>
+        <source>User-defined intent/purpose of the transaction.</source>
+        <translation>Zdefiniowana przez użytkownika intencja/cel transakcji.</translation>
+    </message>
+    <message>
+        <location filename="../transactiontablemodel.cpp" line="378"/>
         <source>Sent to</source>
         <translation>Wysłano do</translation>
     </message>
     <message>
-        <location filename="../transactiontablemodel.cpp" line="363"/>
+        <location filename="../transactiontablemodel.cpp" line="380"/>
         <source>Payment to yourself</source>
         <translation>Płatność do siebie</translation>
     </message>
     <message>
-        <location filename="../transactiontablemodel.cpp" line="365"/>
+        <location filename="../transactiontablemodel.cpp" line="382"/>
         <source>Mined</source>
         <translation>Wydobyto</translation>
     </message>
     <message>
-        <location filename="../transactiontablemodel.cpp" line="368"/>
-        <source>Darksend Denominate</source>
-        <translation>Denominacja Darksend</translation>
-    </message>
-    <message>
-        <location filename="../transactiontablemodel.cpp" line="370"/>
-        <source>Darksend Collateral Payment</source>
-        <translation>Płatność zabezpieczająca Darksend</translation>
-    </message>
-    <message>
-        <location filename="../transactiontablemodel.cpp" line="372"/>
-        <source>Darksend Make Collateral Inputs</source>
-        <translation>Darksend tworzy poboczne wejscia</translation>
-    </message>
-    <message>
-        <location filename="../transactiontablemodel.cpp" line="374"/>
-        <source>Darksend Create Denominations</source>
-        <translation>Darksend tworzy denominacje</translation>
-    </message>
-    <message>
-        <location filename="../transactiontablemodel.cpp" line="376"/>
-        <source>Darksent</source>
-        <translation>Darksent</translation>
-    </message>
-    <message>
-        <location filename="../transactiontablemodel.cpp" line="418"/>
+        <location filename="../transactiontablemodel.cpp" line="425"/>
         <source>(n/a)</source>
         <translation>(brak)</translation>
     </message>
     <message>
-        <location filename="../transactiontablemodel.cpp" line="610"/>
+        <location filename="../transactiontablemodel.cpp" line="638"/>
+        <source>(no label)</source>
+        <translation>(bez etykiety)</translation>
+    </message>
+    <message>
+        <location filename="../transactiontablemodel.cpp" line="677"/>
         <source>Transaction status. Hover over this field to show number of confirmations.</source>
         <translation>Status transakcji. Najedź na pole, aby zobaczyć liczbę potwierdzeń.</translation>
     </message>
     <message>
-        <location filename="../transactiontablemodel.cpp" line="612"/>
+        <location filename="../transactiontablemodel.cpp" line="679"/>
         <source>Date and time that the transaction was received.</source>
         <translation>Data i czas odebrania transakcji.</translation>
     </message>
     <message>
-        <location filename="../transactiontablemodel.cpp" line="614"/>
+        <location filename="../transactiontablemodel.cpp" line="681"/>
         <source>Type of transaction.</source>
         <translation>Rodzaj transakcji.</translation>
     </message>
     <message>
-        <location filename="../transactiontablemodel.cpp" line="616"/>
-        <source>Destination address of transaction.</source>
-        <translation>Adres docelowy transakcji.</translation>
-    </message>
-    <message>
-        <location filename="../transactiontablemodel.cpp" line="618"/>
+        <location filename="../transactiontablemodel.cpp" line="687"/>
         <source>Amount removed from or added to balance.</source>
         <translation>Kwota usunięta z lub dodana do konta.</translation>
     </message>
@@ -3651,211 +3799,209 @@ https://www.transifex.com/projects/p/straks/</translation>
 <context>
     <name>TransactionView</name>
     <message>
-        <location filename="../transactionview.cpp" line="60"/>
-        <location filename="../transactionview.cpp" line="76"/>
+        <location filename="../transactionview.cpp" line="69"/>
+        <location filename="../transactionview.cpp" line="85"/>
         <source>All</source>
         <translation>Wszystko</translation>
     </message>
     <message>
-        <location filename="../transactionview.cpp" line="61"/>
+        <location filename="../transactionview.cpp" line="70"/>
         <source>Today</source>
         <translation>Dzisiaj</translation>
     </message>
     <message>
-        <location filename="../transactionview.cpp" line="62"/>
+        <location filename="../transactionview.cpp" line="71"/>
         <source>This week</source>
         <translation>W tym tygodniu</translation>
     </message>
     <message>
-        <location filename="../transactionview.cpp" line="63"/>
+        <location filename="../transactionview.cpp" line="72"/>
         <source>This month</source>
         <translation>W tym miesiącu</translation>
     </message>
     <message>
-        <location filename="../transactionview.cpp" line="64"/>
+        <location filename="../transactionview.cpp" line="73"/>
         <source>Last month</source>
         <translation>W zeszłym miesiącu</translation>
     </message>
     <message>
-        <location filename="../transactionview.cpp" line="65"/>
+        <location filename="../transactionview.cpp" line="74"/>
         <source>This year</source>
         <translation>W tym roku</translation>
     </message>
     <message>
-        <location filename="../transactionview.cpp" line="66"/>
+        <location filename="../transactionview.cpp" line="75"/>
         <source>Range...</source>
         <translation>Zakres...</translation>
     </message>
     <message>
-        <location filename="../transactionview.cpp" line="77"/>
+        <location filename="../transactionview.cpp" line="86"/>
         <source>Received with</source>
         <translation>Otrzymane przez</translation>
     </message>
     <message>
-        <location filename="../transactionview.cpp" line="79"/>
+        <location filename="../transactionview.cpp" line="88"/>
         <source>Sent to</source>
         <translation>Wysłano do</translation>
     </message>
     <message>
-        <location filename="../transactionview.cpp" line="81"/>
-        <source>Darksent</source>
-        <translation>Darksent</translation>
-    </message>
-    <message>
-        <location filename="../transactionview.cpp" line="82"/>
-        <source>Darksend Make Collateral Inputs</source>
-        <translation>Darksend tworzy poboczne wejscia</translation>
-    </message>
-    <message>
-        <location filename="../transactionview.cpp" line="83"/>
-        <source>Darksend Create Denominations</source>
-        <translation>Darksend tworzy denominacje</translation>
-    </message>
-    <message>
-        <location filename="../transactionview.cpp" line="84"/>
-        <source>Darksend Denominate</source>
-        <translation>Denominacja Darksend</translation>
-    </message>
-    <message>
-        <location filename="../transactionview.cpp" line="85"/>
-        <source>Darksend Collateral Payment</source>
-        <translation>Płatność zabezpieczająca Darksend</translation>
-    </message>
-    <message>
-        <location filename="../transactionview.cpp" line="86"/>
+        <location filename="../transactionview.cpp" line="90"/>
         <source>To yourself</source>
         <translation>Do siebie</translation>
     </message>
     <message>
-        <location filename="../transactionview.cpp" line="87"/>
+        <location filename="../transactionview.cpp" line="91"/>
         <source>Mined</source>
         <translation>Wydobyto</translation>
     </message>
     <message>
-        <location filename="../transactionview.cpp" line="88"/>
+        <location filename="../transactionview.cpp" line="92"/>
         <source>Other</source>
         <translation>Inne</translation>
     </message>
     <message>
-        <location filename="../transactionview.cpp" line="94"/>
+        <location filename="../transactionview.cpp" line="98"/>
         <source>Enter address or label to search</source>
-        <translation>Wprowadź adres albo etykietę żeby wyszukać</translation>
+        <translation>Wprowadź adres albo etykietę aby wyszukać</translation>
     </message>
     <message>
-        <location filename="../transactionview.cpp" line="100"/>
+        <location filename="../transactionview.cpp" line="104"/>
         <source>Min amount</source>
-        <translation>Min suma</translation>
+        <translation>Minimalna liczba</translation>
     </message>
     <message>
-        <location filename="../transactionview.cpp" line="134"/>
+        <location filename="../transactionview.cpp" line="140"/>
+        <source>Abandon transaction</source>
+        <translation>Anuluj transakcję</translation>
+    </message>
+    <message>
+        <location filename="../transactionview.cpp" line="141"/>
         <source>Copy address</source>
-        <translation>Kopiuj adres</translation>
+        <translation>Skopiuj adres</translation>
     </message>
     <message>
-        <location filename="../transactionview.cpp" line="135"/>
+        <location filename="../transactionview.cpp" line="142"/>
         <source>Copy label</source>
-        <translation>Kopiuj etykietę</translation>
+        <translation>Skopiuj etykietę</translation>
     </message>
     <message>
-        <location filename="../transactionview.cpp" line="136"/>
+        <location filename="../transactionview.cpp" line="143"/>
         <source>Copy amount</source>
-        <translation>Kopiuj kwotę</translation>
+        <translation>Skopiuj kwotę</translation>
     </message>
     <message>
-        <location filename="../transactionview.cpp" line="137"/>
+        <location filename="../transactionview.cpp" line="144"/>
         <source>Copy transaction ID</source>
         <translation>Skopiuj ID transakcji</translation>
     </message>
     <message>
-        <location filename="../transactionview.cpp" line="138"/>
+        <location filename="../transactionview.cpp" line="145"/>
+        <source>Copy raw transaction</source>
+        <translation>Skopiuj RAW transakcji</translation>
+    </message>
+    <message>
+        <location filename="../transactionview.cpp" line="146"/>
+        <source>Copy full transaction details</source>
+        <translation>Skopiuj wszystkie szczegóły transakcji</translation>
+    </message>
+    <message>
+        <location filename="../transactionview.cpp" line="147"/>
         <source>Edit label</source>
         <translation>Zmień etykietę</translation>
     </message>
     <message>
-        <location filename="../transactionview.cpp" line="139"/>
+        <location filename="../transactionview.cpp" line="148"/>
         <source>Show transaction details</source>
         <translation>Pokaż szczegóły transakcji</translation>
     </message>
     <message>
-        <location filename="../transactionview.cpp" line="302"/>
+        <location filename="../transactionview.cpp" line="334"/>
         <source>Export Transaction History</source>
         <translation>Eksport historii transakcji</translation>
     </message>
     <message>
-        <location filename="../transactionview.cpp" line="303"/>
+        <location filename="../transactionview.cpp" line="335"/>
         <source>Comma separated file (*.csv)</source>
-        <translation>CSV (rozdzielany przecinkami)</translation>
+        <translation>Plik w formacie *.csv (rozdzielany przecinkami)</translation>
     </message>
     <message>
-        <location filename="../transactionview.cpp" line="312"/>
+        <location filename="../transactionview.cpp" line="344"/>
         <source>Confirmed</source>
         <translation>Potwierdzony</translation>
     </message>
     <message>
-        <location filename="../transactionview.cpp" line="313"/>
+        <location filename="../transactionview.cpp" line="346"/>
+        <source>Watch-only</source>
+        <translation>Tylko do podglądu</translation>
+    </message>
+    <message>
+        <location filename="../transactionview.cpp" line="347"/>
         <source>Date</source>
         <translation>Data</translation>
     </message>
     <message>
-        <location filename="../transactionview.cpp" line="314"/>
+        <location filename="../transactionview.cpp" line="348"/>
         <source>Type</source>
         <translation>Typ</translation>
     </message>
     <message>
-        <location filename="../transactionview.cpp" line="315"/>
+        <location filename="../transactionview.cpp" line="349"/>
         <source>Label</source>
         <translation>Etykieta</translation>
     </message>
     <message>
-        <location filename="../transactionview.cpp" line="316"/>
+        <location filename="../transactionview.cpp" line="350"/>
         <source>Address</source>
         <translation>Adres</translation>
     </message>
     <message>
-        <location filename="../transactionview.cpp" line="317"/>
-        <source>Amount</source>
-        <translation>Kwota</translation>
-    </message>
-    <message>
-        <location filename="../transactionview.cpp" line="318"/>
+        <location filename="../transactionview.cpp" line="352"/>
         <source>ID</source>
         <translation>ID</translation>
     </message>
     <message>
-        <location filename="../transactionview.cpp" line="321"/>
+        <location filename="../transactionview.cpp" line="355"/>
         <source>Exporting Failed</source>
         <translation>Błąd przy próbie eksportu</translation>
     </message>
     <message>
-        <location filename="../transactionview.cpp" line="321"/>
+        <location filename="../transactionview.cpp" line="355"/>
         <source>There was an error trying to save the transaction history to %1.</source>
         <translation>Wystąpił błąd przy próbie zapisu historii transakcji do %1.</translation>
     </message>
     <message>
-        <location filename="../transactionview.cpp" line="325"/>
+        <location filename="../transactionview.cpp" line="359"/>
         <source>Exporting Successful</source>
         <translation>Eksport powiódł się</translation>
     </message>
     <message>
-        <location filename="../transactionview.cpp" line="325"/>
+        <location filename="../transactionview.cpp" line="359"/>
         <source>The transaction history was successfully saved to %1.</source>
         <translation>Historia transakcji została zapisana do %1.</translation>
     </message>
     <message>
-        <location filename="../transactionview.cpp" line="434"/>
+        <location filename="../transactionview.cpp" line="506"/>
         <source>Range:</source>
         <translation>Zakres:</translation>
     </message>
     <message>
-        <location filename="../transactionview.cpp" line="442"/>
+        <location filename="../transactionview.cpp" line="514"/>
         <source>to</source>
         <translation>do</translation>
     </message>
 </context>
 <context>
+    <name>UnitDisplayStatusBarControl</name>
+    <message>
+        <location filename="../straksgui.cpp" line="1294"/>
+        <source>Unit to show amounts in. Click to select another unit.</source>
+        <translation>Jednostka w której przedstawia się stan konta. Kliknij aby wybrać inną.</translation>
+    </message>
+</context>
+<context>
     <name>WalletFrame</name>
     <message>
-        <location filename="../walletframe.cpp" line="26"/>
+        <location filename="../walletframe.cpp" line="27"/>
         <source>No wallet has been loaded.</source>
         <translation>Nie załadowano żadnego portfela.</translation>
     </message>
@@ -3863,56 +4009,50 @@ https://www.transifex.com/projects/p/straks/</translation>
 <context>
     <name>WalletModel</name>
     <message>
-        <location filename="../walletmodel.cpp" line="271"/>
-        <location filename="../walletmodel.cpp" line="285"/>
+        <location filename="../walletmodel.cpp" line="291"/>
         <source>Send Coins</source>
-        <translation>Wyślij płatność</translation>
-    </message>
-    <message numerus="yes">
-        <location filename="../walletmodel.cpp" line="271"/>
-        <source>InstantX doesn&apos;t support sending values that high yet. Transactions are currently limited to %n STAK.</source>
-        <translation><numerusform>InstantX nie obsługuje jeszcze tak wysokiej ilości. Transakcja jest obecnie ograniczona do %n STAK</numerusform><numerusform>InstantX nie obsługuje jeszcze tak wysokich ilości. Transakcje są obecnie ograniczone do %n STAK</numerusform><numerusform>InstantX nie obsługuje jeszcze tak wysokich ilości. Transakcje są obecnie ograniczone do %n STAK</numerusform></translation>
+        <translation>Wykonaj transakcję</translation>
     </message>
 </context>
 <context>
     <name>WalletView</name>
     <message>
-        <location filename="../walletview.cpp" line="44"/>
+        <location filename="../walletview.cpp" line="48"/>
         <source>&amp;Export</source>
-        <translation>&amp;Eksportuj</translation>
+        <translation>Eksportuj</translation>
     </message>
     <message>
-        <location filename="../walletview.cpp" line="45"/>
+        <location filename="../walletview.cpp" line="49"/>
         <source>Export the data in the current tab to a file</source>
         <translation>Eksportuj dane z aktywnej karty do pliku</translation>
     </message>
     <message>
-        <location filename="../walletview.cpp" line="231"/>
+        <location filename="../walletview.cpp" line="257"/>
         <source>Backup Wallet</source>
-        <translation>Kopia Zapasowa Portfela</translation>
+        <translation>Kopia zapasowa portfela</translation>
     </message>
     <message>
-        <location filename="../walletview.cpp" line="232"/>
+        <location filename="../walletview.cpp" line="258"/>
         <source>Wallet Data (*.dat)</source>
-        <translation>Dane Portfela (*.dat)</translation>
+        <translation>Dane portfela (*.dat)</translation>
     </message>
     <message>
-        <location filename="../walletview.cpp" line="238"/>
+        <location filename="../walletview.cpp" line="264"/>
         <source>Backup Failed</source>
-        <translation>Nie udało się wykonać kopii zapasowej</translation>
+        <translation>Nie udało wykonać się kopii zapasowej</translation>
     </message>
     <message>
-        <location filename="../walletview.cpp" line="238"/>
+        <location filename="../walletview.cpp" line="264"/>
         <source>There was an error trying to save the wallet data to %1.</source>
         <translation>Wystąpił błąd przy próbie zapisu pliku portfela do %1.</translation>
     </message>
     <message>
-        <location filename="../walletview.cpp" line="242"/>
+        <location filename="../walletview.cpp" line="268"/>
         <source>Backup Successful</source>
-        <translation>Wykonano Kopię Zapasową</translation>
+        <translation>Wykonano kopię zapasową</translation>
     </message>
     <message>
-        <location filename="../walletview.cpp" line="242"/>
+        <location filename="../walletview.cpp" line="268"/>
         <source>The wallet data was successfully saved to %1.</source>
         <translation>Plik portfela został zapisany do %1.</translation>
     </message>
@@ -3920,53 +4060,24 @@ https://www.transifex.com/projects/p/straks/</translation>
 <context>
     <name>straks-core</name>
     <message>
-        <location filename="../straksstrings.cpp" line="16"/>
-        <source>%s, you must set a rpcpassword in the configuration file:
-%s
-It is recommended you use the following random password:
-rpcuser=straksrpc
-rpcpassword=%s
-(you do not need to remember this password)
-The username and password MUST NOT be the same.
-If the file does not exist, create it with owner-readable-only file permissions.
-It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;STRAKS Alert&quot; admin@foo.com
-</source>
-        <translation>%s, musisz ustawić hasło rpc w pliku konfiguracji:
-%s
-Zalecane jest abyś użył te o to losowo stworzone hasło
-rpcuser=straksrpc
-rpcpassword=%s
-(Nie musisz pamiętać tego hasła)
-Twoje hasło NIE MOŻE być takie samo jak twój login.
-Jeśli plik ten nie istnieje, stwórz go z uprawnieniami do odczytu tylko przez właściciela.
-Zaleca się również aby ustawić alarm powiadomień tzw. alertnotify, aby dać ci znać w razie wystąpienia jekiegoś problemu, na przykład: alertnotify=echo %%s I -s &quot;STRAKS Alert&quot; admin@foo.com
-</translation>
-    </message>
-    <message>
         <location filename="../straksstrings.cpp" line="29"/>
         <source>Acceptable ciphers (default: TLSv1.2+HIGH:TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!3DES:@STRENGTH)</source>
-        <translation>Akceptowane szyfry (domyślny: TLSv1.2+HIGH:TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!3DES:@STRENGTH))</translation>
+        <translation>Akceptowalne szyfry (domyślnie: TLSv1.2+HIGH:TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!3DES:@STRENGTH)</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="32"/>
         <source>An error occurred while setting up the RPC port %u for listening on IPv4: %s</source>
-        <translation>Wystąpił błąd podczas zakładania portu %u RPC służącego do nasłuchu na IPv4: %s</translation>
+        <translation>Wystąpił błąd podczas zakładania portu RPC %u służącego do nasłuchu na IPv4: %s</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="34"/>
         <source>An error occurred while setting up the RPC port %u for listening on IPv6, falling back to IPv4: %s</source>
-        <translation>Wystąpił błąd podczas ustawiania portu %u służącego do nasłuchu na IPv6 przez co nastąpił powrót do do IPv4: s%</translation>
+        <translation>Wystąpił błąd podczas ustawiania portu RPC %u służącego do nasłuchu na IPv6, przez co nastąpił powrót do IPv4: s%</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="37"/>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
-        <translation>Związany z danym adresem oraz zawsze prowadzący na nim nasłuch.  Użyj [host]:oznaczenie dla IPv6</translation>
-    </message>
-    <message>
-        <location filename="../straksstrings.cpp" line="40"/>
-        <source>Cannot obtain a lock on data directory %s. STRAKS Core is probably already running.</source>
-        <translation>Nie można zablokować katalogu danych %s. Prawdopodobnie STRAKS jest już uruchomiony. </translation>
+        <translation>Zwiąż z danym adresem oraz prowadź na nim ciągłego nasłuchu. Użyj oznaczenia [host]:port dla IPv6</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="43"/>
@@ -3979,19 +4090,9 @@ Zaleca się również aby ustawić alarm powiadomień tzw. alertnotify, aby dać
         <translation>Darksend używa dokładnych denominowanych kwot do przesyłania środków, możliwe że musisz zanonimizować trochę więcej monet.</translation>
     </message>
     <message>
-        <location filename="../straksstrings.cpp" line="49"/>
-        <source>Disable all Xnode and Darksend related functionality (0-1, default: 0)</source>
-        <translation>Wyłącz wszystkie funkcje związane z Xnode i Darksend</translation>
-    </message>
-    <message>
         <location filename="../straksstrings.cpp" line="51"/>
         <source>Enable instantx, show confirmations for locked transactions (bool, default: true)</source>
         <translation>Włącz instantx, pokaż potwierdzenia dla zamkniętych transakcji (bool, domyślnie: true)</translation>
-    </message>
-    <message>
-        <location filename="../straksstrings.cpp" line="54"/>
-        <source>Enable use of automated Darksend for funds stored in this wallet (0-1, default: 0)</source>
-        <translation>Włącz możliwość automatyzacji Darksend dla środków zgromadzonych w  tym portfelu (0-1, domyślnie: 0)</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="57"/>
@@ -4001,7 +4102,7 @@ Zaleca się również aby ustawić alarm powiadomień tzw. alertnotify, aby dać
     <message>
         <location filename="../straksstrings.cpp" line="61"/>
         <source>Enter regression test mode, which uses a special chain in which blocks can be solved instantly.</source>
-        <translation>Wejdź w regresyjny tryb testowy, który używa specjalnego łańcucha, w którym bloki mogą być rozwiązywane natychmiastowo. </translation>
+        <translation>Wejdź w regresyjny tryb testowy, który używa specjalnego łańcucha, w którym bloki mogą być rozwiązywane natychmiastowo.</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="64"/>
@@ -4011,17 +4112,17 @@ Zaleca się również aby ustawić alarm powiadomień tzw. alertnotify, aby dać
     <message>
         <location filename="../straksstrings.cpp" line="66"/>
         <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>Transakcja została odrzucona! Może się to zdarzyć jeśli część monet z portfela została już wydana używając kopii pliku wallet.dat i nie zostało to tutaj uwzględnione.</translation>
+        <translation>Błąd: Transakcja została odrzucona! Może się to zdarzyć jeśli część monet z portfela została już wydana, np. gdy użyto kopii pliku wallet.dat gdzie wydano środku, a tutaj nie zostało to uwzględnione.</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="70"/>
         <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
-        <translation>Błąd: Z powodu wielkości kwoty, swojego skomplikowania, lub użycia niedawno otrzymanych monet, transakcja ta wymaga uiszczenia opłaty o wysokości co najmniej %s </translation>
+        <translation>Błąd: Transakcja wymaga uiszczenia dodatkowej opłaty w wysokości %s z powodu swojej wielkości, złożoności lub niedawno otrzymanych momnet!</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="73"/>
         <source>Error: Wallet unlocked for anonymization only, unable to create transaction.</source>
-        <translation>Błąd: Portfel jest odblokowany tylko dla celu anonimizacji, nie możliwe jest przeprowadzenie transakcji.</translation>
+        <translation>Błąd: Portfel jest odblokowany tylko dla celu anonimizacji, niemożliwe jest przeprowadzenie transakcji.</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="75"/>
@@ -4036,12 +4137,12 @@ Zaleca się również aby ustawić alarm powiadomień tzw. alertnotify, aby dać
     <message>
         <location filename="../straksstrings.cpp" line="81"/>
         <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
-        <translation>Wykonaj komendę przy zmianie najlepszego bloku (%s w konsoli jest zastąpione przez hasz bloku)</translation>
+        <translation>Wykonaj komendę przy zmianie najlepszego bloku (%s w konsoli jest zastąpione przez hash bloku)</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="84"/>
         <source>Fees smaller than this are considered zero fee (for transaction creation) (default:</source>
-        <translation>Opłaty mniejsze niż ta, są uważane są za równoznaczne z brakiem opłat (dla przeprowadzenia transakcji) (domyślnie:</translation>
+        <translation>Opłaty mniejsze niż ta są uważane za równoznaczne z brakiem opłat (dla przeprowadzenia transakcji) (domyślnie:</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="87"/>
@@ -4051,7 +4152,7 @@ Zaleca się również aby ustawić alarm powiadomień tzw. alertnotify, aby dać
     <message>
         <location filename="../straksstrings.cpp" line="90"/>
         <source>Found unconfirmed denominated outputs, will wait till they confirm to continue.</source>
-        <translation>Znaleziono niepotwierdzone denominowane transakcje wyjściowe, poczekam aż zostaną one potwierdzone aby móc kontynuować dalej.</translation>
+        <translation>Znaleziono niepotwierdzone denominowane transakcje wyjściowe, oczekiwanie na ich potwierdzenie aby móc kontynuować dalej.</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="93"/>
@@ -4066,7 +4167,7 @@ Zaleca się również aby ustawić alarm powiadomień tzw. alertnotify, aby dać
     <message>
         <location filename="../straksstrings.cpp" line="98"/>
         <source>InstantX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
-        <translation>InstantX potrzebuje aby transakcja wejściowa miała co najmniej 6 potwierdzeń. Poczekaj kilka minut i spróbuj ponownie.</translation>
+        <translation>InstantX potrzebuje co najmniej 6 potwierdzeń transakcji wejściowej, poczekaj kilka minut i spróbuj ponownie.</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="101"/>
@@ -4081,12 +4182,12 @@ Zaleca się również aby ustawić alarm powiadomień tzw. alertnotify, aby dać
     <message>
         <location filename="../straksstrings.cpp" line="105"/>
         <source>Number of seconds to keep misbehaving peers from reconnecting (default: 86400)</source>
-        <translation>Ilość czasu liczonego w sekundach jaki musi upłynąć zanim wadliwy peer znowu może spróbować nawiązać połączenie (domyślnie 86400)</translation>
+        <translation>Liczba sekund ile musi upłynąć zanim wadliwy peer znowu może spróbować nawiązać połączenie (domyślnie: 86400)</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="108"/>
         <source>Output debugging information (default: 0, supplying &lt;category&gt; is optional)</source>
-        <translation>.</translation>
+        <translation>Wyjście informacji debugowania (domyślnie: 0, zaopatrzenie &lt;kategorii&gt; jest opcjonalne)</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="110"/>
@@ -4096,17 +4197,12 @@ Zaleca się również aby ustawić alarm powiadomień tzw. alertnotify, aby dać
     <message>
         <location filename="../straksstrings.cpp" line="114"/>
         <source>Query for peer addresses via DNS lookup, if low on addresses (default: 1 unless -connect)</source>
-        <translation>Jeśli pula adresów jest niska, pytaj o adresy peer przez podgląd DNS (domyślnie: 1 chyba że -connect)</translation>
-    </message>
-    <message>
-        <location filename="../straksstrings.cpp" line="117"/>
-        <source>Set external address:port to get to this Xnode (example: address:port)</source>
-        <translation>Ustaw zewnętrzny adres:port aby połączyć się z tym Xnodem (na przykład: adres:port)</translation>
+        <translation>Pytaj o adresy peerów przez podgląd DNS, jeśli pula adresów jest niska (domyślnie: 1 chyba że -connect)</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="119"/>
         <source>Set maximum size of high-priority/low-fee transactions in bytes (default: %d)</source>
-        <translation>Ustaw maksymalny rozmiar transakcji o wysokim/niskim priorytecie w bajtach (domyślny: %d)</translation>
+        <translation>Ustaw maksymalny rozmiar transakcji o wysokim/niskim priorytecie w bajtach (domyślnie: %d)</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="121"/>
@@ -4126,12 +4222,7 @@ Zaleca się również aby ustawić alarm powiadomień tzw. alertnotify, aby dać
     <message>
         <location filename="../straksstrings.cpp" line="130"/>
         <source>This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</source>
-        <translation>Ta wersja nie jest jeszcze gotowa na oficjalne wydanie - używaj jej na własne ryzyko - nie używaj tej wersji do kopania monet lub do świadczenia usług komercyjnych.</translation>
-    </message>
-    <message>
-        <location filename="../straksstrings.cpp" line="133"/>
-        <source>Unable to bind to %s on this computer. STRAKS Core is probably already running.</source>
-        <translation>Niezdolny do związania z %s na tym komputerze. Prawdopodobnie STRAKS jest już uruchomiony. </translation>
+        <translation>Jest to testowa wersja przedpremierowa - używasz jej na własne ryzyko - nie używaj tej wersji do kopania lub przesyłania środków</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="136"/>
@@ -4141,7 +4232,7 @@ Zaleca się również aby ustawić alarm powiadomień tzw. alertnotify, aby dać
     <message>
         <location filename="../straksstrings.cpp" line="138"/>
         <source>Unable to locate enough Darksend non-denominated funds for this transaction that are not equal 1000 STAK.</source>
-        <translation>Nie znaleziono wystarczającej ilości nie zdenominowanych środków Darksend dla tej transakcji, które nie równają się 1000 STAK</translation>
+        <translation>Nie znaleziono wystarczającej ilości nie zdenominowanych środków Darksend dla tej transakcji, które nie są równe 1000 STAK.</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="141"/>
@@ -4159,29 +4250,24 @@ Zaleca się również aby ustawić alarm powiadomień tzw. alertnotify, aby dać
         <translation>Uwaga: -paytxfee jest bardzo wysoka! To jest opłata którą będziesz musiał uiścić jeśli dokonasz transakcji.</translation>
     </message>
     <message>
-        <location filename="../straksstrings.cpp" line="149"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong STRAKS will not work properly.</source>
-        <translation>Uwaga: Proszę sprawdzić czy data i czas na twoim komputerze są poprawne! Jeśli twój zegar nie pokazuje prawidłowej godziny to STRAKS może nie działać poprawnie.</translation>
-    </message>
-    <message>
         <location filename="../straksstrings.cpp" line="152"/>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
-        <translation>Uwaga: Wygląda na to, że istnieją pewne rozbieżności w sieci! Możliwe, że niektórzy kopacze doświadczają problemów technicznych. </translation>
+        <translation>Uwaga: Wygląda na to, że istnieją pewne rozbieżności w sieci! Możliwe, że niektórzy kopacze doświadczają problemów technicznych.</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="155"/>
         <source>Warning: We do not appear to fully agree with our peers! You may need to upgrade, or other nodes may need to upgrade.</source>
-        <translation>dadf</translation>
+        <translation>Ostrzeżenie: Prawdopodobnie nie ma pełnej kompatybilności z dostępnymi peerami! Może być konieczne ich uaktualnienie lub one same mogą wymagać aktualizacji.</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="158"/>
         <source>Warning: error reading wallet.dat! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
-        <translation>Uwaga: wystąpił błąd podczas odczytu pliku wallet.dat! Wszystkie klucze są odczytywane poprawnie ale dane transakcji lub wpis w bazie adresów jest niepoprawny lub nie istnieje. </translation>
+        <translation>Uwaga: wystąpił błąd podczas odczytu pliku wallet.dat! Wszystkie klucze są odczytywane poprawnie ale dane transakcji lub wpis w bazie adresów są niepoprawne lub nie istnieją. </translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="161"/>
         <source>Warning: wallet.dat corrupt, data salvaged! Original wallet.dat saved as wallet.{timestamp}.bak in %s; if your balance or transactions are incorrect you should restore from a backup.</source>
-        <translation>Uwaga: plik wallet.dat jest uszkodzony, ale dane zostały odzyskane! Oryginalny plik wallet.dat został zapisany jako wallet.{timestamp}.bak w %s; jeżeli twoje saldo lub transakcje są nieprawidłowe powinieneś przwyrócić ten plik z kopi zapasowej.</translation>
+        <translation>Uwaga: plik wallet.dat jest uszkodzony, ale dane zostały odzyskane! Oryginalny plik wallet.dat został zapisany jako wallet.{timestamp}.bak w %s; jeżeli twoje saldo lub transakcje są nieprawidłowe powinieneś przywrócić ten plik z kopii zapasowej.</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="165"/>
@@ -4193,19 +4279,74 @@ If the file does not exist, create it with owner-readable-only file permissions.
 Jeżeli plik ten nie istnieje, stwórz go z uprawnieniami tylko do odczytu przez właściciela.</translation>
     </message>
     <message>
+        <location filename="../straksstrings.cpp" line="16"/>
+        <source>%s, you must set a rpcpassword in the configuration file:
+%s
+It is recommended you use the following random password:
+rpcuser=straksrpc
+rpcpassword=%s
+(you do not need to remember this password)
+The username and password MUST NOT be the same.
+If the file does not exist, create it with owner-readable-only file permissions.
+It is also recommended to set alertnotify so you are notified of problems;
+for example: alertnotify=echo %%s | mail -s &quot;Straks Alert&quot; admin@foo.com
+</source>
+        <translation>%s, musisz ustawić hasło RPC w pliku konfiguracyjnym:
+%s
+Zaleca się użycie następującego losowego hasła
+rpcuser=straksrpc
+rpcpassword=%s
+(nie musisz pamiętać tego hasła)
+Nazwa użytkownika i hasło NIE MOGĄ być takie same.
+Jeśli plik nie istnieje, utwórz go z uprawnieniami do odczytu tylko dla właściciela.
+Zaleca się również ustawienie alertnotify, aby otrzymywać powiadomienia o problemach;
+na przykłąd: alertnotify=echo %%s | mail -s &quot;Straks Alert&quot; admin@foo.com
+</translation>
+    </message>
+    <message>
+        <location filename="../straksstrings.cpp" line="40"/>
+        <source>Cannot obtain a lock on data directory %s. Straks Core is probably already running.</source>
+        <translation>Nie można zablokować katalogu danych %s. Straks Core jest prawdopodobnie włączony.</translation>
+    </message>
+    <message>
+        <location filename="../straksstrings.cpp" line="49"/>
+        <source>Disable all Masternode and Darksend related functionality (0-1, default: 0)</source>
+        <translation>Wyłącz wszystkie funkcjonalności związane z Masternode oraz Darksend (0-1, domyślnie: 0)</translation>
+    </message>
+    <message>
+        <location filename="../straksstrings.cpp" line="54"/>
+        <source>Enable use of automated darksend for funds stored in this wallet (0-1, default: 0)</source>
+        <translation>Włącz użycie automatycznego darksend dla środków przechowywanych w tym portfelu (0-1, domyślnie: 0)</translation>
+    </message>
+    <message>
+        <location filename="../straksstrings.cpp" line="117"/>
+        <source>Set external address:port to get to this masternode (example: address:port)</source>
+        <translation>Ustaw zewnętrzny adres:port aby uzyskać dostęp do tego masternoda (przykład: adres:port)</translation>
+    </message>
+    <message>
+        <location filename="../straksstrings.cpp" line="133"/>
+        <source>Unable to bind to %s on this computer. Straks Core is probably already running.</source>
+        <translation>Nie można uruchomić %s na tym komputerze. Straks Core prawdopodobnie jest już włączony.</translation>
+    </message>
+    <message>
+        <location filename="../straksstrings.cpp" line="149"/>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Straks will not work properly.</source>
+        <translation>Ostrzeżenie: Proszę sprawdź czy czas i data na Twoim komputerze są prawidłowe! Jeśli są złe to Straks nie będzie działał poprawnie.</translation>
+    </message>
+    <message>
         <location filename="../straksstrings.cpp" line="170"/>
-        <source>You must specify a Xnodeprivkey in the configuration. Please see documentation for help.</source>
-        <translation>Musisz sprecyzować Xnodeprivkey w konfiguracji. Proszę przeglądnij dokumentacje w celu pomocy.</translation>
+        <source>You must specify a masternodeprivkey in the configuration. Please see documentation for help.</source>
+        <translation>Musisz sprecyzować klucz prywatny masternoda. Aby uzyskać pomoc sprawdź dokumentację.</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="173"/>
         <source>(default: 1)</source>
-        <translation>(standardowo: 1)</translation>
+        <translation>(domyślnie: 1)</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="174"/>
         <source>(default: wallet.dat)</source>
-        <translation>(standardowo: wallet.dat)</translation>
+        <translation>(domyślnie: wallet.dat)</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="175"/>
@@ -4215,7 +4356,7 @@ Jeżeli plik ten nie istnieje, stwórz go z uprawnieniami tylko do odczytu przez
     <message>
         <location filename="../straksstrings.cpp" line="176"/>
         <source>Accept command line and JSON-RPC commands</source>
-        <translation>Zaakceptuj linie poleceń oraz polecenia JSON-RPC </translation>
+        <translation>Zaakceptuj linie poleceń oraz polecenia JSON-RPC</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="177"/>
@@ -4235,12 +4376,12 @@ Jeżeli plik ten nie istnieje, stwórz go z uprawnieniami tylko do odczytu przez
     <message>
         <location filename="../straksstrings.cpp" line="180"/>
         <source>Allow JSON-RPC connections from specified IP address</source>
-        <translation>Pozwól na połączenia JSON-RPC  z określonego adresu IP</translation>
+        <translation>Pozwól na połączenia JSON-RPC z określonego adresu IP</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="181"/>
         <source>Already have that input.</source>
-        <translation>Ta wartość wejściowa już istnieje</translation>
+        <translation>Ta wartość wejściowa już istnieje.</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="182"/>
@@ -4255,12 +4396,12 @@ Jeżeli plik ten nie istnieje, stwórz go z uprawnieniami tylko do odczytu przez
     <message>
         <location filename="../straksstrings.cpp" line="184"/>
         <source>Block creation options:</source>
-        <translation>Opcje tworzenia bloku</translation>
+        <translation>Opcje tworzenia bloku:</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="185"/>
         <source>Can&apos;t denominate: no compatible inputs left.</source>
-        <translation>Niemożna denominować: Nie ma kompatybilnych transakcji wejściowych.</translation>
+        <translation>Ni emożna denominować: Nie ma kompatybilnych transakcji wejściowych.</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="186"/>
@@ -4290,12 +4431,12 @@ Jeżeli plik ten nie istnieje, stwórz go z uprawnieniami tylko do odczytu przez
     <message>
         <location filename="../straksstrings.cpp" line="191"/>
         <source>Collateral is not valid.</source>
-        <translation>Transakcja pod zastaw jest nie niewłaściwa.</translation>
+        <translation>Transakcja pod zastaw jest niewłaściwa.</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="192"/>
         <source>Collateral not valid.</source>
-        <translation>Transakcja pod zastaw jest nie niewłaściwa.</translation>
+        <translation>Transakcja pod zastaw niewłaściwa.</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="193"/>
@@ -4310,12 +4451,12 @@ Jeżeli plik ten nie istnieje, stwórz go z uprawnieniami tylko do odczytu przez
     <message>
         <location filename="../straksstrings.cpp" line="195"/>
         <source>Connect to JSON-RPC on &lt;port&gt; (default: 8800 or testnet: 8884)</source>
-        <translation>Podłącz do JSON-RPC na porcie &lt;port&gt; (domyślny: 8800 lub sieć testowa: 8884)</translation>
+        <translation>Podłącz do JSON-RPC na porcie &lt;port&gt; (domyślnie: 8800 lub sieć testowa: 8884)</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="196"/>
         <source>Connect to KeePassHttp on port &lt;port&gt; (default: 19455)</source>
-        <translation>Podłącz do KeePassHttp na porcie &lt;port&gt; (domyślny: 19455)</translation>
+        <translation>Podłącz do KeePassHttp na porcie &lt;port&gt; (domyślnie: 19455)</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="197"/>
@@ -4334,13 +4475,138 @@ Jeżeli plik ten nie istnieje, stwórz go z uprawnieniami tylko do odczytu przez
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="200"/>
-        <source>STRAKS Core Daemon</source>
-        <translation>STRAKS Core Daemon</translation>
+        <source>Straks Core Daemon</source>
+        <translation>Daemon Straks Core</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="201"/>
-        <source>STRAKS Core RPC client version</source>
-        <translation>Wersja klienta STRAKS Core RPC</translation>
+        <source>Straks Core RPC client version</source>
+        <translation>Wersja RPC klienta Straks Core</translation>
+    </message>
+    <message>
+        <location filename="../straksstrings.cpp" line="211"/>
+        <source>Enable the client to act as a masternode (0-1, default: 0)</source>
+        <translation>Pozwól klientowi działać jako masternode (0-1, domyślnie: 0)</translation>
+    </message>
+    <message>
+        <location filename="../straksstrings.cpp" line="213"/>
+        <source>Error connecting to masternode.</source>
+        <translation>Błąd łączenia do masternode.</translation>
+    </message>
+    <message>
+        <location filename="../straksstrings.cpp" line="219"/>
+        <source>Error loading wallet.dat: Wallet requires newer version of Straks</source>
+        <translation>Błąd ładowania wallet.dat: Portfel wymaga nowszej wersji Straks</translation>
+    </message>
+    <message>
+        <location filename="../straksstrings.cpp" line="244"/>
+        <source>How many blocks to check at startup (default: 288, 0 = all)</source>
+        <translation>Ile bloków do sprawdzenia podczas uruchomienia (domyślnie: 288, 0 = wszystkie)</translation>
+    </message>
+    <message>
+        <location filename="../straksstrings.cpp" line="246"/>
+        <source>Ignore masternodes less than version (example: 70050; default : 0)</source>
+        <translation>Ignorowanie masternodów starszych od (przykład: 70050; domyślnie : 0)</translation>
+    </message>
+    <message>
+        <location filename="../straksstrings.cpp" line="253"/>
+        <source>Initialization sanity check failed. Straks Core is shutting down.</source>
+        <translation>Sprawdzenie poprawności inicjalizacji nie powiodło się. Zamykanie Straks Core.</translation>
+    </message>
+    <message>
+        <location filename="../straksstrings.cpp" line="264"/>
+        <source>Invalid masternodeprivkey. Please see documenation.</source>
+        <translation>Nieprawidłowy klucz prywatny masternoda. Proszę sprawdź dokumentację.</translation>
+    </message>
+    <message>
+        <location filename="../straksstrings.cpp" line="273"/>
+        <source>Last successful darksend action was too recent.</source>
+	    <translation>Za mało czasu upłynęło od ostatniej udanej akcji Darksend.</translation>
+    </message>
+    <message>
+        <location filename="../straksstrings.cpp" line="279"/>
+        <source>Loading masternode cache...</source>
+        <translation>Ładowanie pamięci podręcznej masternoda...</translation>
+    </message>
+    <message>
+        <location filename="../straksstrings.cpp" line="285"/>
+        <source>Masternode options:</source>
+        <translation>Opcje masternoda:</translation>
+    </message>
+    <message>
+        <location filename="../straksstrings.cpp" line="286"/>
+        <source>Masternode queue is full.</source>
+        <translation>Kolejka masternodów jest pełna.</translation>
+    </message>
+    <message>
+        <location filename="../straksstrings.cpp" line="287"/>
+        <source>Masternode:</source>
+        <translation>Masternode:</translation>
+    </message>
+    <message>
+        <location filename="../straksstrings.cpp" line="291"/>
+        <source>No compatible masternode found.</source>
+        <translation>Nie odnaleziono kompatybilnych masternodów.</translation>
+    </message>
+    <message>
+        <location filename="../straksstrings.cpp" line="293"/>
+        <source>No masternodes detected.</source>
+        <translation>Nie wykryto żadnych masternodów.</translation>
+    </message>
+    <message>
+        <location filename="../straksstrings.cpp" line="298"/>
+        <source>Not in the masternode list.</source>
+        <translation>Brak na liście masternodów.</translation>
+    </message>
+    <message>
+        <location filename="../straksstrings.cpp" line="306"/>
+        <source>RPC SSL options: (see the Straks Wiki for SSL setup instructions)</source>
+        <translation>Opcje RPC SSL: (sprawdź do tego instrukcje na Straks Wiki)</translation>
+    </message>
+    <message>
+        <location filename="../straksstrings.cpp" line="316"/>
+        <source>SSL options: (see the Straks Wiki for SSL setup instructions)</source>
+        <translation>Opcje SSL: (sprawdź do tego instrukcje na Straks Wiki)</translation>
+    </message>
+    <message>
+        <location filename="../straksstrings.cpp" line="318"/>
+        <source>Send command to Straks Core</source>
+        <translation>Wyślij polecenie do Straks Core</translation>
+    </message>
+    <message>
+        <location filename="../straksstrings.cpp" line="329"/>
+        <source>Set the masternode private key</source>
+        <translation>Ustaw klucz prywatny masternoda:</translation>
+    </message>
+    <message>
+        <location filename="../straksstrings.cpp" line="341"/>
+        <source>Specify masternode configuration file (default: masternode.conf)</source>
+        <translation>Określ plik konfiguracyjny masternoda (domyślnie: masternode.conf)</translation>
+    </message>
+    <message>
+        <location filename="../straksstrings.cpp" line="346"/>
+        <source>Start Straks Core Daemon</source>
+        <translation>Włącz Daemona Straks Core</translation>
+    </message>
+    <message>
+        <location filename="../straksstrings.cpp" line="350"/>
+        <source>This is not a masternode.</source>
+        <translation>To nie jest masternode.</translation>
+    </message>
+    <message>
+        <location filename="../straksstrings.cpp" line="360"/>
+        <source>Unable to sign masternode payment winner, wrong key?</source>
+        <translation>Nie można ustalić zwycięzcę płatności masternode, zły klucz?</translation>
+    </message>
+    <message>
+        <location filename="../straksstrings.cpp" line="368"/>
+        <source>Use N separate masternodes to anonymize funds  (2-8, default: 2)</source>
+        <translation>Użyj N oddzielnych masternodów w celu anonimizacji funduszy (2-8, domyślnie: 2)</translation>
+    </message>
+    <message>
+        <location filename="../straksstrings.cpp" line="380"/>
+        <source>Wallet needed to be rewritten: restart Straks to complete</source>
+        <translation>Portfel musi zostać nadpisany: uruchom ponownie Straks aby zakończyć</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="202"/>
@@ -4360,12 +4626,12 @@ Jeżeli plik ten nie istnieje, stwórz go z uprawnieniami tylko do odczytu przez
     <message>
         <location filename="../straksstrings.cpp" line="205"/>
         <source>Disable safemode, override a real safe mode event (default: 0)</source>
-        <translation>Wyłącz tryb awaryjny, nadpisz przawdziwy tryb awaryjny (domyślny:0)</translation>
+        <translation>Wyłącz tryb awaryjny, nadpisz prawdziwy tryb awaryjny (domyślnie: 0)</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="206"/>
         <source>Discover own IP address (default: 1 when listening and no -externalip)</source>
-        <translation>Wykryj własny adres IP (domyślny:1 kiedy nasłuchuje oraz nie ma -externalip)</translation>
+        <translation>Wykryj własny adres IP (domyślnie:1 podczas nasłuchiwania oraz nie ma -externalip)</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="207"/>
@@ -4385,12 +4651,7 @@ Jeżeli plik ten nie istnieje, stwórz go z uprawnieniami tylko do odczytu przez
     <message>
         <location filename="../straksstrings.cpp" line="210"/>
         <source>Downgrading and trying again.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location filename="../straksstrings.cpp" line="211"/>
-        <source>Enable the client to act as a Xnode (0-1, default: 0)</source>
-        <translation>Upoważnia klienta aby działał jako Xnode (0-1, domyślny: 0)</translation>
+        <translation>Cofnięcie kroku i ponawianie próby</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="212"/>
@@ -4398,19 +4659,14 @@ Jeżeli plik ten nie istnieje, stwórz go z uprawnieniami tylko do odczytu przez
         <translation>Wpisy są pełne.</translation>
     </message>
     <message>
-        <location filename="../straksstrings.cpp" line="213"/>
-        <source>Error connecting to Xnode.</source>
-        <translation>Błąd podłączania do masternoda.</translation>
-    </message>
-    <message>
         <location filename="../straksstrings.cpp" line="214"/>
         <source>Error initializing block database</source>
-        <translation>Błąd podczas inicjowania bazy dancyh bloku</translation>
+        <translation>Błąd podczas inicjowania bazy danych bloku</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="215"/>
         <source>Error initializing wallet database environment %s!</source>
-        <translation>Błąd podczas inicjowania środowiska bazy danych portfela</translation>
+        <translation>Błąd podczas inicjowania środowiska bazy danych portfela %s!</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="216"/>
@@ -4426,11 +4682,6 @@ Jeżeli plik ten nie istnieje, stwórz go z uprawnieniami tylko do odczytu przez
         <location filename="../straksstrings.cpp" line="218"/>
         <source>Error loading wallet.dat: Wallet corrupted</source>
         <translation>Błąd wczytywania wallet.dat: Portfel uszkodzony</translation>
-    </message>
-    <message>
-        <location filename="../straksstrings.cpp" line="219"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of STRAKS</source>
-        <translation>Błą wczytywania wallet.dat: Portfel wymaga nowszej wersji STRAKS</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="220"/>
@@ -4465,17 +4716,17 @@ Jeżeli plik ten nie istnieje, stwórz go z uprawnieniami tylko do odczytu przez
     <message>
         <location filename="../straksstrings.cpp" line="226"/>
         <source>Error: You already have pending entries in the Darksend pool</source>
-        <translation>Błąd: Już masz oczekujące wejścia do puli Darksend</translation>
+        <translation>Błąd: Już masz oczekujące wejścia do poola Darksend</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="227"/>
         <source>Error: system error: </source>
-        <translation>Błąd systemu</translation>
+        <translation>Błąd: błąd systemu: </translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="228"/>
         <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
-        <translation>Nie powiódł się nasłuch żadnego z portów. Użyj -listen=0 jeśli chcesz.</translation>
+        <translation>Nie powiódł się nasłuch na żadnym porcie. Użyj -listen=0 jeśli chcesz.</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="229"/>
@@ -4520,12 +4771,12 @@ Jeżeli plik ten nie istnieje, stwórz go z uprawnieniami tylko do odczytu przez
     <message>
         <location filename="../straksstrings.cpp" line="237"/>
         <source>Failed to write transaction index</source>
-        <translation>NIepowodzenie przy zapisie indeksu transakcji</translation>
+        <translation>Niepowodzenie przy zapisie indeksu transakcji</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="238"/>
         <source>Failed to write undo data</source>
-        <translation>NIepowodzenie przy zapisie cofniętych danych</translation>
+        <translation>Niepowodzenie przy zapisie cofniętych danych</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="239"/>
@@ -4535,17 +4786,17 @@ Jeżeli plik ten nie istnieje, stwórz go z uprawnieniami tylko do odczytu przez
     <message>
         <location filename="../straksstrings.cpp" line="240"/>
         <source>Fees smaller than this are considered zero fee (for relaying) (default:</source>
-        <translation>Opłaty mniejsze niż te, są uważane za zerowe opłaty (dla przekazywania) (domyślny:</translation>
+        <translation>Opłaty mniejsze niż te są uważane za zerowe opłaty (dla przekazywania) (domyślnie:</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="241"/>
         <source>Force safe mode (default: 0)</source>
-        <translation>Wymuś tryb bezpieczny (domyślny: 0)</translation>
+        <translation>Wymuś tryb bezpieczny (domyślnie: 0)</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="242"/>
         <source>Generate coins (default: 0)</source>
-        <translation>Generuj monety (domyślny: 0)</translation>
+        <translation>Generuj monety (domyślnie: 0)</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="243"/>
@@ -4553,29 +4804,19 @@ Jeżeli plik ten nie istnieje, stwórz go z uprawnieniami tylko do odczytu przez
         <translation>Poproś o pomoc dla polecenia</translation>
     </message>
     <message>
-        <location filename="../straksstrings.cpp" line="244"/>
-        <source>How many blocks to check at startup (default: 180, 0 = all)</source>
-        <translation>Ile bloków do sprawdzenia podczas uruchomienia (domyślny: 280, 0 = wszystkie)</translation>
-    </message>
-    <message>
         <location filename="../straksstrings.cpp" line="245"/>
         <source>If &lt;category&gt; is not supplied, output all debugging information.</source>
         <translation>Jeśli &lt;kategoria&gt; nie jest dostarczona, utwórz informacje o debugowaniu.</translation>
     </message>
     <message>
-        <location filename="../straksstrings.cpp" line="246"/>
-        <source>Ignore Xnodes less than version (example: 70050; default : 0)</source>
-        <translation>Ignoruj masternody niższe wersją od (przykład: 70050; domyślny: 0)</translation>
-    </message>
-    <message>
         <location filename="../straksstrings.cpp" line="247"/>
         <source>Importing...</source>
-        <translation>Importuje...</translation>
+        <translation>Importowanie...</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="248"/>
         <source>Imports blocks from external blk000??.dat file</source>
-        <translation>Importuje bloki z zewnętrznego pliku blk000??.dat</translation>
+        <translation>Importowanie bloków z zewnętrznego pliku blk000??.dat</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="249"/>
@@ -4590,17 +4831,12 @@ Jeżeli plik ten nie istnieje, stwórz go z uprawnieniami tylko do odczytu przez
     <message>
         <location filename="../straksstrings.cpp" line="251"/>
         <source>Incorrect or no genesis block found. Wrong datadir for network?</source>
-        <translation>Znaleziono nieprawidłowy blok lub brak bloku początkowego. Nieprawidłowy katalog danych dla sieci</translation>
+        <translation>Znaleziono nieprawidłowy blok lub brak bloku początkowego. Nieprawidłowy katalog danych (lokalizacja) dla sieci</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="252"/>
         <source>Information</source>
         <translation>Informacja</translation>
-    </message>
-    <message>
-        <location filename="../straksstrings.cpp" line="253"/>
-        <source>Initialization sanity check failed. STRAKS Core is shutting down.</source>
-        <translation>Inicjalizacja kontroli poprawności nie powiodła się. Trwa zamykanie STRAKS Core</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="254"/>
@@ -4620,7 +4856,7 @@ Jeżeli plik ten nie istnieje, stwórz go z uprawnieniami tylko do odczytu przez
     <message>
         <location filename="../straksstrings.cpp" line="257"/>
         <source>Insufficient funds.</source>
-        <translation>Niewystarczające środki</translation>
+        <translation>Niewystarczające środki.</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="258"/>
@@ -4650,12 +4886,7 @@ Jeżeli plik ten nie istnieje, stwórz go z uprawnieniami tylko do odczytu przez
     <message>
         <location filename="../straksstrings.cpp" line="263"/>
         <source>Invalid amount</source>
-        <translation>Niewłaściwa ilość</translation>
-    </message>
-    <message>
-        <location filename="../straksstrings.cpp" line="264"/>
-        <source>Invalid Xnodeprivkey. Please see documenation.</source>
-        <translation>Nieprawidłowy klucz prywatny masternoda. Przeczytaj dokumentację.</translation>
+        <translation>Nieprawidłowa liczba</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="265"/>
@@ -4670,7 +4901,7 @@ Jeżeli plik ten nie istnieje, stwórz go z uprawnieniami tylko do odczytu przez
     <message>
         <location filename="../straksstrings.cpp" line="267"/>
         <source>KeePassHttp id for the established association</source>
-        <translation>ID KeePassHttp dla ustanowionego skojażenia</translation>
+        <translation>ID KeePassHttp dla ustanowionego skojarzenia</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="268"/>
@@ -4680,17 +4911,17 @@ Jeżeli plik ten nie istnieje, stwórz go z uprawnieniami tylko do odczytu przez
     <message>
         <location filename="../straksstrings.cpp" line="269"/>
         <source>Keep N straks anonymized (default: 0)</source>
-        <translation>Utrzymuj N zanonimizowanych straks (domyślny: 0)</translation>
+        <translation>Utrzymuj N zanonimizowanych Straks (domyślnie: 0)</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="270"/>
         <source>Keep at most &lt;n&gt; unconnectable blocks in memory (default: %u)</source>
-        <translation>Utrzymuj najwyżej &lt;n&gt; niepodłączalnych bloków w pamięci (domyślny: %u)</translation>
+        <translation>Utrzymuj najwyżej &lt;n&gt; niepodłączalnych bloków w pamięci (domyślnie: %u)</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="271"/>
         <source>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</source>
-        <translation>Utrzymuj najwyżej &lt;n&gt; niepodłączalnych transakcji w pamięci (domyślny: %u)</translation>
+        <translation>Utrzymuj najwyżej &lt;n&gt; niepodłączalnych transakcji w pamięci (domyślnie: %u)</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="272"/>
@@ -4698,14 +4929,9 @@ Jeżeli plik ten nie istnieje, stwórz go z uprawnieniami tylko do odczytu przez
         <translation>Za mało czasu upłynęło od ostatniej transakcji Darksend.</translation>
     </message>
     <message>
-        <location filename="../straksstrings.cpp" line="273"/>
-        <source>Last successful Darksend action was too recent.</source>
-        <translation>Za mało czasu upłynęło od ostatniej udanej transakcji Darksend.</translation>
-    </message>
-    <message>
         <location filename="../straksstrings.cpp" line="274"/>
         <source>Limit size of signature cache to &lt;n&gt; entries (default: 50000)</source>
-        <translation>Ogranicz rozmiar pamięci podrecznej podpisu do &lt;n&gt; wejść (domyślny: 50000)</translation>
+        <translation>Ogranicz rozmiar pamięci podrecznej podpisu do &lt;n&gt; wejść (domyślnie: 50000)</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="275"/>
@@ -4715,72 +4941,52 @@ Jeżeli plik ten nie istnieje, stwórz go z uprawnieniami tylko do odczytu przez
     <message>
         <location filename="../straksstrings.cpp" line="276"/>
         <source>Listen for connections on &lt;port&gt; (default: 7575 or testnet: 7565)</source>
-        <translation>Nasłuchuj połączeń na &lt;port&gt; (domyślny: 7575 lub sieć testowa: 7565)</translation>
+        <translation>Nasłuchuj połączeń na &lt;port&gt; (domyślnie: 7575 lub sieć testowa: 7565)</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="277"/>
         <source>Loading addresses...</source>
-        <translation>Ładuje adresy...</translation>
+        <translation>Ładowanie adresów...</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="278"/>
         <source>Loading block index...</source>
-        <translation>Ładuje indeks bloków</translation>
-    </message>
-    <message>
-        <location filename="../straksstrings.cpp" line="279"/>
-        <source>Loading Xnode list...</source>
-        <translation>Ładuję listę masternodów...</translation>
+        <translation>Ładowanie indeksu bloków...</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="280"/>
         <source>Loading wallet... (%3.2f %%)</source>
-        <translation>Ładuje portfel... (%3.2f %%)</translation>
+        <translation>Ładowanie portfela... (%3.2f %%)</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="281"/>
         <source>Loading wallet...</source>
-        <translation>Ładuje portfel...</translation>
+        <translation>Ładowanie portfela...</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="282"/>
         <source>Log transaction priority and fee per kB when mining blocks (default: 0)</source>
-        <translation>Rejestruj priorytet transakcji oraz opłatę za kB podczas wykopywania bloków (domyślny: 0)</translation>
+        <translation>Rejestruj priorytet transakcji oraz opłatę za kB podczas wykopywania bloków (domyślnie: 0)</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="283"/>
         <source>Maintain a full transaction index (default: 0)</source>
-        <translation>Utrzymuj indeks pełnych transakcji (domyślny: 0)</translation>
+        <translation>Utrzymuj indeks pełnych transakcji (domyślnie: 0)</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="284"/>
         <source>Maintain at most &lt;n&gt; connections to peers (default: 125)</source>
-        <translation>Utrzymuj najwyżej &lt;n&gt; połączeń do peerów (domyślny: 125)</translation>
-    </message>
-    <message>
-        <location filename="../straksstrings.cpp" line="285"/>
-        <source>Xnode options:</source>
-        <translation>Opcje masternodów:</translation>
-    </message>
-    <message>
-        <location filename="../straksstrings.cpp" line="286"/>
-        <source>Xnode queue is full.</source>
-        <translation>Kolejka masternodów jest pełna.</translation>
-    </message>
-    <message>
-        <location filename="../straksstrings.cpp" line="287"/>
-        <source>Xnode:</source>
-        <translation>Masternod:</translation>
+        <translation>Utrzymuj najwyżej &lt;n&gt; połączeń do peerów (domyślnie: 125)</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="288"/>
         <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: 5000)</source>
-        <translation>Maksymalny bufor odbierający na każde połączenie, &lt;n&gt;*1000 bajtów (domyślny: 5000)</translation>
+        <translation>Maksymalny bufor odbierający na każde połączenie, &lt;n&gt;*1000 bajtów (domyślnie: 5000)</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="289"/>
         <source>Maximum per-connection send buffer, &lt;n&gt;*1000 bytes (default: 1000)</source>
-        <translation>Maksymalny bufor wysyłania na każde połączenie, &lt;n&gt;*1000 bajtów (domyślny: 1000)</translation>
+        <translation>Maksymalny bufor wysyłania na każde połączenie, &lt;n&gt;*1000 bajtów (domyślnie: 1000)</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="290"/>
@@ -4788,19 +4994,9 @@ Jeżeli plik ten nie istnieje, stwórz go z uprawnieniami tylko do odczytu przez
         <translation>Brak informacji o transakcji wejściowej.</translation>
     </message>
     <message>
-        <location filename="../straksstrings.cpp" line="291"/>
-        <source>No compatible Xnode found.</source>
-        <translation>Nie znaleziono kompatybilnego masternoda.</translation>
-    </message>
-    <message>
         <location filename="../straksstrings.cpp" line="292"/>
         <source>No funds detected in need of denominating.</source>
         <translation>Nie odnaleziono środków w celu denominacji.</translation>
-    </message>
-    <message>
-        <location filename="../straksstrings.cpp" line="293"/>
-        <source>No Xnodes detected.</source>
-        <translation>Nie wykryto żadnych masternodów.</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="294"/>
@@ -4815,7 +5011,7 @@ Jeżeli plik ten nie istnieje, stwórz go z uprawnieniami tylko do odczytu przez
     <message>
         <location filename="../straksstrings.cpp" line="296"/>
         <source>Not compatible with existing transactions.</source>
-        <translation>Nie kompatybilny z istniejącymi transakcjami.</translation>
+        <translation>Niekompatybilny z istniejącymi transakcjami.</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="297"/>
@@ -4823,14 +5019,9 @@ Jeżeli plik ten nie istnieje, stwórz go z uprawnieniami tylko do odczytu przez
         <translation>Dostępny niewystarczający opis pliku.</translation>
     </message>
     <message>
-        <location filename="../straksstrings.cpp" line="298"/>
-        <source>Not in the Xnode list.</source>
-        <translation>Nieobecny na liście masternodów.</translation>
-    </message>
-    <message>
         <location filename="../straksstrings.cpp" line="299"/>
         <source>Only accept block chain matching built-in checkpoints (default: 1)</source>
-        <translation>Akceptuj tylko łańcuch bloków pasujący do wbudowanych punktów kontrolnych (domyślny: 1)</translation>
+        <translation>Akceptuj tylko łańcuch bloków pasujący do wbudowanych punktów kontrolnych (domyślnie: 1)</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="300"/>
@@ -4850,7 +5041,7 @@ Jeżeli plik ten nie istnieje, stwórz go z uprawnieniami tylko do odczytu przez
     <message>
         <location filename="../straksstrings.cpp" line="303"/>
         <source>Prepend debug output with timestamp (default: 1)</source>
-        <translation>Wyjście debugowania poprzedzone znacznikiem czasu (domyślny: 1)</translation>
+        <translation>Wyjście debugowania poprzedzone znacznikiem czasu (domyślnie: 1)</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="304"/>
@@ -4860,12 +5051,7 @@ Jeżeli plik ten nie istnieje, stwórz go z uprawnieniami tylko do odczytu przez
     <message>
         <location filename="../straksstrings.cpp" line="305"/>
         <source>Print block tree on startup (default: 0)</source>
-        <translation>Pokaż drzewo bloków podczas startu (domyślny: 0)</translation>
-    </message>
-    <message>
-        <location filename="../straksstrings.cpp" line="306"/>
-        <source>RPC SSL options: (see the STRAKS Wiki for SSL setup instructions)</source>
-        <translation>Opcje RPC SSL: (przeglądnij STRAKS Wiki po instrukcje ustawień SSL)</translation>
+        <translation>Pokaż drzewo bloków podczas startu (domyślnie: 0)</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="307"/>
@@ -4880,17 +5066,17 @@ Jeżeli plik ten nie istnieje, stwórz go z uprawnieniami tylko do odczytu przez
     <message>
         <location filename="../straksstrings.cpp" line="309"/>
         <source>Randomly drop 1 of every &lt;n&gt; network messages</source>
-        <translation>Losowo odrzuć 1 co każde &lt;n&gt; komunikatów sieciowych</translation>
+        <translation>Losowo odrzuć 1 co &lt;n&gt; komunikatów(y) sieciowych(y)</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="310"/>
         <source>Randomly fuzz 1 of every &lt;n&gt; network messages</source>
-        <translation>Rozmyj losowo 1 co każde &lt;n&gt; komunikatów sieciowych </translation>
+        <translation>Rozmyj losowo 1 co &lt;n&gt; komunikatów(y) sieciowych(e) </translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="311"/>
         <source>Rebuild block chain index from current blk000??.dat files</source>
-        <translation>Odbuduj łańcuch bloków (block chain) od bieżącego pliku blk000??.dat</translation>
+        <translation>Odbuduj łańcuch bloków (blockchain) od bieżącego pliku blk000??.dat</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="312"/>
@@ -4905,7 +5091,7 @@ Jeżeli plik ten nie istnieje, stwórz go z uprawnieniami tylko do odczytu przez
     <message>
         <location filename="../straksstrings.cpp" line="314"/>
         <source>Run a thread to flush wallet periodically (default: 1)</source>
-        <translation>Włącz wątek aby od czasu do czasu wyrównać portfel (domyślny: 1)</translation>
+        <translation>Włącz wątek aby od czasu do czasu wyrównać portfel (domyślnie: 1)</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="315"/>
@@ -4913,39 +5099,29 @@ Jeżeli plik ten nie istnieje, stwórz go z uprawnieniami tylko do odczytu przez
         <translation>Działaj w tle jako daemon i akceptuj polecenia</translation>
     </message>
     <message>
-        <location filename="../straksstrings.cpp" line="316"/>
-        <source>SSL options: (see the STRAKS Wiki for SSL setup instructions)</source>
-        <translation>Opcje SSL: (przeglądnij STRAKS Wiki po instrukcje ustawień SSL)</translation>
-    </message>
-    <message>
         <location filename="../straksstrings.cpp" line="317"/>
         <source>Select SOCKS version for -proxy (4 or 5, default: 5)</source>
-        <translation>Wybierz wersję SOCKS dla -proxy (4 lub 5, domyślny: 5)</translation>
-    </message>
-    <message>
-        <location filename="../straksstrings.cpp" line="318"/>
-        <source>Send command to STRAKS Core</source>
-        <translation>Wyślij polecenie do STRAKS Core</translation>
+        <translation>Wybierz wersję SOCKS dla -proxy (4 lub 5, domyślnie: 5)</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="319"/>
         <source>Send commands to node running on &lt;ip&gt; (default: 127.0.0.1)</source>
-        <translation>Wyślij polecenie do węzła (node) działającego na &lt;ip&gt; (domyślny: 127.0.0.1)</translation>
+        <translation>Wyślij polecenie do węzła (node) działającego na &lt;ip&gt; (domyślnie: 127.0.0.1)</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="320"/>
         <source>Send trace/debug info to console instead of debug.log file</source>
-        <translation>Wyślij informacje o debugowaniu/śladach do konsoli zamiast do pliku debug.log</translation>
+        <translation>Wyślij informacje o śladach/debugowaniu do konsoli zamiast do pliku debug.log</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="321"/>
         <source>Server certificate file (default: server.cert)</source>
-        <translation>Serwer pliku certyfikatu (domyślny: server.cert)</translation>
+        <translation>Serwer pliku certyfikatu (domyślnie: server.cert)</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="322"/>
         <source>Server private key (default: server.pem)</source>
-        <translation>Serwer klucza prywatnego (domyślny: server.pem)</translation>
+        <translation>Serwer klucza prywatnego (domyślnie: server.pem)</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="323"/>
@@ -4960,37 +5136,32 @@ Jeżeli plik ten nie istnieje, stwórz go z uprawnieniami tylko do odczytu przez
     <message>
         <location filename="../straksstrings.cpp" line="325"/>
         <source>Set database cache size in megabytes (%d to %d, default: %d)</source>
-        <translation>Ustaw pamięć podręczną bazy danych w megabajtach (%d to %d, domyślny: %d)</translation>
+        <translation>Ustaw pamięć podręczną bazy danych w megabajtach (%d do %d, domyślnie: %d)</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="326"/>
         <source>Set key pool size to &lt;n&gt; (default: 100)</source>
-        <translation>Ustaw ilość kluczy w key pool do &lt;n&gt; (domyślny: 100)</translation>
+        <translation>Ustaw ilość kluczy w key pool do &lt;n&gt; (domyślnie: 100)</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="327"/>
         <source>Set maximum block size in bytes (default: %d)</source>
-        <translation>Ustaw maksymalny rozmiar bloku w bajtach (domyślny: %d)</translation>
+        <translation>Ustaw maksymalny rozmiar bloku w bajtach (domyślnie: %d)</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="328"/>
         <source>Set minimum block size in bytes (default: 0)</source>
-        <translation>Ustaw minimalny rozmiar bloku w bajtach (domyślny: 0)</translation>
-    </message>
-    <message>
-        <location filename="../straksstrings.cpp" line="329"/>
-        <source>Set the Xnode private key</source>
-        <translation>Ustaw klucz prywatny masternoda</translation>
+        <translation>Ustaw minimalny rozmiar bloku w bajtach (domyślnie: 0)</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="330"/>
         <source>Set the number of threads to service RPC calls (default: 4)</source>
-        <translation>Ustaw liczbę wątków dla usługi połączen RPC (domyślny: 4)</translation>
+        <translation>Ustaw liczbę wątków dla usługi połączen RPC (domyślnie: 4)</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="331"/>
         <source>Sets the DB_PRIVATE flag in the wallet db environment (default: 1)</source>
-        <translation>Ustaw flagę DB_PRIVATE w środowisku db portfela (domyślny: 1)</translation>
+        <translation>Ustaw flagę DB_PRIVATE w środowisku db portfela (domyślnie: 1)</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="332"/>
@@ -5000,12 +5171,12 @@ Jeżeli plik ten nie istnieje, stwórz go z uprawnieniami tylko do odczytu przez
     <message>
         <location filename="../straksstrings.cpp" line="333"/>
         <source>Show benchmark information (default: 0)</source>
-        <translation>Pokaż nformacje o benchmarku (domyślny: 0)</translation>
+        <translation>Pokaż informacje o benchmarku (domyślnie: 0)</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="334"/>
         <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
-        <translation>Zmniejsz plik debug.log podczas włączania klienta (domyślny: 1 kiedy nie ma -debug)</translation>
+        <translation>Zmniejsz plik debug.log podczas włączania klienta (domyślnie: 1 bez -debug)</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="335"/>
@@ -5025,12 +5196,12 @@ Jeżeli plik ten nie istnieje, stwórz go z uprawnieniami tylko do odczytu przez
     <message>
         <location filename="../straksstrings.cpp" line="338"/>
         <source>Specify configuration file (default: straks.conf)</source>
-        <translation>Sprecyzuj plik konfiguracyjny (domyślny: straks.conf)</translation>
+        <translation>Sprecyzuj plik konfiguracyjny (domyślnie: straks.conf)</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="339"/>
         <source>Specify connection timeout in milliseconds (default: 5000)</source>
-        <translation>Sprecyzuj limit czasu połączenia w milisekundach (domyślny: 5000)</translation>
+        <translation>Sprecyzuj limit czasu połączenia w milisekundach (domyślnie: 5000)</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="340"/>
@@ -5038,14 +5209,9 @@ Jeżeli plik ten nie istnieje, stwórz go z uprawnieniami tylko do odczytu przez
         <translation>Sprecyzuj katalog danych</translation>
     </message>
     <message>
-        <location filename="../straksstrings.cpp" line="341"/>
-        <source>Specify Xnode configuration file (default: Xnode.conf)</source>
-        <translation>Sprecyzuj plik konfiguracji masternoda (domyślny: Xnode.conf)</translation>
-    </message>
-    <message>
         <location filename="../straksstrings.cpp" line="342"/>
         <source>Specify pid file (default: straksd.pid)</source>
-        <translation>Sprecyjzuj plik pid (domyślny: straksd.pid)</translation>
+        <translation>Sprecyzjuj plik pid (domyślnie: straksd.pid)</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="343"/>
@@ -5060,22 +5226,17 @@ Jeżeli plik ten nie istnieje, stwórz go z uprawnieniami tylko do odczytu przez
     <message>
         <location filename="../straksstrings.cpp" line="345"/>
         <source>Spend unconfirmed change when sending transactions (default: 1)</source>
-        <translation>Zużyj niepotwierdzoną resztę podczas wysyłania transakcji (domuślny: 1)</translation>
-    </message>
-    <message>
-        <location filename="../straksstrings.cpp" line="346"/>
-        <source>Start STRAKS Core Daemon</source>
-        <translation>Włącz STRAKS Core Daemon</translation>
+        <translation>Zużyj niepotwierdzoną resztę podczas wysyłania transakcji (domyślnie: 1)</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="347"/>
         <source>System error: </source>
-        <translation>Błąd systemu:</translation>
+        <translation>Błąd systemu: </translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="348"/>
         <source>This help message</source>
-        <translation>Ten komunikat pomocny</translation>
+        <translation>Ten komunikat pomocy</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="349"/>
@@ -5083,14 +5244,9 @@ Jeżeli plik ten nie istnieje, stwórz go z uprawnieniami tylko do odczytu przez
         <translation>Używa się tego dla regresywnego testowania narzędzi (opcji) oraz rozwoju aplikacji.</translation>
     </message>
     <message>
-        <location filename="../straksstrings.cpp" line="350"/>
-        <source>This is not a Xnode.</source>
-        <translation>To nie jest masternod.</translation>
-    </message>
-    <message>
         <location filename="../straksstrings.cpp" line="351"/>
         <source>Threshold for disconnecting misbehaving peers (default: 100)</source>
-        <translation>Próg dla niewłaściwie działających, odłączających sie peerów (domyślny: 100)</translation>
+        <translation>Próg dla niewłaściwie działających, odłączających się peerów (domyślnie: 100)</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="352"/>
@@ -5133,11 +5289,6 @@ Jeżeli plik ten nie istnieje, stwórz go z uprawnieniami tylko do odczytu przez
         <translation>Nie udało się powiązać do %s na tym komputerze (powiązanie zwróciło błąd %s)</translation>
     </message>
     <message>
-        <location filename="../straksstrings.cpp" line="360"/>
-        <source>Unable to sign Xnode payment winner, wrong key?</source>
-        <translation>Nie można podpisać zwyciezcy płatności masternoda, nieprawidłowy klucz?</translation>
-    </message>
-    <message>
         <location filename="../straksstrings.cpp" line="361"/>
         <source>Unable to sign spork message, wrong key?</source>
         <translation>Niemożliwe podpisanie wiadomości spork, nieprawidłowy klucz?</translation>
@@ -5155,7 +5306,7 @@ Jeżeli plik ten nie istnieje, stwórz go z uprawnieniami tylko do odczytu przez
     <message>
         <location filename="../straksstrings.cpp" line="364"/>
         <source>Upgrade wallet to latest format</source>
-        <translation>Ulepsz plik wallet.dat do nowego formatu</translation>
+        <translation>Uaktualnij plik wallet.dat do nowego formatu</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="365"/>
@@ -5170,27 +5321,22 @@ Jeżeli plik ten nie istnieje, stwórz go z uprawnieniami tylko do odczytu przez
     <message>
         <location filename="../straksstrings.cpp" line="367"/>
         <source>Use KeePass 2 integration using KeePassHttp plugin (default: 0)</source>
-        <translation>Użyj zintegrowany KeePass 2 używając wtyczkę KeePass Http (domyślny: 0)</translation>
-    </message>
-    <message>
-        <location filename="../straksstrings.cpp" line="368"/>
-        <source>Use N separate Xnodes to anonymize funds  (2-8, default: 2)</source>
-        <translation>Użyj N oddzielnych masternodów aby zanonimizować pieniądze (2-8, domyślny: 2)</translation>
+        <translation>Użyj zintegrowany KeePass 2 używając wtyczkę KeePassHttp (domyślnie: 0)</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="369"/>
         <source>Use OpenSSL (https) for JSON-RPC connections</source>
-        <translation>Użyj OpenSSL (https) dal połączeń JSON-RPC</translation>
+        <translation>Użyj OpenSSL (https) dla połączeń JSON-RPC</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="370"/>
         <source>Use UPnP to map the listening port (default: 0)</source>
-        <translation>Użyj UPnP aby zmapować używany port (domyślny: 0)</translation>
+        <translation>Użyj UPnP aby zmapować używany port (domyślnie: 0)</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="371"/>
         <source>Use UPnP to map the listening port (default: 1 when listening)</source>
-        <translation>Użyj UPnP aby zmapować używany port (domyślny: 1 kiedy nasłuchuje)</translation>
+        <translation>Użyj UPnP aby zmapować używany port (domyślnie: 1 kiedy nasłuchuje)</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="372"/>
@@ -5200,12 +5346,12 @@ Jeżeli plik ten nie istnieje, stwórz go z uprawnieniami tylko do odczytu przez
     <message>
         <location filename="../straksstrings.cpp" line="373"/>
         <source>Username for JSON-RPC connections</source>
-        <translation>Nazwa użytkownika dla połączeń JSON-RPC </translation>
+        <translation>Nazwa użytkownika dla połączeń JSON-RPC</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="374"/>
         <source>Value more than Darksend pool maximum allows.</source>
-        <translation>Wartość jest większa niż ta maksymalnie dopuszczalna przez Darksend pool</translation>
+        <translation>Wartość jest większa niż ta maksymalnie dopuszczalna przez Darksend pool.</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="375"/>
@@ -5233,11 +5379,6 @@ Jeżeli plik ten nie istnieje, stwórz go z uprawnieniami tylko do odczytu przez
         <translation>Portfel jest zamknięty.</translation>
     </message>
     <message>
-        <location filename="../straksstrings.cpp" line="380"/>
-        <source>Wallet needed to be rewritten: restart STRAKS to complete</source>
-        <translation>Portfel musi zostać ponownie zapisany: uruchom STRAKS ponownie aby dokończyć operacje</translation>
-    </message>
-    <message>
         <location filename="../straksstrings.cpp" line="381"/>
         <source>Wallet options:</source>
         <translation>Opcje portfela:</translation>
@@ -5255,11 +5396,7 @@ Jeżeli plik ten nie istnieje, stwórz go z uprawnieniami tylko do odczytu przez
     <message>
         <location filename="../straksstrings.cpp" line="384"/>
         <source>Warning: This version is obsolete, upgrade required!</source>
-        <translation>Ostrzeżenie: Wersja nieaktualna, zalecana aktualizacja!</translation>
-    </message>
-    <message>
-        <source>Wrong state.</source>
-        <translation type="unfinished"/>
+        <translation>Ostrzeżenie: Wersja nieaktualna, wymagana aktualizacja!</translation>
     </message>
     <message>
         <location filename="../straksstrings.cpp" line="385"/>
@@ -5284,7 +5421,7 @@ Jeżeli plik ten nie istnieje, stwórz go z uprawnieniami tylko do odczytu przez
     <message>
         <location filename="../straksstrings.cpp" line="389"/>
         <source>wallet.dat corrupt, salvage failed</source>
-        <translation>Plik wallet.dat zepsuty, odzyskiwanie nie powiodło się</translation>
+        <translation>Plik wallet.dat uszkodzony, odzyskiwanie nie powiodło się</translation>
     </message>
 </context>
 </TS>

@@ -14,7 +14,7 @@
     <message>
         <location filename="../forms/aboutdialog.ui" line="94"/>
         <source>Copyright &amp;copy; 2009-YYYY The STRAKS and DASH Core developers.
-Copyright &amp;copy; 2014-YYYY The STRAKS Core developers.</source>
+Copyright &amp;copy; 2014-YYYY STRAKS developers.</source>
         <translation>Bản quyền &amp;copy; 2009-2014 Nhóm phát triển STRAKS Core.
 Bản quyền &amp;copy; 2014-YYYY Nhóm phát triển STRAKS Core.</translation>
     </message>
@@ -41,12 +41,12 @@ Sản phẩm này bao gồm phần mềm được phát triển bởi dự án O
     </message>
     <message>
         <location filename="../utilitydialog.cpp" line="30"/>
-        <source>The STRAKS Core developers</source>
+        <source>STRAKS developers</source>
         <translation>Nhóm phát triển STRAKS Core</translation>
     </message>
     <message>
         <location filename="../utilitydialog.cpp" line="31"/>
-        <source>The STRAKS Core developers</source>
+        <source>STRAKS developers</source>
         <translation>Nhóm phát triển STRAKS Core</translation>
     </message>
     <message>
@@ -3227,12 +3227,12 @@ https://www.transifex.com/projects/p/straks/</translation>
     </message>
     <message>
         <location filename="../splashscreen.cpp" line="35"/>
-        <source>The STRAKS Core developers</source>
+        <source>STRAKS developers</source>
         <translation>Nhóm phát triển STRAKS Core</translation>
     </message>
     <message>
         <location filename="../splashscreen.cpp" line="36"/>
-        <source>The STRAKS Core developers</source>
+        <source>STRAKS developers</source>
         <translation>Nhóm phát triển STRAKS Core</translation>
     </message>
     <message>

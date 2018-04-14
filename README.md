@@ -2,15 +2,14 @@
 ![Alt text](doc/straks.png)
 
 
-## STRAKS 
+## STRAKS
 
-#### SegWit and SegWit2x active, Lightning Network compatible, Atomic Swap compatible and an increased non-SegWit block size of 4MB;  introducing the first Masternode-enabled digital currency based off core Bitcoin version 0.14.2.  STRAKS endeavours to eliminate unwanted transaction malleability through SegWit activation from day 0; solves capacity constraints suffered by Bitcoin and its peer group through a larger non-SegWit block size and increased signature operations - effectively introducing SegWit4x; is Lightning Network compatible - supporting instant payments, scalability, low cost and cross blockchain transactions; proposes a fair distribution through a Zero Start Instamine Protection (ZSIP) policy and Zero Start Masternode Reward (ZSMR) policy; introduces a new unique Masternode payment re-balancing algorithm, labelled Reactive Equilibria (REV1); and furthermore, implements a modified version of the new effective D106 difficulty re-targeting algorithm
+#### SegWit and SegWit2x active, Lightning Network compatible, Atomic Swap compatible and an increased non-SegWit block size of 4MB;  introducing the first Masternode-enabled digital currency based off core Bitcoin version 0.14.2.  STRAKS endeavours to eliminate unwanted transaction malleability through SegWit activation from day 0; solves capacity constraints suffered by Bitcoin and its peer group through a larger non-SegWit block size and increased signature operations - effectively introducing SegWit4x; is Lightning Network compatible - supporting instant payments, scalability, low cost and cross blockchain transactions; proposes a fair distribution through a Zero Start Instamine Protection (ZSIP) policy and Zero Start Masternode Reward (ZSMR) policy; introduces a new unique Masternode payment re-balancing algorithm, labelled Reactive Equilibria (REV1); and furthermore, implements a modified version of the new effective D601 difficulty re-targeting algorithm
 
 
 __________________________________________________________________________
 
 
-###### Current Version: 1.14.5.2
 ###### Block Size: 4 MB
 ###### Max Block Size Serialized Size: 16 MB
 ###### Proof-of-Work Algorithm: Lyra2rev2
@@ -18,8 +17,8 @@ __________________________________________________________________________
 ###### Coin Maturity: 100 blocks
 ###### Transactions Per Second: 133 (Bitcoin: 3, Bitcoin Cash: 27, Dash: 13)
 ###### Transactions Per 24 hours: 11,520,000
-###### Difficulty Retargeting: New D106 Algorithm
-###### Maximum Coin Supply: 150 Million 
+###### Difficulty Retargeting: New D601 Algorithm
+###### Maximum Coin Supply: 150 Million
 ###### Treasury Funding: 5% Per Block
 ###### SegWit: Active
 ###### SegWit2x: Active
@@ -41,7 +40,7 @@ __________________________________________________________________________
 Introducing a new decentralised, open source, community driven digital currency, focusing on e-commerce utility.
 
 The name is a Danish word that has never been used in any cryptocurrency context until now. It means quick/immediate - referring to the focus that we have on ensuring that transactions are as fast as can be and to be the most efficient cryptocurrency for e-commerce utility in the sector.  The currency unit of account is **STAK**, along with its exchange ticker.
- 
+
 
 ##### E-Commerce
 Global e-commerce sales are projected to reach $2.2 trillion for 2017 and to increase two-fold by 2021 to $4.4 trillion. STRAKS seeks to position itself as a competitive altcoin for e-commerce application. This will be achieved through developing and implementing relevant technology that facilitates e-commerce transactions as smoothly as possible. We will always strive to create partnerships and increase real-world utilisation.
@@ -67,29 +66,25 @@ Speed and privacy are core concerns for users today as well as e-commerce busine
 
 ### Links
 
-- **[STRAKS Website](https://straks.io)**
+- **[STRAKS Website](https://straks.tech)**
 - **[STRAKS Explorer](https://straks.info)**
 - **[STRAKS Discord](https://discord.gg/5gzvadZ)**
 - **[STRAKS Reddit](https://www.reddit.com/r/STRAKSproject)**
 - **[STRAKS Twitter](https://twitter.com/STRAKSproject)**
-- **[STRAKS Telegram](https://t.me/joinchat/AAAAAFNgas-8mT4fmKulFg)**
+- **[STRAKS Telegram](https://t.me/joinchat/F0-p1wzOoGequE5HMLzC5w)**
 - **[STRAKS Facebook](https://www.facebook.com/STRAKSproject)**
 - **[STRAKS Community News](https://straks.news)**
 
 
-### STRAKS Foundation Team
+### STRAKS Team
 
-- **Squbs (squbs@straks.io) - Lead Developer & Business Development**
-- **Cryptovore (dan@straks.io) - Lead Marketing & PR, Business Development**
-- **Ekam (ekam@straks.io) - Lead Developer & Business Development**
-- **John Smith (john@straks.io) - Marketing & PR, Business Development**
-- **Kasper (kasper@straks.io) - Developer, Marketing & PR**
-- **Eskodhi (eskodhi@straks.io) - Developer**
-- **Bruno (bruno@straks.io) - Developer**
-- **Andrew (andrew@straks.io) - Developer**
-- **Flydancer (flydancer@straks.io) - Developer**
-- **Proximus (proximus@straks.io) - Marketing & PR**
-- **Lifipp (lifipp@straks.io) - Marketing & PR**
+- **Squbs (squbs@straks.tech) - Lead Developer & Business Development**
+- **Ekam (ekam@straks.tech) - Lead Developer & Business Development**
+- **Kasper (kasper@straks.tech) - Developer**
+- **Bruno (bruno@straks.tech) - Developer**
+- **Andrew (andrew@straks.tech) - Developer**
+- **Flydancer (flydancer@straks.tech) - Developer**
+- **Proximus (proximus@straks.tech) - Marketing & PR**
 
 
 __________________________________________________________________________
@@ -112,33 +107,11 @@ __________________________________________________________________________
 As above summary, in addition, the following notable items:
 
 
-#### Coinbase Transactions, Pool Mining and Wallet Mining 
+#### Notes, Knowledge Base & Support
 
-**IMPORTANT**
+Note: Pending full implementation and roll out of a STRAKS Lightning Network, **all other STRAKS' features are enabled and functional from day 0**; end-users can utilise STRAKS' speed, larger chain capacity, cross-chain atomic swaps, segregated witness and Masternode functionality straight away.
 
-Other than 'real world' testing of lightning transactions and cross chain atomic swaps, **all STRAKS' features are enabled and work from day 0**; end-users can utilise STRAKS' speed, larger chain capacity, SegWit and Masternode functionality right now.
-
-Due to the unique combination of SegWit, treasury reward, miner reward and Masternode payments, as of this writing, mining software and pools do not yet fully support STRAKS' coinbasetxn configuration.  GPU mining does work, but pool and/or mining software will need further code changes for SegWit blocks.
-
-##### Wallet Mining
-```
-Approach 1 (Local):
-(1) Start straksd/straks-qt locally
-(2) Run: "./straks-cli generate 1" (or via debug console in the Qt gui wallet)
-```
-```
-Approach 2 (Remote):
-(1) Start straksd on remote server and local server
-(2) On your local wallet (server) run: "./straks-cli getaccountaddress 0"
-(3) On Your remote server Run: "./straks-cli generatetoaddress 1 <address from step2>"
-(4) Shutdown local wallet (server)
-```
-
-More information can be found on [STRAKS' Knowledge Base](https://kb.straks.info/)
-
-##### GPU Mining
-
-Please follow [STRAKS' Knowledge Base GPU mining guide](https://kb.straks.info/kb/5a1a52ed48e3b4777551b314)
+Guides and additional information can be found on the [STRAKS' Knowledge Base](https://straks.co), and direct support can be sought on the [STRAKS Discord](https://discord.gg/5gzvadZ)
 
 
 #### Zero Start Instamine Protection (ZSIP)
@@ -152,7 +125,7 @@ STRAKS will be capped at a maxium supply of **150 million coins**.  This target 
 
 The constant block reward prevents event cliffs related to expected "halvings" and will support a more consistent and stable participation rate over a long time horizon.
 
-More information will be available on the STRAKS' [website](https://straks.io)
+More information will be available on the STRAKS' [website](https://straks.tech)
 
 ##### The Monetary Curve Based on a 10 STAK Block Reward
 ![Alt text](doc/mcurve.png)
@@ -172,12 +145,12 @@ Lyra2RE wrapped the Lyra2 PHS with additional cryptographic hash functions, and 
 
 The difference between Lyra2RE and Lyra2REv2 is as follows;
 
-- Additional 2 rounds of [CubeHash](https://en.wikipedia.org/wiki/CubeHash) 
+- Additional 2 rounds of [CubeHash](https://en.wikipedia.org/wiki/CubeHash)
 - Additional 1 round of [Blue Midnight Wish](https://www.mathematik.hu-berlin.de/~schliebn/dl/Blue-Midnight-Wish.pdf)
 - Removal of [Groestl](http://www.groestl.info/)
 
 
-#### **NEW** Difficulty Retargeting Algorithm (D106 - Amaury Sechet)
+#### **NEW** Difficulty Retargeting Algorithm (D601 - Amaury Sechet)
 
 Recent public discussions on how to address Bitcoin Cash's hash rate oscillation has resulted in an excellent approach that addresses many weaknesses of various other algorithms.  A well developed analsysis was presented by Bitcoin Cash's developer Amaury Sechet and supported by Zawy12 via thorough analysis, with simulated results that demonstate the algorthim's effectiveness.  The proposed implementation was modified specific to STRAKS blockchain.
 
@@ -186,13 +159,13 @@ More information can be found here:
 - [Bitcoin Mailing List Discussion](https://lists.linuxfoundation.org/pipermail/bitcoin-ml/2017-August/000136.html)
 - [Bitcoin News - Bitcoin Cash Hard Fork](https://news.bitcoin.com/bitcoin-cash-hard-fork-plans-updated-new-difficulty-adjustment-algorithm-chosen/)
 
-##### The Modified D106 Algorithm Targeting a 60 Second Block Time for STRAKS Blockchain
-![Alt text](doc/D106_algorithm_test.png)
+##### The Modified D601 Algorithm Targeting a 60 Second Block Time for STRAKS Blockchain
+![Alt text](doc/D601_algorithm_test.png)
 
 
 #### Treasury Funding
 
-In order to support continued development, exchange lisiting fees, web/node hosting costs, and various other operational costs related to running a successful blockchain, the STRAKS development team have decided to introduce a 5% treasury fee in perpetuity. We intend to ensure that the new currency is competitive and successful. To be able to deliver on that vision, we need to ensure that the currency is well-funded throughout its lifecycle. 
+In order to support continued development, exchange lisiting fees, web/node hosting costs, and various other operational costs related to running a successful blockchain, the STRAKS development team have decided to introduce a 5% treasury fee in perpetuity. We intend to ensure that the new currency is competitive and successful. To be able to deliver on that vision, we need to ensure that the currency is well-funded throughout its lifecycle.
 
 At 5%, approximately 72 blocks per day are mined for treasury (720 STAK).  In the spirit
 of transparency, the following 2-of-3 multisig addresses are the official
@@ -227,18 +200,18 @@ receiving payments after the aforementioned ZSMR block height.
 
 #### Masternode Payment Rebalancing: **NEW** Reactive Equilibria (REV1)
 
-Unique to STRAKS is the use of a new continous activation function based algorithm, 
-labelled Reactive Equilibria (REV1), that seeks to rebalance the payments made 
-to miners versus Masternodes.  There is a hard limit of 60% of the block reward that 
-can be appropriated for Masternode payments; this limit defines the boundary at which 
-total supply locked by Masternodes versus total circulation remains below ~13%. 
-As the Masternode count increases, the payment to Masternode holders will 
+Unique to STRAKS is the use of a new continuous activation function based algorithm,
+labelled Reactive Equilibria (REV1), that seeks to rebalance the payments made
+to miners versus Masternodes.  There is a hard limit of 60% of the block reward that
+can be appropriated for Masternode payments; this limit defines the boundary at which
+total supply locked by Masternodes versus total circulation remains below ~13%.
+As the Masternode count increases, the payment to Masternode holders will
 decline in favour of miners in order to support a decentralised ideology.  The
 new algorithm is simple in design but highly effective and lays the foundation for
-future advancements.  More information abut this feature will be posted on the
-[main site](https://straks.io). 
+future advancements.  More information about this feature will be posted on the
+[main site](https://straks.tech).
 
-##### Reactive Equilibria Masternode Payment Rebalancing Profile 
+##### Reactive Equilibria Masternode Payment Rebalancing Profile
 ![Alt text](doc/reactive_equilibria.png)
 
 
@@ -246,26 +219,29 @@ future advancements.  More information abut this feature will be posted on the
 
 ![Alt text](doc/segwit.png)
 
-SegWit2x is a combination of both SegWit and a 2MB hardfork. STRAKS has further 
+SegWit2x is a combination of both SegWit and a 2MB hardfork. STRAKS has further
 increased the non-SegWit block size to **4MB** from the outset to allow for greater
-scalability and utility.  The maximum serialised block size is **16MB** for STRAKS. 
+scalability and utility.  The maximum serialised block size is **16MB** for STRAKS.
 
-STRAKS is both lightning network and atomic swap compatible. And unlike 
+STRAKS is both lightning network and atomic swap compatible. And unlike
 many other "compatible" altcoins, SegWit, SegWit2x and the larger blocksize are enabled from the outset.
 
-For further information about Segregated Witness please visit [bitcoincore.org](https://bitcoincore.org/en/2016/01/26/SegWit-benefits/)
+For further information about Segregated Witness please visit [bitcoincore.org](https://bitcoincore.org/en/2016/01/26/segwit-benefits/)
+
+##### Segregated Witness Transaction on STRAKS Mainnet, [block:158979, txid:f729065b24497a99e3152372ef63b96b79228d0b6134e894cb3dcba47d2727f6]
+![Alt text](doc/mainnet_segwit.png)
 
 ##### Segregated Witness Transaction on STRAKS Testnet, [block:6635, txid:3fc630ac1a4b91714d7c7150275b8be019152329e70d1f7a37240a7331b9fab6]
 ![Alt text](doc/testnet_segwit.png)
 
 
-#### InstantTX and DarkSend Removal 
+#### InstantTX and DarkSend Removal
 *(Reproduced here for information purposes only, not release related)*
 
 Dropped support for both InstantTX and DarkSend. With the SegWit upgrade these features are going to be superseeded by far superior technology. SegWit will enable the STRAKS to adopt the [Lightning Network](https://lightning.network/lightning-network-paper.pdf), cross-chain atomic swaps, advanced versions of [TumbleBit](https://eprint.iacr.org/2016/575.pdf) and more.
 
 
-#### Hierarchical Deterministic Key Generation 
+#### Hierarchical Deterministic Key Generation
 *(Reproduced here for information purposes only, not release related)*
 
 Newly created wallets will use hierarchical deterministic key generation
@@ -324,16 +300,15 @@ __________________________________________________________________________
 
 ### Signatum Swap and Developers Premine Information
 
+**Please note:  You can no longer swap from Signatum to STRAKS.  The offer registration period has expired.**
+
 In the spirit of full transparency please read the following information carefully and ask questions on the STRAKS Discord server if you are unsure of anything.
 
 #### No Technical Association with Signatum
 
-This is a new digital currency and it shares no technical association to Signatum other than its superficial placeholder name and proposed “proof-of-burn” style swap mechanics.  This is simply a free coin-swap to a new and much better currency, where you are invited to swap your Signatum coins towards.  Under no circumstance are you forced to do so.  It is simply a gesture we have decided to extend to the Signatum community in the light of the recent scam by the old Signatum developers and emotional turbulence that Signatum investors have experienced.  The whole team was in agreement that this was a better alternative in order to preserve value for Signatum investors and help promote a clean, trustworthy and community orientated cryptocurrency sector.
+This is a new digital currency and it shares no technical association to Signatum other than its superficial placeholder name and proposed “proof-of-burn” style swap mechanics.  The STRAKS team extended the Signatum community an offer to swap away from Signatum in the light of the scam perpetrated by the old Signatum developers.  The whole team was in agreement that this approach would preserve value for Signatum investors and help promote a clean, trustworthy and community orientated cryptocurrency sector.
 
-
-#### The Coin Swap Community Poll
-
-The coin swap poll was initiated on October the 30th and concluded on Saturday the 4th November.  From the poll-data it is evident that the community is in great favour of the 4:1 swap, which includes burning the Signatum coins that will be received during the swap process.  Across Bitcointalk and Discord 319 community members passed their vote.  An overwhelming 85.27% of voters were in favour of the 4:1 swap and burning the coins in the process, while just 14.73% preferred the 20:1 option that would have allowed them to keep their Signatum coins after the swap.  As the community has spoken and decided on the matter, we will initiate a 4:1 coin swap and burn all Signatum coins that we receive in the process.  We personally also believe this to be the best option, as it ensures that fewer people may be affected by the Signatum situation going forward.  Nobody should profit at the expense of others, simply because they may not have the full overview of the situation when purchasing.
+Prior to the launch of STRAKS, the Signatum community voted in favour of 4:1 swap to the coin under development (2017-11-04).  The process involved instantly burning the Signatum coins that was received in exchange for STRAKS to be paid over a specified period of time, as noted below.
 
 
 #### The Swap and Developers Funds
@@ -343,8 +318,8 @@ Instead of premine, primarily due to the new REV1 payment rebalancing algorithm 
 The calculation of the swap and developer funds buffer is as follows:
 
 ```
-Swap Ratio: 4 SIGT : 1 STAK 
-Signatum Circulation (approx): 137,000,000 SIGT 
+Swap Ratio: 4 SIGT : 1 STAK
+Signatum Circulation (approx): 137,000,000 SIGT
 Assumed Circulation for Swap (0.36% buffer): 137,500,000 SIGT
 *(Buffer covers 30 days swap period POS generation)*
 
@@ -368,13 +343,16 @@ Swap
 [0.1] SPkVa5cB1kcgJk5rinL3p9w47qnjpej5gm
 [0.2] SPFTqzvx63YGt6U5GJ2WpbmsatTtZ8gsZr
 [0.3] SiUHsUD7BcHBwry2kZbQrm6YS7XkG8BvGG
-
+...
+[0.n] See https://straks.info/richlist for updated addresses
 
 Developers
 [1.0] SUUTsZhb7cpXNgZbieKFrE8gocAtL7EK1C
 [1.1] STnW6H7rFWmoXoriS5zjuqBQntnvD1tvhB
 [1.2] SZH7YJvMf4Wfxbf5ioZZgkasthebS9gZ4y
 [1.3] ShLgqYKRWrueCtbDXTPL9h64d1Kf73Sv86
+...
+[1.n] See https://straks.info/richlist for updated addresses
 
 
 Initial Mint to Swap Address:
@@ -434,7 +412,7 @@ Coinbase Transaction:
           "SUUTsZhb7cpXNgZbieKFrE8gocAtL7EK1C"
         ]
       }
-    }, 
+    },
     {
       "value": 0.00000000,
       "n": 1,
@@ -447,7 +425,7 @@ Coinbase Transaction:
           "33Ssxmn3ehVMgyxgegXhpLGSBpubPjLZQ6"
         ]
       }
-    }, 
+    },
     {
       "value": 0.00000000,
       "n": 2,
@@ -475,7 +453,7 @@ Block:
   "versionHex": "20000000",
   "merkleroot": "10a1dddf9e7de23eeada61dfa141214f781c7e79d4d128d156df3a0a73ce9eec",
   "tx": [
-    "6efb7d32aa752c234f443eb1cd4c1d874f0d701df5f565e20497937ef3735154", 
+    "6efb7d32aa752c234f443eb1cd4c1d874f0d701df5f565e20497937ef3735154",
     "244a50f42d5685998ef111435a0047f8fdee5c2cd500f6c14e5cba3a4a773672"
   ],
   "time": 1511115839,
@@ -514,51 +492,34 @@ Transaction:
 
 The swap process will be conducted in a manner such that it aligns STRAKS' investor/miner incentives, STRAKS' team long-term objectives, and SIGT's "investors" seeking to accrue value alongside the STRAKS' community.
 
-The distribution of swap funds will be managed to the extent that significant disruption of STAK circulation and market value can/will be minimised.  It would be unreasonable to think that the development team have not extensively considered the detrimental impact of an instantaneous increase in the circulation of STAK coins post swap.  To this consideration, the process defined, as follows, to an appreciable degree, prevents SIGT investors benefiting at the expense of STRAKS' miners/investors.
+The distribution of swap funds will be managed to the extent that significant disruption of STAK circulation and market value can/will be minimised. It would be unreasonable to think that the development team have not extensively considered the detrimental impact of an instantaneous increase in the circulation of STAK coins post swap. To this consideration, the process defined, as follows, to an appreciable degree, prevents SIGT investors benefiting at the expense of STRAKS' miners/investors.
 
-The start date of the swap will be announced soon on all relevant communication channels, and the **window for registration will last exactly 30 days**.
-
-##### The "STAK-bot"
-
-Users will use the STRAKS swap-bot (Swapotron) on Discord, to initiate and conclude their coin-swap.  The steps involved in registering for the swap, subject to minor amendments, will be as follows:
-
-```
-1. User initiates SIGT swap by issuing direct-message to Swapotron (!swap)
-2. Swapotron generates unique Signatum address and requests SIGT transfer from user
-3. Swapotron monitors address and waits for 10 confirmations
-4. Swapotron burns SIGT and notifies user
-5. End of swap process.
-
-At any time the user can type !straks to submit their STRAKS address. This must be
-done prior to the completion of the 30 day swap period.
-```
 
 ##### The Swap Process
 
-Following the end of the swap period, 30-days post announcement of the start, the **swap process will be executed on a monthly basis** thereafter, in-line with the rate at which supply is being generated for STAK through mining, i.e at 1440 blocks per day = 14,400 STAK per day.  With the minor adjustment of the swap supply being accelerated by 5% each year.  
+Following the end of the swap registration period (**__04 January 2018 18:00 UTC__**), ~28 days post announcement of the start, the **swap payments are distributed on a weekly basis**, in-line with the rate at which supply is being generated for STAK through mining, i.e at 1440 blocks per day = 14,400 STAK per day.  With the minor adjustment of the swap supply distribution being accelerated by 5% each year.  
 
-All Signatum coins will be **burnt instantly** upon receipt in a transparent manner, which the user should be able to track via the Signatum explorer.  This is aligned with the STRAKS team's position to *NOT* be responsible for the maintenance of Signatum's chain, associated nodes and issues that may arise over the duration of the swap payback period.  The STRAKS team will *only* be responsible for the swap allocated STAK and monthly distributions to swap participants on an ongoing basis.
+All Signatum coins were **burnt instantly** upon receipt in a transparent manner, which the community were able to track via the Signatum explorer.  This was aligned with the STRAKS team's position to *NOT* be responsible for the maintenance of Signatum's chain, associated nodes and issues that would have arisen otherwise over the duration of the swap payback period.  The STRAKS team is *only* responsible for the swap allocated STAK and weekly distributions to swap participants on an ongoing basis.
 
 ```
-Monthly swap distribution for registered STAK swap addresses:
+Monthly total swap distribution for registered STAK swap addresses:
 
 Year 1 per Month: 432,000 STAK distributed; equivalent to 1,728,000 SIGT
 Year 2 per Month: 453,600 STAK distributed, equivalent to 1,814,400 SIGT
 Year 3 per Month: 475,200 STAK distributed, equivalent to 1,900,800 SIGT
-Year 4 per Month: 496,800 STAK distributed, equivalent to 1,987,200 SIGT
-Year 5 per Month: 518,400 STAK distributed, equivalent to 2,073,600 SIGT
+Year 4 for 7 Months: 496,800 STAK distributed, equivalent to 1,987,200 SIGT
+Year 4 for 1 Month: 389,503 STAK distributed, equivalent to 1,558,012 SIGT
 
-Year 6 for 10 Months: 540,000 STAK distributed, equivalent to 2,160,000 SIGT
-Year 6 for 1 Month: 463,000 STAK distributed, equivalent to 1,852,000 SIGT
+Total Swap Distribution: 20,196,703 STAK
 ```
 
 ##### Swap Supply Relative to Total Supply (+Mining)
 ![Alt text](doc/swap_supply.png)
 
 
-By tracking POW generation, we have essentially **introduced a parallel POS system for SIGT "investors"**.  As such, SIGT investors are rewarded in-line with miners without having to "re-mine" coins -  having done so already.  **We the STRAKS team, present this as an equitable approach for all parties concerned**.  
+By tracking POW generation, we have essentially **introduced a parallel POS system for SIGT "investors"**.  As such, SIGT investors are rewarded in-line with miners without having to "re-mine" coins -  having done so already.  **We the STRAKS team, presented this as an equitable approach for all parties concerned**.  
 
-We note, again however, that Signatum investors/miners are not compelled in any way shape or form to participate in this swap.  This is simply an offer with the goal of alleviating their distress from being scammed by Signatum's development team, and to **build trust for the crypto-currency sector**, from an external perspective.  Moreover, to promote a **zero tolerance policy for nefarious operators within the sector**.
+We note, again however, that Signatum investors/miners were not compelled in any way shape or form to participate in this swap.  This was simply an offer with the goal of alleviating their distress from being scammed by Signatum's development team, and to **build trust for the crypto-currency sector**, from an external perspective.  Moreover, to promote a **zero tolerance policy for nefarious operators within the sector**.
 
 If you have any questions, or misunderstandings, please ask questions on the [STRAKS Discord](https://discord.gg/5gzvadZ).   
 
@@ -569,9 +530,9 @@ If you have any questions, or misunderstandings, please ask questions on the [ST
 __________________________________________________________________________
 
 
-### Acknowledgements 
+### Acknowledgements
 
-Credit goes to Bitcoin Core, Dash and Bitsend for providing a basic platform for 
+Credit goes to Bitcoin Core, Dash and Bitsend for providing a basic platform for
 STRAKS to enhance and develop, in concert with a shared desire to support the
 adoption of a decentralised digital currency future for the masses.
 

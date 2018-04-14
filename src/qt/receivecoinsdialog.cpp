@@ -1,4 +1,4 @@
-// Copyright (c) 2011-2016 The Straks Core developers
+// Copyright (c) 2017-2018 STRAKS developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -44,6 +44,7 @@ ReceiveCoinsDialog::ReceiveCoinsDialog(const PlatformStyle *_platformStyle, QWid
     }
 
     // context menu actions
+    QAction *copyAddressAction = new QAction(tr("Copy address"), this);
     QAction *copyURIAction = new QAction(tr("Copy URI"), this);
     QAction *copyLabelAction = new QAction(tr("Copy label"), this);
     QAction *copyMessageAction = new QAction(tr("Copy message"), this);
@@ -51,6 +52,7 @@ ReceiveCoinsDialog::ReceiveCoinsDialog(const PlatformStyle *_platformStyle, QWid
 
     // context menu
     contextMenu = new QMenu(this);
+    contextMenu->addAction(copyAddressAction);
     contextMenu->addAction(copyURIAction);
     contextMenu->addAction(copyLabelAction);
     contextMenu->addAction(copyMessageAction);
@@ -58,6 +60,7 @@ ReceiveCoinsDialog::ReceiveCoinsDialog(const PlatformStyle *_platformStyle, QWid
 
     // context menu signals
     connect(ui->recentRequestsView, SIGNAL(customContextMenuRequested(QPoint)), this, SLOT(showMenu(QPoint)));
+    connect(copyAddressAction, SIGNAL(triggered()), this, SLOT(copyAddress()));
     connect(copyURIAction, SIGNAL(triggered()), this, SLOT(copyURI()));
     connect(copyLabelAction, SIGNAL(triggered()), this, SLOT(copyLabel()));
     connect(copyMessageAction, SIGNAL(triggered()), this, SLOT(copyMessage()));
@@ -261,6 +264,19 @@ void ReceiveCoinsDialog::showMenu(const QPoint &point)
         return;
     }
     contextMenu->exec(QCursor::pos());
+}
+
+// context menu action: copy address
+void ReceiveCoinsDialog::copyAddress()
+{
+    QModelIndex sel = selectedRow();
+    if (!sel.isValid()) {
+        return;
+    }
+
+    const RecentRequestsTableModel * const submodel = model->getRecentRequestsTableModel();
+    const QString address = submodel->entry(sel.row()).recipient.address;
+    GUIUtil::setClipboard(address);
 }
 
 // context menu action: copy URI
