@@ -604,7 +604,7 @@ std::string HelpMessage(HelpMessageMode mode)
 std::string LicenseInfo()
 {
     const std::string URL_SOURCE_CODE = "<https://github.com/straks/straks>";
-    const std::string URL_WEBSITE = "<https://straks.io>";
+    const std::string URL_WEBSITE = "<https://straks.tech>";
 
 	//TODO-- add straks license
     return FormatParagraph(strprintf(_("Copyright (C) 2009 -%i The Bitcoin Core developers"), COPYRIGHT_YEAR)) + "\n" +
