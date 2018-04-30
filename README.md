@@ -84,7 +84,11 @@ Speed and privacy are core concerns for users today as well as e-commerce busine
 - **Bruno (bruno@straks.tech) - Developer**
 - **Andrew (andrew@straks.tech) - Developer**
 - **Flydancer (flydancer@straks.tech) - Developer**
-- **Proximus (proximus@straks.tech) - Marketing & PR**
+- **Proximus (proximus@straks.tech) - Marketing & Public Relations**
+- **Graev (daniel@straks.tech) - Marketing & Business Relations**
+- **Anduf Lee (anduflee@straks.tech) - Graphics Designer**
+- **DalmationCadet (dalmation@straks.tech) - Community Moderator & Public Relations**
+- **Atexor (atexor@straks.tech) - Community Moderator & Public Relations**
 
 
 __________________________________________________________________________
