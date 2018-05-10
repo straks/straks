@@ -11,7 +11,7 @@ __________________________________________________________________________
 
 
 ###### Block Size: 4 MB
-###### Max Block Size Serialized Size: 16 MB
+###### Max Block Serialized Size: 16 MB
 ###### Proof-of-Work Algorithm: Lyra2rev2
 ###### Block Time: ~60 seconds
 ###### Coin Maturity: 100 blocks
@@ -69,11 +69,10 @@ Speed and privacy are core concerns for users today as well as e-commerce busine
 - **[STRAKS Website](https://straks.tech)**
 - **[STRAKS Explorer](https://straks.info)**
 - **[STRAKS Discord](https://discord.gg/5gzvadZ)**
-- **[STRAKS Reddit](https://www.reddit.com/r/STRAKSproject)**
+- **[STRAKS Reddit](https://www.reddit.com/r/STRAKS)**
 - **[STRAKS Twitter](https://twitter.com/STRAKSproject)**
 - **[STRAKS Telegram](https://t.me/joinchat/F0-p1wzOoGequE5HMLzC5w)**
 - **[STRAKS Facebook](https://www.facebook.com/STRAKSproject)**
-- **[STRAKS Community News](https://straks.news)**
 
 
 ### STRAKS Team
@@ -83,10 +82,12 @@ Speed and privacy are core concerns for users today as well as e-commerce busine
 - **Kasper (kasper@straks.tech) - Developer**
 - **Bruno (bruno@straks.tech) - Developer**
 - **Andrew (andrew@straks.tech) - Developer**
+- **Freeman (freeman@straks.tech) - Developer**
 - **Flydancer (flydancer@straks.tech) - Developer**
-- **Proximus (proximus@straks.tech) - Marketing & Public Relations**
-- **Graev (daniel@straks.tech) - Marketing & Business Relations**
+- **Michael Reid (michael@straks.tech) - Marketing & Business Development**
+- **Daniel Roos (daniel@straks.tech) - Marketing & Business Relations**
 - **Anduf Lee (anduflee@straks.tech) - Graphics Designer**
+- **Proximus (proximus@straks.tech) - Community Moderator & Public Relations**
 - **DalmationCadet (dalmation@straks.tech) - Community Moderator & Public Relations**
 - **Atexor (atexor@straks.tech) - Community Moderator & Public Relations**
 
