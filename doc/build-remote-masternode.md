@@ -14,14 +14,14 @@ ________________________________________________________________________________
 
 #### Local Machine
 
-Note that the following steps can be performed via command line using the *straks-cli*
-instead of using the STRAKS Qt wallet.
+Note that the following steps can be performed via command line using the *seci-cli*
+instead of using the SECI Qt wallet.
 
-1.  Download latest version of STRAKS Qt client for windows or linux
+1.  Download latest version of SECI Qt client for windows or linux
 
-        https://github.com/straks/straks/releases
+        https://github.com/Seci-Coin/Seci/releases
 
-2.  Create straks.conf file with the following contents:
+2.  Create seci.conf file with the following contents:
 
 ```
 rpcallowip=127.0.0.1
@@ -34,10 +34,10 @@ listen=1
 
     Place the configuration file in its correction location:
 
-    For Linux: ${HOME}/.straks/straks.conf
-    For Windows: %appdata%\straks.conf
+    For Linux: ${HOME}/.seci/seci.conf
+    For Windows: %appdata%\seci.conf
 
-3.  Start STRAKS Qt gui client and allow the chain to sync
+3.  Start SECI Qt gui client and allow the chain to sync
 
 4.  Go to Help --> Debug Window --> Console and enter: `getaccountaddress 0`
     Copy the generated address to a text file.
@@ -45,22 +45,22 @@ listen=1
 5.  In the console enter: `masternode genkey`
     Copy the generated private key to a text file.
 
-5.  Send exactly 15,000 STAK in a single transaction to the address generated from Step 4
+5.  Send exactly 30,000 SECI in a single transaction to the address generated from Step 4
 
-6.  After you have received the STAK from Step 5, go to Help --> Debug Window --> Console and enter: `masternode outputs`
+6.  After you have received the SECI from Step 5, go to Help --> Debug Window --> Console and enter: `masternode outputs`
     
     You should see output similar to below indicating that the node has recognised coins as eligible to be used
     as collateral for a Masternode.
 
 ```
 {
-  "d565175089b0f4dce2294dc003799ae0c9cb703cadd996a0a4224458f176eb6e": "0"
+  "d565175289b0f4dce2294dc003799ae0c9cb703cadd996a0a4224458f176eb6e": "0"
 }
 ```
 
-7.  Shutdown the STRAKS Qt wallet
+7.  Shutdown the SECI Qt wallet
 
-8.  Modify the straks.conf and add the lines noted here:
+8.  Modify the seci.conf and add the lines noted here:
 
 ```
 rpcallowip=127.0.0.1
@@ -79,10 +79,10 @@ promode=1
 
 #### Remote Machine
 
-1.  Download latest version of STRAKS linux amd64 release
+1.  Download latest version of SECI linux amd64 release
 
-        https://github.com/straks/straks/releases
-2.  Create straks.conf file with the following contents:
+        https://github.com/Seci-Coin/Seci/releases
+2.  Create seci.conf file with the following contents:
 
 ```
 rpcallowip=127.0.0.1
@@ -105,24 +105,24 @@ alias 127.0.0.1:7575 masternode_private_key collateral_output_txid collateral_ou
 
 e.g.
 
-mn01 127.0.0.1:7575 92bHZcSpmT6UinHzR8VgaVZVgBVfbDRCh1WogXXXXXXtf9pyZ4Y d565175089b0f4dce2294dc003799ae0c9cb703cadd996a0a4224458f176eb6e 0
+mn01 127.0.0.1:7575 92bHZdSpmT6UinHzR8VgaVZVgBVfbDRCh1WogXXXXXXtf9pyZ4Y d565175089b0f4dce2294da003799ae0c9cb703cadd996a0a4224458f176eb6e 0
 ```
 
-4.  Start STRAKS daemon using command `./straksd`; you should get the following output:
+4.  Start SECI daemon using command `./secid`; you should get the following output:
 
 ```
 Missing masternode input, please look at the documentation for instructions on masternode creation
 ```
 
-5.  Then enter the following command using *straks-cli*
+5.  Then enter the following command using *seci-cli*
 
 ```
-./straks-cli masternode debug
+./seci-cli masternode debug
 ```
 
 #### Local Machine
 
-1.  Back on your local machine; start the STRAKS Qt client
+1.  Back on your local machine; start the SECI Qt client
 
 2.  Go to Help --> Debug Window --> Console and enter: `masternode start`
     You should get the following message:
@@ -137,7 +137,7 @@ successfully started masternode
 
     **Congratulations your masternode is up and running!**
 
-    Alternatively, on the STRAKS Qt client Masternodes tab --> All Masternodes you should see your
+    Alternatively, on the SECI Qt client Masternodes tab --> All Masternodes you should see your
     remote node ip address listed with its public key and other data
 
 
