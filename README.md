@@ -13,7 +13,7 @@ __________________________________________________________________________
 ###### Block Size: 4 MB
 ###### Max Block Serialized Size: 16 MB
 ###### Proof-of-Work Algorithm: Lyra2REv2
-###### Block Time: ~60 seconds
+###### Block Time: 60 seconds (approx)
 ###### Coin Maturity: 100 blocks
 ###### Transactions Per Second: 133 (Bitcoin: 3, Bitcoin Cash: 27, Dash: 13)
 ###### Transactions Per 24 hours: 11,520,000
