@@ -1,8 +1,9 @@
 
-![Alt text](doc/straks.png)
+![Alt text](doc/STRAKS_Logo_with_tagline.png)
 
 
-## STRAKS
+__________________________________________________________________________
+
 
 #### SegWit and SegWit2x active, Lightning Network compatible, Atomic Swap compatible and an increased non-SegWit block size of 4MB; introducing the first Masternode-enabled digital currency based off core Bitcoin version 0.14.2. STRAKS endeavours to eliminate unwanted transaction malleability through SegWit activation from day 0; solves capacity constraints suffered by Bitcoin and its peer group through a larger non-SegWit block size and increased signature operations - effectively introducing SegWit4x; is Lightning Network compatible - supporting instant payments, scalability, low cost and cross blockchain transactions; proposes a fair distribution through a Zero Start Instamine Protection (ZSIP) policy and Zero Start Masternode Reward (ZSMR) policy; introduces a new unique Masternode payment re-balancing algorithm, labelled Reactive Equilibria (REV1); and furthermore, implements a modified version of the new effective D601 difficulty re-targeting algorithm
 
@@ -13,7 +14,7 @@ __________________________________________________________________________
 ###### Block Size: 4 MB
 ###### Max Block Serialized Size: 16 MB
 ###### Proof-of-Work Algorithm: Lyra2REv2
-###### Block Time: 60 seconds (approx)
+###### Block Time: 60 seconds
 ###### Coin Maturity: 100 blocks
 ###### Transactions Per Second: 133 (Bitcoin: 3, Bitcoin Cash: 27, Dash: 13)
 ###### Transactions Per 24 hours: 11,520,000
@@ -30,6 +31,83 @@ __________________________________________________________________________
 ###### Masternode Reward: Rebalancing via New Reactive Equilibria (REV1) Algorithm
 ###### ZSMR: Explicit Masternode Decentralisation Promotion [Zero Reward to Block 50400]
 ###### ZSIP: Zero Start Instamine Protection [7 Days: 10080 Blocks]
+
+
+____________________________________________________________________
+
+
+## Quick Start
+
+- **[STRAKS Website](https://straks.tech)**
+- **[STRAKS Explorer](https://straks.info)**
+
+### Community
+
+- **[STRAKS Discord](https://discord.gg/5gzvadZ)**
+- **[STRAKS Forum](https://straks.co)**
+- **[STRAKS BitcoinTalk](https://bitcointalk.org/index.php?topic=2433318.0)**
+- **[STRAKS GitLab](https://lab.straks.co/explore/projects)**
+- **[STRAKS GitHub](https://github.com/straks/straks)**
+- **[STRAKS Insight](https://straks.tech/insight/)**
+- **[STRAKS Telegram](https://telegram.straks.tech)**
+- **[STRAKS Twitter](https://twitter.straks.tech)**
+- **[STRAKS Facebook](https://facebook.straks.tech)**
+
+### E-commerce, Wallets and Gateways
+
+- **[STRAKS Core Wallet](https://github.com/straks/straks/releases)**
+- **[STRAKS Electrum Wallet](https://lab.straks.co/straks/electrum-stak/tags)**
+- **[STRAKS Android Wallet](https://github.com/straks/strakswallet-android/releases)**
+- **[STRAKS Paper Wallet](https://paper.straks.tech)**
+- **[STRAKS Gate](https://lab.straks.co/straks/straksgate)**
+- **[STRAKS Gate-ReactJS POS](https://lab.straks.co/straks/react-pos)**
+- **[STRAKS Point-of-Sale](https://lab.straks.co/straks/strakspos)**
+- **[STRAKS WHMCS-Payment-Gateway](https://lab.straks.co/straks/STRAKS-WHMC-Payment-Gateway)**
+
+### External
+
+- **[CoinMarketCap](https://coinmarketcap.com/currencies/straks/)**
+- **[Masternodes Online](https://masternodes.online/currencies/STAK/)**
+- **[Masternodes Pro](https://masternodes.pro/stats/stak)**
+- **[CoinGecko](https://www.coingecko.com/en/coins/straks)**
+- **[Coinlib](https://coinlib.io/coin/STAK/Straks)**
+- **[WhatToMine](https://whattomine.com/coins/240-stak-lyra2rev2)**
+- **[Crypto-Coinz](https://www.crypto-coinz.net/coin-info/?100-Straks-STAK-Lyra2v2-calculator/)**
+
+### Exchanges/Trading
+
+- **[HitBTC BTC](https://hitbtc.com/exchange/STAK-to-BTC)**
+- **[HitBTC ETH](https://hitbtc.com/exchange/STAK-to-ETH)**
+- **[CryptoBridge](https://wallet.crypto-bridge.org/market/BRIDGE.STAK_BRIDGE.BTC)**
+- **[Stocks.Exchange](https://app.stocks.exchange/en/basic-trade/pair/BTC/STAK/)** 
+- **[SouthXchange BTC](https://www.southxchange.com/Market/Book/STAK/BTC)**
+- **[SouthXchange USD](https://www.southxchange.com/Market/Book/STAK/USD)**
+- **[CREX24 USD](https://crex24.com/exchange/STAK-USD)**
+- **[CREX24 BTC](https://crex24.com/exchange/STAK-BTC)**
+- **[BarterDex](https://github.com/KomodoPlatform/BarterDEX)**
+
+*For commercial information/proposals please contact: marketing@straks.tech*
+*For ALL other enquiries please contact: support@straks.tech*
+
+
+__________________________________________________________________________
+
+
+### STRAKS Team
+
+- **Squbs (squbs@straks.tech) - Co-Founder, Development Lead & Strategy**
+- **Ekam (ekam@straks.tech) - Co-Founder, Development Lead & Strategy**
+- **Michael Reid (michael@straks.tech) - Developer, Marketing & Business Development**
+- **Bruno (bruno@straks.tech) - Developer**
+- **Jeckziel Ayala (jeckziel@straks.tech) - Developer**
+- **Freeman (freeman@straks.tech) - Developer**
+- **Andrew (andrew@straks.tech) - Developer**
+- **Flydancer (flydancer@straks.tech) - Developer**
+- **Daniel Roos (daniel@straks.tech) - Marketing & Business Relations**
+- **Anduf Lee (anduflee@straks.tech) - Graphics Designer**
+- **Proximus (proximus@straks.tech) - Community Moderator & Public Relations**
+- **DalmationCadet (dalmation@straks.tech) - Community Moderator & Public Relations**
+- **Atexor (atexor@straks.tech) - Community Moderator & Public Relations**
 
 
 __________________________________________________________________________
@@ -66,35 +144,6 @@ With the upcoming STRAKS-vote you will be able to not only propose ideas publicl
 
 ##### Speed & Privacy
 Speed and privacy are core concerns for users today as well as e-commerce businesses. To ensure that STRAKS is as effective as possible for e-commerce application, STRAKS will maintain a high focus on increasing anonymity and most important on increasing speed of transactions - to always be at the forefront.
-
-
-### Links
-
-- **[STRAKS Website](https://straks.tech)**
-- **[STRAKS Explorer](https://straks.info)**
-- **[STRAKS Discord](https://discord.gg/5gzvadZ)**
-- **[STRAKS Reddit](https://www.reddit.com/r/STRAKS)**
-- **[STRAKS Twitter](https://twitter.com/strakstech)**
-- **[STRAKS Telegram](https://t.me/joinchat/F0-p1wzOoGequE5HMLzC5w)**
-- **[STRAKS Facebook](https://www.facebook.com/STRAKS.tech)**
-
-
-### STRAKS Team
-
-- **Squbs (squbs@straks.tech) - Lead Developer & Business Development**
-- **Ekam (ekam@straks.tech) - Lead Developer & Business Development**
-- **Kasper (kasper@straks.tech) - Developer**
-- **Bruno (bruno@straks.tech) - Developer**
-- **Andrew (andrew@straks.tech) - Developer**
-- **Freeman (freeman@straks.tech) - Developer**
-- **Flydancer (flydancer@straks.tech) - Developer**
-- **Michael Reid (michael@straks.tech) - Marketing & Business Development**
-- **Daniel Roos (daniel@straks.tech) - Marketing & Business Relations**
-- **Anduf Lee (anduflee@straks.tech) - Graphics Designer**
-- **Proximus (proximus@straks.tech) - Community Moderator & Public Relations**
-- **DalmationCadet (dalmation@straks.tech) - Community Moderator & Public Relations**
-- **Atexor (atexor@straks.tech) - Community Moderator & Public Relations**
-
 
 __________________________________________________________________________
 

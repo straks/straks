@@ -126,7 +126,7 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT2X].nOverrideRuleChangeActivationThreshold = 1; 
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0000000000000000000000000000000000000000000000001773c78ab15e45cc");
+        consensus.nMinimumChainWork = uint256S("0000000000000000000000000000000000000000000000001d1227c60c6658d2");
 
         // By default assume that the signatures in ancestors of this block are valid.
         consensus.defaultAssumeValid = uint256S("0x0");
@@ -187,7 +187,8 @@ NEW **mainnet** merkle root: 15343d9e3cfff44854ec63cc588d5a1ed6ea971085c2be97acb
                 { 94858, uint256S("000000000003b195d823ee34f2ffa36933e4696fa845508e0fa9238e0dbb9718")},
                 { 136201, uint256S("00000000000def1328cef45871f0cd91dabd28dc5ba117535cbcee19eebdf79c")},
                 { 160285, uint256S("00000000000147b96ecc7ab3248dcbabd87b2193bf045750fce80db89465b338")},
-                { 229445, uint256S("0000000000633a2bd9ff75e6c485912688bc4099e494c40c4c65316f4daddaf0")}
+                { 229445, uint256S("0000000000633a2bd9ff75e6c485912688bc4099e494c40c4c65316f4daddaf0")},
+                { 403397, uint256S("00000000007c0be903c811d3128cf63cab174464b029f91e5df30e9abe85d5ca")}
             }
         };
 
