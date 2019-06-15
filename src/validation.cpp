@@ -2217,19 +2217,26 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
 
             const CTransaction &tx = *(block.vtx[0]);
 
-            CAmount tVal =
-                GetBlockSubsidy(pindex->nHeight, chainparams.GetConsensus()) * 0.05;
-            
+            CAmount bVal = GetBlockSubsidy(pindex->nHeight, chainparams.GetConsensus()); 
+            CAmount tVal = bVal * 0.05;
             CAmount nValue = block.vtx[0]->GetValueOut() - tVal;
+
+            CAmount apxMp = GetMasternodePayment(pindex->nHeight, nValue, chainparams.GetConsensus());
 
             BOOST_FOREACH(const CTxOut& output, tx.vout) {
                 if (output.scriptPubKey == payee) {
                     if(fDebug) LogPrintf("MPA: block Masternode payment %d\n", output.nValue);
 
+                    CAmount rBuffer = tVal/2;
+
                     if(output.nValue > nValue * 0.6) {
                         incorrectMNPayment = true;
                         break;
-                    } else {
+                    } else if(pindex->nHeight > 649620 
+                              && (output.nValue < (apxMp-rBuffer) || output.nValue > (apxMp+rBuffer))) {
+                        incorrectMNPayment = true;
+                        break;
+                    }  else {
                         missingMNPayment = false;
                         break;
                     }

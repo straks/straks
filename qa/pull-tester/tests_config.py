@@ -3,8 +3,8 @@
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-SRCDIR="/home/squbs/gitlab/straks"
-BUILDDIR="/home/squbs/gitlab/straks"
+SRCDIR="/home/squbs/gitlab/current/dev/1.14.7.5"
+BUILDDIR="/home/squbs/gitlab/current/dev/1.14.7.5"
 EXEEXT=""
 
 # These will turn into comments if they were disabled when configuring.

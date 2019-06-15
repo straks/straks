@@ -9,7 +9,7 @@
 /* #undef AC_APPLE_UNIVERSAL_BUILD */
 
 /* Version Build */
-#define CLIENT_VERSION_BUILD 4
+#define CLIENT_VERSION_BUILD 5
 
 /* Version is release */
 #define CLIENT_VERSION_IS_RELEASE true
@@ -33,7 +33,7 @@
 #define COPYRIGHT_HOLDERS_SUBSTITUTION "STRAKS"
 
 /* Copyright year */
-#define COPYRIGHT_YEAR 2018
+#define COPYRIGHT_YEAR 2019
 
 /* Define to 1 to enable wallet functions */
 #define ENABLE_WALLET 1
